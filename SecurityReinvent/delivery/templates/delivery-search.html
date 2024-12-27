@@ -1,0 +1,71 @@
+{% extends 'delivery_base.html' %}
+
+{% block title %}Search Package{% endblock %}
+
+{% block container %}
+{% load static %}
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    
+    <div class="search text-center">
+        <div class="search-container">
+            <h2 class="list-title text-left">All Package List <a href="{% url 'Dallexcel_url' %}" class="center"><img width="35" height="35" src="https://img.icons8.com/material-outlined/35/21c101/export-excel.png" alt="export-excel"/></a></h2>
+            <h5 style="text-align: left;">When you pick up package, please verify with secuirty member to register <span style="color:#1A9CE2; font-weight: 800;">security checkout</span></h5>
+            <table class="table text-center" id="dataTable">
+                <thead>
+                  <tr>
+                    <th class="text-center">Tracking Number</th>
+                    <th class="text-center">Receiver</th>
+                    <th class="text-center">Qty</th>
+                    <th class="text-center" style="color:#1A9CE2; font-weight: 800;">Security Checkout</th>
+                    <th class="text-center">Arriving Date</th>
+                    {% if user.is_superuser %}
+                        <th class="text-center">Delete</th>
+                    {% endif %}
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for item in item_list %}
+                        <tr>
+                            <td class="copyTracking text-center"  onclick="copyText(this)">{{ item.tracking_number }} <a>Copy</a></td>
+                            <td>{{ item.receiver }}</td>
+                            <td>{{ item.qty }}</td>
+    
+                            {% if item.checkout %}
+                                <td>{{ item.checkout|date:"m/d/y H:i" }}</td>
+                            {% else %}
+                                <td>
+                                    {% if item.checkout %}
+                                        {{ item.checkout }}
+                                    {% else %}
+                                        {% if user.is_superuser %}
+                                            <center><a class="checkout" href="{% url 'Dsearchout_url' item.id %}">Checkout</a></center>
+                                        {% else%}    
+                                            <center>-</center>
+                                        {% endif %}
+                                    {% endif %}
+                                </td>
+                            {% endif %}
+    
+                            <td>{{ item.arriving_date|date:"m/d/y H:i" }}</td>
+                            {% if user.is_superuser %}
+                                <td><a href="{% url 'Ddelete_url' item.id %}">Delete</a></td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        $('#dataTable').DataTable({
+            searching: true,
+            paging: true,
+            ordering: true,
+            pageLength: 10, // Number of records per page
+        });
+    </script>
+    {% load static %}
+    <script src="{% static 'JavaScript/copytext6.js' %}"></script>
+{% endblock %}

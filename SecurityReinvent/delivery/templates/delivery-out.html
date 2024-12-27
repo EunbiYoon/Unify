@@ -1,0 +1,32 @@
+{% extends 'delivery_base.html' %}
+
+{% block title %}Checkout Package{% endblock %}
+
+{% block container %}
+    <div class="checkout">
+        <div class="checkout-container text-center">
+            {% if error_message %}
+                <p class="alert alert-messaage">Error: {{error_message}}</p>
+            {% endif %}
+            <form method="post" action="{% url 'Dcheckout_url' %}">
+                {% csrf_token %}
+                <h1>Checkout Package</h1>
+                <h5 class="text-left info">
+                    Before you bring out package out, it should be checkout in the system.
+                    <br/><span style="color:#1A9CE2; font-weight: 800 !important;">Tracking number should enter</span> between two options to checkout.
+                </h5>
+                <h5 class="text-left">1. Scan QR Code</h5>
+                <div name="reader" class="reader" id="reader"></div>
+                <h5 class="text-left">2. Type Manually</h5>
+                <h5 id="typetext"></h5>
+                <input type="text" class="result" name="result" id="result" placeholder="1234 5678 9123 4567" oninput="addSpaces()">
+                <button class="text-center" id="submit" type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+    {% load static %}
+    <script src="{% static 'JavaScript/html5-qrcode.min.js' %}"></script>
+    <script src="{% static 'JavaScript/qrscan4.js' %}"></script>
+    <script src="{% static 'JavaScript/inputspace2.js' %}"></script>
+
+{% endblock %}

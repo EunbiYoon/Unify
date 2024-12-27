@@ -1,0 +1,38 @@
+{% extends 'cost_base.html' %}
+
+{% block title %}BOM Comparison Dashboard{% endblock %}
+
+{% block container %}
+<div style="border:1px solid #007BFF;border-radius:10px; background-color:rgb(231, 230, 230); margin:0 30px; padding:30px; color:white">
+        <center><h1 class="text-primary">BOM Comparison Dashboard</h1></center>
+        <center><h5 style="color:black; font-weight: 400;">Choose one of below reports and check data status.</h5></center>
+        <br/>
+        <div class="container">
+            <div class="row">
+                {% for month_year, posts in grouped_posts.items %}
+                <div style="margin:0 auto;">
+                    <div class="column" style="border-radius:10px; background-color: white; margin:10px; padding:10px">
+                        <h3 class="text-dark">{{ month_year }}</h3>
+                        {% for post in posts %}
+                            <h4>
+                                <li style="padding-left:10px;" class="text-primary"><a href="{% url 'detail_bom_url' post.pk %}">{{ post.week }}</a></li>
+                            </h4>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.025); padding:0">
+        Power By LGETN R&D Eunbi Yoon
+        <a style="text-decoration:underline; color:grey" href="mailto : eunbi1.yoon@lge.com">eunbi1.yoon@lge.com</a>
+        | Support By LGETN Accounting Kitae Park 
+        <a style="text-decoration:underline; color:grey" href="mailto : kitae3.park@lge.com">kitae3.park@lge.com</a>, 
+        LGETN Procurement Grace Hwang
+        <a style="text-decoration:underline; color:grey" href="mailto : grace.hwang@lge.com">grace.hwang@lge.com</a>
+    </div>
+{% endblock %}

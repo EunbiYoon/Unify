@@ -1,0 +1,116 @@
+{% extends 're_base.html' %}
+
+{% block title %}REINVENT Request{% endblock %}
+
+{% block container %}
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link {% if active_tab == 'tab1' %}active{% endif %}" href="#tab1" data-toggle="tab">Flexible Workhours</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {% if active_tab == 'tab2' %}active{% endif %}" href="#tab2" data-toggle="tab">My Day</a>
+        </li>
+        <!-- Add more tabs as needed -->
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane {% if active_tab == 'tab1' %}active{% endif %}" id="tab1">
+            {% for message in messages %}
+                {% if "location1" in message.extra_tags %}
+                    <p class="alert alert-secondprimary location1">Error: {{message}}</p>
+                {% endif %}
+            {% endfor %} 
+            <h3>Flexible Workhours Request</h3>
+            <div class="tab-info">
+                <h6>
+                    <span style="color:#f97070">* </span>When you left after 7PM, next day starts 7~10AM depends on overwork time.
+                    <br/><span style="color:#f97070">* </span>Next day start time is calculated automatically when you enter late day finished.
+                    <br/><span style="color:#f97070">* </span>This request does not require approval.
+                </h6>
+            </div>
+            <form method="post" action="{% url 'Rrequestflex_url' %}" id="hiddenflex">
+                {% csrf_token %}
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><h5>Late Day Finshed</h5></th>
+                            <td><h5><input type="datetime-local" name="lateday" type="text" id="datetimepicker" placeholder="08/04/23 7:52 PM" date-enable-time></h5></td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><h5>Next Day Start</h5></th>
+                            <td>
+                                <center><h5 id="outdatetime">Depends on late day finished time.</h5></center>
+                                <input type="hidden" name="hidden_nextday" id="hiddenInput">
+                            </td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><h5>Remark</h5></th>
+                            <td><h6><textarea maxlength="76" name="remark" placeholder="This is not necessary. You can fill out the reason of request such as have a meeting with vendor"></textarea></h6></td>
+                        </tr> 
+                    </tbody>
+                </table>
+                <button type="submit" class="btn btn-primary option2">Submit</button>
+            </form>  
+        </div>
+        <div class="tab-pane {% if active_tab == 'tab2' %}active{% endif %}" id="tab2">
+            {% if message2 %}
+                <p class="alert alert-secondprimary location2">Error: {{message2}}</p>
+            {% endif %}            
+            <h3>My Day Request</h3>
+            <div class="tab-info">
+                <h6>
+                    <span style="color:#f97070">* </span>Once a month, check your credit and choose one day to leave at 3PM.
+                    <br/><span style="color:#f97070">* </span>This is different with Happy Friday which is leaving 3PM on third Friday.
+                    <br/><span style="color:#f97070">* </span>This request does not require approval.
+                </h6>
+            </div>
+            <form method="post" action="{% url 'Rrequestmyday_url' %}" class="hiddenmyday">
+                {% csrf_token %}
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><h5>Credit</h5></th>
+                            <td>
+                                <h5 name="credit">{{ user_credit}}</h5>
+                                <input type="hidden" name="hidden_credit" id="hiddenInput">
+                            </td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><h5>Date</h5></th>
+                            <td><h5><input name="myday" id="datepicker" placeholder="08/05/23"></input></h5></td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><h5>Remark</h5></th>
+                            <td><h6><textarea maxlength="76" name="remark" placeholder="I made this request to go to see a football game !"></textarea></h6></td>
+                        </tr> 
+                    </tbody>
+                </table>
+                    
+                <button type="submit" class="btn btn-primary option1">Submit</button>
+            </form>             
+        </div>
+    </div>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="{% static 'JavaScript/nextday3.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> 
+    <script>
+        // date + time 
+        flatpickr("#datetimepicker", {
+            mode:'single',
+            dateFormat: "m/d/y G:i K", // You can change the format as per your needs
+            minDate:"today",
+            time_24hr:false,
+            enableTime: true,
+        });
+        // date + time 
+        flatpickr("#datepicker", {
+            mode:'single',
+            dateFormat: "m/d/y", // You can change the format as per your needs
+            minDate:"today"
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+    <script src="{% static 'JavaScript/tabmenu.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'cost_base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block container %}
+  <h1 style="margin:50px 0 0;">Welcome to Data Center</h1>
+  <h5 style="font-weight: 400; margin-bottom:20px;">What is Data Center and how to use? Please download user guide book to explore application. <a class="btn btn-primary"  href="{% static 'file/DataCenterGuideBook_v1.pptx' %}" download>Guide</a></h5>
+
+  <div class="card-deck">
+    <div class="card border-primary">
+      <div class="image border-primary" style="border-bottom:1px solid #007bff; display: flex; align-items:center; justify-content:center;">
+        <img style="width:50%; margin:10px;" src="https://img.icons8.com/external-flaticons-flat-flat-icons/300/external-compare-medical-ecommerce-flaticons-flat-flat-icons.png" class="card-img" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">BOM Comparison</h5>
+        <p class="card-text">New Plantopia and GERP Roll Up Data Compare with PGM considering parent-child relationship to figure out substitute and price change.</p>
+        <a href="{% url 'category_bom_url' %}" class="btn btn-primary" style="color:white">Dashboard</a>
+      </div>
+      <div class="card-footer border-primary">
+        {% if recent_bom %}
+          <a href="{% url 'detail_cost_url' recent_cost %}" class="text-primary">Review Recent Report</a>
+        {% else %}
+          No Report Yet
+        {% endif %}
+      </div>
+    </div>
+    <div class="card border-primary">
+      <div class="image" style="border-bottom:1px solid #007bff; display: flex; align-items:center; justify-content:center;">
+        <img style="width:50%; margin:10px;" src="https://img.icons8.com/cute-clipart/300/low-price.png" class="card-img" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Cost Review</h5>
+        <p class="card-text">Review BPA Entity and PAC Entity Material Cost of all product, Top Loader, Front Loader and Dryer to monitor the trend and VI Activity required items</p>
+        <a href="{% url 'category_cost_url' %}" class="btn btn-primary" style="color:white">Dashboard</a>
+      </div>
+      <div class="card-footer border-primary">
+        {% if recent_bom %}
+        <a href="{% url 'detail_bom_url' recent_bom %}" class="text-primary">
+          Review Recent Report
+         </a> 
+        {% else %}
+          No Report Yet
+        {% endif %}
+      </div>
+    </div>
+    <div class="card border-primary">
+      <div class="image" style="border-bottom:1px solid #007bff; display: flex; align-items:center; justify-content:center;">
+        <img style="width:50%; margin:10px;" src="https://img.icons8.com/external-flat-design-circle/300/external-Customer-survey-seo-development-and-marketing-flat-design-circle.png" class="card-img" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Quality Indicator</h5>
+        <p class="card-text">Read customer satisfaction of our products with specialized quality indicator such as CDR, Hazard and FDR to analyze service trend and find the improvements. </p>
+        <a href="http://3.22.224.245/" class="btn btn-primary" style="color:white">Dashboard</a>
+      </div>
+      <div class="card-footer border-primary">
+        {% if recent_bom %}
+          <a href="{% url 'detail_cost_url' recent_cost %}" class="text-primary">Review Recent Report</a>
+        {% else %}
+          No Report Yet
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/report3.css' %}"> 
+</head>
+<body>
+    <div style="display: flex; justify-content: right; margin:0;">
+        <div style="background-color: aliceblue; border:1px solid lightgrey">
+            <a href="{% static file_result %}" download style="border-right:1px solid lightgray; padding:0 10px"> Total Result Download</a>
+            <a href="{% url 'detail_comment_url' post_detail.id  %}" style="border-right:1px solid lightgray; padding:0 10px">Comment</a>
+            <a href="{% url 'category_cost_url' %}" style="padding: 0 10px; border-right:1px solid lightgray;">Dashboard</a>
+            <a href="{% url 'costhome_url' %}" style="padding: 0 10px">Home</a>
+        </div>
+    </div>
+
+    <form method="post" action="{% url 'detail_cost_url' post_detail.id %}" style="margin: 0 200px;">
+        {% csrf_token %}
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Front Loader BPA" id="detail-cost-model">
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Top Loader BPA" id="detail-cost-model">
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Dryer BPA" id="detail-cost-model">
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Front Loader PAC" id="detail-cost-model">
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Top Loader PAC" id="detail-cost-model">
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Dryer PAC" id="detail-cost-model">
+    </form>
+
+    <div style="margin: 0 200px; border:3px solid #007bff98; border-radius: 0 10px 10px 10px;">
+        <h2 style="font-size:2rem;  text-align: center; margin:10px 0; padding:0;">
+            {{week_num}} Cost Review Report
+        </h2>
+        <div class="cost-combine">
+            <div class="detail-graph">
+                <h5>{{model_title}} Trend Graph</h5>
+                <canvas width="60vw" height="30vh" id="chart"></canvas>
+            </div>
+            {% load static %}
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+                var chartColumn=JSON.parse('{{ graph_column |safe }}');
+                var chartData0=JSON.parse('{{graph_value0|safe}}');
+                var chartData1=JSON.parse('{{graph_value1|safe}}');
+                var chartData2=JSON.parse('{{graph_value2|safe}}');
+                var chartData3=JSON.parse('{{graph_value3|safe}}');
+                var chartData4=JSON.parse('{{graph_value4|safe}}');
+                var chartData5=JSON.parse('{{graph_value5|safe}}');
+                var chartData6=JSON.parse('{{graph_value6|safe}}');
+                var index=JSON.parse('{{graph_index|safe}}');
+        
+                var data=[
+                        {
+                            type:'line',
+                            label:index[0],
+                            data:chartData0,
+                            borderColor: '#4472C4',
+                            backgroundColor:'#4472C4'
+                        },
+                        {
+                            type:'line',
+                            label:index[1],
+                            data:chartData1,
+                            borderColor: '#A5A5A5',
+                            backgroundColor:'#A5A5A5',
+                        },
+                        {
+                            type:'line',
+                            label:index[2],
+                            data:chartData2,
+                            borderColor: '#70AD47',
+                            backgroundColor:'#70AD47',
+                        },
+                        {
+                            type:'line',
+                            label:index[3],
+                            data:chartData3,
+                            borderColor: '#FFC000',
+                            backgroundColor:'#FFC000',
+                        },
+                        {
+                            type:'line',
+                            label:index[4],
+                            data:chartData4,
+                            borderColor: '#ED7D31',
+                            backgroundColor:'#ED7D31',
+                        },
+                        {
+                            type:'line',
+                            label:index[5],
+                            data:chartData5,
+                            borderColor: '#6600CC',
+                            backgroundColor:'#6600CC',
+                        },
+                        {
+                            type:'line',
+                            label:index[6],
+                            data:chartData6,
+                            borderColor: '#FF66FF',
+                            backgroundColor:'#FF66FF',
+                        }
+
+                    ]
+                var chartConfig={
+                    data:{
+                        labels:chartColumn,
+                        datasets:data,
+                    },
+                    options:{
+                        scales:{
+                            y:{
+                                // suggestedMin:270,
+                                ticks: {
+                                    // Include a dollar sign in the ticks
+                                    callback: function(value, index, ticks) {
+                                        return '$' + value;
+                                    }
+                                },
+                                grid:{
+                                    display:false
+                                }
+                            },
+                            x:{
+                                grid:{
+                                    display:false
+                                }                               
+                            }
+                        },
+                        plugins:{
+                            // title:{
+                            //     display:true,
+                            //     text:'Trend Graph',
+                            //     font:{size:15,family: 'Montserrat'}
+                            // },
+                            legend:{
+                                labels:{
+                                    // usePointStyle: true,
+                                    // pointStyle: 'line',
+                                    // display:false,
+                                    font:{size:12,family: 'Arial Narrow'}}
+                            },
+                            tooltip:{
+                                legend: {
+                                    display:false
+                                },
+                                callbacks: {
+                                    // labelColor: function(context) {
+                                    //     return {
+                                    //         borderColor: 'rgb(215, 222, 250)',
+                                    //         borderWidth: 2,
+                                    //         borderDash: [2, 2],
+                                    //         borderRadius: 2,
+                                    //     };
+                                    // },
+                                    labelTextColor: function(context) {
+                                        return '#ffffff';
+                                    },
+                                    label: function(context){
+                                        var label='';
+                                        if (context.parsed.y!==null){
+                                            label+=context.parsed.y;
+                                        }
+                                        return label;
+                                    }
+                                }
+                        
+                                }    
+                        }
+                        
+                    }
+                };
+                var chart=new Chart(document.getElementById('chart'), chartConfig);
+            </script>
+
+            <div class="detail-item">
+                <h5>{{model_title}} VI Item</h5>
+                <div class="detail-item1">
+                    <table align="left">
+                        <thead>
+                            <tr>
+                            {% for column in increase_item.columns %}
+                                <th>{{ column }}</th>
+                            {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            {% for row in increase_item.rows %}
+                            <tr>
+                                <th>{{ row.index }}</th>
+                                {% for value in row.values %}
+                                <td>{{ value }}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="detail-item2">
+                    <table align="left">
+                        <thead>
+                            <tr>
+                            {% for column in decrease_item.columns %}
+                                <th>{{ column }}</th>
+                            {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            {% for row in decrease_item.rows %}
+                            <tr>
+                                <th>{{ row.index }}</th>
+                                {% for value in row.values %}
+                                <td>{{ value }}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="detail-trend">
+                <h5>{{model_title}} Trend Table </h5>
+                <table align="left">
+                    <thead>
+                        <tr>
+                        {% for column in trend_table_data.columns %}
+                            <th>{{ column }}</th>
+                        {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        {% for row in trend_table_data.rows %}
+                        <tr>
+                            <th>{{ row.index }}</th>
+                            {% for value in row.values %}
+                            <td>{{ value }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

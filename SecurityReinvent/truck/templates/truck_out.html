@@ -1,0 +1,45 @@
+{% extends 'truck_base.html' %}
+
+{% block container %}
+    <div class="checkout">
+        <h1>Truck Check-Out Registration</h1>
+        <h5>This is for check-in page. If you want to checkin please access <a href="#">@Check-In</a></h5>
+        <form method="post" action="{% url 'Ttruckout_url'  truck_data.pk %}">
+            {% csrf_token %}
+            <table class="text-center registerform" style="width: 60%; margin:auto;">
+                <tr>
+                    <th scope="row" style="margin:0; background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black; padding:5px" class="title1">Time</h5></th>
+                    <td style="border:1px solid #46413378; background-color:white;"><h5 id="current-time" class="time" style="padding:5px"></h5></td>
+                </tr>
+                <tr>
+                    <th scope="row" style="margin:0; background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black; padding:5px" class="title2">PIC</h5></th>
+                    <td style="border:1px solid #46413378; background-color:white;"><h5>{{user.first_name}} {{user.last_name}}</h5></td>
+                </tr>
+                <tr>
+                    <th scope="row" style="margin:0; background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black; padding:5px" class="title3">Truck Number</h5></th>
+                    <td style="border:1px solid #46413378; background-color:white;"><h5>{{truck_data.truck_number}}</h5></td>
+                </tr>
+                <tr>
+                    <th scope="row" style="margin:0; background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black; padding:5px" class="title4">Out Trailer Number/Bobtail</h5></th>
+                    <td style="border:1px solid #46413378; background-color:white;"><h5><input type="text" class="outtrailer" name="outtrailer" placeholder="ABCD1234567"></h5></td>
+                </tr>
+                <tr>
+                    <th scope="row" style="margin:0; background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black; padding:5px" class="title5">Loading Status</h5></th>
+                    <td style="border:1px solid #46413378; background-color:white;">
+                        <h5>
+                            <select class="load" name="load">
+                                <option value="Empty">Empty</option>
+                                <option value="Bobtail">Bobtail</option>
+                                <option value="Full">Full</option>
+                            </select>
+                        </h5>
+                    </td>
+                </tr>
+            </table>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    {% load static %}
+    <script src="{% static 'JavaScript/current_time.js' %}"></script>
+{% endblock %}

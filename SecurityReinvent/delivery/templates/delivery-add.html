@@ -1,0 +1,48 @@
+{% extends 'delivery_base.html' %}
+
+{% block container %}
+    <div class="add">
+        <div class="add-container text-center">
+            {% if error_message %}
+                <p class="alert alert-message">Error: {{error_message}}</p>
+            {% endif %}
+            <form method="post" action="{% url 'Dadd_url' %}">
+                {% csrf_token %}
+                <h1>Add Package</h1>
+                <h5 class="text-left info">
+                    To add package, tracking number and package receiver are required.
+                    <br/>Tracking number can enter between two options as below.
+                </h5>
+                <h5 class="text-left">1. Tracking Number</h5>
+                <div class="container add-tracking">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Scan QR Code</h5>
+                            <div name="reader" class="reader" id="reader"></div>
+                        </div>
+                        <div class="col center">
+                            <h5>Type Manually</h5>
+                            <h4><textarea width="88%" class="result text-center" name="result" id="result" placeholder="1234 5678 9123 4567"></textarea></h4>                   
+                            <h6 id="typetext" oninput="addSpaces()"></h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <h5 class="text-left">2. Package Receiver</h5>
+                <div class="add-receiver text-left">
+                    <h4><input class="text-center" type="text" name="receiver" id="receiver" placeholder="John Smith"></h4>
+                </div>
+                
+                <div class="add-submit">
+                    <button id="submit" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% load static %}
+    <script src="{% static 'JavaScript/html5-qrcode.min.js' %}"></script>
+    <script src="{% static 'JavaScript/qrscan4.js' %}"></script>
+    <script src="{% static 'JavaScript/inputspace2.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'visitor_base.html' %}
+
+{% block container %}
+    <div class="detail-view" style="background-color:white;">
+        <h3 class="text-left">Detail Visitor Request</h3>
+        <hr style="margin:0;">
+        <h6 style="text-align: left; margin:5px 0 20px">{{ visitor_detail.user.first_name }} {{ visitor_detail.user.last_name }}, {{ visitor_detail.register_at|date:"m/d/y h:m A" }}</h6>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Request Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visitor ID</td>
+                    <td>{{ visitor_detail.id}}</td>
+                </tr>
+                <tr>
+                    <td>Visitor Company</td>
+                    <td>{{ visitor_detail.visitor_company}}</td>
+                </tr>
+                <tr>
+                    <td>Visit Date</td>
+                    <td>{{ visitor_detail.start_date }}{% if visitor_detail.end_date %}~{{ visitor_detail.end_date }}{% endif %}</td>
+                </tr>          
+                <tr>
+                    <td style="margin:auto;">Visit Purpose</td>
+                    <td>{{ visitor_detail.visitor_purpose|slice:"0:150" }}<br/>{{ visitor_detail.visitor_purpose|slice:"151:" }}</td>
+                </tr>   
+                <tr>
+                    <td>Bring Laptop</td>
+                    <td>{{ visitor_detail.bring_laptop}}</td>
+                </tr> 
+                <tr>
+                    <td>Visitor Arrived Contact</td>
+                    <td>{{ visitor_detail.pic_contact }}</td>
+                </tr> 
+                <tr>
+                    <td>Remark</td>
+                    {% if visitor_detail.remark %}
+                        <td>{{ visitor_detail.remark|slice:"0:150" }}<br/>{{ visitor_detail.remark|slice:"151:" }}</td>
+                    {% else %}
+                        <td>None</td>
+                    {% endif %}
+                </tr> 
+                <tr>
+                    <td>Status</td>
+                    <td>{{ visitor_detail.approval_status }}</td>
+                </tr>
+                <tr>
+                    <td>Parking Pass</td>
+                    <td>
+                        {% if visitor_detail.approval_status == 'Approved' %}
+                            <a class="parkingpass" href="{% url 'Vparkingpass_url' visitor_detail.pk %}" style="background-color:transparent">Print Parking Pass</a>
+                        {% else %}
+                            Waiting
+                        {% endif %}
+                    </td>
+                </tr>
+        </table>
+        <div class="text-right" class="detail-move">
+            <button class="btn btn-primary text-center backbutton" onclick="goBack()">Back</button>
+            <a class="btn btn-primary text-center deletebutton" href="{% url 'Vdelete_url' visitor_detail.id %}">Delete</a>
+        </div>
+
+    </div>
+    <script>
+        function goBack(){
+            window.history.back();
+        }
+    </script>
+{% endblock %}

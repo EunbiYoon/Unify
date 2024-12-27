@@ -1,0 +1,24 @@
+{% extends 'cost_base.html'%}
+{% block title %}Delete Blog Post{% endblock %}
+{% block container %}
+
+{% if user.is_authenticated %}
+    <h1>Delete Post...</h1>
+    <br/><br/>
+    <h3>Title: {{ object.post.title }}</h3>
+    <h3>Slug: {{ object.post.slug }}</h3>
+    <h3>Comment Body: {{ object.comment_body }}</h3>
+    <h3>Commenter: {{ object.author }}</h3>
+    <br/>
+    <div class="form-group">
+        <form method="POST">
+            {% csrf_token %}
+            <strong>Are you sure?!</strong>
+            <br/>
+            <button class="btn btn-secondary">Delete Post!</button>
+        </form>
+    </div>
+{% else %}
+    Please Login First!
+{% endif %}
+{% endblock %}

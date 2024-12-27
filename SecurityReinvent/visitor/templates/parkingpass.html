@@ -1,0 +1,27 @@
+{% extends 'visitor_base.html' %}
+
+{% block container %}
+    <div class="parkingpass">
+        <h2><button class="printbutton" onclick="printContent()">Print</button></h2>
+        <h5 class="parkingnote">This parking pass is automatically generated according to visitor request approval.</h5>
+        <div class="parkingform" id="parkingform">
+            {% load static %}
+            <image src="{% static 'image/visitorlogo.PNG' %}"></image>
+            <h1>Visitor {{ parking_list.id }}</h1>
+            <h2>{{ parking_list.visitor_company }}</h2>
+            <h2>{{ parking_list.visitor_name }}</h2>
+            {% if parking_list.end_date %}
+                <h2>{{ parking_list.start_date }} ~ {{ parking_list.end_date }}</h2>
+            {% else %}
+            <h2>{{ parking_list.start_date }}</h2>
+            {% endif %}
+            <h5>Authorized Parking Pass From Security Center Visitor Portal <a href="http://10.225.2.86">http://10.225.2.86</a></h5>
+        </div>
+    </div>
+    <script>
+        function printContent(){ 
+            const element=document.getElementById("parkingform");
+            window.print();
+        }
+    </script>
+{% endblock %}

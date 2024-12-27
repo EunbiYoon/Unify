@@ -1,0 +1,38 @@
+{% extends 'parking_base.html' %}
+
+{% block container %}
+    <div class="employee">
+        {% if message %}
+            <p class="alert alert-danger">Error: {{message}}</p>
+        {% endif %}
+        <h1 class="text-center">Register Employee Of Month</h1>
+        <h5 class="text-center" style="margin-bottom:20px; color:#000a52">Please type employee of month's name and duration date.</h5>
+        <form method="post" action="{% url 'Pemployee_url' %}" class="text-center">
+            {% csrf_token %}
+            <table class="text-center registerform">
+                <tbody>
+                    <tr>
+                        <th scope="row" style="margin:0; background-color:#B9BECC; border:1px solid lightgray;"><h5 style="color:#000a52;">Employee Name</h5></th>
+                        <td style="border:1px solid lightgray; background-color: white;"><h5><input type="text" class="name text-center" name="name" placeholder="John Smith"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#B9BECC; border:1px solid lightgray;"><h5 style="color:#000a52;">Duration Date</h5></th>
+                        <td style="border:1px solid lightgray;"><h5><input type="text" id="date-range-picker" placeholder="Select a date range" class="date text-center" name="date"></h5></td>
+                    </tr>  
+                </tbody>
+            </table>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    {% load static %}
+    <script src="{% static 'JavaScript/current_time.js' %}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize flatpickr
+        flatpickr("#date-range-picker", {
+          mode:'range',
+          dateFormat: "Y-m-d", // You can change the format as per your needs
+        });
+    </script> 
+{% endblock %}

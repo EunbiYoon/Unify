@@ -1,0 +1,58 @@
+{% extends 'truck_base.html' %}
+
+{% block container %}
+    <div class="checkin">
+        {% if error_message %}
+            <p class="alert alert-secondprimary text-left message">[Error] All Fields are required. Please fill out <span style="color:#A72B2A;"> {{ error_message }}</span> and submit again.</p>
+        {% endif %}
+        <h1>Truck Check-In Registration</h1>
+        <h5>This is for check-in page. If you want to checkout please access <a href="#">@Checkout</a></h5>
+        <form method="post" action="{% url 'Ttruckin_url' %}" class="text-center">
+            {% csrf_token %}
+            <table class="text-center registerform" style="width: 60%; margin:auto;">
+                <tbody>
+                    <tr>
+                        <th scope="row" style="margin:0; background-color:#a72a2a56;; border:1px solid #46413378;"><h5 style="color:black; padding:5px" class="title1">Time</h5></th>
+                        <td style="border:1px solid #46413378; background-color:white;"><h5 id="current-time" class="time" style="padding:5px"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black; padding:5px" class="title2">PIC</h5></th>
+                        <td style="border:1px solid #46413378; background-color: white;"><h5 class="admin" style="padding:5px">{{user.first_name}} {{user.last_name}}</h5></td>
+                    </tr>  
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title3">Driver Name</h5></th>
+                        <td style="border:1px solid #46413378;"><h5><input type="text" class="drivername" name="drivername" placeholder="John Smith"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title4">License Plate</h5></th>
+                        <td style="border:1px solid #46413378;"><h5><input type="text" class="plate" name="plate" placeholder="AGH1136"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title5">Company</h5></th>
+                        <td style="border:1px solid #46413378;"><h5><input type="text" class="company" name="company" placeholder="ABC Express"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title6">Truck Number</h5></th>
+                        <td style="border:1px solid #46413378;"><h5><input type="text" class="trucknumber" name="trucknumber" placeholder="123456"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title7">Direct Delivery CNTR</h5></th>
+                        <td style="border:1px solid #46413378;"><h5><input type="text" class="cntr" name="cntr" placeholder="ABCD1234567"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title8">Trailer Number</h5></th>
+                        <td style="border:1px solid #46413378;"><h5><input type="text" class="trailer" name="trailer" placeholder="ABCD1234567"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title9">Seal Number</h5></th>
+                        <td style="border:1px solid #46413378;"><h5><input type="text" class="seal" name="seal" placeholder="ABCD123456"></h5></td>
+                    </tr> 
+                </tbody>
+            </table>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    {% load static %}
+    <script src="{% static 'JavaScript/current_time.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,63 @@
+<div class="reinvent-background">
+    {% extends 'sr_base.html' %}
+  
+    {% block title %}REINVENT Home{% endblock %}
+  
+    {% block nav %}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/sr_home.css' %}">
+        <link rel="stylesheet" href="{% static 'css/reinvent.css' %}">
+        <nav class="navbar navbar-expand-lg navbar-light main-navbar" style="color:white!important">
+            <a class="navbar-brand" href="{% url 'reinventhome_url' %}">REINVENT Center</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'sr_home_url' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Rrequest_url' %}">Request</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Rmy_url' %}">My View</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Rteam_url' %}">Team View</a>
+                </li>
+                {% if user.is_superuser %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Rall_url' %}">All List</a>
+                    </li>
+                {% endif %}
+            </ul>
+            <form class="form-inline" style="margin:0;">
+            {% if user.is_authenticated %}
+                {% if user.is_superuser %}
+                <h5>Admin | {{user.first_name }} {{user.last_name}} ({{user.team_at}})</h5>
+                <a href="{% url 'logout_url' %}">Logout</a>
+                {% else %}
+                <h5>User | {{user.first_name }} {{user.last_name}} ({{user.team_at}})</h5>
+                <a href="{% url 'logout_url' %}">Logout</a>
+                {% endif %}
+            {% else %}
+                <h5>Login Here</h5>
+                <a href="{% url 'login_url' %}">Login</a>
+            {% endif %}
+            </form>
+            </div>
+        </nav>
+    {% endblock %}
+    {% block footer %}
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.025); padding:0">
+            Power By LGETN R&D Eunbi Yoon
+        <a style="text-decoration:underline; color:grey" href="mailto : eunbi1.yoon@lge.com">eunbi1.yoon@lge.com</a>
+            | Support By LGETN HR Su Fultz
+            <a style="text-decoration:underline; color:grey" href="mailto : su.fultz@lge.com">su.fultz@lge.com,</a>
+            LGETN HR Jihye Lee
+            <a style="text-decoration:underline; color:grey" href="mailto : jihye3.lee@lge.com">jihye3.lee@lge.com</a>
+      </div>
+    {% endblock %}
+</div>

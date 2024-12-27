@@ -1,0 +1,46 @@
+{% extends 'parking_base.html' %}
+
+{% block container %}
+    <div class="violator">
+        {% if message %}
+            <p class="alert alert-danger">Error: {{message}}</p>
+        {% endif %}
+        <h1 class="text-center">Violator Parking Registration</h1>
+        <h5 class="text-center" style="margin-bottom:20px; color: #615603">Please select the parking lot and type the car plate number.</h5>
+        <form method="post" action="{% url 'Pviolator_url' %}" class="text-center" style="margin:0">
+            {% csrf_token %}
+            <table class="text-center registerform" style="width:60%; margin:auto;">
+                <tbody>
+                    <tr>
+                        <th scope="row" style="background-color:#464133; border:1px solid lightgray;"><h5 style="color:whitesmoke;">Current Time</h5></th>
+                        <td style="border:1px solid lightgray; background-color: white;"><h5 class="time" id="current-time"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#464133; border:1px solid lightgray;"><h5 style="color:whitesmoke;">Parking Lot</h5></th>
+                        <td style="border:1px solid lightgray;">
+                            <h5>
+                                <select class="lot text-center" name="location" style="padding:2px">
+                                    <option value="Visitor">Vistior Parking Lot</option>
+                                    <option value="Gate2t">Gate2 Parking Lot</option>
+                                    <option value="VIP">VIP Parking Lot</option>
+                                </select>
+                            </h5>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" style="background-color:#464133; border:1px solid lightgray;"><h5 style="color:whitesmoke;" class="title3">Car Plate Number</h5></th>
+                        <td style="border:1px solid lightgray; background-color: white;">
+                            <h5>
+                                <input type="text" class="plate text-center" name="plate" placeholder="357GKD">
+                            </h5>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    {% load static %}
+    <script src="{% static 'JavaScript/current_time.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'delivery_base.html' %}
+
+{% block container %}
+    <div class="generate">
+        <div class="generate-container text-center">
+            <h1 align="center">QR Code Generator</h1>
+            <h5 class="text-left info">
+                Qr code size(mostly 250x250) & tracking number required to generate
+                <br/>If tracking number does not exist, type datetime like "2023 0920 1011"
+            </h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center qr-info">
+                        <h5>Select QR Code Size</h5>
+                        <select id="size">
+                            <option value="100">100x100</option>
+                            <option value="150">150x150</option>
+                            <option value="200">200x200</option>
+                            <option value="250" selected>250x250</option>
+                            <option value="300">300x300</option>
+                        </select>
+                        <h5>Tracking Number</h5>
+                        <h5><textarea placeholder="2023 0920 1011" id="qrtext" oninput="addSpaces()"></textarea></h5>
+                        <h5><input type="submit" value="generate" onclick="genQR()"></h5>
+                    </div>
+                    <div class="col qr-image">
+                        <h5 id="qr-display">QR Code Display</h5>
+                        <center><img src="" id="img"></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'JavaScript/generate3.js' %}"></script>
+    <script src="{% static 'JavaScript/inputspace-qr.js' %}"></script>
+{% endblock %}

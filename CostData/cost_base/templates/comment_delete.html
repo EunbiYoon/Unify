@@ -1,0 +1,29 @@
+{% extends 'cost_base.html'%}
+{% block title %}Delete Blog Post{% endblock %}
+{% block container %}
+
+{% if user.is_authenticated %}
+    <div style="border: 2px solid #007BFF; margin:30px 270px;">
+        <div style="background-color:aliceblue;border-radius: 10px; padding:30px; margin:10px">
+            <h1>Delete Comment...</h1>
+            <br/><br/>
+            <h3 class="text-primary">Comment Info</h3>
+            <h5 class="text-secondary">Report Category: {{ object.category }}</h5>
+            <h5 class="text-secondary">Report Week: {{ object.week }}</h5>
+            <h5 class="text-secondary">Commenter: {{ object.author.first_name }} {{ object.author.last_name }}</h5>
+            <h5 class="text-secondary">Comment Body: {{ object.comment_body }}</h5>
+            <br/>
+            <div class="form-group">
+                <form method="POST">
+                    {% csrf_token %}
+                    <strong>Are you sure?!</strong>
+                    <br/>
+                    <button class="btn btn-primary">Delete Post!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% else %}
+    Please Login First!
+{% endif %}
+{% endblock %}

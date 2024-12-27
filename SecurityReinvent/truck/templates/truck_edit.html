@@ -1,0 +1,31 @@
+{% extends 'truck_base.html' %}
+
+{% block container %}
+    <div class="edit">
+        {% if message %}
+        <p class="alert alert-message">{{message}}</p>
+        {% endif %}
+        <h1>{{ info }} Edit</h1>
+        <div class="row justify-content-center">
+            <div class="text-center">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group text-left">
+                        {% if info == 'Check In' %}
+                            <label>{{ info }} PIC: {{ data.checkin_pic.first_name}} {{ data.checkin_pic.last_name }}</label>
+                            <br/><label>{{ info }} Time: {{ data.checkin_at|date:"m/d/y H:m" }}</label>
+                        {% elif info == 'Check Out' %}
+                            <p style="color:#A72B2A; font-weight: 600;">*Load status is one of Full/Empty/Bobtail.</p>
+                            <label>{{ info }} PIC: {{ data.checkout_pic.first_name }} {{ data.checkout_pic.last_name }}</label>
+                            <br/><label>{{ info }} Time: {{ data.checkout_at|date:"m/d/y H:m" }}</label>
+                        {% endif %}
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

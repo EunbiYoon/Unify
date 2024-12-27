@@ -1,0 +1,65 @@
+{% extends 'parking_base.html' %}
+
+{% block container %}
+  {% load static %}
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  
+  <div class="employee_list">
+    <h3 class="list-title text-left">
+      All List 
+      <a href="{% url 'Pemployee_excel_url' %}"><img width="35" height="35" src="https://img.icons8.com/ios-filled/35/000a52/export-excel.png" alt="export-excel"/></a>
+      <a href="{% static 'file/parkingpolicy.pdf' %}" download><img width="35" height="35" src="https://img.icons8.com/ios-filled/35/000a52/privacy-policy.png" alt="image--v1"/></a>
+    </h3>
+    <table class="table text-center" id="dataTable" style="border:1px solid lightgray; background-color: white;">
+      <thead>
+        <tr>
+          <th class="text-center">No</th class="text-center">
+          <th class="text-center">Employee</th class="text-center">
+          <th class="text-center">Duration Date</th class="text-center">
+          <th class="text-center">Parking Location</th class="text-center">
+          <th class="text-center">Registered</th class="text-center">
+          {% if user.is_superuser %}
+            <th class="text-center">Delete</th class="text-center">
+          {% endif %}
+        </tr>
+      </th class="text-center"ead>
+      <tbody>
+          {% for employee in employee_list %}
+            <tr>
+                <td>{{ employee.id }}</td>
+                <td>{{ employee.employee_name }}</td>
+                <td>{{ employee.start_date }}{% if employee.end_date %}~{{ employee.end_date }}{% endif %}</td>
+                <td>Visitor Parking Lot Employee of Month Area</td>
+                <td>{{ employee.register_at|date:"m/d/y" }}</td>
+                {% if user.is_superuser %}
+                <td>
+                  <form method="post" action="{% url 'Pemployee_delete_url' employee.id %}" style="margin:0">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+                  </form>
+                </td>
+                {% endif %}
+            </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <script>
+    $('#dataTable').DataTable({
+      searching: true,
+      paging: true,
+      ordering: true,
+      pageLength:10, // Number of records per page
+      "columnDefs":[
+          {
+              "targets":0,
+              "render":function(data, type, row, meta){
+                  return meta.row+1;
+              }
+          }
+      ]
+    });
+  </script>
+{% endblock %}

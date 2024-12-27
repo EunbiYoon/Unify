@@ -1,0 +1,24 @@
+{% extends 'cost_base.html'%}
+{% block title %}Edit Blog Post{% endblock %}
+{% block container %}
+    <div style="border: 2px solid #007BFF; margin:30px 270px">
+        <div style="background-color:aliceblue;border-radius: 10px; padding:30px; margin:10px">
+            <h1>Update Comment...</h1>
+            <br/><br/>
+            {% if user.is_authenticated %}
+                <div class="form-group" style="display: flex;">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <h4>Report</h4>
+                        <h5>{{ form.week }} {{ form.category }}</h5>
+                        <h4 style="margin-top:10px">Comment</h4>
+                        <h5>{{ form.comment_body }}</h5>
+                        <button class="btn btn-primary" style="margin:auto;">Update</button>
+                    </form>
+                </div>
+            {% else %}
+                Please Login First!
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
