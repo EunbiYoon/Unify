@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'PortfolioBackend',
+    'Portfolio',
     'corsheaders',
     'SecurityReinvent.SR_Base',
     'SecurityReinvent.visitor',
