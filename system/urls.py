@@ -23,6 +23,7 @@ urlpatterns = [
     path('',include('main.urls')),
     path('admin/', admin.site.urls),
     path('accounts/',include('user.urls')),
+    path('portfolio/', include('PortfolioBackend.urls')),
     path('securityreinvent/',include('SecurityReinvent.SR_Base.urls')),
     path('security/visitor/',include('SecurityReinvent.visitor.urls')),
     path('security/parking/',include('SecurityReinvent.parking.urls')),
