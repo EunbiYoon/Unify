@@ -2137,7 +2137,7 @@
         "kind": 5,
         "importPath": "main.urls",
         "description": "main.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.main_home, name='mainhome_url')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.main_home, name=\"mainhome_url\")\n]",
         "detail": "main.urls",
         "documentation": {}
     },
@@ -2164,7 +2164,7 @@
         "kind": 5,
         "importPath": "Portfolio.urls",
         "description": "Portfolio.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', frontendView),  # React의 SPA 라우팅 처리\n]\nurlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('', frontendView, name=\"portfolio_url\"),  # React의 SPA 라우팅 처리,\n]\nurlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
         "detail": "Portfolio.urls",
         "documentation": {}
     },
@@ -2785,7 +2785,7 @@
         "kind": 5,
         "importPath": "SecurityReinvent.SR_Base.urls",
         "description": "SecurityReinvent.SR_Base.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',homeView,name='sr_home_url'),\n    path('security',securityhomeView,name='securityhome_url'),\n    path('reinvent',reinventhomeView,name='reinventhome_url')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',homeView,name='sr_home_url'),\n    path('securitycenter',securityhomeView,name='securityhome_url'),\n    path('reinventcenter',reinventhomeView,name='reinventhome_url')\n]",
         "detail": "SecurityReinvent.SR_Base.urls",
         "documentation": {}
     },
@@ -3460,7 +3460,7 @@
         "kind": 5,
         "importPath": "system.urls",
         "description": "system.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',include('main.urls')),\n    path('admin/', admin.site.urls),\n    path('accounts/',include('user.urls')),\n    path('portfolio/', include('Portfolio.urls')),\n    path('securityreinvent/',include('SecurityReinvent.SR_Base.urls')),\n    path('security/visitor/',include('SecurityReinvent.visitor.urls')),\n    path('security/parking/',include('SecurityReinvent.parking.urls')),\n    path('security/truck/',include('SecurityReinvent.truck.urls')),\n    path('security/delivery/',include('SecurityReinvent.delivery.urls')),",
+        "peekOfCode": "urlpatterns = [\n    path('',include('main.urls')),\n    path('admin/', admin.site.urls),\n    path('accounts/',include('user.urls')),\n    path('portfolio/', include('Portfolio.urls')),\n    path('securityreinvent/',include('SecurityReinvent.SR_Base.urls')),\n    path('securityreinvent/securitycenter/visitorportal',include('SecurityReinvent.visitor.urls')),\n    path('securityreinvent/securitycenter/parkingportal',include('SecurityReinvent.parking.urls')),\n    path('securityreinvent/securitycenter/truckportal',include('SecurityReinvent.truck.urls')),\n    path('securityreinvent/securitycenter/deliveryportal',include('SecurityReinvent.delivery.urls')),",
         "detail": "system.urls",
         "documentation": {}
     },
