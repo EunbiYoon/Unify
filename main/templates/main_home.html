@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>배포된 웹사이트</title>
+    <!-- Bootstrap CSS 추가 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="{% url 'sr_home_url' %}">Security Reinvent Center</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="{% url 'costhome_url' %}">Cost Data Center</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="{% url 'portfolio_url' %}">Portfolio</a>
-        </li>
+    <!-- 전체 화면을 중앙 정렬하기 위한 컨테이너 -->
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center">
+            <h1 class="mb-4">배포된 웹사이트</h1>
+            <!-- 버튼 그룹 -->
+            <div class="btn-group-vertical">
+                <a href="{% url 'sr_home_url' %}" class="btn btn-primary btn-lg mb-2">Security Reinvent Center</a>
+                <a href="{% url 'costhome_url' %}" class="btn btn-warning btn-lg mb-2">Cost Data Center</a>
+                <a href="{% url 'portfolio_url' %}" class="btn btn-success btn-lg">Portfolio</a>
+            </div>
+        </div>
     </div>
+
+    <!-- Bootstrap JS 및 jQuery 추가 (필요 시) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
