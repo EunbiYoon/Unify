@@ -1,0 +1,12 @@
+/* base.html */
+.list{
+    margin: 0 100px;
+}
+footer .info{
+    background-color: rgba(0, 0, 0, 0.025); 
+    padding:0.5rem;
+}
+footer .info a{
+    text-decoration:underline; 
+    color:grey;
+}
