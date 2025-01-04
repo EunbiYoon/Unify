@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>배포된 웹사이트</title>
+    <title>Eunbi Yoon's Website Home</title>
     <!-- Bootstrap CSS 추가 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* 버튼 사이 간격 추가 */
+        .btn-group-vertical .btn {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- 전체 화면을 중앙 정렬하기 위한 컨테이너 -->
-    <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="d-flex justify-content-center align-items-center">
+        <p class="mb-3 text-muted text-left m-3">
+            <br/>
+            회원가입하거나 관리자 계정으로 보려면 <strong class="text-primary">username : admin, password : password</strong> 를 입력하세요.
+            <br/>
+            이 사이트의 모든 데이터는 임의로 생성된 테스트용 가상 데이터입니다.
+        </p>
+    </div>
+    <div class="mt-5"></div>
+    <div class="d-flex justify-content-center align-items-center m-20">
         <div class="text-center">
-            <h1 class="mb-4">배포된 웹사이트</h1>
+            <h1 class="ms-30 mb-3 font-weight-bold">배포된 웹사이트</h1>
+            <!-- 추가 문구 -->
             <!-- 버튼 그룹 -->
             <div class="btn-group-vertical">
-                <a href="{% url 'sr_home_url' %}" class="btn btn-primary btn-lg mb-2">Security Reinvent Center</a>
-                <a href="{% url 'costhome_url' %}" class="btn btn-warning btn-lg mb-2">Cost Data Center</a>
-                <a href="{% url 'portfolio_url' %}" class="btn btn-success btn-lg">Portfolio</a>
+                <a href="{% url 'portfolio_url' %}" class="btn btn-primary btn-lg">Portfolio</a>
+                <a href="/admin" class="btn btn-secondary btn-lg">Admin Dashboard</a>
+                <a href="{% url 'sr_home_url' %}" class="btn btn-success btn-lg">Security Reinvent Center</a>
+                <a href="{% url 'costhome_url' %}" class="btn btn-danger btn-lg">Quality Analysis Dashboard</a>
+                <a href="{% url 'costhome_url' %}" class="btn btn-info btn-lg">Cost Data Center</a>
+                <a href="{% url 'costhome_url' %}" class="btn btn-warning btn-lg">LG Support Video Tutorial</a>
             </div>
         </div>
     </div>

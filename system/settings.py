@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'Portfolio',
-    'corsheaders',
     'SecurityReinvent.SR_Base',
     'SecurityReinvent.visitor',
     'SecurityReinvent.parking',
