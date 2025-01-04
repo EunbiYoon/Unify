@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'SecurityReinvent.reinvent',
     'CostData.cost_base',
     'CostData.report',
-    'CostData.quality',
 ]
 # CustomUser Define
 AUTH_USER_MODEL='user.CustomUser'
