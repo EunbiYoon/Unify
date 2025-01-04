@@ -2,8 +2,8 @@
 import os
 
 from flask import Flask, render_template
-from flasktodo import todo
-from flasktodo.todo import bp
+from QualityAnalysis.flasktodo import todo
+from QualityAnalysis.flasktodo.todo import bp
 import requests
 
 
@@ -23,7 +23,8 @@ def create_app():
     todo.register_error_handler(404, handle_404)
     todo.register_error_handler(500, handle_500)
     
-    todo.register_blueprint(bp)
+    #### Flask URL 선언 ####
+    todo.register_blueprint(bp,url_prefix='/qualityanalysisdashboard')
     
     
     @todo.context_processor

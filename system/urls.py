@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse
+
 
 
 urlpatterns = [
@@ -32,5 +34,5 @@ urlpatterns = [
     path('securityreinvent/reinventcenter/',include('SecurityReinvent.reinvent.urls')),
     path('costdatacenter/', include('CostData.cost_base.urls')),
     path('costdatacenter/report', include('CostData.report.urls')),
-    path('qualityanalysisdashboard', include('CostData.quality.urls')),
+    path('qualityanalysisdashboard/', lambda request: JsonResponse({"message": "Flask 앱 에러 발생. QualityAnalysis폴더더에서 flask run하여 에러를 확인하세요."})),
 ]

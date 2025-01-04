@@ -1699,12 +1699,303 @@
         "documentation": {}
     },
     {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "relativedelta",
+        "importPath": "dateutil",
+        "description": "dateutil",
+        "isExtraImport": true,
+        "detail": "dateutil",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "legend2M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "legend1M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "legend0M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "ABlabels",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Avalues2M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Avalues1M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Avalues0M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Bvalues2M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Bvalues1M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Bvalues0M",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Plabels",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "Pvalues",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "svc_data_html",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "min_data_html",
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "basic_function",
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "pivot_function",
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "hazard_function",
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "ppm_function",
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "ffr_function",
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "importPath": "flasktodo",
+        "description": "flasktodo",
+        "isExtraImport": true,
+        "detail": "flasktodo",
         "documentation": {}
     },
     {
@@ -1730,39 +2021,6 @@
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
         "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1837,6 +2095,14 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "importPath": "QualityAnalysis.flasktodo",
+        "description": "QualityAnalysis.flasktodo",
+        "isExtraImport": true,
+        "detail": "QualityAnalysis.flasktodo",
         "documentation": {}
     },
     {
@@ -2244,6 +2510,213 @@
         "description": "Portfolio.views",
         "peekOfCode": "def frontendView(request):\n    # React 빌드된 index.html 파일 경로\n    index_path = os.path.join(settings.BASE_DIR, 'static/react/index.html')\n    try:\n        with open(index_path, 'r', encoding='utf-8') as f:\n            return HttpResponse(f.read(), content_type='text/html')\n    except FileNotFoundError:\n        return HttpResponse(\"React build file not found. Run 'npm run build' and move files to 'static/react/'.\", status=404)",
         "detail": "Portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "pivot_table",
+        "kind": 5,
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "peekOfCode": "pivot_table = pd.crosstab(index=YearSVCTotal.Report_Day, columns=YearSVCTotal.Report_Month, margins=False)\n#Pivot_table 칼럼과 인덱스 정수로 변환\npivot_table.columns=range(0,12)\npivot_table.index=range(0,31)\npivot_table=pivot_table.astype(int)\n#YearSVCData 만들기 위해 칼럼 이름 바꾸기\ntoday=date.today()\nthisM=int(today.strftime('%m'))\nYearSVCData=pivot_table\nfor i in range(12):",
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "today_svc_data.index",
+        "kind": 5,
+        "importPath": "QualityAnalysis.flasktodo.graph",
+        "description": "QualityAnalysis.flasktodo.graph",
+        "peekOfCode": "today_svc_data.index = np.arange(1, len(today_svc_data) + 1)\n# New Services\nn=1\nNew_Services=\"\"\nwhile n <= len(today_svc_data):\n    New_Services=New_Services + str(n) +\") \"+str(today_svc_data[\"Symptoms\"][n])+\"\\n   \"+str(today_svc_data[\"RCPT_NO_ORD_NO\"][n])+\" /// \"+str(today_svc_data[\"SERIAL_NO 1\"][n])+\"\\n\"\n    n=n+1\n########### SVC 만들기 ##############\n# SVC Text\nSVC=\"Service Status : \"+ str(Yesterday_SVC) + \" → \" + str(Today_SVC) +\" (\"+str(Increase_SVC)+\"↑)\"",
+        "detail": "QualityAnalysis.flasktodo.graph",
+        "documentation": {}
+    },
+    {
+        "label": "random_function",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "peekOfCode": "def random_function():\n    letter1=[\"WT7100\",\"WT7300\",\"WT7405\",\"WT7800\"]\n    model=' '.join(choice(letter1) for i in range(3000))\n    #Symptom\n    letter2=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    symptom=' '.join(choice(letter2) for i in range(3000))\n    #SVC Date\n    svcdate=' '.join(choice(month_list) for i in range(3000))\n    #Production Date\n    prodate=' '.join(choice(month_list) for i in range(3000))",
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "basic_function",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "peekOfCode": "def basic_function(input_data):\n    svc_data=random_function()[0]\n    for i in range(len(input_data)):\n        a=input_data[i]\n        for j in range(len(svc_data)):\n            b=svc_data.at[j,'Symptoms']\n            if b==a:\n                svc_data.at[j,'Sort']=True\n            else:\n                False",
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "pivot_function",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "peekOfCode": "def pivot_function(input_data):\n    pyramid_table=basic_function(input_data)[1]\n    #값이 0이면 데이터 값 없애기 -> 너무 많은 0을 제거\n    pyramid_table = pyramid_table.replace(0,'', regex=True)\n    return pyramid_table\ndef hazard_function(input_data):\n    pyramid_vals=basic_function(input_data)[0]\n    idx2=basic_function(input_data)[2]\n    PROD_data=random_function()[1]\n    pyramid_vals.pop(len(pyramid_vals)-1)",
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "hazard_function",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "peekOfCode": "def hazard_function(input_data):\n    pyramid_vals=basic_function(input_data)[0]\n    idx2=basic_function(input_data)[2]\n    PROD_data=random_function()[1]\n    pyramid_vals.pop(len(pyramid_vals)-1)\n    pyramid_vals=pd.DataFrame(pyramid_vals)\n    pyramid_vals= pyramid_vals [pyramid_vals.columns [:-1]]\n    pyramid_vals.drop(columns=[len(pyramid_vals)-1])\n    #a의 원소들을 모두 int형으로 변환\n    A=pyramid_vals.apply(pd.to_numeric)",
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "ppm_function",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "peekOfCode": "def ppm_function(input_data):\n    pyramid_vals=basic_function(input_data)[0]\n    PROD_data=random_function()[1]\n    pyramid_vals.pop(len(pyramid_vals)-1)\n    pyramid_vals=pd.DataFrame(pyramid_vals)\n    pyramid_vals= pyramid_vals [pyramid_vals.columns [:-1]]\n    pyramid_vals.drop(columns=[len(pyramid_vals)-1])\n    #a의 원소들을 모두 int형으로 변환\n    A=pyramid_vals.apply(pd.to_numeric)\n    # print(\"How many months ago was it improved? [(ex)Improvement Month :2103, last production closing Month: 2106 --> input : 3 \")",
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "ffr_function",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.indicator",
+        "description": "QualityAnalysis.flasktodo.indicator",
+        "peekOfCode": "def ffr_function(input_data):\n    pyramid_table=basic_function(input_data)[1]\n    idx2=basic_function(input_data)[2]\n    SALES_data=random_function()[2]\n    ## L12_SVC, L12_Sales, Weight_Sales dataframe\n    L12_SVC = pd.DataFrame(index=range(0,len(idx2)-1),columns=['L12_SVC']) # total 까지 포함한 값\n    L12_Sales = pd.DataFrame(index=range(0,len(idx2)-1),columns=['L12_Sales'])\n    Weight_Sales = pd.DataFrame()\n    FDR = pd.DataFrame(index=range(0,len(idx2)-1),columns=['FDR'])\n    FFR = pd.DataFrame(index=range(0,len(idx2)-1),columns=['FFR'])",
+        "detail": "QualityAnalysis.flasktodo.indicator",
+        "documentation": {}
+    },
+    {
+        "label": "html_table",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def html_table(input_table):\n    input_table_html=input_table.to_html()\n    input_table_html=input_table_html.replace('border=\"1\" class=\"dataframe\"','id=\"datatablesSimple2\"' )\n    input_table_html=input_table_html.replace('<tr style=\"text-align: right;\">','<tr>')\n    input_table_html=input_table_html.replace('<th></th>','<th>No</th>')\n    return input_table_html\nbp = Blueprint('todo', __name__)\n#check list만 여기서 sorting\n@bp.route(\"/\",methods=[\"POST\",\"GET\"])\ndef index():",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def index():\n    ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)\n    # hazard graph\n    hazard_table=hazard_function(initial_data) \n    # hazard xlabel name",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "trend",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def trend():\n    return render_template('todo/charts.html', ABlabels=ABlabels,\n    Avalues2M=Avalues2M, Avalues1M=Avalues1M, Avalues0M=Avalues0M,\n    Bvalues2M=Bvalues2M,Bvalues1M=Bvalues1M,Bvalues0M=Bvalues0M,\n    Plabels=Plabels,Pvalues=Pvalues,\n    legend2M=legend2M, legend1M=legend1M, legend0M=legend0M)\n@bp.route(\"/list\")\ndef list():\n    return render_template('todo/tables.html',svc_data_html=svc_data_html)\n@bp.route(\"/kpi\",methods=[\"POST\",\"GET\"])",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "list",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def list():\n    return render_template('todo/tables.html',svc_data_html=svc_data_html)\n@bp.route(\"/kpi\",methods=[\"POST\",\"GET\"])\ndef kpi():\n        ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "kpi",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def kpi():\n        ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)\n    # hazard graph\n    hazard_table=hazard_function(initial_data) \n    # hazard xlabel name",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "report",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def report():\n    return render_template('card/report.html')\n@bp.route(\"/email\")\ndef email():\n    return render_template('card/email.html')\n@bp.route(\"/logic\")\ndef logic():\n    return render_template('card/dataframe.html')\n#layout\n@bp.route(\"/layout_static\")",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "email",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def email():\n    return render_template('card/email.html')\n@bp.route(\"/logic\")\ndef logic():\n    return render_template('card/dataframe.html')\n#layout\n@bp.route(\"/layout_static\")\ndef layout_static():\n    return render_template('windowskin/layout-static.html')\n@bp.route(\"/layout_sidenav\")",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "logic",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def logic():\n    return render_template('card/dataframe.html')\n#layout\n@bp.route(\"/layout_static\")\ndef layout_static():\n    return render_template('windowskin/layout-static.html')\n@bp.route(\"/layout_sidenav\")\ndef layout_sidenav():\n    return render_template('windowskin/layout-sidenav-light.html')\n#error",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "layout_static",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def layout_static():\n    return render_template('windowskin/layout-static.html')\n@bp.route(\"/layout_sidenav\")\ndef layout_sidenav():\n    return render_template('windowskin/layout-sidenav-light.html')\n#error\n@bp.route(\"/error_401\")\ndef error_401():\n    return render_template('error/401.html')\n@bp.route(\"/error_404\")",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "layout_sidenav",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def layout_sidenav():\n    return render_template('windowskin/layout-sidenav-light.html')\n#error\n@bp.route(\"/error_401\")\ndef error_401():\n    return render_template('error/401.html')\n@bp.route(\"/error_404\")\ndef error_404():\n    return render_template('error/404.html')\n@bp.route(\"/error_500\")",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "error_401",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def error_401():\n    return render_template('error/401.html')\n@bp.route(\"/error_404\")\ndef error_404():\n    return render_template('error/404.html')\n@bp.route(\"/error_500\")\ndef error_500():\n    return render_template('error/500.html')\nif __name__ == \"__main__\":\n    bp.run(debug=True)",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "error_404",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def error_404():\n    return render_template('error/404.html')\n@bp.route(\"/error_500\")\ndef error_500():\n    return render_template('error/500.html')\nif __name__ == \"__main__\":\n    bp.run(debug=True)",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "error_500",
+        "kind": 2,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "def error_500():\n    return render_template('error/500.html')\nif __name__ == \"__main__\":\n    bp.run(debug=True)",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "kind": 5,
+        "importPath": "QualityAnalysis.flasktodo.todo",
+        "description": "QualityAnalysis.flasktodo.todo",
+        "peekOfCode": "bp = Blueprint('todo', __name__)\n#check list만 여기서 sorting\n@bp.route(\"/\",methods=[\"POST\",\"GET\"])\ndef index():\n    ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)",
+        "detail": "QualityAnalysis.flasktodo.todo",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "QualityAnalysis.wsgi",
+        "description": "QualityAnalysis.wsgi",
+        "peekOfCode": "app = create_app()",
+        "detail": "QualityAnalysis.wsgi",
         "documentation": {}
     },
     {
@@ -3535,10 +4008,28 @@
     },
     {
         "label": "application",
+        "kind": 2,
+        "importPath": "system.wsgi",
+        "description": "system.wsgi",
+        "peekOfCode": "def application(environ, start_response):\n    if environ.get('PATH_INFO').startswith('/qualityanalysisdashboard'):\n        return flask_app(environ, start_response)\n    return django_application(environ, start_response)",
+        "detail": "system.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django_application",
         "kind": 5,
         "importPath": "system.wsgi",
         "description": "system.wsgi",
-        "peekOfCode": "application = get_wsgi_application()",
+        "peekOfCode": "django_application = get_wsgi_application()\nflask_app = create_app()\n# ✅ WSGI: 경로 분기\ndef application(environ, start_response):\n    if environ.get('PATH_INFO').startswith('/qualityanalysisdashboard'):\n        return flask_app(environ, start_response)\n    return django_application(environ, start_response)",
+        "detail": "system.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "flask_app",
+        "kind": 5,
+        "importPath": "system.wsgi",
+        "description": "system.wsgi",
+        "peekOfCode": "flask_app = create_app()\n# ✅ WSGI: 경로 분기\ndef application(environ, start_response):\n    if environ.get('PATH_INFO').startswith('/qualityanalysisdashboard'):\n        return flask_app(environ, start_response)\n    return django_application(environ, start_response)",
         "detail": "system.wsgi",
         "documentation": {}
     },

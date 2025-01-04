@@ -1,8 +1,8 @@
 from flask import render_template, Blueprint, request
 
 import pandas as pd 
-from flasktodo.graph import legend2M, legend1M, legend0M, ABlabels, Avalues2M, Avalues1M, Avalues0M, Bvalues2M, Bvalues1M, Bvalues0M, Plabels, Pvalues, svc_data_html, min_data_html
-from flasktodo.indicator import basic_function,pivot_function, hazard_function, ppm_function, ffr_function
+from QualityAnalysis.flasktodo.graph import legend2M, legend1M, legend0M, ABlabels, Avalues2M, Avalues1M, Avalues0M, Bvalues2M, Bvalues1M, Bvalues0M, Plabels, Pvalues, svc_data_html, min_data_html
+from QualityAnalysis.flasktodo.indicator import basic_function,pivot_function, hazard_function, ppm_function, ffr_function
 
 def html_table(input_table):
     input_table_html=input_table.to_html()
@@ -37,7 +37,7 @@ def index():
     json_column=json_column.replace('],[',',').replace(']]',']')
     json_sum=json_value.replace('[[',json_column+",[")
     # hazard write json file
-    f=open('flasktodo/static/json/hazard.json', "w+")
+    f=open('QualityAnalysis/flasktodo/static/json/hazard.json', "w+")
     f.write(json_sum)
     f.close()
 
@@ -90,7 +90,7 @@ def index():
             json_column=json_column.replace('],[',',').replace(']]',']')
             json_sum=json_value.replace('[[',json_column+",[")
             # hazard write json file
-            f=open('flasktodo/static/json/hazard.json', "w+")
+            f=open('QualityAnalysis/flasktodo/static/json/hazard.json', "w+")
             f.write(json_sum)
             f.close()
             print("HH")
@@ -179,7 +179,7 @@ def kpi():
     json_column=json_column.replace('],[',',').replace(']]',']')
     json_sum=json_value.replace('[[',json_column+",[")
     # hazard write json file
-    f=open('flasktodo/static/json/hazard.json', "w+")
+    f=open('QualityAnalysis/flasktodo/static/json/hazard.json', "w+")
     f.write(json_sum)
     f.close()
 
@@ -232,7 +232,7 @@ def kpi():
             json_column=json_column.replace('],[',',').replace(']]',']')
             json_sum=json_value.replace('[[',json_column+",[")
             # hazard write json file
-            f=open('flasktodo/static/json/hazard.json', "w+")
+            f=open('QualityAnalysis/flasktodo/static/json/hazard.json', "w+")
             f.write(json_sum)
             f.close()
             print("HH")
