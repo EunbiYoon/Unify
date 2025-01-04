@@ -3745,6 +3745,15 @@
         "documentation": {}
     },
     {
+        "label": "JAZZMIN_SETTINGS",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "JAZZMIN_SETTINGS = {\n    \"site_brand\": \"Database Panel\",\n    \"copyright\": \"Eunbi Yoon © 2025\",\n}\n# CustomUser Define\nAUTH_USER_MODEL='user.CustomUser'\n# Login Url\nLOGIN_URL='/accounts/'\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
         "label": "MIDDLEWARE",
         "kind": 5,
         "importPath": "system.settings",

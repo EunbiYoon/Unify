@@ -52,6 +52,13 @@ INSTALLED_APPS = [
     'CostData.cost_base',
     'CostData.report',
 ]
+
+
+JAZZMIN_SETTINGS = {
+    "site_brand": "Database Panel",
+    "copyright": "Eunbi Yoon © 2025",
+}
+
 # CustomUser Define
 AUTH_USER_MODEL='user.CustomUser'
 # Login Url
