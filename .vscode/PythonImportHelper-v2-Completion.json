@@ -1,0 +1,3653 @@
+[
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "importPath": "CostData.report.models",
+        "description": "CostData.report.models",
+        "isExtraImport": true,
+        "detail": "CostData.report.models",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "importPath": "CostData.report.models",
+        "description": "CostData.report.models",
+        "isExtraImport": true,
+        "detail": "CostData.report.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "importPath": "CostData.report.models",
+        "description": "CostData.report.models",
+        "isExtraImport": true,
+        "detail": "CostData.report.models",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ListView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DetailView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectDoesNotExist",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "print_function",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ZipFile",
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "isExtraImport": true,
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "BadZipFile",
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "isExtraImport": true,
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "RegexValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "CostBaseConfig",
+        "kind": 6,
+        "importPath": "CostData.cost_base.apps",
+        "description": "CostData.cost_base.apps",
+        "peekOfCode": "class CostBaseConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"CostData.cost_base\"",
+        "detail": "CostData.cost_base.apps",
+        "documentation": {}
+    },
+    {
+        "label": "PostForm",
+        "kind": 6,
+        "importPath": "CostData.cost_base.forms",
+        "description": "CostData.cost_base.forms",
+        "peekOfCode": "class PostForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['week', 'category', 'comment_body']\nclass EditForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['week', 'category', 'comment_body']",
+        "detail": "CostData.cost_base.forms",
+        "documentation": {}
+    },
+    {
+        "label": "EditForm",
+        "kind": 6,
+        "importPath": "CostData.cost_base.forms",
+        "description": "CostData.cost_base.forms",
+        "peekOfCode": "class EditForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['week', 'category', 'comment_body']",
+        "detail": "CostData.cost_base.forms",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "CostData.cost_base.urls",
+        "description": "CostData.cost_base.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',CosthomeView,name='costhome_url'),\n    path('comment',CommentView.as_view(),name='comment_url'),\n    path('comment/<int:pk>',CommentDetailView.as_view(), name='article-detail'),\n    path('comment/add', CommentAddView.as_view(), name='add_post'),\n    path('comment/edit/<int:pk>', CommentUpdateView.as_view(), name=\"update_post\"),\n    path('comment/delete/<int:pk>/remove', CommentDeleteView.as_view(), name=\"delete_post\"),\n]",
+        "detail": "CostData.cost_base.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CommentView",
+        "kind": 6,
+        "importPath": "CostData.cost_base.views",
+        "description": "CostData.cost_base.views",
+        "peekOfCode": "class CommentView(ListView):\n    template_name='comment.html'\n    ordering=['-date_added']\n    model=Comment\nclass CommentDetailView(DetailView):\n    model=Comment\n    template_name='comment_detail.html'\nclass CommentAddView(CreateView):\n    model=Comment\n    form_class=PostForm",
+        "detail": "CostData.cost_base.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentDetailView",
+        "kind": 6,
+        "importPath": "CostData.cost_base.views",
+        "description": "CostData.cost_base.views",
+        "peekOfCode": "class CommentDetailView(DetailView):\n    model=Comment\n    template_name='comment_detail.html'\nclass CommentAddView(CreateView):\n    model=Comment\n    form_class=PostForm\n    template_name='comment_add.html'\n    success_url=reverse_lazy('comment_url')\n    def form_valid(self, form):\n        form.instance.author = self.request.user",
+        "detail": "CostData.cost_base.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentAddView",
+        "kind": 6,
+        "importPath": "CostData.cost_base.views",
+        "description": "CostData.cost_base.views",
+        "peekOfCode": "class CommentAddView(CreateView):\n    model=Comment\n    form_class=PostForm\n    template_name='comment_add.html'\n    success_url=reverse_lazy('comment_url')\n    def form_valid(self, form):\n        form.instance.author = self.request.user\n        return super().form_valid(form)\nclass CommentUpdateView(UpdateView):\n    model=Comment",
+        "detail": "CostData.cost_base.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentUpdateView",
+        "kind": 6,
+        "importPath": "CostData.cost_base.views",
+        "description": "CostData.cost_base.views",
+        "peekOfCode": "class CommentUpdateView(UpdateView):\n    model=Comment\n    form_class=EditForm\n    template_name='comment_update.html'\n    success_url=reverse_lazy('comment_url')\nclass CommentDeleteView(DeleteView):\n    model=Comment\n    template_name='comment_delete.html'\n    success_url=reverse_lazy('comment_url')",
+        "detail": "CostData.cost_base.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentDeleteView",
+        "kind": 6,
+        "importPath": "CostData.cost_base.views",
+        "description": "CostData.cost_base.views",
+        "peekOfCode": "class CommentDeleteView(DeleteView):\n    model=Comment\n    template_name='comment_delete.html'\n    success_url=reverse_lazy('comment_url')",
+        "detail": "CostData.cost_base.views",
+        "documentation": {}
+    },
+    {
+        "label": "CosthomeView",
+        "kind": 2,
+        "importPath": "CostData.cost_base.views",
+        "description": "CostData.cost_base.views",
+        "peekOfCode": "def CosthomeView(request):\n    try:\n        recent_bom = Post.objects.filter(category__name='BOM Comparison').latest('date_added')\n    except ObjectDoesNotExist:\n        recent_bom = None\n    try:\n        recent_cost = Post.objects.filter(category__name='Cost Review').latest('date_added')\n    except ObjectDoesNotExist:\n        recent_cost = None\n    context = {",
+        "detail": "CostData.cost_base.views",
+        "documentation": {}
+    },
+    {
+        "label": "QualityConfig",
+        "kind": 6,
+        "importPath": "CostData.quality.apps",
+        "description": "CostData.quality.apps",
+        "peekOfCode": "class QualityConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'CostData.quality'",
+        "detail": "CostData.quality.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "CostData.quality.urls",
+        "description": "CostData.quality.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',qualtiyhomeView,name='qualityhome_url')\n]",
+        "detail": "CostData.quality.urls",
+        "documentation": {}
+    },
+    {
+        "label": "qualtiyhomeView",
+        "kind": 2,
+        "importPath": "CostData.quality.views",
+        "description": "CostData.quality.views",
+        "peekOfCode": "def qualtiyhomeView(request):\n    return redirect('costhome_url')",
+        "detail": "CostData.quality.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "CostData.report.migrations.0001_initial",
+        "description": "CostData.report.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"Category\",\n            fields=[\n                (",
+        "detail": "CostData.report.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ReportConfig",
+        "kind": 6,
+        "importPath": "CostData.report.apps",
+        "description": "CostData.report.apps",
+        "peekOfCode": "class ReportConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'CostData.report'",
+        "detail": "CostData.report.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CommentForm",
+        "kind": 6,
+        "importPath": "CostData.report.forms",
+        "description": "CostData.report.forms",
+        "peekOfCode": "class CommentForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['comment_body']",
+        "detail": "CostData.report.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "CostData.report.models",
+        "description": "CostData.report.models",
+        "peekOfCode": "class Category(models.Model):\n    name=models.CharField(max_length=255)\n    def __str__(self):\n        return self.name\n    class Meta:\n        verbose_name_plural='  1) Categories'\nclass Week(models.Model):\n    name=models.CharField(max_length=255)\n    def __str__(self):\n        return self.name",
+        "detail": "CostData.report.models",
+        "documentation": {}
+    },
+    {
+        "label": "Week",
+        "kind": 6,
+        "importPath": "CostData.report.models",
+        "description": "CostData.report.models",
+        "peekOfCode": "class Week(models.Model):\n    name=models.CharField(max_length=255)\n    def __str__(self):\n        return self.name\n    class Meta:\n        verbose_name_plural='  2) Weeks'\nclass Post(models.Model):\n    category=models.ForeignKey(Category, on_delete=models.CASCADE)\n    week=models.ForeignKey(Week, on_delete=models.CASCADE)\n    author=models.ForeignKey(CustomUser, on_delete=models.CASCADE)",
+        "detail": "CostData.report.models",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "CostData.report.models",
+        "description": "CostData.report.models",
+        "peekOfCode": "class Post(models.Model):\n    category=models.ForeignKey(Category, on_delete=models.CASCADE)\n    week=models.ForeignKey(Week, on_delete=models.CASCADE)\n    author=models.ForeignKey(CustomUser, on_delete=models.CASCADE)\n    date_added=models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return str(self.category)+ ' | ' + str(self.week)\n    class Meta:\n        verbose_name_plural='  3) Posts'\nclass Comment(models.Model):",
+        "detail": "CostData.report.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "kind": 6,
+        "importPath": "CostData.report.models",
+        "description": "CostData.report.models",
+        "peekOfCode": "class Comment(models.Model):\n    category=models.ForeignKey(Category, on_delete=models.CASCADE)\n    week=models.ForeignKey(Week, on_delete=models.CASCADE)\n    author=models.ForeignKey(CustomUser, on_delete=models.CASCADE)\n    date_added=models.DateTimeField(auto_now_add=True)\n    comment_body = models.TextField()\n    # def save(self, *args, **kwargs):\n    #     self.date_added = timezone.now()\n    #     super(Comment, self).save(*args, **kwargs)\n    class Meta:",
+        "detail": "CostData.report.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "CostData.report.urls",
+        "description": "CostData.report.urls",
+        "peekOfCode": "urlpatterns = [\n    path('bom-comparison/<int:pk>/', detail_bom_view, name='detail_bom_url'),\n    path('cost-review/<int:pk>/', detail_cost_view, name='detail_cost_url'),\n    path('bom-comparison/category', category_bom_view, name='category_bom_url'),\n    path('cost-review/category', category_cost_view, name='category_cost_url'),\n    path('comment/<int:pk>/', detail_comment_view, name='detail_comment_url')\n]",
+        "detail": "CostData.report.urls",
+        "documentation": {}
+    },
+    {
+        "label": "detail_bom_view",
+        "kind": 2,
+        "importPath": "CostData.report.views",
+        "description": "CostData.report.views",
+        "peekOfCode": "def detail_bom_view(request, pk):\n    #get the specific posts\n    post = Post.objects.get(pk=pk)\n    #initial settings\n    model_input=\"DR\"\n    new_comment=None\n    model_title=\"Dryer (Prod Model : RV13D1AMAZU.ABWEUUS / Sales Model : DLE3400W)\"\n    trend_template=str(pk)+'/DR_trend.html'\n    item_template=str(pk)+'/DR_item.html'\n    if request.method == 'POST':",
+        "detail": "CostData.report.views",
+        "documentation": {}
+    },
+    {
+        "label": "detail_cost_view",
+        "kind": 2,
+        "importPath": "CostData.report.views",
+        "description": "CostData.report.views",
+        "peekOfCode": "def detail_cost_view(request, pk):\n    #get the specific posts\n    post = Post.objects.get(pk=pk)\n    #initial settings\n    model_input=\"BPA-FL\"\n    model_title=\"Front Loader BPA\"\n    new_comment=None\n    if request.method == 'POST':\n        action=request.POST.get('action')\n        if action in [\"Front Loader BPA\",\"Top Loader BPA\",\"Dryer BPA\",\"Front Loader PAC\",\"Top Loader PAC\",\"Dryer PAC\"]:",
+        "detail": "CostData.report.views",
+        "documentation": {}
+    },
+    {
+        "label": "category_bom_view",
+        "kind": 2,
+        "importPath": "CostData.report.views",
+        "description": "CostData.report.views",
+        "peekOfCode": "def category_bom_view(request):\n    posts = Post.objects.filter(category__name='BOM Comparison').order_by('week__name')\n    # Group posts by month\n    grouped_posts = {}\n    for post in posts:\n        month_year = post.week.name[:5]  # Extract the month and year (e.g., '23.07')\n        if month_year not in grouped_posts:\n            grouped_posts[month_year] = []\n        grouped_posts[month_year].append(post)\n    context = {",
+        "detail": "CostData.report.views",
+        "documentation": {}
+    },
+    {
+        "label": "category_cost_view",
+        "kind": 2,
+        "importPath": "CostData.report.views",
+        "description": "CostData.report.views",
+        "peekOfCode": "def category_cost_view(request):\n    posts = Post.objects.filter(category__name='Cost Review').order_by('week__name')\n    # Group posts by month\n    grouped_posts = {}\n    for post in posts:\n        month_year = post.week.name[:5]  # Extract the month and year (e.g., '23.07')\n        if month_year not in grouped_posts:\n            grouped_posts[month_year] = []\n        grouped_posts[month_year].append(post)\n    context = {",
+        "detail": "CostData.report.views",
+        "documentation": {}
+    },
+    {
+        "label": "detail_comment_view",
+        "kind": 2,
+        "importPath": "CostData.report.views",
+        "description": "CostData.report.views",
+        "peekOfCode": "def detail_comment_view(request, pk):\n    get_post = get_object_or_404(Post, pk=pk)\n    if request.method == 'POST':\n        form = CommentForm(request.POST)\n        if form.is_valid():\n            comment = form.save(commit=False)\n            comment.author = request.user\n            comment.post = get_post\n            comment.week = get_post.week\n            comment.category = get_post.category",
+        "detail": "CostData.report.views",
+        "documentation": {}
+    },
+    {
+        "label": "cmd_doc",
+        "kind": 5,
+        "importPath": "env.Scripts.runxlrd",
+        "description": "env.Scripts.runxlrd",
+        "peekOfCode": "cmd_doc = \"\"\"\nCommands:\n2rows           Print the contents of first and last row in each sheet\n3rows           Print the contents of first, second and last row in each sheet\nbench           Same as \"show\", but doesn't print -- for profiling\nbiff_count[1]   Print a count of each type of BIFF record in the file\nbiff_dump[1]    Print a dump (char and hex) of the BIFF records in the file\nfonts           hdr + print a dump of all font objects\nhdr             Mini-overview of file (no per-sheet information)\nhotshot         Do a hotshot profile run e.g. ... -f1 hotshot bench bigfile*.xls",
+        "detail": "env.Scripts.runxlrd",
+        "documentation": {}
+    },
+    {
+        "label": "options",
+        "kind": 5,
+        "importPath": "env.Scripts.runxlrd",
+        "description": "env.Scripts.runxlrd",
+        "peekOfCode": "options = None\nif __name__ == \"__main__\":\n    import xlrd\n    import sys\n    import time\n    import glob\n    import traceback\n    import gc\n    from xlrd.timemachine import xrange, REPR\n    class LogHandler(object):",
+        "detail": "env.Scripts.runxlrd",
+        "documentation": {}
+    },
+    {
+        "label": "extract_file",
+        "kind": 2,
+        "importPath": "env.Scripts.vba_extract",
+        "description": "env.Scripts.vba_extract",
+        "peekOfCode": "def extract_file(xlsm_zip, filename):\n    # Extract a single file from an Excel xlsm macro file.\n    data = xlsm_zip.read(\"xl/\" + filename)\n    # Write the data to a local file.\n    file = open(filename, \"wb\")\n    file.write(data)\n    file.close()\n# The VBA project file and project signature file we want to extract.\nvba_filename = \"vbaProject.bin\"\nvba_signature_filename = \"vbaProjectSignature.bin\"",
+        "detail": "env.Scripts.vba_extract",
+        "documentation": {}
+    },
+    {
+        "label": "vba_filename",
+        "kind": 5,
+        "importPath": "env.Scripts.vba_extract",
+        "description": "env.Scripts.vba_extract",
+        "peekOfCode": "vba_filename = \"vbaProject.bin\"\nvba_signature_filename = \"vbaProjectSignature.bin\"\n# Get the xlsm file name from the commandline.\nif len(sys.argv) > 1:\n    xlsm_file = sys.argv[1]\nelse:\n    print(\n        \"\\nUtility to extract a vbaProject.bin binary from an Excel 2007+ \"\n        \"xlsm macro file for insertion into an XlsxWriter file.\\n\"\n        \"If the macros are digitally signed, extracts also a vbaProjectSignature.bin \"",
+        "detail": "env.Scripts.vba_extract",
+        "documentation": {}
+    },
+    {
+        "label": "vba_signature_filename",
+        "kind": 5,
+        "importPath": "env.Scripts.vba_extract",
+        "description": "env.Scripts.vba_extract",
+        "peekOfCode": "vba_signature_filename = \"vbaProjectSignature.bin\"\n# Get the xlsm file name from the commandline.\nif len(sys.argv) > 1:\n    xlsm_file = sys.argv[1]\nelse:\n    print(\n        \"\\nUtility to extract a vbaProject.bin binary from an Excel 2007+ \"\n        \"xlsm macro file for insertion into an XlsxWriter file.\\n\"\n        \"If the macros are digitally signed, extracts also a vbaProjectSignature.bin \"\n        \"file.\\n\"",
+        "detail": "env.Scripts.vba_extract",
+        "documentation": {}
+    },
+    {
+        "label": "MainConfig",
+        "kind": 6,
+        "importPath": "main.apps",
+        "description": "main.apps",
+        "peekOfCode": "class MainConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"main\"",
+        "detail": "main.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "main.urls",
+        "description": "main.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.main_home, name=\"mainhome_url\")\n]",
+        "detail": "main.urls",
+        "documentation": {}
+    },
+    {
+        "label": "main_home",
+        "kind": 2,
+        "importPath": "main.views",
+        "description": "main.views",
+        "peekOfCode": "def main_home(request):\n    return render(request, 'main_home.html', {})",
+        "detail": "main.views",
+        "documentation": {}
+    },
+    {
+        "label": "PortfolioConfig",
+        "kind": 6,
+        "importPath": "Portfolio.apps",
+        "description": "Portfolio.apps",
+        "peekOfCode": "class PortfolioConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'Portfolio'",
+        "detail": "Portfolio.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "Portfolio.urls",
+        "description": "Portfolio.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', frontendView, name=\"portfolio_url\"),  # React의 SPA 라우팅 처리,\n]\nurlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "detail": "Portfolio.urls",
+        "documentation": {}
+    },
+    {
+        "label": "frontendView",
+        "kind": 2,
+        "importPath": "Portfolio.views",
+        "description": "Portfolio.views",
+        "peekOfCode": "def frontendView(request):\n    # React 빌드된 index.html 파일 경로\n    index_path = os.path.join(settings.BASE_DIR, 'static/react/index.html')\n    try:\n        with open(index_path, 'r', encoding='utf-8') as f:\n            return HttpResponse(f.read(), content_type='text/html')\n    except FileNotFoundError:\n        return HttpResponse(\"React build file not found. Run 'npm run build' and move files to 'static/react/'.\", status=404)",
+        "detail": "Portfolio.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0001_initial",
+        "description": "SecurityReinvent.delivery.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='QRCodeData',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('code_data', models.CharField(max_length=255)),",
+        "detail": "SecurityReinvent.delivery.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0002_qrcodedata_qty",
+        "description": "SecurityReinvent.delivery.migrations.0002_qrcodedata_qty",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('delivery', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='qrcodedata',\n            name='qty',\n            field=models.IntegerField(default=1),\n        ),",
+        "detail": "SecurityReinvent.delivery.migrations.0002_qrcodedata_qty",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0003_qrcodedata_admin_pic",
+        "description": "SecurityReinvent.delivery.migrations.0003_qrcodedata_admin_pic",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('delivery', '0002_qrcodedata_qty'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='qrcodedata',\n            name='admin_pic',\n            field=models.ForeignKey(default='1', on_delete=django.db.models.deletion.CASCADE, to='user.customuser'),",
+        "detail": "SecurityReinvent.delivery.migrations.0003_qrcodedata_admin_pic",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0004_remove_qrcodedata_receiver_check",
+        "description": "SecurityReinvent.delivery.migrations.0004_remove_qrcodedata_receiver_check",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('delivery', '0003_qrcodedata_admin_pic'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='qrcodedata',\n            name='receiver_check',\n        ),\n    ]",
+        "detail": "SecurityReinvent.delivery.migrations.0004_remove_qrcodedata_receiver_check",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0005_auto_20230920_0958",
+        "description": "SecurityReinvent.delivery.migrations.0005_auto_20230920_0958",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('delivery', '0004_remove_qrcodedata_receiver_check'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='DeliveryData',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "SecurityReinvent.delivery.migrations.0005_auto_20230920_0958",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0006_auto_20230920_1000",
+        "description": "SecurityReinvent.delivery.migrations.0006_auto_20230920_1000",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('delivery', '0005_auto_20230920_0958'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='deliverydata',\n            old_name='arriving_at',\n            new_name='arriving_date',\n        ),",
+        "detail": "SecurityReinvent.delivery.migrations.0006_auto_20230920_1000",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0007_alter_deliverydata_options",
+        "description": "SecurityReinvent.delivery.migrations.0007_alter_deliverydata_options",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('delivery', '0006_auto_20230920_1000'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='deliverydata',\n            options={'verbose_name_plural': 'Delivery Data'},\n        ),\n    ]",
+        "detail": "SecurityReinvent.delivery.migrations.0007_alter_deliverydata_options",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0008_alter_deliverydata_checkout",
+        "description": "SecurityReinvent.delivery.migrations.0008_alter_deliverydata_checkout",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('delivery', '0007_alter_deliverydata_options'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='deliverydata',\n            name='checkout',\n            field=models.DateTimeField(),\n        ),",
+        "detail": "SecurityReinvent.delivery.migrations.0008_alter_deliverydata_checkout",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.migrations.0009_alter_deliverydata_checkout",
+        "description": "SecurityReinvent.delivery.migrations.0009_alter_deliverydata_checkout",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('delivery', '0008_alter_deliverydata_checkout'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='deliverydata',\n            name='checkout',\n            field=models.DateTimeField(blank=True, null=True),\n        ),",
+        "detail": "SecurityReinvent.delivery.migrations.0009_alter_deliverydata_checkout",
+        "documentation": {}
+    },
+    {
+        "label": "DeliveryDataAdmin",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.admin",
+        "description": "SecurityReinvent.delivery.admin",
+        "peekOfCode": "class DeliveryDataAdmin(admin.ModelAdmin):\n    list_display=['tracking_number','arriving_date','registered_by','receiver','qty','checkout']\n# Register your models here.\nadmin.site.register(DeliveryData, DeliveryDataAdmin)",
+        "detail": "SecurityReinvent.delivery.admin",
+        "documentation": {}
+    },
+    {
+        "label": "DeliveryConfig",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.apps",
+        "description": "SecurityReinvent.delivery.apps",
+        "peekOfCode": "class DeliveryConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'SecurityReinvent.delivery'",
+        "detail": "SecurityReinvent.delivery.apps",
+        "documentation": {}
+    },
+    {
+        "label": "DeliveryData",
+        "kind": 6,
+        "importPath": "SecurityReinvent.delivery.models",
+        "description": "SecurityReinvent.delivery.models",
+        "peekOfCode": "class DeliveryData(models.Model):\n    tracking_number=models.CharField(max_length=255)\n    registered_by=models.ForeignKey(CustomUser, on_delete=models.CASCADE)\n    receiver=models.CharField(max_length=255)\n    qty=models.IntegerField(default=1, blank=False, null=False)\n    arriving_date=models.DateTimeField(auto_now_add=True)\n    checkout=models.DateTimeField(blank=True, null=True)\n    class Meta:\n        verbose_name_plural='Delivery Data'",
+        "detail": "SecurityReinvent.delivery.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "SecurityReinvent.delivery.urls",
+        "description": "SecurityReinvent.delivery.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',DhomeView,name='Dhome_url'),\n    path('search',DsearchView, name='Dsearch_url'),\n    path('checkout/<int:pk>',DsearchcheckoutView, name='Dsearchout_url'),\n    path('checkout',DcheckoutView,name=\"Dcheckout_url\"),\n    path('generate/qrcode',DgenqrView,name='Dgenerateqr_url'),\n    path('add',DaddView,name='Dadd_url'),\n    path('search/download',DallexcelView,name='Dallexcel_url'),\n    path('delete/<int:pk>',DdeleteView,name='Ddelete_url'),\n]",
+        "detail": "SecurityReinvent.delivery.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DhomeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DhomeView(request):\n    return render(request, 'delivery_home.html')\ndef DsearchView(request):\n    item_list=DeliveryData.objects.all().order_by('-arriving_date')\n    username=request.user.username\n    context={\n        'item_list':item_list,\n        'username':username,\n    }\n    return render(request, 'delivery-search.html', context)",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "DsearchView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DsearchView(request):\n    item_list=DeliveryData.objects.all().order_by('-arriving_date')\n    username=request.user.username\n    context={\n        'item_list':item_list,\n        'username':username,\n    }\n    return render(request, 'delivery-search.html', context)\ndef DsearchcheckoutView(request, pk):\n    delivery_data=DeliveryData.objects.get(pk=pk)",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "DsearchcheckoutView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DsearchcheckoutView(request, pk):\n    delivery_data=DeliveryData.objects.get(pk=pk)\n    delivery_data.checkout=timezone.now()\n    print(delivery_data.checkout)\n    delivery_data.save()\n    return redirect('Dsearch_url')\ndef DcheckoutView(request):\n    if request.method=='POST':\n        scan_track=request.POST.get('result')\n        #remove input 4 digit space",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "DcheckoutView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DcheckoutView(request):\n    if request.method=='POST':\n        scan_track=request.POST.get('result')\n        #remove input 4 digit space\n        scan_track=scan_track.replace(\" \",\"\")\n        #check tracking_number exist\n        try:\n            entry=DeliveryData.objects.get(tracking_number=scan_track)\n            if entry.checkout:\n                context={",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "DaddView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DaddView(request):\n    if request.method=='POST':\n        scan_track=request.POST.get('result')\n        #remove input 4 digit space\n        scan_track=scan_track.replace(\" \",\"\")\n        scan_receiver=request.POST.get('receiver')\n        #if each colum empty\n        if not scan_track:\n            context={\n                \"error_message\":\"Tracking number is empty!\"",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "DgenqrView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DgenqrView(request):\n    return render(request,'delivery-qr.html')\ndef DallexcelView(request):\n    data=DeliveryData.objects.all().order_by('-id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"DeliveryPackageList_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "DallexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DallexcelView(request):\n    data=DeliveryData.objects.all().order_by('-id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"DeliveryPackageList_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Tracking Number','Receiver', 'Qty', 'Security Checkout', 'Arriving Date']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "DdeleteView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.delivery.views",
+        "description": "SecurityReinvent.delivery.views",
+        "peekOfCode": "def DdeleteView(request, pk):\n    selected_data=DeliveryData.objects.get(pk=pk)\n    selected_data.delete()\n    return redirect('Dsearch_url')",
+        "detail": "SecurityReinvent.delivery.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.migrations.0001_initial",
+        "description": "SecurityReinvent.parking.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CarData',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('visitor_name', models.CharField(max_length=255)),",
+        "detail": "SecurityReinvent.parking.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.migrations.0002_auto_20230918_0925",
+        "description": "SecurityReinvent.parking.migrations.0002_auto_20230918_0925",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('parking', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='cardata',\n            name='user',\n            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='user.customuser'),",
+        "detail": "SecurityReinvent.parking.migrations.0002_auto_20230918_0925",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.migrations.0003_auto_20230918_1029",
+        "description": "SecurityReinvent.parking.migrations.0003_auto_20230918_1029",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('parking', '0002_auto_20230918_0925'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='violatordata',\n            name='user',\n            field=models.ForeignKey(default='1', on_delete=django.db.models.deletion.CASCADE, to='user.customuser'),",
+        "detail": "SecurityReinvent.parking.migrations.0003_auto_20230918_1029",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.migrations.0004_auto_20230922_1031",
+        "description": "SecurityReinvent.parking.migrations.0004_auto_20230922_1031",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('parking', '0003_auto_20230918_1029'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='employeeofmonthdata',\n            name='end_date',\n            field=models.CharField(blank=True, max_length=100, null=True),\n        ),",
+        "detail": "SecurityReinvent.parking.migrations.0004_auto_20230922_1031",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.migrations.0005_auto_20230922_1215",
+        "description": "SecurityReinvent.parking.migrations.0005_auto_20230922_1215",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('parking', '0004_auto_20230922_1031'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='employeeofmonthdata',\n            old_name='user',\n            new_name='register_by',\n        ),",
+        "detail": "SecurityReinvent.parking.migrations.0005_auto_20230922_1215",
+        "documentation": {}
+    },
+    {
+        "label": "ViolatorDataAdmin",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.admin",
+        "description": "SecurityReinvent.parking.admin",
+        "peekOfCode": "class ViolatorDataAdmin(admin.ModelAdmin):\n    list_display=['car_plate','parking_at','violate_count']\nadmin.site.register(ViolatorData, ViolatorDataAdmin)\n# Register your models here.\nclass EmployeeOfMonthDataAdmin(admin.ModelAdmin):\n    list_display=['employee_name','register_at','start_date','end_date']\nadmin.site.register(EmployeeOfMonthData, EmployeeOfMonthDataAdmin)",
+        "detail": "SecurityReinvent.parking.admin",
+        "documentation": {}
+    },
+    {
+        "label": "EmployeeOfMonthDataAdmin",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.admin",
+        "description": "SecurityReinvent.parking.admin",
+        "peekOfCode": "class EmployeeOfMonthDataAdmin(admin.ModelAdmin):\n    list_display=['employee_name','register_at','start_date','end_date']\nadmin.site.register(EmployeeOfMonthData, EmployeeOfMonthDataAdmin)",
+        "detail": "SecurityReinvent.parking.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ParkingConfig",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.apps",
+        "description": "SecurityReinvent.parking.apps",
+        "peekOfCode": "class ParkingConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'SecurityReinvent.parking'",
+        "detail": "SecurityReinvent.parking.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ViolatorData",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.models",
+        "description": "SecurityReinvent.parking.models",
+        "peekOfCode": "class ViolatorData(models.Model):\n    car_plate=models.CharField(max_length=255)\n    parking_lot=models.CharField(max_length=255)\n    parking_at=models.DateTimeField(auto_now_add=True)\n    violate_count=models.IntegerField(null=False, blank=False)\n    register_by=models.ForeignKey(CustomUser, on_delete=models.CASCADE)\nclass EmployeeOfMonthData(models.Model):\n    employee_name=models.CharField(max_length=255)\n    register_at=models.DateTimeField(auto_now_add=True)\n    start_date=models.CharField(max_length=100, null=False, blank=False)",
+        "detail": "SecurityReinvent.parking.models",
+        "documentation": {}
+    },
+    {
+        "label": "EmployeeOfMonthData",
+        "kind": 6,
+        "importPath": "SecurityReinvent.parking.models",
+        "description": "SecurityReinvent.parking.models",
+        "peekOfCode": "class EmployeeOfMonthData(models.Model):\n    employee_name=models.CharField(max_length=255)\n    register_at=models.DateTimeField(auto_now_add=True)\n    start_date=models.CharField(max_length=100, null=False, blank=False)\n    end_date=models.CharField(max_length=100, null=True, blank=True)\n    register_by=models.ForeignKey(CustomUser, on_delete=models.CASCADE)",
+        "detail": "SecurityReinvent.parking.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "SecurityReinvent.parking.urls",
+        "description": "SecurityReinvent.parking.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',PhomeView,name='Phome_url'),\n    path('violator/register',PviolatorView,name='Pviolator_url'),\n    path('violator/list',PviolatorlistView,name='Pviolator_list_url'),\n    path('violator/delete/<int:data_id>',PviolatordeleteView,name='Pviolator_delete_url'),\n    path('violator/ticket/<int:data_id>',Pviolator1ticketView,name='Pviolator_ticket_url'),\n    path('violator/tow/<int:data_id>',Pviolator2ticketView,name='Pviolator_tow_url'),\n    path('employee_of_month/register',PemployeeView,name='Pemployee_url'),\n    path('employee_of_month/list',PemployeelistView,name='Pemployee_list_url'),\n    path('employee_of_month/delete/<int:data_id>',PemployeedeleteView,name='Pemployee_delete_url'),",
+        "detail": "SecurityReinvent.parking.urls",
+        "documentation": {}
+    },
+    {
+        "label": "PhomeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PhomeView(request):\n    return render(request, 'parking_home.html')\ndef PviolatorView(request):\n    if request.method=='POST':\n        get_location=request.POST.get('location')\n        get_plate=request.POST.get('plate')\n        if get_plate==\"\":\n            err=\"There is no plate number. Please type car plate number.\"\n            return render(request, 'violator.html', {'message':err})\n        else:",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PviolatorView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PviolatorView(request):\n    if request.method=='POST':\n        get_location=request.POST.get('location')\n        get_plate=request.POST.get('plate')\n        if get_plate==\"\":\n            err=\"There is no plate number. Please type car plate number.\"\n            return render(request, 'violator.html', {'message':err})\n        else:\n            get_plate_front=str(get_plate).lstrip()\n            get_plate_back=str(get_plate_front).strip()",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PviolatorlistView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PviolatorlistView(request):\n    violator_list=ViolatorData.objects.all().order_by('-id') \n    context={\n        'violator_list':violator_list\n    }\n    return render(request, 'violator_list.html', context)\n@login_required\ndef PviolatordeleteView(request, data_id):\n    if request.method=='POST':\n        selected_data=ViolatorData.objects.get(pk=data_id)",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PviolatordeleteView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PviolatordeleteView(request, data_id):\n    if request.method=='POST':\n        selected_data=ViolatorData.objects.get(pk=data_id)\n        selected_data.delete()\n    return redirect('Pviolator_list_url')\ndef Pviolator1ticketView(request, data_id):\n    if request.method=='POST':\n        selected_data=ViolatorData.objects.get(pk=data_id)\n        return render(request, 'violator_ticket.html', {'violator_data':selected_data})\ndef Pviolator2ticketView(request, data_id):",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "Pviolator1ticketView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def Pviolator1ticketView(request, data_id):\n    if request.method=='POST':\n        selected_data=ViolatorData.objects.get(pk=data_id)\n        return render(request, 'violator_ticket.html', {'violator_data':selected_data})\ndef Pviolator2ticketView(request, data_id):\n    if request.method=='POST':\n        selected_data=ViolatorData.objects.get(pk=data_id)\n        return render(request, 'violator_tow.html', {'violator_data':selected_data})\ndef PemployeeView(request):\n    if request.method=='POST':",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "Pviolator2ticketView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def Pviolator2ticketView(request, data_id):\n    if request.method=='POST':\n        selected_data=ViolatorData.objects.get(pk=data_id)\n        return render(request, 'violator_tow.html', {'violator_data':selected_data})\ndef PemployeeView(request):\n    if request.method=='POST':\n        get_name=request.POST.get('name')\n        get_date=request.POST.get('date')\n        if get_name==\"\":\n            if get_date==\"\":",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PemployeeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PemployeeView(request):\n    if request.method=='POST':\n        get_name=request.POST.get('name')\n        get_date=request.POST.get('date')\n        if get_name==\"\":\n            if get_date==\"\":\n                err=\"You didn't enter anything. Please type employee name and duration date.\"\n                return render(request, 'employee.html', {'message':err}) \n            else:\n                err=\"There is no employee name. Please type employee name.\"",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PemployeelistView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PemployeelistView(request):\n    employee_list=EmployeeOfMonthData.objects.all().order_by('-id') \n    context={\n        'employee_list':employee_list\n    }\n    return render(request, 'employee_list.html', context)\n@login_required\ndef PemployeedeleteView(request, data_id):\n    if request.method=='POST':\n        selected_data=EmployeeOfMonthData.objects.get(pk=data_id)",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PemployeedeleteView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PemployeedeleteView(request, data_id):\n    if request.method=='POST':\n        selected_data=EmployeeOfMonthData.objects.get(pk=data_id)\n        selected_data.delete()\n    return redirect('Pemployee_list_url')\ndef PviolatorexcelView(request):\n    data=ViolatorData.objects.all().order_by('id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PviolatorexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PviolatorexcelView(request):\n    data=ViolatorData.objects.all().order_by('id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"AllViolatorParkingList_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Car Plate', 'Violate Date', 'Parking Location','Violate Count']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "PemployeeexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.parking.views",
+        "description": "SecurityReinvent.parking.views",
+        "peekOfCode": "def PemployeeexcelView(request):\n    data=EmployeeOfMonthData.objects.all()\n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"AllEmployeeOfMonthParkingList_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Employee', 'Start Date','End Date', 'Parking Location','Request Date']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.parking.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0001_initial",
+        "description": "SecurityReinvent.reinvent.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ReinventData',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "SecurityReinvent.reinvent.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0002_reinventdata_request_at",
+        "description": "SecurityReinvent.reinvent.migrations.0002_reinventdata_request_at",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('reinvent', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='reinventdata',\n            name='request_at',\n            field=models.DateField(auto_now=True),\n        ),",
+        "detail": "SecurityReinvent.reinvent.migrations.0002_reinventdata_request_at",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0003_alter_reinventdata_request_at",
+        "description": "SecurityReinvent.reinvent.migrations.0003_alter_reinventdata_request_at",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('reinvent', '0002_reinventdata_request_at'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='reinventdata',\n            name='request_at',\n            field=models.DateTimeField(auto_now_add=True),\n        ),",
+        "detail": "SecurityReinvent.reinvent.migrations.0003_alter_reinventdata_request_at",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0004_auto_20230817_1052",
+        "description": "SecurityReinvent.reinvent.migrations.0004_auto_20230817_1052",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('reinvent', '0003_alter_reinventdata_request_at'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='reinventdata',\n            name='lateday',\n            field=models.CharField(blank=True, max_length=100, null=True),\n        ),",
+        "detail": "SecurityReinvent.reinvent.migrations.0004_auto_20230817_1052",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0005_rename_requestday_reinventdata_appliedday",
+        "description": "SecurityReinvent.reinvent.migrations.0005_rename_requestday_reinventdata_appliedday",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('reinvent', '0004_auto_20230817_1052'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='reinventdata',\n            old_name='requestday',\n            new_name='appliedday',\n        ),",
+        "detail": "SecurityReinvent.reinvent.migrations.0005_rename_requestday_reinventdata_appliedday",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0006_auto_20230817_1058",
+        "description": "SecurityReinvent.reinvent.migrations.0006_auto_20230817_1058",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('reinvent', '0005_rename_requestday_reinventdata_appliedday'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='reinventdata',\n            old_name='appliedday',\n            new_name='applied_day',\n        ),",
+        "detail": "SecurityReinvent.reinvent.migrations.0006_auto_20230817_1058",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0007_remove_reinventdata_credit",
+        "description": "SecurityReinvent.reinvent.migrations.0007_remove_reinventdata_credit",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('reinvent', '0006_auto_20230817_1058'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='reinventdata',\n            name='credit',\n        ),\n    ]",
+        "detail": "SecurityReinvent.reinvent.migrations.0007_remove_reinventdata_credit",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.migrations.0008_alter_reinventdata_remark",
+        "description": "SecurityReinvent.reinvent.migrations.0008_alter_reinventdata_remark",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('reinvent', '0007_remove_reinventdata_credit'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='reinventdata',\n            name='remark',\n            field=models.TextField(blank=True, max_length=76, null=True),\n        ),",
+        "detail": "SecurityReinvent.reinvent.migrations.0008_alter_reinventdata_remark",
+        "documentation": {}
+    },
+    {
+        "label": "ReinventDataAdmin",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.admin",
+        "description": "SecurityReinvent.reinvent.admin",
+        "peekOfCode": "class ReinventDataAdmin(admin.ModelAdmin):\n    list_display=('program','applied_day','user','request_at')\nadmin.site.register(ReinventData,ReinventDataAdmin)",
+        "detail": "SecurityReinvent.reinvent.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ReinventConfig",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.apps",
+        "description": "SecurityReinvent.reinvent.apps",
+        "peekOfCode": "class ReinventConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'SecurityReinvent.reinvent'",
+        "detail": "SecurityReinvent.reinvent.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ReinventData",
+        "kind": 6,
+        "importPath": "SecurityReinvent.reinvent.models",
+        "description": "SecurityReinvent.reinvent.models",
+        "peekOfCode": "class ReinventData(models.Model):\n    program=models.CharField(max_length=100, null=False, blank=False)\n    late_day=models.CharField(max_length=100, null=True, blank=True)\n    applied_day=models.CharField(max_length=100, null=False, blank=False)\n    remark=models.TextField(null=True, blank=True, max_length=76)\n    user=models.ForeignKey(CustomUser, on_delete=models.CASCADE)\n    request_at=models.DateTimeField(auto_now_add=True)",
+        "detail": "SecurityReinvent.reinvent.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "SecurityReinvent.reinvent.urls",
+        "description": "SecurityReinvent.reinvent.urls",
+        "peekOfCode": "urlpatterns = [\n    path('request',RrequestView, name='Rrequest_url'),\n    path('request/flexibleworkhours',Rflex_requestView, name='Rrequestflex_url'),\n    path('request/myday',Rmyday_requestView, name='Rrequestmyday_url'),\n    path('me',RmyView, name='Rmy_url'),\n    path('team',RteamView, name='Rteam_url'),\n    path('all',RallView, name='Rall_url'),\n    path('me/delete/message/<int:data_id>',RmydeleteMessageView,name='Rmydeletemessage_url'),\n    path('me/delete/<int:data_id>',RmydeleteView,name='Rmydelete_url'),\n    path('me/excel',RmyexcelView,name='Rmyexcel_url'),",
+        "detail": "SecurityReinvent.reinvent.urls",
+        "documentation": {}
+    },
+    {
+        "label": "RrequestView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RrequestView(request):\n    active_tab = 'tab1'\n    current_user=request.user\n    user_credit=current_user.myday_credit\n    context={\n        'user_credit':user_credit,\n        'active_tab': active_tab\n    }\n    return render(request, 're_request.html', context)\ndef Rflex_requestView(request):",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "Rflex_requestView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def Rflex_requestView(request):\n    if request.method=='POST':\n        next_day=request.POST.get('hidden_nextday')\n        print(next_day)\n        if next_day=='Not Applicable':\n            messages.error(request,\"Late day fininshed before 7PM. This is only possible to request when you finish after 7PM.\",extra_tags='location1')\n            return HttpResponseRedirect(reverse('Rrequest_url'))\n        if not next_day:\n            messages.error(request,\"Please fill out late day finished blank.\",extra_tags='location1')\n            return HttpResponseRedirect(reverse('Rrequest_url'))",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "Rmyday_requestView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def Rmyday_requestView(request):\n    if request.method=='POST':\n        current_user=request.user\n        user_credit=current_user.myday_credit\n        if user_credit<=0:\n            message2=\"There are no credits available for My Day. Credits reset to 1 on the first of each month.\"\n            active_tab='tab2'\n            context={\n                'message2':message2,\n                'active_tab':active_tab",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RmyView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RmyView(request):\n    reinvent_mylist=ReinventData.objects.filter(user=request.user).order_by('-id')\n    context={\n        'reinvent_mylist':reinvent_mylist,\n    }\n    return render(request, 're_my.html', context)\n@login_required\ndef RteamView(request):\n    current_user=request.user\n    user_team=current_user.team_at",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RteamView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RteamView(request):\n    current_user=request.user\n    user_team=current_user.team_at\n    ReinventData_instances=ReinventData.objects.filter(user__team_at=user_team).order_by('-id')\n    context={\n        'reinvent_teamlist':ReinventData_instances,\n        'my_team':user_team\n    }\n    return render(request, 're_team.html', context)\ndef RallView(request):",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RallView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RallView(request):\n    reinvent_alllist=ReinventData.objects.all().order_by('-id')\n    context={\n        'reinvent_alllist':reinvent_alllist\n    }\n    return render(request, 're_all.html', context)\n@login_required\ndef RmydeleteMessageView(request, data_id):\n    selected_data=get_object_or_404(ReinventData, pk=data_id)\n    context={",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RmydeleteMessageView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RmydeleteMessageView(request, data_id):\n    selected_data=get_object_or_404(ReinventData, pk=data_id)\n    context={\n        'selected_data':selected_data\n    }\n    return render(request, 're_delete.html', context)\n@login_required\ndef RmydeleteView(request, data_id):\n    selected_data=get_object_or_404(ReinventData, pk=data_id)\n    selected_program=selected_data.program",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RmydeleteView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RmydeleteView(request, data_id):\n    selected_data=get_object_or_404(ReinventData, pk=data_id)\n    selected_program=selected_data.program\n    if selected_program == 'My Day':\n        current_user=request.user\n        current_user.myday_credit+=1\n        current_user.save()\n    # delete the data\n    selected_data.delete()\n    return redirect('Rmy_url')",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RmyexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RmyexcelView(request):\n    data=ReinventData.objects.filter(user=request.user).order_by('-id')\n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"MyREINVENT_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Request', 'Applied Day', 'Late Day(Flexible Worhours)','Remark','Request At','Team', 'Requester']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RteamexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RteamexcelView(request):\n    current_user=request.user\n    user_team=current_user.team_at\n    data=ReinventData.objects.filter(user__team_at=user_team).order_by('-id')\n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"{user_team}TeamREINVENT_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "RallexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.reinvent.views",
+        "description": "SecurityReinvent.reinvent.views",
+        "peekOfCode": "def RallexcelView(request):\n    data=ReinventData.objects.all().order_by('-id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"AllREINVENT_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Request', 'Applied Day', 'Late Day(Flexible Worhours)','Remark','Register At','Requester']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.reinvent.views",
+        "documentation": {}
+    },
+    {
+        "label": "SrBaseConfig",
+        "kind": 6,
+        "importPath": "SecurityReinvent.SR_Base.apps",
+        "description": "SecurityReinvent.SR_Base.apps",
+        "peekOfCode": "class SrBaseConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"SecurityReinvent.SR_Base\"",
+        "detail": "SecurityReinvent.SR_Base.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "SecurityReinvent.SR_Base.urls",
+        "description": "SecurityReinvent.SR_Base.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',homeView,name='sr_home_url'),\n    path('securitycenter',securityhomeView,name='securityhome_url'),\n    path('reinventcenter',reinventhomeView,name='reinventhome_url')\n]",
+        "detail": "SecurityReinvent.SR_Base.urls",
+        "documentation": {}
+    },
+    {
+        "label": "homeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.SR_Base.views",
+        "description": "SecurityReinvent.SR_Base.views",
+        "peekOfCode": "def homeView(request):\n    return render(request, 'sr_home.html')\ndef securityhomeView(request):\n    return render(request, 'securityhome.html')\ndef reinventhomeView(request):\n    return render(request, 'reinventhome.html')",
+        "detail": "SecurityReinvent.SR_Base.views",
+        "documentation": {}
+    },
+    {
+        "label": "securityhomeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.SR_Base.views",
+        "description": "SecurityReinvent.SR_Base.views",
+        "peekOfCode": "def securityhomeView(request):\n    return render(request, 'securityhome.html')\ndef reinventhomeView(request):\n    return render(request, 'reinventhome.html')",
+        "detail": "SecurityReinvent.SR_Base.views",
+        "documentation": {}
+    },
+    {
+        "label": "reinventhomeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.SR_Base.views",
+        "description": "SecurityReinvent.SR_Base.views",
+        "peekOfCode": "def reinventhomeView(request):\n    return render(request, 'reinventhome.html')",
+        "detail": "SecurityReinvent.SR_Base.views",
+        "documentation": {}
+    },
+    {
+        "label": "TruckDataAdmin",
+        "kind": 6,
+        "importPath": "SecurityReinvent.truck.admin",
+        "description": "SecurityReinvent.truck.admin",
+        "peekOfCode": "class TruckDataAdmin(admin.ModelAdmin):\n    list_display=('id', 'license_plate','driver_name', 'checkin_pic', 'checkin_at', 'checkout_pic', 'checkout_at')\nadmin.site.register(TruckData,TruckDataAdmin)",
+        "detail": "SecurityReinvent.truck.admin",
+        "documentation": {}
+    },
+    {
+        "label": "TruckConfig",
+        "kind": 6,
+        "importPath": "SecurityReinvent.truck.apps",
+        "description": "SecurityReinvent.truck.apps",
+        "peekOfCode": "class TruckConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'SecurityReinvent.truck'",
+        "detail": "SecurityReinvent.truck.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TruckCheckInForm",
+        "kind": 6,
+        "importPath": "SecurityReinvent.truck.forms",
+        "description": "SecurityReinvent.truck.forms",
+        "peekOfCode": "class TruckCheckInForm(forms.ModelForm):\n    class Meta:\n        model=TruckData\n        fields=['driver_name', 'license_plate','company_name','truck_number','direct_cntr','in_trailer','seal_number','upload_file']\nclass TruckCheckOutForm(forms.ModelForm):\n    class Meta:\n        model=TruckData\n        fields=['out_trailer','load_status','upload_file']",
+        "detail": "SecurityReinvent.truck.forms",
+        "documentation": {}
+    },
+    {
+        "label": "TruckCheckOutForm",
+        "kind": 6,
+        "importPath": "SecurityReinvent.truck.forms",
+        "description": "SecurityReinvent.truck.forms",
+        "peekOfCode": "class TruckCheckOutForm(forms.ModelForm):\n    class Meta:\n        model=TruckData\n        fields=['out_trailer','load_status','upload_file']",
+        "detail": "SecurityReinvent.truck.forms",
+        "documentation": {}
+    },
+    {
+        "label": "TruckData",
+        "kind": 6,
+        "importPath": "SecurityReinvent.truck.models",
+        "description": "SecurityReinvent.truck.models",
+        "peekOfCode": "class TruckData(models.Model):\n    driver_name=models.CharField(max_length=255, null=True)\n    license_plate=models.CharField(max_length=255, null=True)\n    company_name=models.CharField(max_length=255, null=True)\n    truck_number=models.CharField(max_length=255, null=True)\n    direct_cntr=models.CharField(max_length=255, null=True)\n    in_trailer=models.CharField(max_length=255, null=True)\n    seal_number=models.CharField(max_length=255, null=True)\n    checkin_at=models.DateTimeField(blank=True, null=True)\n    checkin_pic=models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='checkin_pic')",
+        "detail": "SecurityReinvent.truck.models",
+        "documentation": {}
+    },
+    {
+        "label": "upload_location",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.models",
+        "description": "SecurityReinvent.truck.models",
+        "peekOfCode": "def upload_location(instance, filename):\n    now = datetime.now()\n    if not instance.checkout_at:\n        username=instance.checkin_pic.username\n        folder_name = f'checkin/{username}/{now.strftime(\"%Y-%m-%d_%I-%M-%p\")}'\n    else:\n        username=instance.checkout_pic.username\n        folder_name = f'checkout/{username}/{now.strftime(\"%Y-%m-%d_%I-%M-%p\")}'\n    return os.path.join(folder_name, filename)\n# Create your models here.",
+        "detail": "SecurityReinvent.truck.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "SecurityReinvent.truck.urls",
+        "description": "SecurityReinvent.truck.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',ThomeView,name='Thome_url'),\n    path('in',TcheckinView,name='Ttruckin_url'),\n    path('out/<int:pk>',TcheckoutView,name='Ttruckout_url'),\n    path('history',ThistoryView,name='Ttruckhistory_url'),\n    path('detail/<int:pk>',TdetailView,name='Ttruckdetail_url'),\n    path('edit/in/<int:pk>',TeditInView,name='TtruckeditIn_url'),\n    path('edit/out/<int:pk>',TeditOutView,name='TtruckeditOut_url'),\n    path('delete/<int:pk>',TdeleteView,name='Ttruckdelete_url'),\n    path('history/download',TallexcelView,name='Tallexcel_url')",
+        "detail": "SecurityReinvent.truck.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ThomeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def ThomeView(request):\n    return render(request, 'truck_home.html')\ndef TcheckinView(request):\n    if request.method=='POST':\n        get_driver=request.POST.get('drivername')\n        get_plate=request.POST.get('plate')\n        get_company=request.POST.get('company')\n        get_truck=request.POST.get('trucknumber')\n        get_cntr=request.POST.get('cntr')\n        get_trailer=request.POST.get('trailer')",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "TcheckinView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def TcheckinView(request):\n    if request.method=='POST':\n        get_driver=request.POST.get('drivername')\n        get_plate=request.POST.get('plate')\n        get_company=request.POST.get('company')\n        get_truck=request.POST.get('trucknumber')\n        get_cntr=request.POST.get('cntr')\n        get_trailer=request.POST.get('trailer')\n        get_seal=request.POST.get('seal')\n        if get_driver!='' and get_plate!='' and get_company!='' and get_truck!='' and get_cntr!='' and get_trailer!='' and get_seal!='':",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "TcheckoutView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def TcheckoutView(request,pk):\n    truck_data=TruckData.objects.get(pk=pk)\n    if request.method=='POST':\n        get_trailer=request.POST.get('outtrailer')\n        get_load=request.POST.get('load')\n        truck_data.out_trailer=get_trailer\n        truck_data.load_status=get_load\n        truck_data.checkout_at=timezone.now()\n        truck_data.checkout_pic=request.user\n        truck_data.save()",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "ThistoryView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def ThistoryView(request):\n    truck_list=TruckData.objects.all().order_by('-checkin_at')\n    context={\n        'truck_list':truck_list\n    }\n    return render(request, 'truck_history.html', context)\ndef TdetailView(request, pk):\n    truck_detailed=get_object_or_404(TruckData, pk=pk)\n    context={\n        'truck_detailed':truck_detailed",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "TdetailView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def TdetailView(request, pk):\n    truck_detailed=get_object_or_404(TruckData, pk=pk)\n    context={\n        'truck_detailed':truck_detailed\n    }\n    return render(request, 'truck_detail.html', context)\n@login_required\ndef TeditInView(request,pk):\n    truck_edit=get_object_or_404(TruckData, pk=pk)\n    if request.method==\"POST\":",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "TeditInView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def TeditInView(request,pk):\n    truck_edit=get_object_or_404(TruckData, pk=pk)\n    if request.method==\"POST\":\n        form=TruckCheckInForm(request.POST, request.FILES, instance=truck_edit)\n        if form.is_valid():\n            form.save()\n            return redirect('Ttruckdetail_url', pk=pk)\n        else:\n            message=\"Form is not valid\"\n            context={",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "TeditOutView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def TeditOutView(request,pk):\n    truck_edit=get_object_or_404(TruckData, pk=pk)\n    if request.method==\"POST\":\n        form=TruckCheckOutForm(request.POST, instance=truck_edit)\n        if form.is_valid():\n            form.save()\n            return redirect('Ttruckdetail_url', pk=pk)\n        else:\n            message=\"Form is not valid\"\n            context={",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "TdeleteView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def TdeleteView(request, pk):\n    selected_data=TruckData.objects.get(pk=pk)\n    selected_data.delete()\n    return redirect('Ttruckhistory_url')\ndef TallexcelView(request):\n    data=TruckData.objects.all().order_by('-id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"TruckTrackingList_{current_date}.csv\"",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "TallexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.truck.views",
+        "description": "SecurityReinvent.truck.views",
+        "peekOfCode": "def TallexcelView(request):\n    data=TruckData.objects.all().order_by('-id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"TruckTrackingList_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Driver Name','License Plate', 'Company Name', 'Truck Number','Direct Delivery CNTR','Trailer Number','Seal Number','Check-In PIC','Check-In Time','Check-Out PIC','Check-Out Time','Out Trailer Number/Bobtail','Load Status']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.truck.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0001_initial",
+        "description": "SecurityReinvent.visitor.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ApprovalStatus',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "SecurityReinvent.visitor.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0002_alter_visitordata_status",
+        "description": "SecurityReinvent.visitor.migrations.0002_alter_visitordata_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='visitordata',\n            name='status',\n            field=models.ForeignKey(default='Requested', on_delete=django.db.models.deletion.CASCADE, to='visitor.approvalstatus'),\n            preserve_default=False,",
+        "detail": "SecurityReinvent.visitor.migrations.0002_alter_visitordata_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0003_auto_20230922_0945",
+        "description": "SecurityReinvent.visitor.migrations.0003_auto_20230922_0945",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0002_alter_visitordata_status'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='visitordata',\n            name='status',\n        ),\n        migrations.AddField(",
+        "detail": "SecurityReinvent.visitor.migrations.0003_auto_20230922_0945",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0004_alter_visitordata_pic_contact",
+        "description": "SecurityReinvent.visitor.migrations.0004_alter_visitordata_pic_contact",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0003_auto_20230922_0945'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='visitordata',\n            name='pic_contact',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
+        "detail": "SecurityReinvent.visitor.migrations.0004_alter_visitordata_pic_contact",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0005_auto_20230929_0949",
+        "description": "SecurityReinvent.visitor.migrations.0005_auto_20230929_0949",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0004_alter_visitordata_pic_contact'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='visitordata',\n            old_name='approval_status',\n            new_name='security_admin_approval',\n        ),",
+        "detail": "SecurityReinvent.visitor.migrations.0005_auto_20230929_0949",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0006_auto_20230929_0954",
+        "description": "SecurityReinvent.visitor.migrations.0006_auto_20230929_0954",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0005_auto_20230929_0949'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='visitordata',\n            old_name='security_admin_approval',\n            new_name='security_manager_approval',\n        ),",
+        "detail": "SecurityReinvent.visitor.migrations.0006_auto_20230929_0954",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0007_auto_20230929_1000",
+        "description": "SecurityReinvent.visitor.migrations.0007_auto_20230929_1000",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0006_auto_20230929_0954'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='ApprovalStatus',\n        ),\n        migrations.AddField(\n            model_name='visitordata',",
+        "detail": "SecurityReinvent.visitor.migrations.0007_auto_20230929_1000",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0008_auto_20230929_1022",
+        "description": "SecurityReinvent.visitor.migrations.0008_auto_20230929_1022",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0007_auto_20230929_1000'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='visitordata',\n            old_name='security_team_leader_appoval',\n            new_name='security_leader_appoval',\n        ),",
+        "detail": "SecurityReinvent.visitor.migrations.0008_auto_20230929_1022",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0009_auto_20230929_1344",
+        "description": "SecurityReinvent.visitor.migrations.0009_auto_20230929_1344",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0008_auto_20230929_1022'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='visitordata',\n            name='security_leader_appoval_time',\n            field=models.CharField(default='', max_length=100),\n        ),",
+        "detail": "SecurityReinvent.visitor.migrations.0009_auto_20230929_1344",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0010_auto_20230929_1345",
+        "description": "SecurityReinvent.visitor.migrations.0010_auto_20230929_1345",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0009_auto_20230929_1344'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='visitordata',\n            name='security_leader_appoval_time',\n            field=models.DateField(default=''),\n        ),",
+        "detail": "SecurityReinvent.visitor.migrations.0010_auto_20230929_1345",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.migrations.0011_remove_visitordata_security_leader_appoval_and_more",
+        "description": "SecurityReinvent.visitor.migrations.0011_remove_visitordata_security_leader_appoval_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0010_auto_20230929_1345'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='visitordata',\n            name='security_leader_appoval',\n        ),\n        migrations.RemoveField(",
+        "detail": "SecurityReinvent.visitor.migrations.0011_remove_visitordata_security_leader_appoval_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "VisitorDataAdmin",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.admin",
+        "description": "SecurityReinvent.visitor.admin",
+        "peekOfCode": "class VisitorDataAdmin(admin.ModelAdmin):\n    list_display=('id','visitor_purpose','user','register_at')\nadmin.site.register(VisitorData,VisitorDataAdmin)",
+        "detail": "SecurityReinvent.visitor.admin",
+        "documentation": {}
+    },
+    {
+        "label": "VisitorConfig",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.apps",
+        "description": "SecurityReinvent.visitor.apps",
+        "peekOfCode": "class VisitorConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'SecurityReinvent.visitor'",
+        "detail": "SecurityReinvent.visitor.apps",
+        "documentation": {}
+    },
+    {
+        "label": "VisitorData",
+        "kind": 6,
+        "importPath": "SecurityReinvent.visitor.models",
+        "description": "SecurityReinvent.visitor.models",
+        "peekOfCode": "class VisitorData(models.Model):\n    visitor_name=models.CharField(max_length=255, null=False, blank=False)\n    visitor_company=models.CharField(max_length=255, null=False, blank=False)\n    start_date=models.CharField(max_length=100, null=False, blank=False)\n    end_date=models.CharField(max_length=100, null=True, blank=True)\n    visitor_purpose=models.TextField(null=False, blank=False)\n    bring_laptop=models.CharField(max_length=255, null=False, blank=False)\n    pic_contact=models.CharField(max_length=255, null=True, blank=True)\n    register_at=models.DateTimeField(auto_now_add=True)\n    remark=models.TextField(null=True, blank=True)",
+        "detail": "SecurityReinvent.visitor.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "SecurityReinvent.visitor.urls",
+        "description": "SecurityReinvent.visitor.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',VhomeView,name='Vhome_url'),\n    path('register',VregisterView,name='Vregister_url'),\n    path('my',VmyView,name='Vmy_url'),\n    path('detail/<int:pk>',VdetailView,name='Vdetail_url'),\n    path('list',VlistView,name='Vlist_url'),\n    path('delete/<int:data_id>',VdeleteView,name='Vdelete_url'),\n    path('list/delete/<int:data_id>',VlistdeleteView,name='Vlistdelete_url'),\n    path('my/<int:data_id>', VtogglemyView, name='Vmytoggle_url'),\n    path('list/<int:data_id>', VtogglelistView, name='Vlisttoggle_url'),",
+        "detail": "SecurityReinvent.visitor.urls",
+        "documentation": {}
+    },
+    {
+        "label": "VhomeView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VhomeView(request):\n    return render(request, 'visitor_home.html')\n@login_required\ndef VregisterView(request):\n    if request.method=='POST':\n        get_name=request.POST.get('name')\n        get_company=request.POST.get('company')\n        get_date=request.POST.get('date')\n        get_purpose=request.POST.get('purpose')\n        get_laptop=request.POST.get('laptop')",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VregisterView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VregisterView(request):\n    if request.method=='POST':\n        get_name=request.POST.get('name')\n        get_company=request.POST.get('company')\n        get_date=request.POST.get('date')\n        get_purpose=request.POST.get('purpose')\n        get_laptop=request.POST.get('laptop')\n        get_contact=request.POST.get('phone')\n        get_remark=request.POST.get('remark')\n        if get_name==\"\" or get_company==\"\" or get_date==\"\" or get_purpose==\"\":",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VmyView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VmyView(request):\n    #if there is no contents -> no sending to templates\n    try:\n        visitor_mylist=VisitorData.objects.filter(user=request.user).order_by('-id')\n        context={\n            'visitor_mylist':visitor_mylist\n        }\n        return render(request, 'visitor_my.html', context)\n    # if there is contents\n    except:",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VdetailView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VdetailView(request, pk):\n    visitor_detail=VisitorData.objects.get(pk=pk)\n    context={\n        'visitor_detail':visitor_detail\n    }\n    return render(request, 'visitor_detail.html', context)\ndef VlistView(request):\n    try:\n        visitor_list=VisitorData.objects.all().order_by('-id')\n        context={",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VlistView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VlistView(request):\n    try:\n        visitor_list=VisitorData.objects.all().order_by('-id')\n        context={\n            'visitor_list':visitor_list\n        }\n        return render(request, 'visitor_list.html', context)\n    except:\n        return render(request,'visitor_list.html')\n@login_required",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VdeleteView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VdeleteView(request, data_id):\n    selected_data=VisitorData.objects.get(pk=data_id)\n    selected_data.delete()\n    return redirect('Vmy_url')\n@login_required\ndef VlistdeleteView(request, data_id):\n    if request.method=='POST':\n        try:\n            selected_data=VisitorData.objects.get(pk=data_id)\n            selected_data.delete()",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VlistdeleteView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VlistdeleteView(request, data_id):\n    if request.method=='POST':\n        try:\n            selected_data=VisitorData.objects.get(pk=data_id)\n            selected_data.delete()\n        except VisitorData.DoesNotExist:\n            pass\n    return redirect('Vlist_url')\n@login_required\ndef VtogglemyView(request, data_id):",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VtogglemyView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VtogglemyView(request, data_id):\n    if request.method=='POST':\n        visitor=get_object_or_404(VisitorData, id=data_id)\n        visitor.show_remark=not visitor.show_remark\n        visitor.save()\n        return redirect('Vmy_url')\ndef VtogglelistView(request, data_id):\n    if request.method=='POST':\n        visitor=get_object_or_404(VisitorData, id=data_id)\n        visitor.show_remark=not visitor.show_remark",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VtogglelistView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VtogglelistView(request, data_id):\n    if request.method=='POST':\n        visitor=get_object_or_404(VisitorData, id=data_id)\n        visitor.show_remark=not visitor.show_remark\n        visitor.save()\n        return redirect('Vlist_url')\n@login_required\ndef VapprovalView(request, data_id):\n    approve_data=VisitorData.objects.get(id=data_id)\n    approve_data.approval_status=\"Approved\"",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VapprovalView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VapprovalView(request, data_id):\n    approve_data=VisitorData.objects.get(id=data_id)\n    approve_data.approval_status=\"Approved\"\n    approve_data.save()\n    return redirect('Vlist_url')\n@login_required\ndef VrejectView(request, data_id):\n    approve_data=VisitorData.objects.get(id=data_id)\n    approve_data.approval_status=\"Rejected\"\n    approve_data.save()",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VrejectView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VrejectView(request, data_id):\n    approve_data=VisitorData.objects.get(id=data_id)\n    approve_data.approval_status=\"Rejected\"\n    approve_data.save()\n    return redirect('Vlist_url')\n@login_required\ndef VpassView(request, data_id):\n    parking_data=VisitorData.objects.get(id=data_id)\n    return render(request, 'parkingpass.html', {'parking_list':parking_data})\n@login_required",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VpassView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VpassView(request, data_id):\n    parking_data=VisitorData.objects.get(id=data_id)\n    return render(request, 'parkingpass.html', {'parking_list':parking_data})\n@login_required\ndef VcheckinView(request, data_id):\n    if request.method==\"POST\":\n        checkin_data=VisitorData.objects.get(id=data_id)\n        checkin_data.check_in=timezone.now()\n        checkin_data.save()\n        return redirect('Vlist_url')",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VcheckinView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VcheckinView(request, data_id):\n    if request.method==\"POST\":\n        checkin_data=VisitorData.objects.get(id=data_id)\n        checkin_data.check_in=timezone.now()\n        checkin_data.save()\n        return redirect('Vlist_url')\n@login_required\ndef VcheckoutView(request, data_id):\n    if request.method==\"POST\":\n        checkout_data=VisitorData.objects.get(id=data_id)",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VcheckoutView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VcheckoutView(request, data_id):\n    if request.method==\"POST\":\n        checkout_data=VisitorData.objects.get(id=data_id)\n        checkout_data.check_out=timezone.now()\n        checkout_data.save()\n        return redirect('Vlist_url')  \n@login_required\ndef VmyexcelView(request):\n    data=VisitorData.objects.filter(user=request.user).order_by('-id')\n    # Convert queryset to DataFrame",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VmyexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VmyexcelView(request):\n    data=VisitorData.objects.filter(user=request.user).order_by('-id')\n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"MyVisitorList_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Visitor Name', 'Visitor Company', 'Visit Date(Start)','Visit Date(End)','Visit Purpose','Bring Laptop', 'Visitor PIC','Remark', 'Check In','Check Out', 'Status','Requster','Request Date']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "VallexcelView",
+        "kind": 2,
+        "importPath": "SecurityReinvent.visitor.views",
+        "description": "SecurityReinvent.visitor.views",
+        "peekOfCode": "def VallexcelView(request):\n    data=VisitorData.objects.all().order_by('-id') \n    # Convert queryset to DataFrame\n    response = HttpResponse(content_type='text/csv')\n    current_date = datetime.datetime.now().strftime(\"%m%d\")\n    filename = f\"AllVisitorList_{current_date}.csv\"\n    response['Content-Disposition'] = f'attachment; filename=\"{filename}\"'\n    writer = csv.writer(response)\n    writer.writerow(['No','Request', 'Applied Day', 'Late Day(Flexible Worhours)','Remark','Register At','Requester']) # CSV header\n    for index, obj in enumerate(data, start=1):",
+        "detail": "SecurityReinvent.visitor.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "system.asgi",
+        "description": "system.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "system.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['10.225.2.86', 'localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['10.225.2.86', 'localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['10.225.2.86', 'localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['10.225.2.86', 'localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'main',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'system.urls'",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "ROOT_URLCONF = 'system.urls'\nTEMPLATES_PATH = os.path.join(BASE_DIR, 'templates')\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [TEMPLATES_PATH],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES_PATH",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "TEMPLATES_PATH = os.path.join(BASE_DIR, 'templates')\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [TEMPLATES_PATH],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [TEMPLATES_PATH],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'system.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'America/Chicago'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = '/static/'",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "TIME_ZONE = 'America/Chicago'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = '/static/'\n# Location where static files will be collected\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = '/static/'\n# Location where static files will be collected\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = '/static/'\n# Location where static files will be collected\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\n# Static files (CSS, JavaScript, Images)\nSTATIC_URL = '/static/'\n# Location where static files will be collected\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Location where static files will be collected\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "system.urls",
+        "description": "system.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',include('main.urls')),\n    path('admin/', admin.site.urls),\n    path('accounts/',include('user.urls')),\n    path('portfolio/', include('Portfolio.urls')),\n    path('securityreinvent/',include('SecurityReinvent.SR_Base.urls')),\n    path('securityreinvent/securitycenter/visitorportal',include('SecurityReinvent.visitor.urls')),\n    path('securityreinvent/securitycenter/parkingportal',include('SecurityReinvent.parking.urls')),\n    path('securityreinvent/securitycenter/truckportal',include('SecurityReinvent.truck.urls')),\n    path('securityreinvent/securitycenter/deliveryportal',include('SecurityReinvent.delivery.urls')),",
+        "detail": "system.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "system.wsgi",
+        "description": "system.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "system.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "user.migrations.0001_initial",
+        "description": "user.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Team',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "user.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "TeamAdmin",
+        "kind": 6,
+        "importPath": "user.admin",
+        "description": "user.admin",
+        "peekOfCode": "class TeamAdmin(admin.ModelAdmin):\n    list_display=('team_name','team_manager','manager_email')\n    def team_name(self,obj):\n        return obj.team.name if obj.team.manager else None\nadmin.site.register(Team,TeamAdmin)\nclass CustomUserAdmin(admin.ModelAdmin):\n    list_display=('username','team_at','first_name','last_name','username','email','myday_credit', 'is_superuser')\nadmin.site.register(CustomUser, CustomUserAdmin)",
+        "detail": "user.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserAdmin",
+        "kind": 6,
+        "importPath": "user.admin",
+        "description": "user.admin",
+        "peekOfCode": "class CustomUserAdmin(admin.ModelAdmin):\n    list_display=('username','team_at','first_name','last_name','username','email','myday_credit', 'is_superuser')\nadmin.site.register(CustomUser, CustomUserAdmin)",
+        "detail": "user.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserConfig",
+        "kind": 6,
+        "importPath": "user.apps",
+        "description": "user.apps",
+        "peekOfCode": "class UserConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'user'",
+        "detail": "user.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "kind": 6,
+        "importPath": "user.models",
+        "description": "user.models",
+        "peekOfCode": "class Team(models.Model):\n    team_name=models.CharField(max_length=50)\n    team_manager=models.CharField(max_length=50)\n    manager_email=models.EmailField(\n        unique=True,\n        validators=[\n            RegexValidator(\n                regex=r'^[a-zA-Z0-9._%+-]+@lge\\.com$',\n                message='Email address must end with lge.com'\n            )",
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "kind": 6,
+        "importPath": "user.models",
+        "description": "user.models",
+        "peekOfCode": "class CustomUser(AbstractUser):\n    first_name=models.CharField(max_length=30)\n    last_name=models.CharField(max_length=30)\n    team_at=models.ForeignKey(Team, on_delete=models.SET_NULL, null=True)\n    email=models.EmailField(\n        unique=True,\n        validators=[\n            RegexValidator(\n                regex=r'^[a-zA-Z0-9._%+-]+@lge\\.com$',\n                message='Email address must end with lge.com'",
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "user.urls",
+        "description": "user.urls",
+        "peekOfCode": "urlpatterns = [\n    #users\n    path('',accountView, name=\"account_url\"),\n    path('login',customloginView, name='login_url'),\n    path('register/',registerView, name=\"register_url\"),\n    path('logout/',logoutView, name=\"logout_url\"),\n    # reset process -> login.html\n    path('login_password/', auth_views.PasswordResetView.as_view(), name='password_reset'),\n    # after the password reset email sent -> email_sent.html\n    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),",
+        "detail": "user.urls",
+        "documentation": {}
+    },
+    {
+        "label": "accountView",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def accountView(request):\n    team_list=Team.objects.all()\n    previous_page = request.META.get('HTTP_REFERER', '/')\n    context = {\n        'previous_page': previous_page,\n        'team_list':team_list\n    }\n    return render(request, 'account.html',context)\ndef customloginView(request):\n    if request.method==\"POST\":",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "customloginView",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def customloginView(request):\n    if request.method==\"POST\":\n        get_id=request.POST['id'] \n        get_password=request.POST['password']\n        user=authenticate(request, username=get_id, password=get_password)\n        if user is not None:\n            login(request, user)\n            return redirect('mainhome_url')        \n        else:\n            messages.error(request,\"Wrong Credentials\", extra_tags='login')",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "registerView",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def registerView(request):\n    if request.method=='POST':\n        get_fname=request.POST['fname']\n        get_lname=request.POST['lname']\n        get_email=request.POST['email']\n        get_team=request.POST['team']\n        get_pass1=request.POST['pass1']\n        get_pass2=request.POST['pass2']\n        if get_fname=='' or get_lname=='' or get_team=='' or get_email=='' or get_pass1=='' or get_pass2=='':\n            messages.error(request,'Please fill out all blanks.',  extra_tags='register')",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "logoutView",
+        "kind": 2,
+        "importPath": "user.views",
+        "description": "user.views",
+        "peekOfCode": "def logoutView(request):\n    logout(request)\n    return redirect('mainhome_url')",
+        "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'system.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
