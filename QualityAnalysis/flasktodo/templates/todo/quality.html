@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Product Quality KPI</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="../static/css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" id="topnav">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="{{ url_for('todo.index') }}">Start Bootstrap</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" onclick="doDark()">Dark Theme</a></li>
+                        <li><a class="dropdown-item" onclick="doLight()">Light Theme</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="{{ url_for('auth.logout') }}">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="{{ url_for('todo.index') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="{{ url_for('todo.layout_static') }}">Static Navigation</a>
+                                    <a class="nav-link" href="{{ url_for('todo.layout_sidenav') }}">Light Sidenav</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="{{ url_for('todo.error_401') }}">401 Page</a>
+                                            <a class="nav-link" href="{{ url_for('todo.error_404') }}">404 Page</a>
+                                            <a class="nav-link" href="{{ url_for('todo.error_500') }}">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="{{ url_for('todo.trend') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Service & Sales Trend
+                            </a>
+                            <a class="nav-link" href="{{ url_for('todo.kpi') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
+                                Product Quality KPI
+                            </a>
+                            <a class="nav-link" href="{{ url_for('todo.list') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Total Service Review
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Template Desinged By</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Product Quality Key Performance Indicators</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="{{ url_for('todo.index') }}">Dashboard</a></li>
+                            <li class="breadcrumb-item active">KPI</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
+                                <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+                                <br/>Chart.js is a third party plugin that is used to generate the bar, line and pie charts in this template. The charts below have been customized - for further customization options, please visit the official
+                                <a target="_blank" href="https://www.chartjs.org/docs/latest/">Chart.js documentation</a>
+                            </div>
+                        </div>
+                            
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                    Pyramid Chart - Quality Indicator
+                            </div>
+                            <div class="card-body">
+                                <!---------List of checkboxes and options----------->
+                                <form action="/qualtiy" method="POST">
+                                    <div class="multi-selector">
+                                        <div class="select-field">
+                                            <input type="text" name="" placeholder="Choose Symptoms" id="" class="input-selector">
+                                            <span class="down-arrow">&blacktriangledown;</span>
+                                        </div>
+                                        <div class="list">
+                                            <label for="task1" class="task">
+                                                <input type="checkbox" name="symptom1" value="DRAIN">Drain
+                                            </label>
+                                            <label for="task2" class="task">
+                                                <input type="checkbox" name="symptom1" value="EXPLANATION">Explanation
+                                            </label>
+                                            <label for="task3" class="task">
+                                                <input type="checkbox" name="symptom1" value="EXTERIOR">Exterior
+                                            </label>
+                                            <label for="task4" class="task">
+                                                <input type="checkbox" name="symptom1" value="FILLING">Filling
+                                            </label>
+                                            <label for="task5" class="task">
+                                                <input type="checkbox" name="symptom1" value="LEAK">Leak
+                                            </label>
+                                            <label for="task6" class="task">
+                                                <input type="checkbox" name="symptom1" value="LID">Lid
+                                            </label>
+                                            <label for="task7" class="task">
+                                                <input type="checkbox" name="symptom1" value="MISASSEMBLY">Misassembly
+                                            </label>
+                                            <label for="task8" class="task">
+                                                <input type="checkbox" name="symptom1" value="MOTOR">Motor
+                                            </label>
+                                            <label for="task9" class="task">
+                                                <input type="checkbox" name="symptom1" value="NOISE/VIBRATION">Noise/Vibration
+                                            </label>
+                                            <label for="task10" class="task">
+                                                <input type="checkbox" name="symptom1" value="OTHER">Other
+                                            </label>
+                                            <label for="task11" class="task">
+                                                <input type="checkbox" name="symptom1" value="PCB">PCB
+                                            </label>
+                                            <label for="task12" class="task">
+                                                <input type="checkbox" name="symptom1" value="RETURN">Return
+                                            </label>
+                                            <label for="button" class="task">
+                                                <input type="submit" value="submit" name="action1"/>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                                <div class="card-body pivot">
+                                    {{ sort_pivot_html|safe }}
+                                </div>
+                            </div>
+                            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-line me-1"></i>
+                                    Hazard Graph - Quality Indicator
+                            </div>
+                            <div class="card-body">
+                                <!---------List of checkboxes and options----------->
+                                <form action="/quality" method="POST">
+                                    <div class="multi-selector">
+                                        <div class="select-field2">
+                                            <input type="text" name="" placeholder="Choose Symptoms" id="" class="input-selector">
+                                            <span class="down-arrow2">&blacktriangledown;</span>
+                                        </div>
+                                        <div class="list2">
+                                            <label for="task1" class="task">
+                                                <input type="checkbox" name="symptom2" value="DRAIN">Drain
+                                            </label>
+                                            <label for="task2" class="task">
+                                                <input type="checkbox" name="symptom2" value="EXPLANATION">Explanation
+                                            </label>
+                                            <label for="task3" class="task">
+                                                <input type="checkbox" name="symptom2" value="EXTERIOR">Exterior
+                                            </label>
+                                            <label for="task4" class="task">
+                                                <input type="checkbox" name="symptom2" value="FILLING">Filling
+                                            </label>
+                                            <label for="task5" class="task">
+                                                <input type="checkbox" name="symptom2" value="LEAK">Leak
+                                            </label>
+                                            <label for="task6" class="task">
+                                                <input type="checkbox" name="symptom2" value="LID">Lid
+                                            </label>
+                                            <label for="task7" class="task">
+                                                <input type="checkbox" name="symptom2" value="MISASSEMBLY">Misassembly
+                                            </label>
+                                            <label for="task8" class="task">
+                                                <input type="checkbox" name="symptom2" value="MOTOR">Motor
+                                            </label>
+                                            <label for="task9" class="task">
+                                                <input type="checkbox" name="symptom2" value="NOISE/VIBRATION">Noise/Vibration
+                                            </label>
+                                            <label for="task10" class="task">
+                                                <input type="checkbox" name="symptom2" value="OTHER">Other
+                                            </label>
+                                            <label for="task11" class="task">
+                                                <input type="checkbox" name="symptom2" value="PCB">PCB
+                                            </label>
+                                            <label for="task12" class="task">
+                                                <input type="checkbox" name="symptom2" value="RETURN">Return
+                                            </label>
+                                            <label for="button" class="task">
+                                                <input type="submit" value="submit" name="action2">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="hazard-graph">
+                                    <canvas id="myTest" width="100%" height="30" class=""></canvas>
+                                </div>
+                            </div>  
+                            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-calculator"></i>
+                                            AAR & PPM - Quality Indicator
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="/quality" method="POST">
+                                            <div class="multi-selector">
+                                                <div class="select-field3">
+                                                    <input type="text" name="" placeholder="Choose Symptoms" id="" class="input-selector">
+                                                    <span class="down-arrow3">&blacktriangledown;</span>
+                                                </div>
+                                                <div class="list3">
+                                                    <label for="task1" class="task">
+                                                        <input type="checkbox" name="symptom3" value="DRAIN">Drain
+                                                    </label>
+                                                    <label for="task2" class="task">
+                                                        <input type="checkbox" name="symptom3" value="EXPLANATION">Explanation
+                                                    </label>
+                                                    <label for="task3" class="task">
+                                                        <input type="checkbox" name="symptom3" value="EXTERIOR">Exterior
+                                                    </label>
+                                                    <label for="task4" class="task">
+                                                        <input type="checkbox" name="symptom3" value="FILLING">Filling
+                                                    </label>
+                                                    <label for="task5" class="task">
+                                                        <input type="checkbox" name="symptom3" value="LEAK">Leak
+                                                    </label>
+                                                    <label for="task6" class="task">
+                                                        <input type="checkbox" name="symptom3" value="LID">Lid
+                                                    </label>
+                                                    <label for="task7" class="task">
+                                                        <input type="checkbox" name="symptom3" value="MISASSEMBLY">Misassembly
+                                                    </label>
+                                                    <label for="task8" class="task">
+                                                        <input type="checkbox" name="symptom3" value="MOTOR">Motor
+                                                    </label>
+                                                    <label for="task9" class="task">
+                                                        <input type="checkbox" name="symptom3" value="NOISE/VIBRATION">Noise/Vibration
+                                                    </label>
+                                                    <label for="task10" class="task">
+                                                        <input type="checkbox" name="symptom3" value="OTHER">Other
+                                                    </label>
+                                                    <label for="task11" class="task">
+                                                        <input type="checkbox" name="symptom3" value="PCB">PCB
+                                                    </label>
+                                                    <label for="task12" class="task">
+                                                        <input type="checkbox" name="symptom3" value="RETURN">Return
+                                                    </label>
+                                                    <label for="button" class="task">
+                                                        <input type="submit" value="submit" name="action3">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="aar-table">
+                                        {{ aar_table_html|safe }}
+                                        </div>
+                                    </div>
+                                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="card mb-4" style="height:95%">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-line me-1"></i>
+                                        FFR & FDR - Quality Indicator
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="/quality" method="POST">
+                                            <div class="multi-selector">
+                                                <div class="select-field4">
+                                                    <input type="text" name="" placeholder="Choose Symptoms" id="" class="input-selector">
+                                                    <span class="down-arrow4">&blacktriangledown;</span>
+                                                </div>
+                                                <div class="list4">
+                                                    <label for="task1" class="task">
+                                                        <input type="checkbox" name="symptom4" value="DRAIN">Drain
+                                                    </label>
+                                                    <label for="task2" class="task">
+                                                        <input type="checkbox" name="symptom4" value="EXPLANATION">Explanation
+                                                    </label>
+                                                    <label for="task3" class="task">
+                                                        <input type="checkbox" name="symptom4" value="EXTERIOR">Exterior
+                                                    </label>
+                                                    <label for="task4" class="task">
+                                                        <input type="checkbox" name="symptom4" value="FILLING">Filling
+                                                    </label>
+                                                    <label for="task5" class="task">
+                                                        <input type="checkbox" name="symptom4" value="LEAK">Leak
+                                                    </label>
+                                                    <label for="task6" class="task">
+                                                        <input type="checkbox" name="symptom4" value="LID">Lid
+                                                    </label>
+                                                    <label for="task7" class="task">
+                                                        <input type="checkbox" name="symptom4" value="MISASSEMBLY">Misassembly
+                                                    </label>
+                                                    <label for="task8" class="task">
+                                                        <input type="checkbox" name="symptom4" value="MOTOR">Motor
+                                                    </label>
+                                                    <label for="task9" class="task">
+                                                        <input type="checkbox" name="symptom4" value="NOISE/VIBRATION">Noise/Vibration
+                                                    </label>
+                                                    <label for="task10" class="task">
+                                                        <input type="checkbox" name="symptom4" value="OTHER">Other
+                                                    </label>
+                                                    <label for="task11" class="task">
+                                                        <input type="checkbox" name="symptom4" value="PCB">PCB
+                                                    </label>
+                                                    <label for="task12" class="task">
+                                                        <input type="checkbox" name="symptom4" value="RETURN">Return
+                                                    </label>
+                                                    <label for="button" class="task">
+                                                        <input type="submit" value="submit" name="action4">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="ffrchart" width="100%" height="30">
+                                            <script>
+                                                var FFRLabels = '{{ ffr_label| tojson }}';
+
+                                                var FFR1YValues = '{{ FFR1YValues | tojson }}';
+                                                var FFR1YLegend = '{{ FFR1YLegend }}';
+                                                var FDR1YValues = '{{ FDR1YValues | tojson }}';
+                                                var FDR1YLegend = '{{ FDR1YLegend }}';
+
+                                                var FFR2YValues = '{{ FFR2YValues | tojson }}';
+                                                var FFR2YLegend = '{{ FFR2YLegend }}';
+                                                var FDR2YValues = '{{ FDR2YValues | tojson }}';
+                                                var FDR2YLegend = '{{ FDR2YLegend }}';
+
+                                                var FFR3YValues = '{{ FFR3YValues | tojson }}';
+                                                var FFR3YLegend = '{{ FFR3YLegend }}';
+                                                var FDR3YValues = '{{ FDR3YValues | tojson }}';
+                                                var FDR3YLegend = '{{ FDR3YLegend }}';
+
+                                                var FFR4YValues = '{{ FFR4YValues | tojson }}';
+                                                var FFR4YLegend = '{{ FFR4YLegend }}';
+                                                var FDR4YValues = '{{ FDR4YValues | tojson }}';
+                                                var FDR4YLegend = '{{ FDR4YLegend }}';
+                                              
+                                            </script>
+                                        </canvas>
+                                    </div>
+                                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                                </div>
+                            </div>
+                        </div>
+
+            
+
+
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="../static/js/scripts.js"></script>
+        <script type="text/javascript" src="../static/js/datatables-simple-demo.js"></script>
+        <script type="text/javascript" src="../static/assets/demo/multi-selector.js"></script>
+        <script type="text/javascript" src="../static/assets/demo/hazard-graph.js"></script>
+        <script type="text/javascript" src="../static/assets/demo/ffr-graph.js"></script>
+    </body>
+</html>
