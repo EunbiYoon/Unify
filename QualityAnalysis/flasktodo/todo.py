@@ -283,29 +283,24 @@ def kpi():
 
 #card
 @bp.route("/report")
-
 def report():
     return render_template('card/report.html')
 
 @bp.route("/email")
-
 def email():
     return render_template('card/email.html')
 
 @bp.route("/logic")
-
 def logic():
     return render_template('card/dataframe.html')
 
 
 #layout
 @bp.route("/layout_static")
-
 def layout_static():
     return render_template('windowskin/layout-static.html')
 
 @bp.route("/layout_sidenav")
-
 def layout_sidenav():
     return render_template('windowskin/layout-sidenav-light.html')
 
