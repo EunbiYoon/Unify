@@ -4242,7 +4242,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def index():\n    return render_template('index.html')\n@bp.route('/submit', methods=('POST',))\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')\n        review = request.form.get('review')\n        # 필수 입력값 검증",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@bp.route('/submit', methods=['POST'])\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')\n        review = request.form.get('review')\n        # 필수 입력값 검증",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4260,7 +4260,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def home():      \n    return redirect(url_for('.index')) # do something\n# top loader template render\n@bp.route('/topnoise', methods=('POST',))\ndef topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=('POST',))\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=('POST',))",
+        "peekOfCode": "def home():      \n    return redirect(url_for('.index')) # do something\n# top loader template render\n@bp.route('/topnoise', methods=['POST'])\ndef topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=['POST'])\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=['POST'])",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4269,7 +4269,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=('POST',))\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=('POST',))\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=('POST',))\ndef topleak():  ",
+        "peekOfCode": "def topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=['POST'])\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=['POST'])\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=['POST'])\ndef topleak():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4278,7 +4278,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=('POST',))\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=('POST',))\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=('POST',))\ndef toperror():  ",
+        "peekOfCode": "def topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=['POST'])\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=['POST'])\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=['POST'])\ndef toperror():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4287,7 +4287,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=('POST',))\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=('POST',))\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=('POST',))\ndef topfill():  ",
+        "peekOfCode": "def topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=['POST'])\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=['POST'])\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=['POST'])\ndef topfill():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4296,7 +4296,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=('POST',))\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=('POST',))\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=('POST',))\ndef topdrain():  ",
+        "peekOfCode": "def topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=['POST'])\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=['POST'])\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=['POST'])\ndef topdrain():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4305,7 +4305,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=('POST',))\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=('POST',))\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=('POST',))\ndef topdispense():  ",
+        "peekOfCode": "def toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=['POST'])\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=['POST'])\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=['POST'])\ndef topdispense():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4314,7 +4314,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=('POST',))\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=('POST',))\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=('POST',))\ndef topdoor():  ",
+        "peekOfCode": "def topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=['POST'])\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=['POST'])\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=['POST'])\ndef topdoor():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4323,7 +4323,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=('POST',))\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=('POST',))\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=('POST',))\ndef toppower():  ",
+        "peekOfCode": "def topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=['POST'])\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=['POST'])\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=['POST'])\ndef toppower():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4332,7 +4332,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=('POST',))\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=('POST',))\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=('POST',))\ndef topsmell():  ",
+        "peekOfCode": "def topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=['POST'])\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=['POST'])\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=['POST'])\ndef topsmell():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4341,7 +4341,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=('POST',))\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=('POST',))\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=('POST',))\ndef topthinq():      ",
+        "peekOfCode": "def topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=['POST'])\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=['POST'])\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=['POST'])\ndef topthinq():      ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4350,7 +4350,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=('POST',))\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=('POST',))\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=('POST',))",
+        "peekOfCode": "def toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=['POST'])\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=['POST'])\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=['POST'])",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4359,7 +4359,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=('POST',))\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=('POST',))\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=('POST',))",
+        "peekOfCode": "def topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=['POST'])\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=['POST'])\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=['POST'])",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4368,7 +4368,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=('POST',))\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=('POST',))\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=('POST',))",
+        "peekOfCode": "def topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=['POST'])\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=['POST'])\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=['POST'])",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4377,7 +4377,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=('POST',))\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=('POST',))\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/fronfleak', methods=('POST',))\ndef fronfleak():  ",
+        "peekOfCode": "def frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=['POST'])\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=['POST'])\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/frontleak', methods=['POST'])\ndef frontleak():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4386,7 +4386,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=('POST',))\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/fronfleak', methods=('POST',))\ndef fronfleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=('POST',))\ndef fronterror():  ",
+        "peekOfCode": "def frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=['POST'])\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/frontleak', methods=['POST'])\ndef frontleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=['POST'])\ndef fronterror():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4395,16 +4395,16 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/fronfleak', methods=('POST',))\ndef fronfleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=('POST',))\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=('POST',))\ndef frontfill():  ",
+        "peekOfCode": "def frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/frontleak', methods=['POST'])\ndef frontleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=['POST'])\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=['POST'])\ndef frontfill():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
     {
-        "label": "fronfleak",
+        "label": "frontleak",
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def fronfleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=('POST',))\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=('POST',))\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=('POST',))\ndef frontdrain():  ",
+        "peekOfCode": "def frontleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=['POST'])\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=['POST'])\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=['POST'])\ndef frontdrain():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4413,7 +4413,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=('POST',))\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=('POST',))\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=('POST',))\ndef frontdispense():  ",
+        "peekOfCode": "def fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=['POST'])\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=['POST'])\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=['POST'])\ndef frontdispense():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4422,7 +4422,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=('POST',))\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=('POST',))\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=('POST',))\ndef frontdoor():  ",
+        "peekOfCode": "def frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=['POST'])\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=['POST'])\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=['POST'])\ndef frontdoor():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4431,7 +4431,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=('POST',))\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=('POST',))\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=('POST',))\ndef frontpower():  ",
+        "peekOfCode": "def frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=['POST'])\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=['POST'])\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=['POST'])\ndef frontpower():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4440,7 +4440,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=('POST',))\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=('POST',))\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=('POST',))\ndef frontsmell():  ",
+        "peekOfCode": "def frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=['POST'])\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=['POST'])\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=['POST'])\ndef frontsmell():  ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4449,7 +4449,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=('POST',))\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=('POST',))\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=('POST',))\ndef frontthinq():      ",
+        "peekOfCode": "def frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=['POST'])\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=['POST'])\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=['POST'])\ndef frontthinq():      ",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4458,7 +4458,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=('POST',))\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=('POST',))\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
+        "peekOfCode": "def frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=['POST'])\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=['POST'])\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4467,7 +4467,7 @@
         "kind": 2,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=('POST',))\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
+        "peekOfCode": "def frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=['POST'])\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
@@ -4485,7 +4485,7 @@
         "kind": 5,
         "importPath": "VideoTutorial.flaskapp.action",
         "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "bp = Blueprint('action', __name__)\n@bp.route('/')\ndef index():\n    return render_template('index.html')\n@bp.route('/submit', methods=('POST',))\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')",
+        "peekOfCode": "bp = Blueprint('action', __name__)\n@bp.route('/')\ndef index():\n    return render_template('index.html')\n@bp.route('/submit', methods=['POST'])\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')",
         "detail": "VideoTutorial.flaskapp.action",
         "documentation": {}
     },
