@@ -30,9 +30,10 @@ def create_app():
     
     # 환경 변수 로드
     try:
+        sqlitebasedir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'))
         app.config.from_mapping(
-            SECRET_KEY=os.environ['SECRET_KEY'],
-            SQLALCHEMY_DATABASE_URI=os.environ['SQLALCHEMY_DATABASE_URI'],
+            # SECRET_KEY=os.environ['SECRET_KEY'],
+            SQLALCHEMY_DATABASE_URI=f"sqlite:///{os.path.join(sqlitebasedir, 'db.sqlite3')}",
             SQLALCHEMY_TRACK_MODIFICATIONS=False
         )
     except KeyError as e:
