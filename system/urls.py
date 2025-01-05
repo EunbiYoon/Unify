@@ -34,5 +34,6 @@ urlpatterns = [
     path('securityreinvent/reinventcenter/',include('SecurityReinvent.reinvent.urls')),
     path('costdatacenter/', include('CostData.cost_base.urls')),
     path('costdatacenter/report', include('CostData.report.urls')),
-    path('qualityanalysisdashboard/', lambda request: JsonResponse({"message": "Flask 앱 에러 발생. QualityAnalysis폴더더에서 flask run하여 에러를 확인하세요."})),
+    path('qualityanalysisdashboard/', lambda request: JsonResponse({"message": "Flask 앱 에러 발생. QualityAnalysis폴더에서 flask run하여 에러를 확인하세요."})),
+    path('lgsupportvideotutorial/', lambda request: JsonResponse({"message": "Flask 앱 에러 발생. VideoTutorial폴더에서 flask run하여 에러를 확인하세요."})),
 ]

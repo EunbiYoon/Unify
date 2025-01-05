@@ -1735,6 +1735,22 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "random",
         "description": "random",
@@ -1768,6 +1784,78 @@
     },
     {
         "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "abort",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "current_app",
         "importPath": "flask",
         "description": "flask",
         "isExtraImport": true,
@@ -2042,6 +2130,14 @@
         "documentation": {}
     },
     {
+        "label": "create_app",
+        "importPath": "VideoTutorial.flaskapp",
+        "description": "VideoTutorial.flaskapp",
+        "isExtraImport": true,
+        "detail": "VideoTutorial.flaskapp",
+        "documentation": {}
+    },
+    {
         "label": "django.contrib.auth.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -2113,6 +2209,88 @@
         "description": "django.contrib.auth.hashers",
         "isExtraImport": true,
         "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "VideoTutorial.flaskapp.models",
+        "description": "VideoTutorial.flaskapp.models",
+        "isExtraImport": true,
+        "detail": "VideoTutorial.flaskapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "VideoSurvey",
+        "importPath": "VideoTutorial.flaskapp.models",
+        "description": "VideoTutorial.flaskapp.models",
+        "isExtraImport": true,
+        "detail": "VideoTutorial.flaskapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "importPath": "flaskapp",
+        "description": "flaskapp",
+        "isExtraImport": true,
+        "detail": "flaskapp",
         "documentation": {}
     },
     {
@@ -3929,7 +4107,7 @@
         "kind": 2,
         "importPath": "system.wsgi",
         "description": "system.wsgi",
-        "peekOfCode": "def application(environ, start_response):\n    if environ.get('PATH_INFO').startswith('/qualityanalysisdashboard'):\n        return flask_app(environ, start_response)\n    return django_application(environ, start_response)",
+        "peekOfCode": "def application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)\n    # VideoTutorial Flask 앱 경로\n    elif path.startswith('/lgsupportvideotutorial'):\n        return video_tutorial_app(environ, start_response)\n    # Django 기본 애플리케이션 (루트 경로)\n    return django_application(environ, start_response)",
         "detail": "system.wsgi",
         "documentation": {}
     },
@@ -3938,16 +4116,25 @@
         "kind": 5,
         "importPath": "system.wsgi",
         "description": "system.wsgi",
-        "peekOfCode": "django_application = get_wsgi_application()\nflask_app = create_app()\n# ✅ WSGI: 경로 분기\ndef application(environ, start_response):\n    if environ.get('PATH_INFO').startswith('/qualityanalysisdashboard'):\n        return flask_app(environ, start_response)\n    return django_application(environ, start_response)",
+        "peekOfCode": "django_application = get_wsgi_application()\n# Flask 애플리케이션 로드\nquality_analysis_app = create_quality_analysis_app()\nvideo_tutorial_app = create_video_tutorial_app()\n# WSGI: 경로 분기 로직 (Flask + Django 통합)\ndef application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)",
         "detail": "system.wsgi",
         "documentation": {}
     },
     {
-        "label": "flask_app",
+        "label": "quality_analysis_app",
         "kind": 5,
         "importPath": "system.wsgi",
         "description": "system.wsgi",
-        "peekOfCode": "flask_app = create_app()\n# ✅ WSGI: 경로 분기\ndef application(environ, start_response):\n    if environ.get('PATH_INFO').startswith('/qualityanalysisdashboard'):\n        return flask_app(environ, start_response)\n    return django_application(environ, start_response)",
+        "peekOfCode": "quality_analysis_app = create_quality_analysis_app()\nvideo_tutorial_app = create_video_tutorial_app()\n# WSGI: 경로 분기 로직 (Flask + Django 통합)\ndef application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)\n    # VideoTutorial Flask 앱 경로\n    elif path.startswith('/lgsupportvideotutorial'):",
+        "detail": "system.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "video_tutorial_app",
+        "kind": 5,
+        "importPath": "system.wsgi",
+        "description": "system.wsgi",
+        "peekOfCode": "video_tutorial_app = create_video_tutorial_app()\n# WSGI: 경로 분기 로직 (Flask + Django 통합)\ndef application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)\n    # VideoTutorial Flask 앱 경로\n    elif path.startswith('/lgsupportvideotutorial'):\n        return video_tutorial_app(environ, start_response)",
         "detail": "system.wsgi",
         "documentation": {}
     },
@@ -4048,6 +4235,465 @@
         "description": "user.views",
         "peekOfCode": "def logoutView(request):\n    logout(request)\n    return redirect('mainhome_url')",
         "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@bp.route('/submit', methods=('POST',))\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')\n        review = request.form.get('review')\n        # 필수 입력값 검증",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "submit",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')\n        review = request.form.get('review')\n        # 필수 입력값 검증\n        if not all([product, dealer, rating, review]):\n            abort(400, \"모든 필드를 입력해야 합니다.\")\n        # 데이터베이스에 추가",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def home():      \n    return redirect(url_for('.index')) # do something\n# top loader template render\n@bp.route('/topnoise', methods=('POST',))\ndef topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=('POST',))\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=('POST',))",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topnoise",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=('POST',))\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=('POST',))\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=('POST',))\ndef topleak():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topcloth",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=('POST',))\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=('POST',))\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=('POST',))\ndef toperror():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topcycle",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=('POST',))\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=('POST',))\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=('POST',))\ndef topfill():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topleak",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=('POST',))\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=('POST',))\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=('POST',))\ndef topdrain():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "toperror",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=('POST',))\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=('POST',))\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=('POST',))\ndef topdispense():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topfill",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=('POST',))\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=('POST',))\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=('POST',))\ndef topdoor():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topdrain",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=('POST',))\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=('POST',))\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=('POST',))\ndef toppower():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topdispense",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=('POST',))\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=('POST',))\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=('POST',))\ndef topsmell():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topdoor",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=('POST',))\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=('POST',))\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=('POST',))\ndef topthinq():      ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "toppower",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=('POST',))\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=('POST',))\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=('POST',))",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topsmell",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=('POST',))\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=('POST',))\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=('POST',))",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "topthinq",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=('POST',))\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=('POST',))\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=('POST',))",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontnoise",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=('POST',))\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=('POST',))\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/fronfleak', methods=('POST',))\ndef fronfleak():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontcloth",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=('POST',))\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/fronfleak', methods=('POST',))\ndef fronfleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=('POST',))\ndef fronterror():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontcycle",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/fronfleak', methods=('POST',))\ndef fronfleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=('POST',))\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=('POST',))\ndef frontfill():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "fronfleak",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def fronfleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=('POST',))\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=('POST',))\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=('POST',))\ndef frontdrain():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "fronterror",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=('POST',))\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=('POST',))\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=('POST',))\ndef frontdispense():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontfill",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=('POST',))\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=('POST',))\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=('POST',))\ndef frontdoor():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontdrain",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=('POST',))\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=('POST',))\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=('POST',))\ndef frontpower():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontdispense",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=('POST',))\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=('POST',))\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=('POST',))\ndef frontsmell():  ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontdoor",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=('POST',))\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=('POST',))\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=('POST',))\ndef frontthinq():      ",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontpower",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=('POST',))\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=('POST',))\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontsmell",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=('POST',))\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "frontthinq",
+        "kind": 2,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "def frontthinq():      \n    return render_template('fl/thinq.html') # do something",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "kind": 5,
+        "importPath": "VideoTutorial.flaskapp.action",
+        "description": "VideoTutorial.flaskapp.action",
+        "peekOfCode": "bp = Blueprint('action', __name__)\n@bp.route('/')\ndef index():\n    return render_template('index.html')\n@bp.route('/submit', methods=('POST',))\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')",
+        "detail": "VideoTutorial.flaskapp.action",
+        "documentation": {}
+    },
+    {
+        "label": "VideoSurvey",
+        "kind": 6,
+        "importPath": "VideoTutorial.flaskapp.models",
+        "description": "VideoTutorial.flaskapp.models",
+        "peekOfCode": "class VideoSurvey(db.Model):\n    __tablename__ = 'Video Survey'\n    id = db.Column(db.Integer, primary_key=True)\n    product = db.Column(db.String(200), nullable=False)\n    dealer = db.Column(db.String(200), nullable=False)\n    rating = db.Column(db.Integer, nullable=False)\n    review = db.Column(db.Text(), nullable=False)",
+        "detail": "VideoTutorial.flaskapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "VideoTutorial.flaskapp.models",
+        "description": "VideoTutorial.flaskapp.models",
+        "peekOfCode": "db = SQLAlchemy()\nclass VideoSurvey(db.Model):\n    __tablename__ = 'Video Survey'\n    id = db.Column(db.Integer, primary_key=True)\n    product = db.Column(db.String(200), nullable=False)\n    dealer = db.Column(db.String(200), nullable=False)\n    rating = db.Column(db.Integer, nullable=False)\n    review = db.Column(db.Text(), nullable=False)",
+        "detail": "VideoTutorial.flaskapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "peekOfCode": "def upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')\n    )",
+        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "peekOfCode": "def downgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('mytable')\n    # ### end Alembic commands ###",
+        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "peekOfCode": "revision = '486664a03527'\ndown_revision = None\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),",
+        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "peekOfCode": "down_revision = None\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),",
+        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),",
+        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "peekOfCode": "depends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')",
+        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "peekOfCode": "def upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')\n    )",
+        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "peekOfCode": "def downgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.INTEGER(), autoincrement=True, nullable=False),\n    sa.Column('product', sa.VARCHAR(length=200), autoincrement=False, nullable=False),\n    sa.Column('dealer', sa.VARCHAR(length=200), autoincrement=False, nullable=False),\n    sa.Column('rating', sa.INTEGER(), autoincrement=False, nullable=False),\n    sa.Column('review', sa.TEXT(), autoincrement=False, nullable=False),\n    sa.PrimaryKeyConstraint('id', name='mytable_pkey')\n    )",
+        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "peekOfCode": "revision = 'e0c4a93d566b'\ndown_revision = '486664a03527'\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),",
+        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "peekOfCode": "down_revision = '486664a03527'\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),",
+        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),",
+        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "peekOfCode": "depends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')",
+        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
+        "documentation": {}
+    },
+    {
+        "label": "get_engine",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "def get_engine():\n    try:\n        # this works with Flask-SQLAlchemy<3 and Alchemical\n        return current_app.extensions['migrate'].db.get_engine()\n    except (TypeError, AttributeError):\n        # this works with Flask-SQLAlchemy>=3\n        return current_app.extensions['migrate'].db.engine\ndef get_engine_url():\n    try:\n        return get_engine().url.render_as_string(hide_password=False).replace(",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "get_engine_url",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "def get_engine_url():\n    try:\n        return get_engine().url.render_as_string(hide_password=False).replace(\n            '%', '%%')\n    except AttributeError:\n        return str(get_engine().url).replace('%', '%%')\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "get_metadata",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "def get_metadata():\n    if hasattr(target_db, 'metadatas'):\n        return target_db.metadatas[None]\n    return target_db.metadata\ndef run_migrations_offline():\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "def run_migrations_offline():\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "def run_migrations_online():\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    # this callback is used to prevent an auto-migration from being generated\n    # when there are no changes to the schema\n    # reference: http://alembic.zzzcomputing.com/en/latest/cookbook.html\n    def process_revision_directives(context, revision, directives):\n        if getattr(config.cmd_opts, 'autogenerate', False):",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nfileConfig(config.config_file_name)\nlogger = logging.getLogger('alembic.env')\ndef get_engine():\n    try:\n        # this works with Flask-SQLAlchemy<3 and Alchemical\n        return current_app.extensions['migrate'].db.get_engine()\n    except (TypeError, AttributeError):",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "logger = logging.getLogger('alembic.env')\ndef get_engine():\n    try:\n        # this works with Flask-SQLAlchemy<3 and Alchemical\n        return current_app.extensions['migrate'].db.get_engine()\n    except (TypeError, AttributeError):\n        # this works with Flask-SQLAlchemy>=3\n        return current_app.extensions['migrate'].db.engine\ndef get_engine_url():\n    try:",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_db",
+        "kind": 5,
+        "importPath": "VideoTutorial.migrations.env",
+        "description": "VideoTutorial.migrations.env",
+        "peekOfCode": "target_db = current_app.extensions['migrate'].db\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef get_metadata():\n    if hasattr(target_db, 'metadatas'):\n        return target_db.metadatas[None]\n    return target_db.metadata\ndef run_migrations_offline():",
+        "detail": "VideoTutorial.migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "VideoTutorial.wsgi",
+        "description": "VideoTutorial.wsgi",
+        "peekOfCode": "app = create_app()",
+        "detail": "VideoTutorial.wsgi",
         "documentation": {}
     },
     {

@@ -1,4 +1,4 @@
-How to run flask in QualityAnalysis
+# How to run flask in QualityAnalysis
 1. Move location to QualityAnalysis and make sure you are in virtual environment(venv)
 2. todo.py, __init__.py need to change like this
     => from QualityAnalysis.flasktodo.graph  ->  from flasktodo.graph
@@ -14,3 +14,14 @@ How to run flask in QualityAnalysis
 4. Visit this, http://127.0.0.1:5000/qualityanalysisdashboard/
 5. If you want to change to visit, http://127.0.0.1:5000, to see home page then remove url_prefix in __init__.py
     => todo.register_blueprint(bp,url_prefix='/qualityanalysisdashboard')
+
+# How to run flask in VideoTutorial
+1. Move location to VideoTutorial and make sure you are in virtual environment(venv)
+2. action.py, __init__.py need to change like this
+    => from QualityAnalysis.flasktodo.graph  ->  from flasktodo.graph
+    => Totally 5 points
+        [action.py]
+        1) from VideoTutorial.flaskapp.models import db, VideoSurvey
+        [__init__.py]
+        2) from VideoTutorial.flaskapp import action    
+        3) from VideoTutorial.flaskapp.models import db

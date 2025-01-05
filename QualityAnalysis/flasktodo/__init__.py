@@ -26,15 +26,4 @@ def create_app():
     #### Flask URL 선언 ####
     todo.register_blueprint(bp,url_prefix='/qualityanalysisdashboard')
     
-    
-    @todo.context_processor
-    def instance_id():
-        instance_id = ''
-        try:
-            response = requests.get('http://169.254.169.254/latest/meta-data/instance-id/', timeout=3)
-            instance_id = response.content.decode('utf-8')
-        except:
-            pass
-        return dict(instance_id=instance_id)
-    
     return todo

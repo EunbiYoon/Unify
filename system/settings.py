@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'main',
     'Portfolio',
     'QualityAnalysis.flasktodo',
+    'VideoTutorial.flaskapp',
     'SecurityReinvent.SR_Base',
     'SecurityReinvent.visitor',
     'SecurityReinvent.parking',

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../static/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  </head>   
+  <body>
+    <header>
+            <nav>
+                <div class="signature">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../static/image-page/tl5.png" alt="">
+                        </a>
+                    </div> 
+                    <div class="text">
+                        <div class="text1">LGEUS TN R&D Team </div>
+                        <div class="text2">LG Washing Machine</div>
+                        <div class="text3">Customer Quick Guide</div>
+                    </div>     
+                </div>
+                <div class="navigation">
+                    <input type="checkbox" class="toggle-menu"/>
+                    <div class="hamburger"></div>
+                    <ul class="menu">
+                        <li><a href="#"><span>Home</span></a></li>
+                        <li><a href="#product-section"><span>Product</span></a></li>
+                        <li><a href="#symptom-section"><span>Top Loader</span></a></li>
+                        <li><a href="#symptom2-section"><span>Front Loader</span></a></li>
+                        <li><a href="#summary-section"><span>Survey</span></a></li>
+                    </ul>
+                </div>
+            </nav>   
+    </header>
+
+    <section id="top">
+        <div class="container">
+            <div class="info">
+            <h1 class="neonText">Customer Support </h1>
+            <h2> Washing Machine </h2>
+            <h3> Video Tutorial <i class="fas fa-video"></i> </h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="introduction-section">
+        <div class="container">
+            <div class="title">
+                <h1>Introduction</h1>
+            </div>
+            <div class="introduction-container">
+                <div class="box blue">
+                    <h5>Reliability</h5>
+                    <p>Made by Production Site, contents are updated with most recent increasing service trend on real-time</p>
+                </div>
+                <div class="box red">
+                    <h5>Speedy</h5>
+                    <p>Faster way to solve your issue compared to call representitive(10-30min) or service technician (7-10days)</p>
+                </div>
+                <div class="box yellow">
+                    <h5>Easy</h5>
+                    <p>Easy to see and try on you washer with detailed video. The goal of video is the simplest trouble-shooting </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product-section">
+        <div class="container">
+          <div class="title">
+              <h1>What is your Product?</h1>
+          </div>
+          <div class="product-container">
+            <div class="box image1">
+                <a href="#symptom-section">
+                    <div class="text">top loader</div>
+                </a>
+            </div>
+            <div class="box image2">
+                <a href="#symptom2-section">
+                    <div class="text">front loader</div>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="symptom-section">
+        <div class="container">
+            <div class="title">
+                <h1>What is your Top Loader symptom?</h1>
+            </div>
+            <div class="symptom-container">
+                <form action="/topnoise" method="POST">
+                    <div class="box image1">
+                        <button type="submit" class="btn btn-primary">Noise Vibration</button>
+                    </div>
+                </form>
+                <form action="/topcloth" method="POST">
+                    <div class="box image2">
+                        <button type="submit" class="btn btn-primary">Clothing Issue</button>
+                    </div>
+                </form>
+                <form action="/topcycle" method="POST">
+                    <div class="box image3">
+                        <button type="submit" class="btn btn-primary">Cycle Operation</button>
+                    </div> 
+                </form>
+                <form action="/topdrain" method="POST">
+                    <div class="box image4">
+                        <button type="submit" class="btn btn-primary">Drainage</button>
+                    </div>
+                </form>
+                <form action="/toperror" method="POST">
+                    <div class="box image5">
+                        <button type="submit" class="btn btn-primary">Error Code</button>
+                    </div>
+                </form>
+                <form action="/topfill" method="POST">
+                    <div class="box image6">
+                        <button type="submit" class="btn btn-primary">Filling</button>
+                    </div>
+                </form>
+                <form action="/topleak" method="POST">
+                    <div class="box image7">
+                        <button type="submit" class="btn btn-primary">Leaking</button>
+                    </div>
+                </form>
+                <form action="/topdispense" method="POST">
+                    <div class="box image8">
+                        <button type="submit" class="btn btn-primary">Dispenser</button>
+                    </div>
+                </form>
+                <form action="/topdoor" method="POST">
+                    <div class="box image9">
+                        <button type="submit" class="btn btn-primary">Door Issue</button>
+                    </div>
+                </form>
+                <form action="/toppower" method="POST">
+                    <div class="box image10">
+                        <button type="submit" class="btn btn-primary">Not Working</button>
+                    </div>
+                </form>
+                <form action="/topsmell" method="POST">
+                    <div class="box image11">
+                        <button type="submit" class="btn btn-primary">Smell Odor</button>
+                    </div>
+                </form>
+                <form action="/topthinq" method="POST">
+                    <div class="box image12">
+                        <button type="submit" class="btn btn-primary">ThinQ App</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+  
+    <section id="symptom2-section">
+        <div class="container">
+            <div class="title">
+                <h1>What is your Front Loader symptom?</h1>
+            </div>
+            <div class="symptom-container">
+                <form action="/frontnoise" method="POST">
+                    <div class="box image1">
+                        <button type="submit" class="btn btn-primary">Noise Vibration</button>
+                    </div>
+                </form>
+                <form action="/frontcloth" method="POST">
+                    <div class="box image2">
+                        <button type="submit" class="btn btn-primary">Clothing Issue</button>
+                    </div>
+                </form>
+                <form action="/frontcycle" method="POST">
+                    <div class="box image3">
+                        <button type="submit" class="btn btn-primary">Cycle Operation</button>
+                    </div>
+                </form>
+                <form action="/frontdrain" method="POST">
+                    <div class="box image4">
+                        <button type="submit" class="btn btn-primary">Drainage</button>
+                    </div>
+                </form>
+                <form action="/fronterror" method="POST">
+                    <div class="box image5">
+                        <button type="submit" class="btn btn-primary">Error Code</button>
+                    </div>
+                </form>
+                <form action="/frontfill" method="POST">
+                    <div class="box image6">
+                        <button type="submit" class="btn btn-primary">Filling</button>
+                    </div>
+                </form>
+                <form action="/frontleak" method="POST">
+                    <div class="box image7">
+                        <button type="submit" class="btn btn-primary">Leaking</button>
+                    </div>
+                </form>
+                <form action="/frontdispense" method="POST">
+                    <div class="box image8">
+                        <button type="submit" class="btn btn-primary">Dispenser</button>
+                    </div>
+                </form>
+                <form action="/frontdoor" method="POST">
+                    <div class="box image9">
+                        <button type="submit" class="btn btn-primary">Door Issue</button>
+                    </div>
+                </form>
+                <form action="/frontpower" method="POST">
+                    <div class="box image10">
+                        <button type="submit" class="btn btn-primary">Not Working</button>
+                    </div>
+                </form>
+                <form action="/frontsmell" method="POST">
+                    <div class="box image11">
+                        <button type="submit" class="btn btn-primary">Smell Odor</button>
+                    </div>
+                </form>
+                <form action="/frontthinq" method="POST">
+                    <div class="box image12">
+                        <button type="submit" class="btn btn-primary">ThinQ App</button>
+                    </div>
+                </form>
+            
+        </div>
+    </section>
+
+    <section id="summary-section">
+        <div class="review">
+            <h1>Customer Satisfaction Survey</h1>
+            <h2>This is monitoring by production site and your opinion will improve product quality</h2>
+            <form action="/submit" method="POST">
+                <div class="form-group">
+                <h3>What is the serial number of product?</h3>
+                <input
+                    type="text"
+                    name="product"
+                    placeholder="ex)103TNAB1A111"/>
+                </div>
+        
+                <div class="form-group">
+                <h3>Who installed your product?</h3>
+                <select name="dealer">
+                    <option value="LG Electronics">LG</option>
+                    <option value="The Home Depot">The Home Depot</option>
+                    <option value="Best Buy">Best Buy</option>
+                    <option value="Lowe's">Lowe's </option>
+                    <option value="Abt">Abt</option>
+                    <option value="Sears">Sears</option>
+                    <option value="Delivery Company">Delivery Company</option>
+                    <option value="Maintenance Company">Maintenance Company</option>
+                    <option value="Own">Own</option>
+                    <option value="Preinstalled">Preinstalled</option>
+                </select>
+                </div>
+        
+                <div class="form-group">
+                <h3>How satisfied are you with our solution? </h3>
+                <input type="radio" name="rating" value="1" /> 1
+                <input type="radio" name="rating" value="2" /> 2
+                <input type="radio" name="rating" value="3" /> 3
+                <input type="radio" name="rating" value="4" /> 4
+                <input type="radio" name="rating" value="5" /> 5
+                </div>
+        
+                <div class="form-group">
+                <h3>Please offer us your feedback!</h3>
+                <textarea
+                    name="review"
+                    id=""
+                    cols="35"
+                    rows="10"
+                    placeholder="Tell us what you liked and/or did not like" style="border-color:grey"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer__content">
+              <section class="left">
+                <a class="footer__item">Made by Eunbi Yoon</a>
+                <a class="footer__item">LGEUS Tennessee Factory R&D Team</a>
+              </section>
+              <section class="right">
+                <div class="footer__column">
+                  <a class="footer__item">Recent</a>
+                  <a class="footer__item">Calendar</a>
+                </div>
+                <div class="footer__column">
+                  <a class="footer__item" href="#">About</a>
+                  <a class="footer__item">V3_092322</a>
+                </div>
+              </section>
+            </div>
+          </footer>
+        
+      
+    </section>  
+</body>
+</html>
