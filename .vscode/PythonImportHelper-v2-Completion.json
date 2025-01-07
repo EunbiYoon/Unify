@@ -64,46 +64,6 @@
         "documentation": {}
     },
     {
-        "label": "messages",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -117,6 +77,62 @@
         "description": "django.contrib",
         "isExtraImport": true,
         "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -264,38 +280,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -320,95 +304,7 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -449,6 +345,102 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -584,6 +576,38 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -633,94 +657,6 @@
     },
     {
         "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -816,6 +752,94 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -829,6 +853,14 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -929,6 +961,14 @@
     },
     {
         "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -1097,6 +1137,22 @@
     },
     {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -1304,6 +1360,62 @@
         "documentation": {}
     },
     {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -1490,54 +1602,6 @@
         "documentation": {}
     },
     {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
         "label": "print_function",
         "importPath": "__future__",
         "description": "__future__",
@@ -1635,391 +1699,12 @@
         "documentation": {}
     },
     {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "os",
         "description": "os",
         "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "date",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "relativedelta",
-        "importPath": "dateutil",
-        "description": "dateutil",
-        "isExtraImport": true,
-        "detail": "dateutil",
-        "documentation": {}
-    },
-    {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "Blueprint",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "url_for",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "Blueprint",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "abort",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "url_for",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "current_app",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "legend2M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "legend1M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "legend0M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "ABlabels",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Avalues2M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Avalues1M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Avalues0M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Bvalues2M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Bvalues1M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Bvalues0M",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Plabels",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "Pvalues",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "svc_data_html",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "min_data_html",
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "basic_function",
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "pivot_function",
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "hazard_function",
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "ppm_function",
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "ffr_function",
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "create_app",
-        "importPath": "flasktodo",
-        "description": "flasktodo",
-        "isExtraImport": true,
-        "detail": "flasktodo",
         "documentation": {}
     },
     {
@@ -2045,6 +1730,39 @@
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
         "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -2122,22 +1840,6 @@
         "documentation": {}
     },
     {
-        "label": "create_app",
-        "importPath": "QualityAnalysis.flasktodo",
-        "description": "QualityAnalysis.flasktodo",
-        "isExtraImport": true,
-        "detail": "QualityAnalysis.flasktodo",
-        "documentation": {}
-    },
-    {
-        "label": "create_app",
-        "importPath": "VideoTutorial.flaskapp",
-        "description": "VideoTutorial.flaskapp",
-        "isExtraImport": true,
-        "detail": "VideoTutorial.flaskapp",
-        "documentation": {}
-    },
-    {
         "label": "django.contrib.auth.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -2209,88 +1911,6 @@
         "description": "django.contrib.auth.hashers",
         "isExtraImport": true,
         "detail": "django.contrib.auth.hashers",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "VideoTutorial.flaskapp.models",
-        "description": "VideoTutorial.flaskapp.models",
-        "isExtraImport": true,
-        "detail": "VideoTutorial.flaskapp.models",
-        "documentation": {}
-    },
-    {
-        "label": "VideoSurvey",
-        "importPath": "VideoTutorial.flaskapp.models",
-        "description": "VideoTutorial.flaskapp.models",
-        "isExtraImport": true,
-        "detail": "VideoTutorial.flaskapp.models",
-        "documentation": {}
-    },
-    {
-        "label": "SQLAlchemy",
-        "importPath": "flask_sqlalchemy",
-        "description": "flask_sqlalchemy",
-        "isExtraImport": true,
-        "detail": "flask_sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "op",
-        "importPath": "alembic",
-        "description": "alembic",
-        "isExtraImport": true,
-        "detail": "alembic",
-        "documentation": {}
-    },
-    {
-        "label": "op",
-        "importPath": "alembic",
-        "description": "alembic",
-        "isExtraImport": true,
-        "detail": "alembic",
-        "documentation": {}
-    },
-    {
-        "label": "context",
-        "importPath": "alembic",
-        "description": "alembic",
-        "isExtraImport": true,
-        "detail": "alembic",
-        "documentation": {}
-    },
-    {
-        "label": "sqlalchemy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "fileConfig",
-        "importPath": "logging.config",
-        "description": "logging.config",
-        "isExtraImport": true,
-        "detail": "logging.config",
-        "documentation": {}
-    },
-    {
-        "label": "create_app",
-        "importPath": "flaskapp",
-        "description": "flaskapp",
-        "isExtraImport": true,
-        "detail": "flaskapp",
         "documentation": {}
     },
     {
@@ -2381,6 +2001,33 @@
         "description": "CostData.cost_base.views",
         "peekOfCode": "def CosthomeView(request):\n    try:\n        recent_bom = Post.objects.filter(category__name='BOM Comparison').latest('date_added')\n    except ObjectDoesNotExist:\n        recent_bom = None\n    try:\n        recent_cost = Post.objects.filter(category__name='Cost Review').latest('date_added')\n    except ObjectDoesNotExist:\n        recent_cost = None\n    context = {",
         "detail": "CostData.cost_base.views",
+        "documentation": {}
+    },
+    {
+        "label": "QualityConfig",
+        "kind": 6,
+        "importPath": "CostData.quality.apps",
+        "description": "CostData.quality.apps",
+        "peekOfCode": "class QualityConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'CostData.quality'",
+        "detail": "CostData.quality.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "CostData.quality.urls",
+        "description": "CostData.quality.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',qualtiyhomeView,name='qualityhome_url')\n]",
+        "detail": "CostData.quality.urls",
+        "documentation": {}
+    },
+    {
+        "label": "qualtiyhomeView",
+        "kind": 2,
+        "importPath": "CostData.quality.views",
+        "description": "CostData.quality.views",
+        "peekOfCode": "def qualtiyhomeView(request):\n    return redirect('costhome_url')",
+        "detail": "CostData.quality.views",
         "documentation": {}
     },
     {
@@ -2597,213 +2244,6 @@
         "description": "Portfolio.views",
         "peekOfCode": "def frontendView(request):\n    # React 빌드된 index.html 파일 경로\n    index_path = os.path.join(settings.BASE_DIR, 'static/react/index.html')\n    try:\n        with open(index_path, 'r', encoding='utf-8') as f:\n            return HttpResponse(f.read(), content_type='text/html')\n    except FileNotFoundError:\n        return HttpResponse(\"React build file not found. Run 'npm run build' and move files to 'static/react/'.\", status=404)",
         "detail": "Portfolio.views",
-        "documentation": {}
-    },
-    {
-        "label": "pivot_table",
-        "kind": 5,
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "peekOfCode": "pivot_table = pd.crosstab(index=YearSVCTotal.Report_Day, columns=YearSVCTotal.Report_Month, margins=False)\n#Pivot_table 칼럼과 인덱스 정수로 변환\npivot_table.columns=range(0,12)\npivot_table.index=range(0,31)\npivot_table=pivot_table.astype(int)\n#YearSVCData 만들기 위해 칼럼 이름 바꾸기\ntoday=date.today()\nthisM=int(today.strftime('%m'))\nYearSVCData=pivot_table\nfor i in range(12):",
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "today_svc_data.index",
-        "kind": 5,
-        "importPath": "QualityAnalysis.flasktodo.graph",
-        "description": "QualityAnalysis.flasktodo.graph",
-        "peekOfCode": "today_svc_data.index = np.arange(1, len(today_svc_data) + 1)\n# New Services\nn=1\nNew_Services=\"\"\nwhile n <= len(today_svc_data):\n    New_Services=New_Services + str(n) +\") \"+str(today_svc_data[\"Symptoms\"][n])+\"\\n   \"+str(today_svc_data[\"RCPT_NO_ORD_NO\"][n])+\" /// \"+str(today_svc_data[\"SERIAL_NO 1\"][n])+\"\\n\"\n    n=n+1\n########### SVC 만들기 ##############\n# SVC Text\nSVC=\"Service Status : \"+ str(Yesterday_SVC) + \" → \" + str(Today_SVC) +\" (\"+str(Increase_SVC)+\"↑)\"",
-        "detail": "QualityAnalysis.flasktodo.graph",
-        "documentation": {}
-    },
-    {
-        "label": "random_function",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "peekOfCode": "def random_function():\n    letter1=[\"WT7100\",\"WT7300\",\"WT7405\",\"WT7800\"]\n    model=' '.join(choice(letter1) for i in range(3000))\n    #Symptom\n    letter2=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    symptom=' '.join(choice(letter2) for i in range(3000))\n    #SVC Date\n    svcdate=' '.join(choice(month_list) for i in range(3000))\n    #Production Date\n    prodate=' '.join(choice(month_list) for i in range(3000))",
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "basic_function",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "peekOfCode": "def basic_function(input_data):\n    svc_data=random_function()[0]\n    for i in range(len(input_data)):\n        a=input_data[i]\n        for j in range(len(svc_data)):\n            b=svc_data.at[j,'Symptoms']\n            if b==a:\n                svc_data.at[j,'Sort']=True\n            else:\n                False",
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "pivot_function",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "peekOfCode": "def pivot_function(input_data):\n    pyramid_table=basic_function(input_data)[1]\n    #값이 0이면 데이터 값 없애기 -> 너무 많은 0을 제거\n    pyramid_table = pyramid_table.replace(0,'', regex=True)\n    return pyramid_table\ndef hazard_function(input_data):\n    pyramid_vals=basic_function(input_data)[0]\n    idx2=basic_function(input_data)[2]\n    PROD_data=random_function()[1]\n    pyramid_vals.pop(len(pyramid_vals)-1)",
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "hazard_function",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "peekOfCode": "def hazard_function(input_data):\n    pyramid_vals=basic_function(input_data)[0]\n    idx2=basic_function(input_data)[2]\n    PROD_data=random_function()[1]\n    pyramid_vals.pop(len(pyramid_vals)-1)\n    pyramid_vals=pd.DataFrame(pyramid_vals)\n    pyramid_vals= pyramid_vals [pyramid_vals.columns [:-1]]\n    pyramid_vals.drop(columns=[len(pyramid_vals)-1])\n    #a의 원소들을 모두 int형으로 변환\n    A=pyramid_vals.apply(pd.to_numeric)",
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "ppm_function",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "peekOfCode": "def ppm_function(input_data):\n    pyramid_vals=basic_function(input_data)[0]\n    PROD_data=random_function()[1]\n    pyramid_vals.pop(len(pyramid_vals)-1)\n    pyramid_vals=pd.DataFrame(pyramid_vals)\n    pyramid_vals= pyramid_vals [pyramid_vals.columns [:-1]]\n    pyramid_vals.drop(columns=[len(pyramid_vals)-1])\n    #a의 원소들을 모두 int형으로 변환\n    A=pyramid_vals.apply(pd.to_numeric)\n    # print(\"How many months ago was it improved? [(ex)Improvement Month :2103, last production closing Month: 2106 --> input : 3 \")",
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "ffr_function",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.indicator",
-        "description": "QualityAnalysis.flasktodo.indicator",
-        "peekOfCode": "def ffr_function(input_data):\n    pyramid_table=basic_function(input_data)[1]\n    idx2=basic_function(input_data)[2]\n    SALES_data=random_function()[2]\n    ## L12_SVC, L12_Sales, Weight_Sales dataframe\n    L12_SVC = pd.DataFrame(index=range(0,len(idx2)-1),columns=['L12_SVC']) # total 까지 포함한 값\n    L12_Sales = pd.DataFrame(index=range(0,len(idx2)-1),columns=['L12_Sales'])\n    Weight_Sales = pd.DataFrame()\n    FDR = pd.DataFrame(index=range(0,len(idx2)-1),columns=['FDR'])\n    FFR = pd.DataFrame(index=range(0,len(idx2)-1),columns=['FFR'])",
-        "detail": "QualityAnalysis.flasktodo.indicator",
-        "documentation": {}
-    },
-    {
-        "label": "html_table",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def html_table(input_table):\n    input_table_html=input_table.to_html()\n    input_table_html=input_table_html.replace('border=\"1\" class=\"dataframe\"','id=\"datatablesSimple2\"' )\n    input_table_html=input_table_html.replace('<tr style=\"text-align: right;\">','<tr>')\n    input_table_html=input_table_html.replace('<th></th>','<th>No</th>')\n    return input_table_html\nbp = Blueprint('todo', __name__)\n#check list만 여기서 sorting\n@bp.route(\"/\",methods=[\"POST\",\"GET\"])\ndef index():",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "index",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def index():\n    ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)\n    # hazard graph\n    hazard_table=hazard_function(initial_data) \n    # hazard xlabel name",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "trend",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def trend():\n    return render_template('todo/charts.html', ABlabels=ABlabels,\n    Avalues2M=Avalues2M, Avalues1M=Avalues1M, Avalues0M=Avalues0M,\n    Bvalues2M=Bvalues2M,Bvalues1M=Bvalues1M,Bvalues0M=Bvalues0M,\n    Plabels=Plabels,Pvalues=Pvalues,\n    legend2M=legend2M, legend1M=legend1M, legend0M=legend0M)\n@bp.route(\"/list\")\ndef list():\n    return render_template('todo/tables.html',svc_data_html=svc_data_html)\n@bp.route(\"/kpi\",methods=[\"POST\",\"GET\"])",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "list",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def list():\n    return render_template('todo/tables.html',svc_data_html=svc_data_html)\n@bp.route(\"/kpi\",methods=[\"POST\",\"GET\"])\ndef kpi():\n        ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "kpi",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def kpi():\n        ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)\n    # hazard graph\n    hazard_table=hazard_function(initial_data) \n    # hazard xlabel name",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "report",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def report():\n    return render_template('card/report.html')\n@bp.route(\"/email\")\ndef email():\n    return render_template('card/email.html')\n@bp.route(\"/logic\")\ndef logic():\n    return render_template('card/dataframe.html')\n#layout\n@bp.route(\"/layout_static\")",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "email",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def email():\n    return render_template('card/email.html')\n@bp.route(\"/logic\")\ndef logic():\n    return render_template('card/dataframe.html')\n#layout\n@bp.route(\"/layout_static\")\ndef layout_static():\n    return render_template('windowskin/layout-static.html')\n@bp.route(\"/layout_sidenav\")",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "logic",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def logic():\n    return render_template('card/dataframe.html')\n#layout\n@bp.route(\"/layout_static\")\ndef layout_static():\n    return render_template('windowskin/layout-static.html')\n@bp.route(\"/layout_sidenav\")\ndef layout_sidenav():\n    return render_template('windowskin/layout-sidenav-light.html')\n#error",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "layout_static",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def layout_static():\n    return render_template('windowskin/layout-static.html')\n@bp.route(\"/layout_sidenav\")\ndef layout_sidenav():\n    return render_template('windowskin/layout-sidenav-light.html')\n#error\n@bp.route(\"/error_401\")\ndef error_401():\n    return render_template('error/401.html')\n@bp.route(\"/error_404\")",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "layout_sidenav",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def layout_sidenav():\n    return render_template('windowskin/layout-sidenav-light.html')\n#error\n@bp.route(\"/error_401\")\ndef error_401():\n    return render_template('error/401.html')\n@bp.route(\"/error_404\")\ndef error_404():\n    return render_template('error/404.html')\n@bp.route(\"/error_500\")",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "error_401",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def error_401():\n    return render_template('error/401.html')\n@bp.route(\"/error_404\")\ndef error_404():\n    return render_template('error/404.html')\n@bp.route(\"/error_500\")\ndef error_500():\n    return render_template('error/500.html')\nif __name__ == \"__main__\":\n    bp.run(debug=True)",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "error_404",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def error_404():\n    return render_template('error/404.html')\n@bp.route(\"/error_500\")\ndef error_500():\n    return render_template('error/500.html')\nif __name__ == \"__main__\":\n    bp.run(debug=True)",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "error_500",
-        "kind": 2,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "def error_500():\n    return render_template('error/500.html')\nif __name__ == \"__main__\":\n    bp.run(debug=True)",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "bp",
-        "kind": 5,
-        "importPath": "QualityAnalysis.flasktodo.todo",
-        "description": "QualityAnalysis.flasktodo.todo",
-        "peekOfCode": "bp = Blueprint('todo', __name__)\n#check list만 여기서 sorting\n@bp.route(\"/\",methods=[\"POST\",\"GET\"])\ndef index():\n    ####################### INITIAL #####################\n    # symptoms\n    initial_data=[\"DRAIN\",\"EXPLANATION\",\"EXTERIOR\",\"FILLING\",\"LEAK\",\"LID\",\"MISASSEMBLY\",\"MOTOR\",\"NOISE/VIBRATION\",\"OTHER\",\"PCB\",\"RETURN\"]\n    # pivot chart --> datatablesSimple2\n    sort_pivot=pivot_function(initial_data)\n    sort_pivot_html=html_table(sort_pivot)",
-        "detail": "QualityAnalysis.flasktodo.todo",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "QualityAnalysis.wsgi",
-        "description": "QualityAnalysis.wsgi",
-        "peekOfCode": "app = create_app()",
-        "detail": "QualityAnalysis.wsgi",
         "documentation": {}
     },
     {
@@ -3923,15 +3363,6 @@
         "documentation": {}
     },
     {
-        "label": "JAZZMIN_SETTINGS",
-        "kind": 5,
-        "importPath": "system.settings",
-        "description": "system.settings",
-        "peekOfCode": "JAZZMIN_SETTINGS = {\n    \"site_brand\": \"Database Panel\",\n    \"copyright\": \"Eunbi Yoon © 2025\",\n}\n# CustomUser Define\nAUTH_USER_MODEL='user.CustomUser'\n# Login Url\nLOGIN_URL='/accounts/'\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
-        "detail": "system.settings",
-        "documentation": {}
-    },
-    {
         "label": "MIDDLEWARE",
         "kind": 5,
         "importPath": "system.settings",
@@ -3945,16 +3376,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "ROOT_URLCONF = 'system.urls'\nTEMPLATES_PATH = os.path.join(BASE_DIR, 'templates')\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [TEMPLATES_PATH],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
-        "detail": "system.settings",
-        "documentation": {}
-    },
-    {
-        "label": "TEMPLATES_PATH",
-        "kind": 5,
-        "importPath": "system.settings",
-        "description": "system.settings",
-        "peekOfCode": "TEMPLATES_PATH = os.path.join(BASE_DIR, 'templates')\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [TEMPLATES_PATH],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'system.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3963,7 +3385,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [TEMPLATES_PATH],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -4104,37 +3526,10 @@
     },
     {
         "label": "application",
-        "kind": 2,
-        "importPath": "system.wsgi",
-        "description": "system.wsgi",
-        "peekOfCode": "def application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)\n    # VideoTutorial Flask 앱 경로\n    elif path.startswith('/lgsupportvideotutorial'):\n        return video_tutorial_app(environ, start_response)\n    # Django 기본 애플리케이션 (루트 경로)\n    return django_application(environ, start_response)",
-        "detail": "system.wsgi",
-        "documentation": {}
-    },
-    {
-        "label": "django_application",
         "kind": 5,
         "importPath": "system.wsgi",
         "description": "system.wsgi",
-        "peekOfCode": "django_application = get_wsgi_application()\n# Flask 애플리케이션 로드\nquality_analysis_app = create_quality_analysis_app()\nvideo_tutorial_app = create_video_tutorial_app()\n# WSGI: 경로 분기 로직 (Flask + Django 통합)\ndef application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)",
-        "detail": "system.wsgi",
-        "documentation": {}
-    },
-    {
-        "label": "quality_analysis_app",
-        "kind": 5,
-        "importPath": "system.wsgi",
-        "description": "system.wsgi",
-        "peekOfCode": "quality_analysis_app = create_quality_analysis_app()\nvideo_tutorial_app = create_video_tutorial_app()\n# WSGI: 경로 분기 로직 (Flask + Django 통합)\ndef application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)\n    # VideoTutorial Flask 앱 경로\n    elif path.startswith('/lgsupportvideotutorial'):",
-        "detail": "system.wsgi",
-        "documentation": {}
-    },
-    {
-        "label": "video_tutorial_app",
-        "kind": 5,
-        "importPath": "system.wsgi",
-        "description": "system.wsgi",
-        "peekOfCode": "video_tutorial_app = create_video_tutorial_app()\n# WSGI: 경로 분기 로직 (Flask + Django 통합)\ndef application(environ, start_response):\n    path = environ.get('PATH_INFO', '')\n    # QualityAnalysis Flask 앱 경로\n    if path.startswith('/qualityanalysisdashboard'):\n        return quality_analysis_app(environ, start_response)\n    # VideoTutorial Flask 앱 경로\n    elif path.startswith('/lgsupportvideotutorial'):\n        return video_tutorial_app(environ, start_response)",
+        "peekOfCode": "application = get_wsgi_application()",
         "detail": "system.wsgi",
         "documentation": {}
     },
@@ -4235,465 +3630,6 @@
         "description": "user.views",
         "peekOfCode": "def logoutView(request):\n    logout(request)\n    return redirect('mainhome_url')",
         "detail": "user.views",
-        "documentation": {}
-    },
-    {
-        "label": "index",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def index():\n    return render_template('index.html')\n@bp.route('/submit', methods=['POST'])\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')\n        review = request.form.get('review')\n        # 필수 입력값 검증",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "submit",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')\n        review = request.form.get('review')\n        # 필수 입력값 검증\n        if not all([product, dealer, rating, review]):\n            abort(400, \"모든 필드를 입력해야 합니다.\")\n        # 데이터베이스에 추가",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "home",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def home():      \n    return redirect(url_for('.index')) # do something\n# top loader template render\n@bp.route('/topnoise', methods=['POST'])\ndef topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=['POST'])\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=['POST'])",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topnoise",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topnoise():\n    return render_template('tl/noise.html') # do something\n@bp.route('/topcloth', methods=['POST'])\ndef topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=['POST'])\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=['POST'])\ndef topleak():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topcloth",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topcloth():  \n    return render_template('tl/clothing.html') # do something\n@bp.route('/topcycle', methods=['POST'])\ndef topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=['POST'])\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=['POST'])\ndef toperror():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topcycle",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topcycle():         \n    return render_template('tl/cycle.html') # do something\n@bp.route('/topleak', methods=['POST'])\ndef topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=['POST'])\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=['POST'])\ndef topfill():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topleak",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topleak():  \n    return render_template('tl/leak.html') # do something\n@bp.route('/toperror', methods=['POST'])\ndef toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=['POST'])\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=['POST'])\ndef topdrain():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "toperror",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def toperror():  \n    return render_template('tl/error.html') # do something'\n@bp.route('/topfill', methods=['POST'])\ndef topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=['POST'])\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=['POST'])\ndef topdispense():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topfill",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topfill():  \n    return render_template('tl/filling.html') # do something\n@bp.route('/topdrain', methods=['POST'])\ndef topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=['POST'])\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=['POST'])\ndef topdoor():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topdrain",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topdrain():  \n    return render_template('tl/drainage.html') # do something\n@bp.route('/topdispense', methods=['POST'])\ndef topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=['POST'])\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=['POST'])\ndef toppower():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topdispense",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topdispense():  \n    return render_template('tl/dispenser.html') # do something\n@bp.route('/topdoor', methods=['POST'])\ndef topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=['POST'])\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=['POST'])\ndef topsmell():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topdoor",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topdoor():  \n    return render_template('tl/door.html') # do something\n@bp.route('/toppower', methods=['POST'])\ndef toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=['POST'])\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=['POST'])\ndef topthinq():      ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "toppower",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def toppower():  \n    return render_template('tl/power.html') # do something\n@bp.route('/topsmell', methods=['POST'])\ndef topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=['POST'])\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=['POST'])",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topsmell",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topsmell():  \n    return render_template('tl/smell.html') # do something\n@bp.route('/topthinq', methods=['POST'])\ndef topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=['POST'])\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=['POST'])",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "topthinq",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def topthinq():      \n    return render_template('tl/thinq.html') # do something\n#front loader template render\n@bp.route('/frontnoise', methods=['POST'])\ndef frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=['POST'])\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=['POST'])",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontnoise",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontnoise():\n    return render_template('fl/noise.html') # do something\n@bp.route('/frontcloth', methods=['POST'])\ndef frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=['POST'])\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/frontleak', methods=['POST'])\ndef frontleak():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontcloth",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontcloth():   \n    return render_template('fl/clothing.html') # do something\n@bp.route('/frontcycle', methods=['POST'])\ndef frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/frontleak', methods=['POST'])\ndef frontleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=['POST'])\ndef fronterror():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontcycle",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontcycle():         \n    return render_template('fl/cycle.html') # do something\n@bp.route('/frontleak', methods=['POST'])\ndef frontleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=['POST'])\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=['POST'])\ndef frontfill():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontleak",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontleak():  \n    return render_template('fl/leak.html') # do something\n@bp.route('/fronterror', methods=['POST'])\ndef fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=['POST'])\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=['POST'])\ndef frontdrain():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "fronterror",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def fronterror():  \n    return render_template('fl/error.html') # do something'\n@bp.route('/frontfill', methods=['POST'])\ndef frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=['POST'])\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=['POST'])\ndef frontdispense():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontfill",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontfill():  \n    return render_template('fl/filling.html') # do something\n@bp.route('/frontdrain', methods=['POST'])\ndef frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=['POST'])\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=['POST'])\ndef frontdoor():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontdrain",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontdrain():  \n    return render_template('fl/drainage.html') # do something\n@bp.route('/frontdispense', methods=['POST'])\ndef frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=['POST'])\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=['POST'])\ndef frontpower():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontdispense",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontdispense():  \n    return render_template('fl/dispenser.html') # do something\n@bp.route('/frontdoor', methods=['POST'])\ndef frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=['POST'])\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=['POST'])\ndef frontsmell():  ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontdoor",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontdoor():  \n    return render_template('fl/door.html') # do something\n@bp.route('/frontpower', methods=['POST'])\ndef frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=['POST'])\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=['POST'])\ndef frontthinq():      ",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontpower",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontpower():  \n    return render_template('fl/power.html') # do something\n@bp.route('/frontsmell', methods=['POST'])\ndef frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=['POST'])\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontsmell",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontsmell():  \n    return render_template('fl/smell.html') # do something\n@bp.route('/frontthinq', methods=['POST'])\ndef frontthinq():      \n    return render_template('fl/thinq.html') # do something",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "frontthinq",
-        "kind": 2,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "def frontthinq():      \n    return render_template('fl/thinq.html') # do something",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "bp",
-        "kind": 5,
-        "importPath": "VideoTutorial.flaskapp.action",
-        "description": "VideoTutorial.flaskapp.action",
-        "peekOfCode": "bp = Blueprint('action', __name__)\n@bp.route('/')\ndef index():\n    return render_template('index.html')\n@bp.route('/submit', methods=['POST'])\ndef submit():\n    try:\n        product = request.form.get('product')\n        dealer = request.form.get('dealer')\n        rating = request.form.get('rating')",
-        "detail": "VideoTutorial.flaskapp.action",
-        "documentation": {}
-    },
-    {
-        "label": "VideoSurvey",
-        "kind": 6,
-        "importPath": "VideoTutorial.flaskapp.models",
-        "description": "VideoTutorial.flaskapp.models",
-        "peekOfCode": "class VideoSurvey(db.Model):\n    __tablename__ = 'Video Survey'\n    id = db.Column(db.Integer, primary_key=True)\n    product = db.Column(db.String(200), nullable=False)\n    dealer = db.Column(db.String(200), nullable=False)\n    rating = db.Column(db.Integer, nullable=False)\n    review = db.Column(db.Text(), nullable=False)",
-        "detail": "VideoTutorial.flaskapp.models",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "kind": 5,
-        "importPath": "VideoTutorial.flaskapp.models",
-        "description": "VideoTutorial.flaskapp.models",
-        "peekOfCode": "db = SQLAlchemy()\nclass VideoSurvey(db.Model):\n    __tablename__ = 'Video Survey'\n    id = db.Column(db.Integer, primary_key=True)\n    product = db.Column(db.String(200), nullable=False)\n    dealer = db.Column(db.String(200), nullable=False)\n    rating = db.Column(db.Integer, nullable=False)\n    review = db.Column(db.Text(), nullable=False)",
-        "detail": "VideoTutorial.flaskapp.models",
-        "documentation": {}
-    },
-    {
-        "label": "upgrade",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "peekOfCode": "def upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')\n    )",
-        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "documentation": {}
-    },
-    {
-        "label": "downgrade",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "peekOfCode": "def downgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('mytable')\n    # ### end Alembic commands ###",
-        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "documentation": {}
-    },
-    {
-        "label": "revision",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "peekOfCode": "revision = '486664a03527'\ndown_revision = None\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),",
-        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "documentation": {}
-    },
-    {
-        "label": "down_revision",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "peekOfCode": "down_revision = None\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),",
-        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "documentation": {}
-    },
-    {
-        "label": "branch_labels",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),",
-        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "documentation": {}
-    },
-    {
-        "label": "depends_on",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "description": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "peekOfCode": "depends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')",
-        "detail": "VideoTutorial.migrations.versions.486664a03527_change_table_name",
-        "documentation": {}
-    },
-    {
-        "label": "upgrade",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "peekOfCode": "def upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')\n    )",
-        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "documentation": {}
-    },
-    {
-        "label": "downgrade",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "peekOfCode": "def downgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('mytable',\n    sa.Column('id', sa.INTEGER(), autoincrement=True, nullable=False),\n    sa.Column('product', sa.VARCHAR(length=200), autoincrement=False, nullable=False),\n    sa.Column('dealer', sa.VARCHAR(length=200), autoincrement=False, nullable=False),\n    sa.Column('rating', sa.INTEGER(), autoincrement=False, nullable=False),\n    sa.Column('review', sa.TEXT(), autoincrement=False, nullable=False),\n    sa.PrimaryKeyConstraint('id', name='mytable_pkey')\n    )",
-        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "documentation": {}
-    },
-    {
-        "label": "revision",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "peekOfCode": "revision = 'e0c4a93d566b'\ndown_revision = '486664a03527'\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),",
-        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "documentation": {}
-    },
-    {
-        "label": "down_revision",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "peekOfCode": "down_revision = '486664a03527'\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),",
-        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "documentation": {}
-    },
-    {
-        "label": "branch_labels",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),",
-        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "documentation": {}
-    },
-    {
-        "label": "depends_on",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "description": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "peekOfCode": "depends_on = None\ndef upgrade():\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('Video Survey',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('product', sa.String(length=200), nullable=False),\n    sa.Column('dealer', sa.String(length=200), nullable=False),\n    sa.Column('rating', sa.Integer(), nullable=False),\n    sa.Column('review', sa.Text(), nullable=False),\n    sa.PrimaryKeyConstraint('id')",
-        "detail": "VideoTutorial.migrations.versions.e0c4a93d566b_change_actual_name",
-        "documentation": {}
-    },
-    {
-        "label": "get_engine",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "def get_engine():\n    try:\n        # this works with Flask-SQLAlchemy<3 and Alchemical\n        return current_app.extensions['migrate'].db.get_engine()\n    except (TypeError, AttributeError):\n        # this works with Flask-SQLAlchemy>=3\n        return current_app.extensions['migrate'].db.engine\ndef get_engine_url():\n    try:\n        return get_engine().url.render_as_string(hide_password=False).replace(",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "get_engine_url",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "def get_engine_url():\n    try:\n        return get_engine().url.render_as_string(hide_password=False).replace(\n            '%', '%%')\n    except AttributeError:\n        return str(get_engine().url).replace('%', '%%')\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "get_metadata",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "def get_metadata():\n    if hasattr(target_db, 'metadatas'):\n        return target_db.metadatas[None]\n    return target_db.metadata\ndef run_migrations_offline():\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "run_migrations_offline",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "def run_migrations_offline():\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "run_migrations_online",
-        "kind": 2,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "def run_migrations_online():\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    # this callback is used to prevent an auto-migration from being generated\n    # when there are no changes to the schema\n    # reference: http://alembic.zzzcomputing.com/en/latest/cookbook.html\n    def process_revision_directives(context, revision, directives):\n        if getattr(config.cmd_opts, 'autogenerate', False):",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "config",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nfileConfig(config.config_file_name)\nlogger = logging.getLogger('alembic.env')\ndef get_engine():\n    try:\n        # this works with Flask-SQLAlchemy<3 and Alchemical\n        return current_app.extensions['migrate'].db.get_engine()\n    except (TypeError, AttributeError):",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "logger = logging.getLogger('alembic.env')\ndef get_engine():\n    try:\n        # this works with Flask-SQLAlchemy<3 and Alchemical\n        return current_app.extensions['migrate'].db.get_engine()\n    except (TypeError, AttributeError):\n        # this works with Flask-SQLAlchemy>=3\n        return current_app.extensions['migrate'].db.engine\ndef get_engine_url():\n    try:",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "target_db",
-        "kind": 5,
-        "importPath": "VideoTutorial.migrations.env",
-        "description": "VideoTutorial.migrations.env",
-        "peekOfCode": "target_db = current_app.extensions['migrate'].db\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef get_metadata():\n    if hasattr(target_db, 'metadatas'):\n        return target_db.metadatas[None]\n    return target_db.metadata\ndef run_migrations_offline():",
-        "detail": "VideoTutorial.migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "VideoTutorial.wsgi",
-        "description": "VideoTutorial.wsgi",
-        "peekOfCode": "app = create_app()",
-        "detail": "VideoTutorial.wsgi",
         "documentation": {}
     },
     {
