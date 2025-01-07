@@ -1,1 +1,2 @@
-web: python -m pip install -r requirements.txt && python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+web: gunicorn Unify.wsgi --log-file
+web: python manage.py migrate && gunicorn Unify.wsgi
