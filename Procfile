@@ -1,2 +1,1 @@
-web: gunicorn system.wsgi:application --log-file
-web: python manage.py migrate && gunicorn system.wsgi:application
+web: gunicorn system.wsgi:application --bind 0.0.0.0:8000
