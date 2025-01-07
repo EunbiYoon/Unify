@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'SecurityReinvent.reinvent',
     'CostData.cost_base',
     'CostData.report',
+    'whitenoise.runserver_nostatic',
 ]
 
 
@@ -73,6 +74,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware"
 ]
 
 ROOT_URLCONF = 'system.urls'
@@ -158,6 +160,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정
 ]
 
+# White noise static stuff
+STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT=BASE_DIR / 'staticfiles'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

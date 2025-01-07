@@ -3936,7 +3936,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'system.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    \"whitenoise.middleware.WhiteNoiseMiddleware\"\n]",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -4044,7 +4044,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\n# Location where static files will be collected\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Location where static files will be collected\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\n# White noise static stuff\nSTATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'\nSTATIC_ROOT=BASE_DIR / 'staticfiles'",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -4053,7 +4053,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# For debugging purposes, during development (optional):\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\n# White noise static stuff\nSTATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'\nSTATIC_ROOT=BASE_DIR / 'staticfiles'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -4062,7 +4062,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정\n]\n# White noise static stuff\nSTATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'\nSTATIC_ROOT=BASE_DIR / 'staticfiles'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field",
         "detail": "system.settings",
         "documentation": {}
     },
