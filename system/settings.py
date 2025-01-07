@@ -28,6 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["unify-production-e96d.up.railway.app","localhost","127.0.0.1"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://unify-production-e96d.up.railway.app"
+]
 
 # Application definition
 
