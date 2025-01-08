@@ -3882,7 +3882,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\"",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3891,7 +3891,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3900,7 +3900,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3909,7 +3909,16 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "ALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "ALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "detail": "system.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_TRUSTED_ORIGINS",
+        "kind": 5,
+        "importPath": "system.settings",
+        "description": "system.settings",
+        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "system.settings",
         "documentation": {}
     },
