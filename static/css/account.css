@@ -1,5 +1,5 @@
 .account-background{
-    background-image:linear-gradient(to bottom right,  rgb(255, 211, 245), rgb(190, 223, 253),rgb(207, 253, 188), #fff2b6,#FDCCBB,#e3ffb6) !important;
+    background-image:linear-gradient(to bottom right,  #007BFF,#e3ffb6) !important;
     height: 100%;
     display: flex;
     align-items: center;
