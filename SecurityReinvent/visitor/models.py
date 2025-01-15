@@ -15,4 +15,4 @@ class VisitorData(models.Model):
     check_in=models.DateTimeField(null=True, blank=True)
     check_out=models.DateTimeField(null=True, blank=True)
     user=models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    approval_status=models.CharField(max_length=20, default='Requested')
+    approval_status=models.CharField(max_length=20)

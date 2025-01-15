@@ -656,150 +656,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -2111,6 +1967,23 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "dj_database_url",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dj_database_url",
+        "description": "dj_database_url",
+        "detail": "dj_database_url",
         "documentation": {}
     },
     {
@@ -3594,98 +3467,8 @@
         "kind": 6,
         "importPath": "SecurityReinvent.visitor.migrations.0001_initial",
         "description": "SecurityReinvent.visitor.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ApprovalStatus',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='VisitorData',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "SecurityReinvent.visitor.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0002_alter_visitordata_status",
-        "description": "SecurityReinvent.visitor.migrations.0002_alter_visitordata_status",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='visitordata',\n            name='status',\n            field=models.ForeignKey(default='Requested', on_delete=django.db.models.deletion.CASCADE, to='visitor.approvalstatus'),\n            preserve_default=False,",
-        "detail": "SecurityReinvent.visitor.migrations.0002_alter_visitordata_status",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0003_auto_20230922_0945",
-        "description": "SecurityReinvent.visitor.migrations.0003_auto_20230922_0945",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0002_alter_visitordata_status'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='visitordata',\n            name='status',\n        ),\n        migrations.AddField(",
-        "detail": "SecurityReinvent.visitor.migrations.0003_auto_20230922_0945",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0004_alter_visitordata_pic_contact",
-        "description": "SecurityReinvent.visitor.migrations.0004_alter_visitordata_pic_contact",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0003_auto_20230922_0945'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='visitordata',\n            name='pic_contact',\n            field=models.CharField(blank=True, max_length=255, null=True),\n        ),",
-        "detail": "SecurityReinvent.visitor.migrations.0004_alter_visitordata_pic_contact",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0005_auto_20230929_0949",
-        "description": "SecurityReinvent.visitor.migrations.0005_auto_20230929_0949",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0004_alter_visitordata_pic_contact'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='visitordata',\n            old_name='approval_status',\n            new_name='security_admin_approval',\n        ),",
-        "detail": "SecurityReinvent.visitor.migrations.0005_auto_20230929_0949",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0006_auto_20230929_0954",
-        "description": "SecurityReinvent.visitor.migrations.0006_auto_20230929_0954",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0005_auto_20230929_0949'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='visitordata',\n            old_name='security_admin_approval',\n            new_name='security_manager_approval',\n        ),",
-        "detail": "SecurityReinvent.visitor.migrations.0006_auto_20230929_0954",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0007_auto_20230929_1000",
-        "description": "SecurityReinvent.visitor.migrations.0007_auto_20230929_1000",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0006_auto_20230929_0954'),\n    ]\n    operations = [\n        migrations.DeleteModel(\n            name='ApprovalStatus',\n        ),\n        migrations.AddField(\n            model_name='visitordata',",
-        "detail": "SecurityReinvent.visitor.migrations.0007_auto_20230929_1000",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0008_auto_20230929_1022",
-        "description": "SecurityReinvent.visitor.migrations.0008_auto_20230929_1022",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0007_auto_20230929_1000'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='visitordata',\n            old_name='security_team_leader_appoval',\n            new_name='security_leader_appoval',\n        ),",
-        "detail": "SecurityReinvent.visitor.migrations.0008_auto_20230929_1022",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0009_auto_20230929_1344",
-        "description": "SecurityReinvent.visitor.migrations.0009_auto_20230929_1344",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0008_auto_20230929_1022'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='visitordata',\n            name='security_leader_appoval_time',\n            field=models.CharField(default='', max_length=100),\n        ),",
-        "detail": "SecurityReinvent.visitor.migrations.0009_auto_20230929_1344",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0010_auto_20230929_1345",
-        "description": "SecurityReinvent.visitor.migrations.0010_auto_20230929_1345",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0009_auto_20230929_1344'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='visitordata',\n            name='security_leader_appoval_time',\n            field=models.DateField(default=''),\n        ),",
-        "detail": "SecurityReinvent.visitor.migrations.0010_auto_20230929_1345",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "SecurityReinvent.visitor.migrations.0011_remove_visitordata_security_leader_appoval_and_more",
-        "description": "SecurityReinvent.visitor.migrations.0011_remove_visitordata_security_leader_appoval_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('visitor', '0010_auto_20230929_1345'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='visitordata',\n            name='security_leader_appoval',\n        ),\n        migrations.RemoveField(",
-        "detail": "SecurityReinvent.visitor.migrations.0011_remove_visitordata_security_leader_appoval_and_more",
         "documentation": {}
     },
     {
@@ -3882,7 +3665,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\",",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production.up.railway.app\",",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3891,7 +3674,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = [\"unify-production.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3900,7 +3683,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = [\"unify-production.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3909,7 +3692,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "ALLOWED_HOSTS = [\"unify-production-e96d.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',",
+        "peekOfCode": "ALLOWED_HOSTS = [\"unify-production.up.railway.app\",\"yooneunbi.com\",\"localhost\",\"127.0.0.1\"]\nCSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3918,7 +3701,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production-e96d.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\n    \"https://unify-production.up.railway.app\",\n    \"https://yooneunbi.com\"\n]\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'user',\n    'django.contrib.admin',\n    'django.contrib.auth',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3981,7 +3764,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'system.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'system.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n# DATABASES = {\n#     'default': {\n#         'ENGINE': 'django.db.backends.sqlite3',\n#         'NAME': BASE_DIR / 'db.sqlite3',\n#     }\n# }\nload_dotenv(os.path.join(BASE_DIR, '.env'))",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -3990,7 +3773,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': dj_database_url.parse(os.getenv('DATABASE_URL'))\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {",
         "detail": "system.settings",
         "documentation": {}
     },

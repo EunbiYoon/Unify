@@ -54,7 +54,7 @@ def VregisterView(request):
         else:
             get_start=get_date
             get_end=""
-        visitor_add=VisitorData(visitor_name=get_name, visitor_company=get_company, start_date=get_start, end_date=get_end, visitor_purpose=get_purpose, bring_laptop=get_laptop, pic_contact=get_contact, remark=get_remark, user=request.user)
+        visitor_add=VisitorData(visitor_name=get_name, visitor_company=get_company, start_date=get_start, end_date=get_end, visitor_purpose=get_purpose, bring_laptop=get_laptop, pic_contact=get_contact, remark=get_remark, user=request.user, get_approval_status="Requested")
         visitor_add.save()
         return redirect('Vmy_url')
     return render(request, 'visitor_register.html')
