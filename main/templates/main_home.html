@@ -7,35 +7,81 @@
     <!-- Bootstrap CSS 추가 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* 버튼 사이 간격 추가 */
-        .btn-group-vertical .btn {
-            margin-bottom: 10px;
+        .shared-background {
+            background-color: #f8f9fa; /* 회색 배경 */
+            padding: 30px;
+            border-radius: 10px; /* 둥근 모서리 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+            display: flex;
+            align-items: flex-start; /* 위쪽 정렬 */
+            justify-content: space-between; /* 좌우 간격 유지 */
+            max-width: 900px; /* 최대 너비 제한 */
+            margin: 50px auto; /* 화면 중앙 배치 */
+        }
+        .section-box {
+            width: 45%; /* 각 섹션 너비 */
+        }
+        .divider {
+            width: 2px; /* 구분선 두께 */
+            height: auto; /* 컨테이너 높이에 맞춤 */
+            background-color: lightgray; /* 회색 구분선 색상 */
+            align-self: stretch; /* 구분선이 두 섹션 높이에 맞게 늘어남 */
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        a {
+            margin-bottom: 5px;
+        }
+
+        /* 모바일 대응 */
+        @media (max-width: 768px) {
+            .shared-background {
+                flex-direction: column; /* 세로 배치 */
+                max-width: 90%; /* 모바일 화면에 맞게 */
+            }
+            .section-box {
+                width: 100%; /* 섹션 너비 전체 */
+                margin-bottom: 30px; /* 섹션 간 간격 */
+            }
         }
     </style>
 </head>
 <body>
-    <!-- 전체 화면을 중앙 정렬하기 위한 컨테이너 -->
-    <div class="d-flex justify-content-center align-items-center">
-        <p class="mb-3 text-muted text-left m-3">
-            <br/>
-            회원가입하거나 관리자 계정으로 보려면 <strong class="text-primary">username : admin, password : password</strong> 를 입력하세요.
-            <br/>
-            이 사이트의 모든 데이터는 임의로 생성된 테스트용 가상 데이터입니다.
-        </p>
-    </div>
-    <div class="mt-5"></div>
-    <div class="d-flex justify-content-center align-items-center m-20">
-        <div class="text-center">
-            <h1 class="ms-30 mb-3 font-weight-bold">배포된 웹사이트</h1>
-            <!-- 추가 문구 -->
-            <!-- 버튼 그룹 -->
+    <!-- 공유된 배경 컨테이너 -->
+    <div class="shared-background">
+        <!-- 첫 번째 섹션 -->
+        <div class="section-box text-center">
+            <h1 class="font-weight-bold">배포된 웹사이트</h1>
+            <p class="text-left text-section">
+                로그인 시, 회원가입을 하거나 관리자 계정인
+                <strong class="text-secondary">username : admin, password : password</strong> 를 입력하세요.
+                웹 사이트의 모든 데이터는 임의로 생성된 테스트용 가상 데이터입니다.
+            </p>
             <div class="btn-group-vertical">
-                <a href="{% url 'portfolio_url' %}" class="btn btn-primary btn-lg">Portfolio</a>
-                <a href="/admin" class="btn btn-secondary btn-lg">Admin Dashboard</a>
+                <a href="{% url 'portfolio_url' %}" class="btn btn-danger btn-lg">Portfolio</a>
+                <a href="/admin" class="btn btn-warning btn-lg">Admin Dashboard</a>
                 <a href="{% url 'costhome_url' %}" class="btn btn-success btn-lg">Cost Data Center</a>
-                <a href="/qualityanalysisdashboard" class="btn btn-danger btn-lg">Quality Analysis Dashboard</a>
-                <a href="{% url 'sr_home_url' %}" class="btn btn-info btn-lg">Security Reinvent Center</a>
-                <a href="/lgsupportvideotutorial" class="btn btn-warning btn-lg">LG Support Video Tutorial</a>
+                <a href="/qualityanalysisdashboard" class="btn btn-info btn-lg">Quality Analysis Dashboard</a>
+                <a href="{% url 'sr_home_url' %}" class="btn btn-primary btn-lg">Security Reinvent Center</a>
+                <a href="/lgsupportvideotutorial" class="btn btn-secondary btn-lg">LG Support Video Tutorial</a>
+            </div>
+        </div>
+
+        <!-- 구분선 -->
+        <div class="divider"></div>
+
+        <!-- 두 번째 섹션 -->
+        <div class="section-box text-center">
+            <h1 class="font-weight-bold">코드 관리</h1>
+            <p class="text-left text-section">
+                저는 노션을 소스 코드 문서 관리 도구로 사용하고, 깃허브는 코드 버전 관리를 위해 활용했습니다. 또한, AI Project는 제가 미국 매사추세츠 대학교 수업 프로젝트에서 진행한 작업과 관련되어 있습니다.
+            </p>
+            <div class="btn-group-horizontal">
+                <a href="" class="btn btn-dark btn-lg">Notion</a>
+                <a href="" class="btn btn-light btn-lg border border-secondary">GitHub</a>
+                <a href="" class="btn btn-primary btn-lg">AI Project</a>
             </div>
         </div>
     </div>
