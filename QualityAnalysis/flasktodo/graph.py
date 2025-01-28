@@ -153,7 +153,8 @@ for i in range(len(svc_data)):
 today=date.today()
 YearNmonth=pd.DataFrame()
 for i in range(12):
-    k=today-timedelta(days=30*i)
+    # 에러 수정 1/28/2025
+    k=today-timedelta(days=31*i)
     YearNmonth.at[i,"Month"]=k.strftime('%Y-%m')
 
 #1년 데이터 소팅하기 -- pivot table 이용하기
@@ -184,15 +185,18 @@ YearSVC10M=svc_data[svc_data['Report_Date'].str.contains(YearNmonth.at[9,"Month"
 YearSVC11M=svc_data[svc_data['Report_Date'].str.contains(YearNmonth.at[10,"Month"])]
 YearSVC12M=svc_data[svc_data['Report_Date'].str.contains(YearNmonth.at[11,"Month"])]
 
+
 YearSVCTotal=pd.concat([YearSVC1M,YearSVC2M,YearSVC3M,YearSVC4M,YearSVC5M,YearSVC6M,
                         YearSVC7M,YearSVC8M,YearSVC9M,YearSVC10M,YearSVC11M,YearSVC12M])
                         
 pivot_table = pd.crosstab(index=YearSVCTotal.Report_Day, columns=YearSVCTotal.Report_Month, margins=False)
 
+
 #Pivot_table 칼럼과 인덱스 정수로 변환
 pivot_table.columns=range(0,12)
 pivot_table.index=range(0,31)
 pivot_table=pivot_table.astype(int)
+
 
 
 #YearSVCData 만들기 위해 칼럼 이름 바꾸기
@@ -342,13 +346,14 @@ legend0M=date0M_name
 ABlabels=list(range(1,len(Salesresult.index)+1))
 
 # zero not display
-Avalues2M=SVCresult['SVC_'+date2M_name].dropna().to_list()
-Avalues1M=SVCresult['SVC_'+date1M_name].dropna().to_list()
-Avalues0M=SVCresult['SVC_'+date0M_name].dropna().to_list()
-
-Bvalues2M=Salesresult['Sales_'+date2M_name].fillna(0).to_list()
-Bvalues1M=Salesresult['Sales_'+date1M_name].fillna(0).to_list()
-Bvalues0M=Salesresult['Sales_'+date0M_name].fillna(0).to_list()
+# 에러 수정 1/28/2025
+Avalues2M=SVCresult['SVC_'+date2M_name].iloc[:, 0].squeeze().dropna().tolist()
+Avalues1M=SVCresult['SVC_'+date1M_name].iloc[:, 0].squeeze().dropna().tolist()
+Avalues0M=SVCresult['SVC_'+date0M_name].dropna().tolist()
+# 에러 수정 1/28/2025
+Bvalues2M=Salesresult['Sales_'+date2M_name].iloc[:, 0].squeeze().fillna(0).tolist()
+Bvalues1M=Salesresult['Sales_'+date1M_name].iloc[:, 0].squeeze().fillna(0).tolist()
+Bvalues0M=Salesresult['Sales_'+date0M_name].fillna(0).tolist()
 
 
 svc_data.index=range(1,len(svc_data)+1)
