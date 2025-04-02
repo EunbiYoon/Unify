@@ -3,6 +3,8 @@
 import os
 import sys
 
+sys.path.append(os.path.join(os.path.dirname(__file__), "QualityAnalysis"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "VideoTutorial"))
 
 def main():
     """Run administrative tasks."""
