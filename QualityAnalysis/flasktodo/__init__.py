@@ -1,7 +1,7 @@
 import os
 import requests
 from flask import Flask, render_template
-from QualityAnalysis.todo import bp  # ✅ 상대경로 import (배포 시 필수)
+from .todo import bp  # ✅ 상대경로 import (배포 시 필수)
 
 
 def handle_401(e):
