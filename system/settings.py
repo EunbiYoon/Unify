@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["realistic-milena-eunbiyoon-6fefe7da.koyeb.app","yooneunbi.com","localhost","127.0.0.1"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://unify-production-e96d.up.railway.app",
+    "realistic-milena-eunbiyoon-6fefe7da.koyeb.app",
     "https://yooneunbi.com"
 ]
 
