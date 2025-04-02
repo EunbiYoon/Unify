@@ -2,8 +2,10 @@
 import os
 
 from flask import Flask, render_template
-from QualityAnalysis.flasktodo import todo
-from QualityAnalysis.flasktodo.todo import bp
+# from QualityAnalysis.flasktodo import todo
+# from QualityAnalysis.flasktodo.todo import bp
+from flasktodo import todo
+from flasktodo.todo import bp
 import requests
 
 

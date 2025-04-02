@@ -193,7 +193,12 @@ pivot_table = pd.crosstab(index=YearSVCTotal.Report_Day, columns=YearSVCTotal.Re
 
 
 #Pivot_table 칼럼과 인덱스 정수로 변환
-pivot_table.columns=range(0,12)
+# pivot_table.columns=range(0,12) ==> 에러 수정 4/2/2025
+if pivot_table.shape[1] == 12:
+    pivot_table.columns = range(0, 12)
+else:
+    pivot_table.columns = range(pivot_table.shape[1])
+
 pivot_table.index=range(0,31)
 pivot_table=pivot_table.astype(int)
 
@@ -204,7 +209,8 @@ today=date.today()
 thisM=int(today.strftime('%m'))
 YearSVCData=pivot_table
 
-for i in range(12):
+# for i in range(12) => 에러 수정 4/2/25
+for i in range(len(YearSVCData.columns)):
     colM=int(YearSVCData.columns[i])
     if i<thisM: #7월 기준이면 1~7월까지
         YearSVCData=YearSVCData.rename(columns={colM:str(i+12-thisM)}) # int는 숫자 순서대로 배치 되어야 해서
