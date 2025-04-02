@@ -26,11 +26,12 @@ SECRET_KEY = 'django-insecure-2y9yq)pfjh9n67ydaeduxr4ma6)_9ms%78$kskv_xpm=u_4q37
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["realistic-milena-eunbiyoon-6fefe7da.koyeb.app","yooneunbi.com","localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["realistic-milena-eunbiyoon-6fefe7da.koyeb.app","www.yooneunbi.com","yooneunbi.com","localhost","127.0.0.1"]
 
 CSRF_TRUSTED_ORIGINS = [
     "realistic-milena-eunbiyoon-6fefe7da.koyeb.app",
-    "https://yooneunbi.com"
+    "www.yooneunbi.com",
+    "yooneunbi.com"
 ]
 
 # Application definition
