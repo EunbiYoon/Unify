@@ -30,10 +30,10 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # 데이터베이스 마이그레이션 및 static 파일 수집 (필요시)
 RUN . /opt/venv/bin/activate && python manage.py collectstatic --noinput
-RUN . /opt/venv/bin/activate && python manage.py migrate
+# ⛔️ 빌드 타임 migrate 제거
+# RUN . /opt/venv/bin/activate && python manage.py migrate
 
-# 포트 설정 (Railway는 기본적으로 8000 포트 사용)
 EXPOSE 8000
 
-# Gunicorn을 사용하여 WSGI 애플리케이션 실행
-CMD ["/opt/venv/bin/gunicorn", "--bind", "0.0.0.0:8000", "system.wsgi:application"]
+# 컨테이너 시작 시 migrate 실행 후 gunicorn 시작
+CMD ["/bin/sh", "-c", ". /opt/venv/bin/activate && python manage.py migrate --noinput && exec gunicorn system.wsgi:application --bind 0.0.0.0:8000"]
