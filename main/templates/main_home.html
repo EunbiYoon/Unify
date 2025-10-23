@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunbi Yoon's Website Home</title>
+    <title>Eunbi's Web Applications</title>
     <!-- Bootstrap CSS 추가 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="icon" type="image/x-icon" href="static/icon.ico">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'icon/portfolio.png'%}">
     <style>
         .shared-background {
             background-color: #f8f9fa; /* 회색 배경 */
