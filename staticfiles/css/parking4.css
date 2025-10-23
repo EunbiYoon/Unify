@@ -1,0 +1,414 @@
+#dataTable{
+    width: 100% !important;
+  }
+  .dataTables_wrapper .dataTables_filter input{
+    background-color: white !important;
+  }
+  .dataTables_wrapper .dataTables_length select{
+    background-color: white !important; 
+  }
+  
+/* parking_base.html */
+.parking{
+    z-index:1;
+    position: relative;
+    padding:0;
+    height: 100%;
+}
+.parking::before{
+    content:"";
+    background-size: cover;
+    background-image: url('../../static/image/MainLot1.jpg');
+    filter:blur(3px);
+    position:fixed;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+nav{
+background-color: #000A52;
+border-bottom:2px solid #000A52;
+}
+nav form a{
+color:white;
+margin:0 20px 0 30px; 
+border:1px solid white; 
+border-radius: 5px; padding:5px
+}
+nav h5{
+color:white; 
+margin:0
+}
+
+/* parking_home.html */
+.content{
+    background-color: rgba(255, 255, 255, 0.931);
+    border-radius: 10px;
+    border:3px solid #000A52;
+    margin: 60px auto;
+    padding:30px
+}
+.content p {
+    font-size:35px;
+    font-weight: 700;
+    border-right: .15em solid #000a52;
+    white-space: nowrap;
+    overflow: hidden;
+    color:#000a52;
+}
+
+.content p a{
+    color:#000a52;
+}
+
+.content p:nth-child(1) {
+    width: 29.5em;
+    -webkit-animation: type 1s steps(40, end);
+    animation: type 1s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.content p:nth-child(2) {
+    width: 24em;
+    opacity: 0;
+    -webkit-animation: type2 1s steps(40, end);
+    animation: type2 1s steps(40, end);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.content p:nth-child(3) {
+    width: 24.5em;
+    opacity: 0;
+    -webkit-animation: type2 1s steps(40, end);
+    animation: type2 1s steps(40, end);
+    -webkit-animation-delay: 1s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.content p:nth-child(4) {
+    width: 16em;
+    opacity: 0;
+    -webkit-animation: type2  0.5s steps(40, end);
+    animation: type2  0.5s steps(40, end);
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.content p:nth-child(5) {
+    width: 16em;
+    opacity: 0;
+    -webkit-animation: type2 0.5s steps(40, end);
+    animation: type2 0.5s steps(40, end);
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 3.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.content p:nth-child(6) {
+    width: 16em;
+    opacity: 0;
+    -webkit-animation: type2 0.5s steps(40, end);
+    animation: type2 0.5s steps(40, end);
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.content p:nth-child(7) {
+    width: 16em;
+    opacity: 0;
+    -webkit-animation: type2 0.5s steps(40, end);
+    animation: type2 0.5s steps(40, end);
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 4.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+    width: 0;
+    }
+    99.9% {
+    border-right: .15em solid #64717C;
+    }
+    100% {
+    border: none;
+    }
+}
+@-webkit-keyframes type {
+    0% {
+    width: 0;
+    }
+    99.9% {
+    border-right: .15em solid #64717C;
+    }
+    100% {
+    border: none;
+    }
+}
+@keyframes type2 {
+    0% {
+    width: 0;
+    }
+    1% {
+    opacity: 1;
+    }
+    99.9% {
+    border-right: .15em solid #64717C;
+    }
+    100% {
+    opacity: 1;
+    border: none;
+    }
+}
+@keyframes type3 {
+    0% {
+    width: 0;
+    }
+    1% {
+    opacity: 1;
+    border-right: .15em solid #c0aa00;
+    }
+    100% {
+    opacity: 1;
+    border-right: .15em solid #c0aa00;
+    }
+}
+@keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+}
+
+
+/* violator.html */
+.violator .alert{
+    background-color: #c0aa0034;
+    color:#615603;
+    text-align: center;
+    font-weight: 600;
+    font-size:1rem;
+    border:none;
+}
+.violator{
+    background-color: rgba(255, 255, 255, 0.931);
+    border-radius: 10px;
+    border:3px solid #c0aa00;
+    margin-top:30px;
+    padding:20px;
+}
+.violator form{
+    margin:0;
+}
+.violator h1{
+    color:#464133;
+}
+.violator .registerform h5{
+    margin:0;
+}
+.violator .registerform input, .violator .registerform textarea, .violator .registerform select, .violator .time{
+    padding:5px;
+    border:none;
+    width: 100%;
+    text-align: center;
+}
+.violator .registerform input::placeholder{
+    color:lightgray !important;
+    font-weight: 600;
+}
+.violator button{
+    background-color:#c0aa009d;
+    border:none;
+    font-weight: 700;
+    color:#464133;
+    border:2px solid #464133;
+    margin-top:10px
+}
+.violator button:hover{
+    background-color: #464133;
+    color:whitesmoke;
+    border:2px solid #c0aa00;
+}
+
+/* violator_list.html */
+.violator-list{
+    background-color: rgba(255, 255, 255, 0.931);
+    border-radius: 10px;
+    border:3px solid #c0aa00;
+    margin-top:30px;
+    padding:20px;
+}
+.violator-list table{
+    margin-top:100px;
+}
+.violator-list table th, .violator-list table tr, .violator-list table td{
+    border:1px solid lightgray;
+}
+.violator-list form{
+    margin:0;
+}
+.violator-list table button{
+    border:none;
+    border-radius: 3px;
+    margin:0;
+}
+.violator-list table button:hover{
+    background-color: #c0aa00;
+    color:white;
+}
+
+/* violator_ticket.html */
+.violatorticket h3{
+    margin:0;
+}
+
+.violatorticket button{
+    border-radius: 5px !important;
+    margin: 10px;
+  }
+.violatorticket span{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom:0;
+}
+.printview h1{
+    font-size:6rem;
+    text-align: center;
+}
+.printview{ 
+    margin-top: 30px !important;
+    border: 3px dashed black !important;
+    background-color: white !important;
+}
+.printview h6{
+    text-align: right;
+    margin-top:30px;
+    margin-right:30px;
+    margin-bottom:20px;
+}
+
+@media print{
+    body {
+        max-height: 80%;
+    }
+    .printbutton{
+        visibility: hidden;
+    }
+    .printform{
+        visibility: visible;
+        position:absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        margin:0;
+    }
+    .printnote{
+        visibility: hidden;
+    }
+}
+
+
+
+/* employee.html */
+.employee .alert{
+    background-color: #000a5216;
+    color:#03138d;
+    text-align: center;
+    font-weight: 600;
+    font-size:1rem;
+    border:none;
+}
+.employee{
+    background-color: rgba(255, 255, 255, 0.931);
+    border-radius: 10px;
+    border:3px solid #000a52;
+    margin-top:30px;
+    padding:20px;
+}
+.employee form{
+    margin:0;
+}
+.employee input{
+    width: 100%;
+    border:none;
+}
+.employee h5{
+    margin:0;
+}
+.employee table{
+    margin:auto;
+    width:50%;
+}
+.employee table td{
+    padding:0;
+}
+.employee table th,.employee table input, .employee table select{
+    padding:5px !important;
+    border:none;
+}
+.employee table input::placeholder{
+    color:lightgray;
+    font-weight: 600;
+}
+.employee button{
+    margin-top: 10px;
+    background-color:#000a52;
+    border:none;
+    font-weight: 700;
+    color:whitesmoke;
+    border:2px solid #B9BECC;
+}
+.employee button:hover{
+    background-color: #B9BECC;
+    color:#000a52;
+    border:2px solid #000a52;
+}
+
+
+/* employee_list.html */
+.employee_list button{
+    background-color:#000A52;
+    border:none;
+    font-weight: 700;
+    color:#464133;
+    border:2px solid #464133;
+    border-radius: 5px;
+}
+.employee_list button:hover{
+    background-color: #464133;
+    color:whitesmoke;
+    border:2px solid #c0aa00;
+}
+.employee_list{
+    background-color: rgba(255, 255, 255, 0.931);
+    border-radius: 10px;
+    border:3px solid #000a52;
+    margin-top:30px;
+    padding:20px;
+}
+.employee_list table{
+    margin-top:100px;
+}
+.employee_list table th, .employee_list table tr, .employee_list table td{
+    border:1px solid lightgray;
+}
+.employee_list table button{
+    border:none;
+    border-radius: 3px;
+    margin:0;
+    font-weight: 400;
+    color:black ;
+    background-color: rgba(212, 212, 212, 0.749);
+}
+.employee_list table button:hover{
+    background-color: #000a52;
+    color:white;
+    border:none;
+}

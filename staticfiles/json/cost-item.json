@@ -1,0 +1,2059 @@
+{     
+    "23.05 W4":{
+        "BPA-DR":{     
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", 0.02, "23.05 W1"]},
+                {"index":"2","values":["Cover,Safety", 0.12, "23.05 W4"]},
+                {"index":"Total","values":["", 0.14, ""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Gasket", -0.18, "23.05 W2"]},
+                {"index":"2","values":["Resin,EPS", -0.16, "23.05 W2"]},
+                {"index":"3","values":["Door Assembly,Sub", -0.07, "23.05 W2"]},
+                {"index":"4","values":["Resin,PP", -1.21, "23.05 W4"]},
+                {"index":"5","values":["Door Assembly,Sub", -0.46, "23.05 W4"]},
+                {"index":"6","values":["Generator Assembly", -0.37, "23.05 W4"]},
+                {"index":"Total","values":["", -2.44, ""]}
+                ]  
+            }     
+        },
+        "BPA-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", 0.02, "23.05 W1"]},
+                {"index":"2","values":["Resin,PP", 0.55, "23.05 W2"]},
+                {"index":"3","values":["Window", 0.1, "23.05 W4"]},
+                {"index":"4","values":["Resin,ASA", 0.04, "23.05 W4"]},
+                {"index":"Total","values":["", 0.71, ""]}
+                ]
+            },
+            "Decrease":{  
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Wrap", -0.03, "23.05 W1"]},
+                {"index":"2","values":["Accessory Assembly", -0.01, "23.05 W1"]},
+                {"index":"3","values":["PCB Assembly,Complex", -0.35, "23.05 W4"]},
+                {"index":"4","values":["Resin,PP", -0.24, "23.05 W4"]},
+                {"index":"5","values":["Tub,Drum(Front)", -0.17, "23.05 W4"]},
+                {"index":"Total","values":["", -0.8, ""]}
+                ]
+            }
+        },
+        "BPA-TL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", 0.02, "23.05 W1"]},
+                {"index":"2","values":["Resin,PP", 0.55, "23.05 W2"]},
+                {"index":"3","values":["Window", 0.1, "23.05 W4"]},
+                {"index":"4","values":["Resin,ASA", 0.04, "23.05 W4"]},
+                {"index":"Total","values":["", 0.71, ""]}
+                ]
+            },
+            "Decrease":{ 
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Bracket Assembly", -0.03, "23.05 W1"]},
+                {"index":"2","values":["Resin,ASA(Chg_Qty)", -0.01, "23.05 W1"]},
+                {"index":"3","values":["Lid Assembly", -0.09, "23.05 W2"]},
+                {"index":"4","values":["Housing Assembly,Clutch Coupling", -0.4, "23.05 W4"]},
+                {"index":"5","values":["Base,Tub(Inner)", -0.2, "23.05 W4"]},
+                {"index":"6","values":["Resin,PP", -0.09, "23.05 W4"]},
+                {"index":"Total","values":["", -0.83, ""]}
+                ] 
+            }
+        },
+        "PAC-DR":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", 0.02, "23.05 W1"]},
+                {"index":"2","values":["Bracket,Hinge", 0.03, "23.05 W2"]},
+                {"index":"3","values":["Cover,Safety", 0.12, "23.05 W4"]},
+                {"index":"Total","values":["", 0.16, ""]}
+                ]
+            },
+            "Decrease":{  
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Parts Assembly,Motor", -2.0, "23.05 W2"]},
+                {"index":"2","values":["Sheet,Steel(Alcot)", -1.99, "23.05 W2"]},
+                {"index":"3","values":["Generator Assembly", -1.24, "23.05 W2"]},
+                {"index":"4","values":["Heater Assembly", -0.61, "23.05 W2"]},
+                {"index":"5","values":["Resin,EPS", -0.58, "23.05 W2"]},
+                {"index":"6","values":["Valve Assembly,Inlet", -0.68, "23.05 W3"]},
+                {"index":"7","values":["Door,Glass", -1.22, "23.05 W4"]},
+                {"index":"8","values":["Resin,PP", -1.21, "23.05 W4"]},
+                {"index":"9","values":["Door Assembly,Sub", -0.46, "23.05 W4"]},
+                {"index":"Total","values":["", -10.0, ""]}
+                ]
+            }
+        },
+        "PAC-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", 0.02, "23.05 W1"]},
+                {"index":"2","values":["Resin,PP", 0.02, "23.05 W4"]},
+                {"index":"3","values":["Resin,ASA", 0.02, "23.05 W4"]},
+                {"index":"Total","values":["", 0.06, ""]}
+                ]
+            },
+            "Decrease":{  
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Wrap", -0.03, "23.05 W1"]},
+                {"index":"2","values":["Accessory Assembly", -0.01, "23.05 W1"]},
+                {"index":"3","values":["Stator Assembly,Combined", -2.79, "23.05 W2"]},
+                {"index":"4","values":["Rotor Assembly,Combined", -1.91, "23.05 W2"]},
+                {"index":"5","values":["Bearing,Ball", -1.29, "23.05 W2"]},
+                {"index":"6","values":["Heater Assembly", -0.23, "23.05 W3"]},
+                {"index":"7","values":["Resin,TPE", -0.29, "23.05 W3"]},
+                {"index":"8","values":["Tub,Drum(Front)", -0.17, "23.05 W4"]},
+                {"index":"9","values":["Switch Assembly,Locker", -0.17, "23.05 W4"]},
+                {"index":"10","values":["Harness,Single", -0.15, "23.05 W4"]},
+                {"index":"Total","values":["", -7.05, ""]}
+                ]
+            }
+        },
+        "PAC-TL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", 0.01, "23.05 W1"]},
+                {"index":"2","values":["Bracket,Hinge", 0.03, "23.05 W2"]},
+                {"index":"3","values":["Box Assembly,Detergent", 0.31, "23.05 W4"]},
+                {"index":"4","values":["Resin,ASA", 0.02, "23.05 W4"]},
+                {"index":"Total","values":["", 0.36, ""]}
+                ]
+            },
+            "Decrease":{  
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Resin,ASA(Chg_Qty)", -0.01, "23.05 W1"]},
+                {"index":"2","values":["Bracket Assembly", -0.03, "23.05 W1"]},
+                {"index":"3","values":["Sheet,Steel(PCM)", -2.38, "23.05 W2"]},
+                {"index":"4","values":["Housing Assembly,Clutch Coupling", -1.44, "23.05 W2"]},
+                {"index":"5","values":["Resin,PP", -0.83, "23.05 W2"]},
+                {"index":"6","values":["PCB Assembly,Complex", -4.36, "23.05 W3"]},
+                {"index":"7","values":["Stator Assembly,Combined", -1.81, "23.05 W3"]},
+                {"index":"8","values":["Rotor Assembly,Combined", -1.25, "23.05 W3"]},
+                {"index":"9","values":["Housing Assembly,Clutch Coupling", -0.4, "23.05 W4"]},
+                {"index":"10","values":["Harness,Multi", -0.31, "23.05 W4"]},
+                {"index":"11","values":["Base,Tub(Inner)", -0.2, "23.05 W4"]},
+                {"index":"Total","values":["", -13.03, ""]}
+                ]
+            }
+        }
+    },
+    "23.06 W1":{
+        "BPA-DR":{     
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Resin,ASA:Chg Qty", 0.18, "23.06 W1"]},
+                {"index":"Total","values":["", 0.18, ""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "BPA-TL":{     
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "BPA-FL":{     
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Resin,PP:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"Total","values":["", 0.05, ""]}
+                ]                
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Resin,PP:Chg Qty", -0.55, "23.06 W1"]},
+                {"index":"Total","values":["", -0.55, ""]}
+                ]               
+            }
+        },
+        "PAC-DR":{     
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"Total","values":["", -2.60, ""]}
+                ]            
+            }
+        },
+        "PAC-TL":{     
+            "Increase":{
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"2","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"Total","values":["", -0.08, ""]}
+                ] 
+            }
+        },
+        "PAC-FL":{     
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.75, "23.06 W1"]},
+                {"index":"2","values":["Panel Assembly,Drawer", 0.06, "23.06 W1"]},
+                {"index":"3","values":["Resin,PP", 0.06, "23.06 W1"]},
+                {"index":"Total","values":["", 0.87, ""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Resin,ASA", -2.05, "23.06 W1"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.34, "23.06 W1"]},
+                {"index":"3","values":["Power Cord Assembly", -0.29, "23.06 W1"]},
+                {"index":"4","values":["Harness,Multi", -0.20, "23.06 W1"]},
+                {"index":"Total","values":["", -2.88, ""]}
+                ]
+            }
+        }
+    },
+    "23.06 W2":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.79, "23.06 W1"]},
+                {"index":"2","values":["Cover,Tub:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"3","values":["Panel Assembly,Drawer", 0.05, "23.06 W1"]},
+                {"index":"Total","values":["", 0.89, ""]}
+            ]},
+            "Decrease":{
+            "columns": ["", "Decrease", "VI", "Date"],
+            "rows":[
+            {"index":"1","values":["Frame,Door(Outer):Chg Qty", -1.69, "23.06 W1"]},
+            {"index":"2","values":["Tub,Outer", -0.57, "23.06 W2"]},
+            {"index":"3","values":["Cover,Tub", -0.19, "23.06 W2"]},
+            {"index":"4","values":["Door,Glass", -0.1, "23.06 W2"]},
+            {"index":"Total","values":["", -2.55, ""]}
+            ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.03, "23.06 W2"]},
+                {"index":"Total","values":["", -0.03, ""]}
+              ]}
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", 0.18, "23.06 W1"]},
+                {"index":"Total","values":["", 0.18, ""]}
+              ]},
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Tub,Drum(Rear)", -0.84, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.77, "23.06 W2"]},
+                {"index":"5","values":["Door,Glass", -0.06, "23.06 W2"]},
+                {"index":"Total","values":["", -4.27, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.76, "23.06 W1"]},
+                {"index":"2","values":["Panel Assembly,Drawer", 0.06, "23.06 W1"]},
+                {"index":"3","values":["Cover,Tub:Chg Qty", 0.06, "23.06 W1"]},
+                {"index":"Total","values":["", 0.88, ""]}
+            ]},
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", -2.05, "23.06 W1"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.34, "23.06 W1"]},
+                {"index":"3","values":["Power Cord Assembly", -0.29, "23.06 W1"]},
+                {"index":"4","values":["Harness,Multi", -0.2, "23.06 W1"]},
+                {"index":"5","values":["Damper Assembly,Friction", -0.08, "23.06 W1"]},
+                {"index":"6","values":["Cabinet", -1.95, "23.06 W2"]},
+                {"index":"7","values":["Package Assembly", -0.08, "23.06 W2"]},
+                {"index":"8","values":["Bellows", -0.04, "23.06 W2"]},
+                {"index":"9","values":["Box Assembly,Detergent", -0.02, "23.06 W2"]},
+                {"index":"Total","values":["", -5.05, ""]}
+            ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.14, "23.06 W2"]},
+                {"index":"Total","values":["", 0.14, ""]}
+              ]},
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"2","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"3","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"4","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"5","values":["Package Assembly", -0.83, "23.06 W2"]},
+                {"index":"6","values":["Tub,Outer", -0.49, "23.06 W2"]},
+                {"index":"7","values":["Packing", -0.3, "23.06 W2"]},
+                {"index":"8","values":["Cover,Top(Form)", -0.21, "23.06 W2"]},
+                {"index":"9","values":["Case Assembly", -0.09, "23.06 W2"]},
+                {"index":"10","values":["Cover,Balance(Upper)", -0.07, "23.06 W2"]},
+                {"index":"11","values":["Harness,Single", -0.06, "23.06 W2"]},
+                {"index":"12","values":["Lid Assembly", -0.05, "23.06 W2"]},
+                {"index":"13","values":["Bracket Assembly", -0.05, "23.06 W2"]},
+                {"index":"14","values":["Cover,Balance(Lower)", -0.1, "23.06 W2"]},
+                {"index":"Total","values":["", -2.41, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Parts Assembly,Motor", -1.85, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.69, "23.06 W2"]},
+                {"index":"5","values":["Tub,Drum(Front)", -0.66, "23.06 W2"]},
+                {"index":"6","values":["Package Assembly", -0.54, "23.06 W2"]},
+                {"index":"7","values":["Heater Assembly", -0.4, "23.06 W2"]},
+                {"index":"8","values":["Belt,Poly V", -0.37, "23.06 W2"]},
+                {"index":"9","values":["Parts Assembly,Motor", -0.29, "23.06 W2"]},
+                {"index":"10","values":["Duct Assembly", -0.23, "23.06 W2"]},
+                {"index":"11","values":["Gasket", -0.17, "23.06 W2"]},
+                {"index":"12","values":["Cover,Rear", -0.16, "23.06 W2"]},
+                {"index":"13","values":["Roller Assembly", -0.14, "23.06 W2"]},
+                {"index":"14","values":["Base,Cabinet", -0.14, "23.06 W2"]},
+                {"index":"15","values":["Duct,Outlet", -0.04, "23.06 W2"]},
+                {"index":"Total","values":["", -8.28, ""]}
+              ]}
+        }
+    },
+    "23.06 W3":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.79, "23.06 W1"]},
+                {"index":"2","values":["Cover,Tub:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"3","values":["Panel Assembly,Drawer", 0.05, "23.06 W1"]},
+                {"index":"Total","values":["", 0.89, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", -1.69, "23.06 W1"]},
+                {"index":"2","values":["Tub,Outer", -0.57, "23.06 W2"]},
+                {"index":"3","values":["Cover,Tub", -0.19, "23.06 W2"]},
+                {"index":"4","values":["Door,Glass", -0.1, "23.06 W2"]},
+                {"index":"5","values":["Tub,Outer", -0.06, "23.06 W3"]},
+                {"index":"6","values":["Tub,Drum(Rear)", -0.04, "23.06 W3"]},
+                {"index":"7","values":["Tub,Drum(Front)", -0.03, "23.06 W3"]},
+                {"index":"8","values":["Gasket", -0.03, "23.06 W3"]},
+                {"index":"Total","values":["", -2.71, ""]}
+              ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.79, "23.06 W1"]},
+                {"index":"2","values":["Cover,Tub:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"3","values":["Panel Assembly,Drawer", 0.05, "23.06 W1"]},
+                {"index":"4","values":["Decor,Lid", 1.21, "23.06 W3"]},
+                {"index":"5","values":["Housing Assembly,Clutch Coupling", 0.07, "23.06 W3"]},
+                {"index":"6","values":["Base,Tub(Inner)", 0.08, "23.06 W3"]},
+                {"index":"Total","values":["", 2.25, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.03, "23.06 W2"]},
+                {"index":"2","values":["Wrap", -0.33, "23.06 W3"]},
+                {"index":"3","values":["Tub,Outer", -0.05, "23.06 W3"]},
+                {"index":"4","values":["Panel,Control", -0.03, "23.06 W3"]},
+                {"index":"5","values":["Switch Assembly", -0.02, "23.06 W3"]},
+                {"index":"6","values":["Suspension Assembly", -0.03, "23.06 W3"]},
+                {"index":"Total","values":["", -0.49, ""]}
+              ]}
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", 0.18, "23.06 W1"]},
+                {"index":"Total","values":["", 0.18, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Tub,Drum(Rear)", -0.84, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.77, "23.06 W2"]},
+                {"index":"5","values":["Door,Glass", -0.06, "23.06 W2"]},
+                {"index":"6","values":["Parts Assembly,Motor", -0.12, "23.06 W3"]},
+                {"index":"7","values":["Panel Assembly,Control", -0.11, "23.06 W3"]},
+                {"index":"8","values":["PCB Assembly,Complex", -0.1, "23.06 W3"]},
+                {"index":"9","values":["Heater Assembly", -0.06, "23.06 W3"]},
+                {"index":"10","values":["Filter Assembly", -0.05, "23.06 W3"]},
+                {"index":"11","values":["Door Assembly,Sub", -0.04, "23.06 W3"]},
+                {"index":"Total","values":["", -4.75, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.76, "23.06 W1"]},
+                {"index":"2","values":["Panel Assembly,Drawer", 0.06, "23.06 W1"]},
+                {"index":"3","values":["Cover,Tub:Chg Qty", 0.06, "23.06 W1"]},
+                {"index":"Total","values":["", 0.88, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", -2.05, "23.06 W1"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.34, "23.06 W1"]},
+                {"index":"3","values":["Power Cord Assembly", -0.29, "23.06 W1"]},
+                {"index":"4","values":["Harness,Multi", -0.2, "23.06 W1"]},
+                {"index":"5","values":["Damper Assembly,Friction", -0.08, "23.06 W1"]},
+                {"index":"6","values":["Cabinet", -1.95, "23.06 W2"]},
+                {"index":"7","values":["Wrap", -0.08, "23.06 W2"]},
+                {"index":"8","values":["Bellows", -0.04, "23.06 W2"]},
+                {"index":"9","values":["Box Assembly,Detergent", -0.02, "23.06 W2"]},
+                {"index":"10","values":["Stator Assembly,Combined", -2.45, "23.06 W3"]},
+                {"index":"11","values":["Rotor Assembly,Combined", -1.62, "23.06 W3"]},
+                {"index":"12","values":["Frame,Door(Outer)", -1.16, "23.06 W3"]},
+                {"index":"13","values":["Gasket", -0.28, "23.06 W3"]},
+                {"index":"14","values":["Switch Assembly,Locker", -0.26, "23.06 W3"]},
+                {"index":"Total","values":["", -10.82, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.14, "23.06 W2"]},
+                {"index":"Total","values":["", 0.14, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"2","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"3","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"4","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"5","values":["Package Assembly", -0.83, "23.06 W2"]},
+                {"index":"6","values":["Tub,Outer", -0.49, "23.06 W2"]},
+                {"index":"7","values":["Packing", -0.3, "23.06 W2"]},
+                {"index":"8","values":["Cover,Top(Form)", -0.21, "23.06 W2"]},
+                {"index":"9","values":["Case Assembly", -0.09, "23.06 W2"]},
+                {"index":"10","values":["Cover,Balance(Upper)", -0.07, "23.06 W2"]},
+                {"index":"11","values":["Harness,Single", -0.06, "23.06 W2"]},
+                {"index":"12","values":["Lid Assembly", -0.05, "23.06 W2"]},
+                {"index":"13","values":["Bracket Assembly", -0.05, "23.06 W2"]},
+                {"index":"14","values":["Cover,Balance(Lower)", -0.1, "23.06 W2"]},
+                {"index":"15","values":["PCB Assembly,Complex", -4.08, "23.06 W3"]},
+                {"index":"16","values":["Cabinet", -2.16, "23.06 W3"]},
+                {"index":"17","values":["Stator Assembly,Combined", -1.75, "23.06 W3"]},
+                {"index":"18","values":["Rotor Assembly,Combined", -1.15, "23.06 W3"]},
+                {"index":"19","values":["Base,Tub(Inner)", -1.23, "23.06 W3"]},
+                {"index":"Total","values":["", -12.78, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Cover,Safety", 0.1, "23.06 W3"]},
+                {"index":"Total","values":["", 0.1, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Parts Assembly,Motor", -1.85, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.69, "23.06 W2"]},
+                {"index":"5","values":["Tub,Drum(Front)", -0.66, "23.06 W2"]},
+                {"index":"6","values":["Package Assembly", -0.54, "23.06 W2"]},
+                {"index":"7","values":["Heater Assembly", -0.4, "23.06 W2"]},
+                {"index":"8","values":["Belt,Poly V", -0.37, "23.06 W2"]},
+                {"index":"9","values":["Parts Assembly,Motor", -0.29, "23.06 W2"]},
+                {"index":"10","values":["Duct Assembly", -0.23, "23.06 W2"]},
+                {"index":"11","values":["Gasket", -0.17, "23.06 W2"]},
+                {"index":"12","values":["Cover,Rear", -0.16, "23.06 W2"]},
+                {"index":"13","values":["Roller Assembly", -0.14, "23.06 W2"]},
+                {"index":"14","values":["Base,Cabinet", -0.14, "23.06 W2"]},
+                {"index":"15","values":["Duct,Outlet", -0.04, "23.06 W2"]},
+                {"index":"16","values":["Tub,Drum(Center)", -1.94, "23.06 W3"]},
+                {"index":"17","values":["Panel Assembly,Control", -1.26, "23.06 W3"]},
+                {"index":"18","values":["Frame,Door(Outer)", -1.13, "23.06 W3"]},
+                {"index":"19","values":["Parts Assembly,Motor", -0.12, "23.06 W3"]},
+                {"index":"20","values":["Generator Assembly", -0.09, "23.06 W3"]},
+                {"index":"Total","values":["", -12.82, ""]}
+              ]}
+        }
+    },
+    "23.06 W4":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.79, "23.06 W1"]},
+                {"index":"2","values":["Cover,Tub:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"3","values":["Panel Assembly,Drawer", 0.05, "23.06 W1"]},
+                {"index":"4","values":["Rotor Assembly,Combined", 0.12, "23.06 W4"]},
+                {"index":"5","values":["PCB Assembly,Complex", 0.01, "23.06 W4"]},
+                {"index":"Total","values":["", 1.02, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", -1.69, "23.06 W1"]},
+                {"index":"2","values":["Tub,Outer", -0.57, "23.06 W2"]},
+                {"index":"3","values":["Cover,Tub", -0.19, "23.06 W2"]},
+                {"index":"4","values":["Door,Glass", -0.1, "23.06 W2"]},
+                {"index":"5","values":["Tub,Outer", -0.06, "23.06 W3"]},
+                {"index":"6","values":["Tub,Drum(Rear)", -0.04, "23.06 W3"]},
+                {"index":"7","values":["Tub,Drum(Front)", -0.03, "23.06 W3"]},
+                {"index":"8","values":["Gasket", -0.03, "23.06 W3"]},
+                {"index":"Total","values":["", -2.71, ""]}
+              ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.79, "23.06 W1"]},
+                {"index":"2","values":["Cover,Tub:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"3","values":["Panel Assembly,Drawer", 0.05, "23.06 W1"]},
+                {"index":"4","values":["Decor,Lid", 1.21, "23.06 W3"]},
+                {"index":"5","values":["Housing Assembly,Clutch Coupling", 0.07, "23.06 W3"]},
+                {"index":"6","values":["Base,Tub(Inner)", 0.08, "23.06 W3"]},
+                {"index":"7","values":["Stator Assembly,Combined", 0.09, "23.06 W4"]},
+                {"index":"8","values":["Rotor Assembly,Combined", 0.08, "23.06 W4"]},
+                {"index":"Total","values":["", 2.42, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.03, "23.06 W2"]},
+                {"index":"2","values":["Wrap", -0.33, "23.06 W3"]},
+                {"index":"3","values":["Tub,Outer", -0.05, "23.06 W3"]},
+                {"index":"4","values":["Panel,Control", -0.03, "23.06 W3"]},
+                {"index":"5","values":["Switch Assembly", -0.02, "23.06 W3"]},
+                {"index":"6","values":["Suspension Assembly", -0.03, "23.06 W3"]},
+                {"index":"Total","values":["", -0.49, ""]}
+              ]}
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", 0.18, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Center)", 0.27, "23.06 W4"]},
+                {"index":"Total","values":["", 0.45, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Tub,Drum(Rear)", -0.84, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.77, "23.06 W2"]},
+                {"index":"5","values":["Door,Glass", -0.06, "23.06 W2"]},
+                {"index":"6","values":["Parts Assembly,Motor", -0.12, "23.06 W3"]},
+                {"index":"7","values":["Panel Assembly,Control", -0.11, "23.06 W3"]},
+                {"index":"8","values":["PCB Assembly,Complex", -0.1, "23.06 W3"]},
+                {"index":"9","values":["Heater Assembly", -0.06, "23.06 W3"]},
+                {"index":"10","values":["Filter Assembly", -0.05, "23.06 W3"]},
+                {"index":"11","values":["Door Assembly,Sub", -0.04, "23.06 W3"]},
+                {"index":"Total","values":["", -4.75, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.76, "23.06 W1"]},
+                {"index":"2","values":["Panel Assembly,Drawer", 0.06, "23.06 W1"]},
+                {"index":"3","values":["Cover,Tub:Chg Qty", 0.06, "23.06 W1"]},
+                {"index":"4","values":["Rotor Assembly,Combined", 0.12, "23.06 W4"]},
+                {"index":"Total","values":["", 1.0, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", -2.05, "23.06 W1"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.34, "23.06 W1"]},
+                {"index":"3","values":["Power Cord Assembly", -0.29, "23.06 W1"]},
+                {"index":"4","values":["Harness,Multi", -0.2, "23.06 W1"]},
+                {"index":"5","values":["Damper Assembly,Friction", -0.08, "23.06 W1"]},
+                {"index":"6","values":["Cabinet", -1.95, "23.06 W2"]},
+                {"index":"7","values":["Wrap", -0.08, "23.06 W2"]},
+                {"index":"8","values":["Bellows", -0.04, "23.06 W2"]},
+                {"index":"9","values":["Box Assembly,Detergent", -0.02, "23.06 W2"]},
+                {"index":"10","values":["Stator Assembly,Combined", -2.45, "23.06 W3"]},
+                {"index":"11","values":["Rotor Assembly,Combined", -1.62, "23.06 W3"]},
+                {"index":"12","values":["Frame,Door(Outer)", -1.16, "23.06 W3"]},
+                {"index":"13","values":["Gasket", -0.28, "23.06 W3"]},
+                {"index":"14","values":["Switch Assembly,Locker", -0.26, "23.06 W3"]},
+                {"index":"15","values":["Tub Assembly,Outer", -1.25, "23.06 W4"]},
+                {"index":"16","values":["Power Cord Assembly", -0.24, "23.06 W4"]},
+                {"index":"17","values":["Accessory Assembly", -0.07, "23.06 W4"]},
+                {"index":"18","values":["Switch Assembly,Pressure", -0.03, "23.06 W4"]},
+                {"index":"Total","values":["", -12.41, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.14, "23.06 W2"]},
+                {"index":"2","values":["Stator Assembly,Combined", 0.09, "23.06 W4"]},
+                {"index":"3","values":["Rotor Assembly,Combined", 0.08, "23.06 W4"]},
+                {"index":"Total","values":["", 0.31, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"2","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"3","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"4","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"5","values":["Package Assembly", -0.83, "23.06 W2"]},
+                {"index":"6","values":["Tub,Outer", -0.49, "23.06 W2"]},
+                {"index":"7","values":["Packing", -0.3, "23.06 W2"]},
+                {"index":"8","values":["Cover,Top(Form)", -0.21, "23.06 W2"]},
+                {"index":"9","values":["Case Assembly", -0.09, "23.06 W2"]},
+                {"index":"10","values":["Cover,Balance(Upper)", -0.07, "23.06 W2"]},
+                {"index":"11","values":["Harness,Single", -0.06, "23.06 W2"]},
+                {"index":"12","values":["Lid Assembly", -0.05, "23.06 W2"]},
+                {"index":"13","values":["Bracket Assembly", -0.05, "23.06 W2"]},
+                {"index":"14","values":["Cover,Balance(Lower)", -0.1, "23.06 W2"]},
+                {"index":"15","values":["PCB Assembly,Complex", -4.08, "23.06 W3"]},
+                {"index":"16","values":["Cabinet", -2.16, "23.06 W3"]},
+                {"index":"17","values":["Stator Assembly,Combined", -1.75, "23.06 W3"]},
+                {"index":"18","values":["Rotor Assembly,Combined", -1.15, "23.06 W3"]},
+                {"index":"19","values":["Base,Tub(Inner)", -1.23, "23.06 W3"]},
+                {"index":"20","values":["Housing Assembly,Clutch Coupling", -1.68, "23.06 W4"]},
+                {"index":"Total","values":["", -14.46, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Cover,Safety", 0.1, "23.06 W3"]},
+                {"index":"2","values":["Tub,Drum(Center)", 0.27, "23.06 W4"]},
+                {"index":"Total","values":["", 0.37, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Parts Assembly,Motor", -1.85, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.69, "23.06 W2"]},
+                {"index":"5","values":["Tub,Drum(Front)", -0.66, "23.06 W2"]},
+                {"index":"6","values":["Package Assembly", -0.54, "23.06 W2"]},
+                {"index":"7","values":["Heater Assembly", -0.4, "23.06 W2"]},
+                {"index":"8","values":["Belt,Poly V", -0.37, "23.06 W2"]},
+                {"index":"9","values":["Parts Assembly,Motor", -0.29, "23.06 W2"]},
+                {"index":"10","values":["Duct Assembly", -0.23, "23.06 W2"]},
+                {"index":"11","values":["Gasket", -0.17, "23.06 W2"]},
+                {"index":"12","values":["Cover,Rear", -0.16, "23.06 W2"]},
+                {"index":"13","values":["Roller Assembly", -0.14, "23.06 W2"]},
+                {"index":"14","values":["Base,Cabinet", -0.14, "23.06 W2"]},
+                {"index":"15","values":["Duct,Outlet", -0.04, "23.06 W2"]},
+                {"index":"16","values":["Tub,Drum(Center)", -1.94, "23.06 W3"]},
+                {"index":"17","values":["Panel Assembly,Control", -1.26, "23.06 W3"]},
+                {"index":"18","values":["Frame,Door(Outer)", -1.13, "23.06 W3"]},
+                {"index":"19","values":["Parts Assembly,Motor", -0.12, "23.06 W3"]},
+                {"index":"20","values":["Generator Assembly", -0.09, "23.06 W3"]},
+                {"index":"21","values":["Plate,Upper", -0.03, "23.06 W4"]},
+                {"index":"Total","values":["", -12.85, ""]}
+              ]}
+        }
+    },
+    "23.06 W5":{
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", 0.18, "23.06 W1"]},
+                {"index":"2","values":["Sheet,Steel(Alcot)", 0.27, "23.06 W4"]},
+                {"index":"Total","values":["", 0.45, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Tub,Drum(Rear)", -0.84, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.77, "23.06 W2"]},
+                {"index":"5","values":["Door,Glass", -0.06, "23.06 W2"]},
+                {"index":"6","values":["Parts Assembly,Motor", -0.12, "23.06 W3"]},        
+                {"index":"7","values":["Panel Assembly,Control", -0.11, "23.06 W3"]},      
+                {"index":"8","values":["PCB Assembly,Complex", -0.1, "23.06 W3"]},
+                {"index":"9","values":["Heater Assembly", -0.06, "23.06 W3"]},
+                {"index":"10","values":["Filter Assembly", -0.05, "23.06 W3"]},
+                {"index":"11","values":["Door Assembly,Sub", -0.04, "23.06 W3"]},
+                {"index":"12","values":["Paint,Powder", -0.8, "23.06 W5"]},
+                {"index":"13","values":["Gasket", -0.42, "23.06 W5"]},
+                {"index":"14","values":["Frame,Door(Outer):Chg Qty", -0.06, "23.06 W5"]},  
+                {"index":"Total","values":["", -6.03, ""]}
+              ]}
+        },
+        "BPA-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.79, "23.06 W1"]},
+                {"index":"2","values":["Cover,Tub:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"3","values":["Panel Assembly,Drawer", 0.05, "23.06 W1"]},
+                {"index":"4","values":["Rotor Assembly,Combined", 0.12, "23.06 W4"]},
+                {"index":"5","values":["PCB Assembly,Complex", 0.01, "23.06 W4"]},
+                {"index":"6","values":["Decor,Panel", 2.48, "23.06 W5"]},
+                {"index":"Total","values":["", 3.5, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", -1.69, "23.06 W1"]},
+                {"index":"2","values":["Tub,Outer", -0.57, "23.06 W2"]},
+                {"index":"3","values":["Cover,Tub", -0.19, "23.06 W2"]},
+                {"index":"4","values":["Door,Glass", -0.1, "23.06 W2"]},
+                {"index":"5","values":["Tub,Outer", -0.06, "23.06 W3"]},
+                {"index":"6","values":["Tub,Drum(Rear)", -0.04, "23.06 W3"]},
+                {"index":"7","values":["Tub,Drum(Front)", -0.03, "23.06 W3"]},
+                {"index":"8","values":["Gasket", -0.03, "23.06 W3"]},
+                {"index":"9","values":["PCB Assembly,Display", -0.07, "23.06 W5"]},
+                {"index":"Total","values":["", -2.78, ""]}
+              ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.79, "23.06 W1"]},
+                {"index":"2","values":["Cover,Tub:Chg Qty", 0.05, "23.06 W1"]},
+                {"index":"3","values":["Panel Assembly,Drawer", 0.05, "23.06 W1"]},
+                {"index":"4","values":["Decor,Lid", 1.21, "23.06 W3"]},
+                {"index":"5","values":["Housing Assembly,Clutch Coupling", 0.07, "23.06 W3"]},
+                {"index":"6","values":["Base,Tub(Inner)", 0.08, "23.06 W3"]},
+                {"index":"7","values":["Stator Assembly,Combined", 0.09, "23.06 W4"]},
+                {"index":"8","values":["Rotor Assembly,Combined", 0.08, "23.06 W4"]},
+                {"index":"Total","values":["", 2.42, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.03, "23.06 W2"]},
+                {"index":"2","values":["Wrap", -0.33, "23.06 W3"]},
+                {"index":"3","values":["Tub,Outer", -0.05, "23.06 W3"]},
+                {"index":"4","values":["Panel,Control", -0.03, "23.06 W3"]},
+                {"index":"5","values":["Switch Assembly", -0.02, "23.06 W3"]},
+                {"index":"6","values":["Suspension Assembly", -0.03, "23.06 W3"]},
+                {"index":"7","values":["Panel,Rear", -0.0, "23.06 W5"]},
+                {"index":"Total","values":["", -0.49, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Cover,Safety", 0.1, "23.06 W3"]},
+                {"index":"2","values":["Sheet,Steel(Alcot)", 0.27, "23.06 W4"]},
+                {"index":"Total","values":["", 0.37, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Rear)", -1.32, "23.06 W1"]},
+                {"index":"2","values":["Tub,Drum(Front)", -1.28, "23.06 W1"]},
+                {"index":"3","values":["Parts Assembly,Motor", -1.85, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Front)", -0.69, "23.06 W2"]},
+                {"index":"5","values":["Tub,Drum(Front)", -0.66, "23.06 W2"]},
+                {"index":"6","values":["Package Assembly", -0.54, "23.06 W2"]},
+                {"index":"7","values":["Heater Assembly", -0.4, "23.06 W2"]},
+                {"index":"8","values":["Belt,Poly V", -0.37, "23.06 W2"]},
+                {"index":"9","values":["Parts Assembly,Motor", -0.29, "23.06 W2"]},
+                {"index":"10","values":["Duct Assembly", -0.23, "23.06 W2"]},
+                {"index":"11","values":["Gasket", -0.17, "23.06 W2"]},
+                {"index":"12","values":["Cover,Rear", -0.16, "23.06 W2"]},
+                {"index":"13","values":["Roller Assembly", -0.14, "23.06 W2"]},
+                {"index":"14","values":["Base,Cabinet", -0.14, "23.06 W2"]},
+                {"index":"15","values":["Duct,Outlet", -0.04, "23.06 W2"]},
+                {"index":"16","values":["Tub,Drum(Center)", -1.94, "23.06 W3"]},
+                {"index":"17","values":["Panel Assembly,Control", -1.26, "23.06 W3"]},
+                {"index":"18","values":["Frame,Door(Outer)", -1.13, "23.06 W3"]},
+                {"index":"19","values":["Parts Assembly,Motor", -0.12, "23.06 W3"]},
+                {"index":"20","values":["Generator Assembly", -0.09, "23.06 W3"]},
+                {"index":"21","values":["Plate,Upper", -0.03, "23.06 W4"]},
+                {"index":"22","values":["Paint,Powder", -1.05, "23.06 W5"]},
+                {"index":"23","values":["Cover,Rear", -0.67, "23.06 W5"]},
+                {"index":"24","values":["Gasket", -0.48, "23.06 W5"]},
+                {"index":"25","values":["Frame,Door(Outer):Chg Qty", -0.06, "23.06 W5"]},
+                {"index":"Total","values":["", -15.11, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", 0.76, "23.06 W1"]},
+                {"index":"2","values":["Panel Assembly,Drawer", 0.06, "23.06 W1"]},
+                {"index":"3","values":["Cover,Tub:Chg Qty", 0.06, "23.06 W1"]},
+                {"index":"4","values":["Rotor Assembly,Combined", 0.12, "23.06 W4"]},
+                {"index":"Total","values":["", 1.0, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Frame,Door(Outer):Chg Qty", -2.05, "23.06 W1"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.34, "23.06 W1"]},
+                {"index":"3","values":["Power Cord Assembly", -0.29, "23.06 W1"]},
+                {"index":"4","values":["Harness,Multi", -0.2, "23.06 W1"]},
+                {"index":"5","values":["Damper Assembly,Friction", -0.08, "23.06 W1"]},
+                {"index":"6","values":["Cabinet", -1.95, "23.06 W2"]},
+                {"index":"7","values":["Wrap", -0.08, "23.06 W2"]},
+                {"index":"8","values":["Bellows", -0.04, "23.06 W2"]},
+                {"index":"9","values":["Box Assembly,Detergent", -0.02, "23.06 W2"]},
+                {"index":"10","values":["Stator Assembly,Combined", -2.45, "23.06 W3"]},
+                {"index":"11","values":["Rotor Assembly,Combined", -1.62, "23.06 W3"]},
+                {"index":"12","values":["Frame,Door(Outer)", -1.16, "23.06 W3"]},
+                {"index":"13","values":["Gasket", -0.28, "23.06 W3"]},
+                {"index":"14","values":["Switch Assembly,Locker", -0.26, "23.06 W3"]},
+                {"index":"15","values":["Bearing,Ball", -0.72, "23.06 W4"]},
+                {"index":"16","values":["Bearing,Ball", -0.53, "23.06 W4"]},
+                {"index":"17","values":["Power Cord Assembly", -0.24, "23.06 W4"]},
+                {"index":"18","values":["Housing,Bearing Drum", -0.68, "23.06 W5"]},
+                {"index":"19","values":["Cover,Tub", -0.23, "23.06 W5"]},
+                {"index":"20","values":["Damper Assembly,Friction", -0.15, "23.06 W5"]},
+                {"index":"21","values":["Base,Cabinet", -0.12, "23.06 W5"]},
+                {"index":"Total","values":["", -13.49, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.14, "23.06 W2"]},
+                {"index":"2","values":["Stator Assembly,Combined", 0.09, "23.06 W4"]},
+                {"index":"3","values":["Rotor Assembly,Combined", 0.08, "23.06 W4"]},
+                {"index":"Total","values":["", 0.31, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"2","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"3","values":["Damper Assembly,Friction", -0.07, "23.06 W1"]},
+                {"index":"4","values":["Cap,Cover", -0.01, "23.06 W1"]},
+                {"index":"5","values":["Package Assembly", -0.83, "23.06 W2"]},
+                {"index":"6","values":["Tub,Outer", -0.49, "23.06 W2"]},
+                {"index":"7","values":["Packing", -0.3, "23.06 W2"]},
+                {"index":"8","values":["Cover,Top(Form)", -0.21, "23.06 W2"]},
+                {"index":"9","values":["Case Assembly", -0.09, "23.06 W2"]},
+                {"index":"10","values":["Cover,Balance(Upper)", -0.07, "23.06 W2"]},
+                {"index":"11","values":["Harness,Single", -0.06, "23.06 W2"]},
+                {"index":"12","values":["Lid Assembly", -0.05, "23.06 W2"]},
+                {"index":"13","values":["Bracket Assembly", -0.05, "23.06 W2"]},
+                {"index":"14","values":["Cover,Balance(Lower)", -0.1, "23.06 W2"]},
+                {"index":"15","values":["PCB Assembly,Complex", -4.08, "23.06 W3"]},
+                {"index":"16","values":["Cabinet", -2.16, "23.06 W3"]},
+                {"index":"17","values":["Stator Assembly,Combined", -1.75, "23.06 W3"]},
+                {"index":"18","values":["Rotor Assembly,Combined", -1.15, "23.06 W3"]},
+                {"index":"19","values":["Base,Tub(Inner)", -1.23, "23.06 W3"]},
+                {"index":"20","values":["Housing Assembly,Clutch Coupling", -1.68, "23.06 W4"]},
+                {"index":"21","values":["Pulsator,Washing", -0.26, "23.06 W5"]},
+                {"index":"22","values":["Damper Assembly,Friction", -0.13, "23.06 W5"]},
+                {"index":"23","values":["Motor Assembly,DC,Clutch", -0.07, "23.06 W5"]},
+                {"index":"24","values":["Hose Assembly,Drain", -0.04, "23.06 W5"]},
+                {"index":"25","values":["Holder", -0.01, "23.06 W5"]},
+                {"index":"Total","values":["", -14.97, ""]}
+              ]}
+        }
+    },
+    "23.07 W1":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        }
+    },
+    "23.07 W2":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box", 1.06, "23.06 W2"]},
+                {"index":"Total","values":["", 1.06, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -2.44, "23.06 W2"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.23, "23.06 W2"]},
+                {"index":"3","values":["Tub,Drum(Rear)", -0.21, "23.06 W2"]},
+                {"index":"4","values":["Gasket", -0.19, "23.06 W2"]},
+                {"index":"5","values":["Harness,Multi", -0.18, "23.06 W2"]},
+                {"index":"Total","values":["", -3.25, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.16, "23.06 W2"]},
+                {"index":"Total","values":["", 0.16, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["PCB Assembly,Complex", -2.17, "23.06 W2"]},
+                {"index":"2","values":["Bush", -0.61, "23.06 W2"]},
+                {"index":"3","values":["Tub,Outer", -0.46, "23.06 W2"]},
+                {"index":"4","values":["Cover,Tub", -0.36, "23.06 W2"]},
+                {"index":"5","values":["Pump Assembly,Drain", -0.2, "23.06 W2"]},
+                {"index":"Total","values":["", -3.8, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box", 1.06, "23.06 W2"]},
+                {"index":"Total","values":["", 1.06, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Parts Assembly,Motor", -1.64, "23.06 W2"]},
+                {"index":"2","values":["Belt,Poly V", -0.33, "23.06 W2"]},
+                {"index":"3","values":["Tub,Drum(Front Form)", -0.32, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Rear Form)", -0.26, "23.06 W2"]},
+                {"index":"5","values":["Heater Assembly", -0.23, "23.06 W2"]},
+                {"index":"Total","values":["", -2.78, ""]}
+              ]}
+        }
+    },
+    "23.07 W3":{
+        "BPA-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", -0.28, "23.07 W3"]},      
+                {"index":"2","values":["Tub Assembly,Drum(Inner)", -0.17, "23.07 W3"]},
+                {"index":"3","values":["Dispenser", -0.03, "23.07 W3"]},
+                {"index":"Total","values":["", -0.48, ""]}
+              ]} 
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.16, "23.06 W2"]},
+                {"index":"Total","values":["", 0.16, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["PCB Assembly,Complex", -2.17, "23.06 W2"]},
+                {"index":"2","values":["Bush", -0.61, "23.06 W2"]},
+                {"index":"3","values":["Tub,Outer", -0.46, "23.06 W2"]},
+                {"index":"4","values":["Cover,Tub", -0.36, "23.06 W2"]},
+                {"index":"5","values":["Pump Assembly,Drain", -0.2, "23.06 W2"]},
+                {"index":"6","values":["Base Assembly,Cabinet", -0.91, "23.06 W3"]},
+                {"index":"7","values":["Panel,Rear", -0.39, "23.06 W3"]},
+                {"index":"8","values":["Damper", -0.08, "23.06 W3"]},
+                {"index":"Total","values":["", -5.18, ""]}
+              ]}
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box", 1.06, "23.06 W2"]},
+                {"index":"2","values":["Box", 1.06, "23.06 W3"]},
+                {"index":"Total","values":["", 2.12, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Parts Assembly,Motor", -1.64, "23.06 W2"]},
+                {"index":"2","values":["Belt,Poly V", -0.33, "23.06 W2"]},
+                {"index":"3","values":["Tub,Drum(Front Form)", -0.32, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Rear Form)", -0.26, "23.06 W2"]},
+                {"index":"5","values":["Heater Assembly", -0.23, "23.06 W2"]},
+                {"index":"6","values":["Tub Assembly,Drum", -0.34, "23.06 W3"]},
+                {"index":"7","values":["Door Assembly,Sub", -0.12, "23.06 W3"]},
+                {"index":"Total","values":["", -3.24, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box", 1.06, "23.06 W2"]},
+                {"index":"Total","values":["", 1.06, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -2.44, "23.06 W2"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.23, "23.06 W2"]},
+                {"index":"3","values":["Tub,Drum(Rear)", -0.21, "23.06 W2"]},
+                {"index":"4","values":["Gasket", -0.19, "23.06 W2"]},
+                {"index":"5","values":["Harness,Multi", -0.18, "23.06 W2"]},
+                {"index":"6","values":["Stator Assembly,Combined", -2.04, "23.06 W3"]},
+                {"index":"7","values":["Gasket", -0.24, "23.06 W3"]},
+                {"index":"8","values":["Switch Assembly,Locker", -0.2, "23.06 W3"]},
+                {"index":"9","values":["Tub Assembly,Drum(Inner)", -0.17, "23.06 W3"]},
+                {"index":"10","values":["Packing", -0.15, "23.06 W3"]},
+                {"index":"Total","values":["", -6.05, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.16, "23.06 W2"]},
+                {"index":"Total","values":["", 0.16, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["PCB Assembly,Complex", -2.17, "23.06 W2"]},
+                {"index":"2","values":["Bush", -0.61, "23.06 W2"]},
+                {"index":"3","values":["Tub,Outer", -0.46, "23.06 W2"]},
+                {"index":"4","values":["Cover,Tub", -0.36, "23.06 W2"]},
+                {"index":"5","values":["Pump Assembly,Drain", -0.2, "23.06 W2"]},
+                {"index":"6","values":["Base,Tub(Inner)", -1.52, "23.06 W3"]},
+                {"index":"7","values":["Packing", -0.66, "23.06 W3"]},
+                {"index":"8","values":["Lid,Inner", -0.32, "23.06 W3"]},
+                {"index":"9","values":["Lid,Out", -0.24, "23.06 W3"]},
+                {"index":"10","values":["Pulsator,Washing", -0.14, "23.06 W3"]},
+                {"index":"Total","values":["", -6.68, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box", 1.06, "23.06 W2"]},
+                {"index":"2","values":["Box", 1.06, "23.06 W3"]},
+                {"index":"Total","values":["", 2.12, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Parts Assembly,Motor", -1.64, "23.06 W2"]},
+                {"index":"2","values":["Belt,Poly V", -0.33, "23.06 W2"]},
+                {"index":"3","values":["Tub,Drum(Front Form)", -0.32, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Rear Form)", -0.26, "23.06 W2"]},
+                {"index":"5","values":["Heater Assembly", -0.23, "23.06 W2"]},
+                {"index":"6","values":["Door,Glass", -0.99, "23.06 W3"]},
+                {"index":"7","values":["Packing", -0.45, "23.06 W3"]},
+                {"index":"8","values":["Tub Assembly,Drum", -0.34, "23.06 W3"]},
+                {"index":"9","values":["Duct,Outlet", -0.03, "23.06 W3"]},
+                {"index":"10","values":["Plate,Upper", -0.02, "23.06 W3"]},
+                {"index":"Total","values":["", -4.61, ""]}
+              ]}
+        }
+    },
+    "23.07 W4":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+              },
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", -0.28, "23.07 W3"]},
+                {"index":"2","values":["Tub Assembly,Drum(Inner)", -0.17, "23.07 W3"]},
+                {"index":"3","values":["Dispenser", -0.03, "23.07 W3"]},
+                {"index":"4","values":["Clamp", -0.06, "23.07 W4"]},
+                {"index":"Total","values":["", -0.54, ""]}
+              ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.16, "23.06 W2"]},
+                {"index":"Total","values":["", 0.16, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["PCB Assembly,Complex", -2.17, "23.06 W2"]},
+                {"index":"2","values":["Bush", -0.61, "23.06 W2"]},
+                {"index":"3","values":["Tub,Outer", -0.46, "23.06 W2"]},
+                {"index":"4","values":["Cover,Tub", -0.36, "23.06 W2"]},
+                {"index":"5","values":["Pump Assembly,Drain", -0.2, "23.06 W2"]},
+                {"index":"6","values":["Base Assembly,Cabinet", -0.91, "23.06 W3"]},
+                {"index":"7","values":["Panel,Rear", -0.39, "23.06 W3"]},
+                {"index":"8","values":["Damper", -0.08, "23.06 W3"]},
+                {"index":"Total","values":["", -5.18, ""]}
+              ]}
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+                },
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Dispenser Assembly", -0.28, "23.07 W3"]},
+                {"index":"2","values":["Tub Assembly,Drum(Inner)", -0.17, "23.07 W3"]},
+                {"index":"3","values":["Dispenser", -0.03, "23.07 W3"]},
+                {"index":"4","values":["Clamp", -0.06, "23.07 W4"]},
+                {"index":"Total","values":["", -0.54, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box", 1.06, "23.06 W2"]},
+                {"index":"Total","values":["", 1.06, ""]}
+                ]},
+                "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -2.44, "23.06 W2"]},
+                {"index":"2","values":["Pump Assembly,Drain", -0.23, "23.06 W2"]},
+                {"index":"3","values":["Tub,Drum(Rear)", -0.21, "23.06 W2"]},
+                {"index":"4","values":["Gasket", -0.19, "23.06 W2"]},
+                {"index":"5","values":["Harness,Multi", -0.18, "23.06 W2"]},
+                {"index":"6","values":["Stator Assembly,Combined", -2.04, "23.06 W3"]},
+                {"index":"7","values":["Gasket", -0.24, "23.06 W3"]},
+                {"index":"8","values":["Switch Assembly,Locker", -0.2, "23.06 W3"]},
+                {"index":"9","values":["Tub Assembly,Drum(Inner)", -0.17, "23.06 W3"]},
+                {"index":"10","values":["Packing", -0.15, "23.06 W3"]},
+                {"index":"11","values":["Rotor Assembly,Combined", -1.23, "23.07 W4"]},
+                {"index":"12","values":["Bracket,Hinge", -0.36, "23.07 W4"]},
+                {"index":"13","values":["Dispenser Assembly", -0.28, "23.07 W4"]},
+                {"index":"14","values":["Handle", -0.09, "23.07 W4"]},
+                {"index":"Total","values":["", -8.01, ""]}
+                ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box Assembly,Detergent", 0.16, "23.06 W2"]},
+                {"index":"Total","values":["", 0.16, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["PCB Assembly,Complex", -2.17, "23.06 W2"]},
+                {"index":"2","values":["Bush", -0.61, "23.06 W2"]},
+                {"index":"3","values":["Tub,Outer", -0.46, "23.06 W2"]},
+                {"index":"4","values":["Cover,Tub", -0.36, "23.06 W2"]},
+                {"index":"5","values":["Pump Assembly,Drain", -0.2, "23.06 W2"]},
+                {"index":"6","values":["Base,Tub(Inner)", -1.52, "23.06 W3"]},
+                {"index":"7","values":["Packing", -0.66, "23.06 W3"]},
+                {"index":"8","values":["Lid,Inner", -0.32, "23.06 W3"]},
+                {"index":"9","values":["Lid,Out", -0.24, "23.06 W3"]},
+                {"index":"10","values":["Pulsator,Washing", -0.14, "23.06 W3"]},
+                {"index":"11","values":["Housing Assembly,Clutch Coupling", -1.83, "23.06 W4"]},
+                {"index":"12","values":["Stator Assembly,Combined", -1.34, "23.06 W4"]},
+                {"index":"13","values":["Rotor Assembly,Combined", -0.87, "23.06 W4"]},
+                {"index":"14","values":["Switch Assembly", -0.12, "23.06 W4"]},
+                {"index":"15","values":["Damper", -0.08, "23.06 W4"]},
+                {"index":"Total","values":["", -10.92, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Box", 1.06, "23.06 W2"]},
+                {"index":"2","values":["Box", 1.06, "23.06 W3"]},
+                {"index":"Total","values":["", 2.12, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Parts Assembly,Motor", -1.64, "23.06 W2"]},
+                {"index":"2","values":["Belt,Poly V", -0.33, "23.06 W2"]},
+                {"index":"3","values":["Tub,Drum(Front Form)", -0.32, "23.06 W2"]},
+                {"index":"4","values":["Tub,Drum(Rear Form)", -0.26, "23.06 W2"]},
+                {"index":"5","values":["Heater Assembly", -0.23, "23.06 W2"]},
+                {"index":"6","values":["Door,Glass", -0.99, "23.06 W3"]},
+                {"index":"7","values":["Packing", -0.45, "23.06 W3"]},
+                {"index":"8","values":["Tub Assembly,Drum", -0.34, "23.06 W3"]},
+                {"index":"9","values":["Duct,Outlet", -0.03, "23.06 W3"]},
+                {"index":"10","values":["Plate,Upper", -0.02, "23.06 W3"]},
+                {"index":"11","values":["Tub,Drum(Rear)", -1.02, "23.06 W4"]},
+                {"index":"12","values":["Door Assembly,Sub", -0.18, "23.06 W4"]},
+                {"index":"Total","values":["", -5.81, ""]}
+              ]}
+        }
+    },
+    "23.08 W1":{
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Switch Assembly,Safety", 0.54, "23.08 W1"]},
+                {"index":"Total","values":["", 0.54, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Center)", -0.26, "23.08 W1"]},
+                {"index":"2","values":["Door,Glass", -0.02, "23.08 W1"]},
+                {"index":"Total","values":["", -0.28, ""]}
+              ]}
+        },
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel, Control", 3.74, "23.08 W1"]},
+                {"index":"2","values":["Drawer Assembly", 2.36, "23.08 W1"]},
+                {"index":"Total","values":["", 6.1, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -1.99, "23.08 W1"]},
+                {"index":"Total","values":["", -1.99, ""]}
+              ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Lower", 0.56, "23.08 W1"]},
+                {"index":"2","values":["Plate,Upper", 0.26, "23.08 W1"]},
+                {"index":"Total","values":["", 0.82, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            },
+            "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+                ]
+            }
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel Assembly,Control", 4.23, "23.08 W1"]},
+                {"index":"2","values":["Drawer,Panel", 1.83, "23.08 W1"]},
+                {"index":"Total","values":["", 6.06, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -4.19, "23.08 W1"]},
+                {"index":"Total","values":["", -4.19, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Upper", 0.28, "23.08 W1"]},
+                {"index":"2","values":["Plate,Lower", 0.59, "23.08 W1"]},
+                {"index":"Total","values":["", 0.87, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+              ]}
+        }
+    },
+    "23.08 W2":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel, Control", 3.74, "23.08 W1"]},
+                {"index":"2","values":["Drawer Assembly", 2.36, "23.08 W1"]},
+                {"index":"3","values":["Package Assembly", 0.1, "23.08 W2"]},
+                {"index":"Total","values":["", 6.2, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -1.99, "23.08 W1"]},
+                {"index":"Total","values":["", -1.99, ""]}
+              ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Lower", 0.56, "23.08 W1"]},
+                {"index":"2","values":["Plate,Upper", 0.26, "23.08 W1"]},
+                {"index":"3","values":["Package Assembly", 0.18, "23.08 W2"]},
+                {"index":"Total","values":["", 1.0, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+              ]}
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Switch Assembly,Safety", 0.54, "23.08 W1"]},
+                {"index":"2","values":["Package Assembly", 0.12, "23.08 W2"]},
+                {"index":"Total","values":["", 0.66, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Center)", -0.26, "23.08 W1"]},
+                {"index":"2","values":["Door,Glass", -0.02, "23.08 W1"]},
+                {"index":"Total","values":["", -0.28, ""]}
+              ]}  
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel Assembly,Control", 4.23, "23.08 W1"]},
+                {"index":"2","values":["Drawer,Panel", 1.83, "23.08 W1"]},
+                {"index":"3","values":["Stator Assembly,Combined", 1.93, "23.08 W2"]},
+                {"index":"4","values":["Rotor Assembly,Combined", 1.15, "23.08 W2"]},
+                {"index":"5","values":["Harness,Multi", 0.21, "23.08 W2"]},
+                {"index":"6","values":["Gasket", 0.09, "23.08 W2"]},
+                {"index":"7","values":["Tub,Outer", 0.09, "23.08 W2"]},
+                {"index":"Total","values":["", 9.53, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -4.19, "23.08 W1"]},
+                {"index":"2","values":["Balance Weight", -0.12, "23.08 W2"]},
+                {"index":"3","values":["Cover,Cabinet", -0.11, "23.08 W2"]},
+                {"index":"4","values":["Hinge", -0.05, "23.08 W2"]},
+                {"index":"Total","values":["", -4.47, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Upper", 0.28, "23.08 W1"]},
+                {"index":"2","values":["Plate,Lower", 0.59, "23.08 W1"]},
+                {"index":"3","values":["Cabinet", 1.74, "23.08 W2"]},
+                {"index":"4","values":["PCB Assembly,Complex", 1.53, "23.08 W2"]},
+                {"index":"5","values":["Stator Assembly,Combined", 1.14, "23.08 W2"]},
+                {"index":"6","values":["Rotor Assembly,Combined", 0.76, "23.08 W2"]},
+                {"index":"7","values":["Base,Tub(Inner)", 0.3, "23.08 W2"]},
+                {"index":"Total","values":["", 6.34, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Center)", 1.9, "23.08 W2"]},
+                {"index":"2","values":["Parts Assembly,Motor", 1.32, "23.08 W2"]},
+                {"index":"3","values":["Belt,Poly V", 0.32, "23.08 W2"]},
+                {"index":"4","values":["Frame,Door(Outer)", 0.22, "23.08 W2"]},
+                {"index":"5","values":["Tub,Drum(Front Form)", 0.2, "23.08 W2"]},
+                {"index":"Total","values":["", 3.96, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel Assembly,Control", -0.24, "23.08 W2"]},
+                {"index":"2","values":["PCB Assembly,Complex", -0.13, "23.08 W2"]},
+                {"index":"3","values":["Cover,Cabinet", -0.08, "23.08 W2"]},
+                {"index":"Total","values":["", -0.45, ""]}
+              ]}
+        }
+    },
+    "23.08 W3":{
+        "BPA-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel, Control", 3.74, "23.08 W1"]},
+                {"index":"2","values":["Drawer Assembly", 2.36, "23.08 W1"]},
+                {"index":"3","values":["Package Assembly", 0.1, "23.08 W2"]},
+                {"index":"4","values":["Bearing,Ball", 0.03, "23.08 W3"]},
+                {"index":"5","values":["Bearing,Ball", 0.02, "23.08 W3"]},
+                {"index":"Total","values":["", 6.25, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -1.99, "23.08 W1"]},
+                {"index":"2","values":["Damper Assembly,Friction", -0.11, "23.08 W3"]},
+                {"index":"Total","values":["", -2.1, ""]}
+              ]}           
+        },
+        "BPA-TL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Lower", 0.56, "23.08 W1"]},     
+                {"index":"2","values":["Plate,Upper", 0.26, "23.08 W1"]},     
+                {"index":"3","values":["Package Assembly", 0.18, "23.08 W2"]},
+                {"index":"Total","values":["", 1.0, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Housing Assembly,Clutch Coupling", -0.13, "23.08 W3"]},
+                {"index":"2","values":["Damper Assembly,Friction", -0.1, "23.08 W3"]},
+                {"index":"Total","values":["", -0.23, ""]}
+              ]}            
+        },
+        "BPA-DR":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Switch Assembly,Safety", 0.54, "23.08 W1"]},
+                {"index":"2","values":["Package Assembly", 0.12, "23.08 W2"]},
+                {"index":"3","values":["Cover,Rear", 1.0, "23.08 W3"]},
+                {"index":"Total","values":["", 1.66, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Center)", -0.26, "23.08 W1"]},
+                {"index":"2","values":["Door,Glass", -0.02, "23.08 W1"]},
+                {"index":"Total","values":["", -0.28, ""]}
+              ]}
+        },
+        "PAC-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel Assembly,Control", 4.23, "23.08 W1"]},
+                {"index":"2","values":["Drawer,Panel", 1.83, "23.08 W1"]},
+                {"index":"3","values":["Stator Assembly,Combined", 1.93, "23.08 W2"]},
+                {"index":"4","values":["Rotor Assembly,Combined", 1.15, "23.08 W2"]},
+                {"index":"5","values":["Harness,Multi", 0.21, "23.08 W2"]},
+                {"index":"6","values":["Gasket", 0.09, "23.08 W2"]},
+                {"index":"7","values":["Tub,Outer", 0.09, "23.08 W2"]},
+                {"index":"Total","values":["", 9.53, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -4.19, "23.08 W1"]},
+                {"index":"2","values":["Balance Weight", -0.12, "23.08 W2"]},
+                {"index":"3","values":["Cover,Cabinet", -0.11, "23.08 W2"]},
+                {"index":"4","values":["Hinge", -0.05, "23.08 W2"]},
+                {"index":"5","values":["Bearing,Ball", -0.68, "23.08 W3"]},
+                {"index":"6","values":["Bearing,Ball", -0.51, "23.08 W3"]},
+                {"index":"7","values":["Wrap", -0.06, "23.08 W3"]},
+                {"index":"Total","values":["", -5.72, ""]}
+              ]}
+        },
+        "PAC-TL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Upper", 0.28, "23.08 W1"]},
+                {"index":"2","values":["Plate,Lower", 0.59, "23.08 W1"]},
+                {"index":"3","values":["Cabinet", 1.74, "23.08 W2"]},
+                {"index":"4","values":["PCB Assembly,Complex", 1.53, "23.08 W2"]},
+                {"index":"5","values":["Stator Assembly,Combined", 1.14, "23.08 W2"]},
+                {"index":"6","values":["Rotor Assembly,Combined", 0.76, "23.08 W2"]},
+                {"index":"7","values":["Base,Tub(Inner)", 0.3, "23.08 W2"]},
+                {"index":"Total","values":["", 6.34, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Base,Tub(Inner)", -1.56, "23.08 W3"]},
+                {"index":"2","values":["Housing Assembly,Clutch Coupling", -1.45, "23.08 W3"]},
+                {"index":"3","values":["Wrap", -0.07, "23.08 W3"]},
+                {"index":"4","values":["Hose Assembly,Drain", -0.04, "23.08 W3"]},
+                {"index":"Total","values":["", -3.12, ""]}
+              ]}
+        },
+        "PAC-DR":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Center)", 1.9, "23.08 W2"]},
+                {"index":"2","values":["Parts Assembly,Motor", 1.32, "23.08 W2"]},
+                {"index":"3","values":["Belt,Poly V", 0.32, "23.08 W2"]},
+                {"index":"4","values":["Frame,Door(Outer)", 0.22, "23.08 W2"]},
+                {"index":"5","values":["Tub,Drum(Front Form)", 0.2, "23.08 W2"]},
+                {"index":"6","values":["Cover,Rear", 0.34, "23.08 W3"]},
+                {"index":"7","values":["Cover,Safety", 0.12, "23.08 W3"]},
+                {"index":"Total","values":["", 4.42, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel Assembly,Control", -0.24, "23.08 W2"]},
+                {"index":"2","values":["PCB Assembly,Complex", -0.13, "23.08 W2"]},
+                {"index":"3","values":["Cover,Cabinet", -0.08, "23.08 W2"]},
+                {"index":"4","values":["Door,Glass", -0.89, "23.08 W3"]},
+                {"index":"5","values":["Wrap", -0.06, "23.08 W3"]},
+                {"index":"Total","values":["", -1.4, ""]}
+              ]}           
+        }      
+    },
+    "23.08 W4":{
+        "BPA-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel, Control", 3.74, "23.08 W1"]},
+                {"index":"2","values":["Drawer Assembly", 2.36, "23.08 W1"]},
+                {"index":"3","values":["Package Assembly", 0.1, "23.08 W2"]},
+                {"index":"4","values":["Bearing,Ball", 0.03, "23.08 W3"]},
+                {"index":"5","values":["Bearing,Ball", 0.02, "23.08 W3"]},
+                {"index":"6","values":["Rotor Assembly,Combined", 0.2, "23.08 W4"]},
+                {"index":"Total","values":["", 6.45, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -1.99, "23.08 W1"]},
+                {"index":"2","values":["Damper Assembly,Friction", -0.11, "23.08 W3"]},
+                {"index":"3","values":["Power Cord Assembly", -0.06, "23.08 W4"]},
+                {"index":"4","values":["Pump Assembly,Drain", -0.06, "23.08 W4"]},
+                {"index":"5","values":["Holder", -0.01, "23.08 W4"]},
+                {"index":"6","values":["Accessory Assembly", -0.01, "23.08 W4"]},
+                {"index":"Total","values":["", -2.24, ""]}
+              ]}
+        },
+        "BPA-TL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Lower", 0.56, "23.08 W1"]},
+                {"index":"2","values":["Plate,Upper", 0.26, "23.08 W1"]},
+                {"index":"3","values":["Package Assembly", 0.18, "23.08 W2"]},
+                {"index":"4","values":["Label,Barcode", 0.1, "23.08 W4"]},
+                {"index":"5","values":["Stator Assembly,Combined", 0.56, "23.08 W4"]},
+                {"index":"Total","values":["", 1.66, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Housing Assembly,Clutch Coupling", -0.13, "23.08 W3"]},
+                {"index":"2","values":["Damper Assembly,Friction", -0.1, "23.08 W3"]},
+                {"index":"Total","values":["", -0.23, ""]}
+              ]}
+        },
+        "BPA-DR":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Switch Assembly,Safety", 0.54, "23.08 W1"]},
+                {"index":"2","values":["Package Assembly", 0.12, "23.08 W2"]},
+                {"index":"3","values":["Cover,Rear", 1.0, "23.08 W3"]},
+                {"index":"4","values":["Frame Assembly", 0.01, "23.08 W4"]},
+                {"index":"Total","values":["", 1.67, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Center)", -0.26, "23.08 W1"]},
+                {"index":"2","values":["Door,Glass", -0.02, "23.08 W1"]},
+                {"index":"3","values":["Tub,Drum(Center)", -0.21, "23.08 W4"]},
+                {"index":"4","values":["Bracket,Top", -0.13, "23.08 W4"]},
+                {"index":"5","values":["Door,Glass", -0.09, "23.08 W4"]},
+                {"index":"Total","values":["", -0.71, ""]}
+              ]}
+        },
+        "PAC-FL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel Assembly,Control", 4.23, "23.08 W1"]},
+                {"index":"2","values":["Drawer,Panel", 1.83, "23.08 W1"]},
+                {"index":"3","values":["Stator Assembly,Combined", 1.93, "23.08 W2"]},
+                {"index":"4","values":["Rotor Assembly,Combined", 1.15, "23.08 W2"]},
+                {"index":"5","values":["Harness,Multi", 0.21, "23.08 W2"]},
+                {"index":"6","values":["Gasket", 0.09, "23.08 W2"]},
+                {"index":"7","values":["Tub,Outer", 0.09, "23.08 W2"]},
+                {"index":"8","values":["Rotor Assembly,Combined", 0.2, "23.08 W4"]},
+                {"index":"Total","values":["", 9.73, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Door,Glass", -4.19, "23.08 W1"]},
+                {"index":"2","values":["Balance Weight", -0.12, "23.08 W2"]},
+                {"index":"3","values":["Cover,Cabinet", -0.11, "23.08 W2"]},
+                {"index":"4","values":["Hinge", -0.05, "23.08 W2"]},
+                {"index":"5","values":["Bearing,Ball", -0.68, "23.08 W3"]},
+                {"index":"6","values":["Bearing,Ball", -0.51, "23.08 W3"]},
+                {"index":"7","values":["Wrap", -0.06, "23.08 W3"]},
+                {"index":"8","values":["Damper Assembly,Friction", -0.25, "23.08 W4"]},
+                {"index":"9","values":["Heater Assembly", -0.23, "23.08 W4"]},
+                {"index":"10","values":["Accessory Assembly", -0.01, "23.08 W4"]},
+                {"index":"11","values":["Holder", -0.07, "23.08 W4"]},
+                {"index":"12","values":["Guide,Water", -0.01, "23.08 W4"]},
+                {"index":"Total","values":["", -6.29, ""]}
+              ]}
+        },
+        "PAC-TL":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Plate,Upper", 0.28, "23.08 W1"]},
+                {"index":"2","values":["Plate,Lower", 0.59, "23.08 W1"]},
+                {"index":"3","values":["Cabinet", 1.74, "23.08 W2"]},
+                {"index":"4","values":["PCB Assembly,Complex", 1.53, "23.08 W2"]},
+                {"index":"5","values":["Stator Assembly,Combined", 1.14, "23.08 W2"]},
+                {"index":"6","values":["Rotor Assembly,Combined", 0.76, "23.08 W2"]},
+                {"index":"7","values":["Base,Tub(Inner)", 0.3, "23.08 W2"]},
+                {"index":"8","values":["Stator Assembly,Combined", 0.56, "23.08 W4"]},
+                {"index":"9","values":["Label,Barcode", 0.1, "23.08 W4"]},
+                {"index":"Total","values":["", 7.0, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Base,Tub(Inner)", -1.56, "23.08 W3"]},
+                {"index":"2","values":["Housing Assembly,Clutch Coupling", -1.45, "23.08 W3"]},
+                {"index":"3","values":["Wrap", -0.07, "23.08 W3"]},
+                {"index":"4","values":["Hose Assembly,Drain", -0.04, "23.08 W3"]},
+                {"index":"Total","values":["", -3.12, ""]}
+              ]}
+        },
+        "PAC-DR":{
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tub,Drum(Center)", 1.9, "23.08 W2"]},
+                {"index":"2","values":["Parts Assembly,Motor", 1.32, "23.08 W2"]},
+                {"index":"3","values":["Belt,Poly V", 0.32, "23.08 W2"]},
+                {"index":"4","values":["Frame,Door(Outer)", 0.22, "23.08 W2"]},
+                {"index":"5","values":["Tub,Drum(Front Form)", 0.2, "23.08 W2"]},
+                {"index":"6","values":["Cover,Rear", 0.34, "23.08 W3"]},
+                {"index":"7","values":["Cover,Safety", 0.12, "23.08 W3"]},
+                {"index":"8","values":["Frame Assembly", 0.63, "23.08 W4"]},
+                {"index":"9","values":["Bracket,Top", 0.12, "23.08 W4"]},
+                {"index":"Total","values":["", 5.17, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Panel Assembly,Control", -0.24, "23.08 W2"]},
+                {"index":"2","values":["PCB Assembly,Complex", -0.13, "23.08 W2"]},
+                {"index":"3","values":["Cover,Cabinet", -0.08, "23.08 W2"]},
+                {"index":"4","values":["Door,Glass", -0.89, "23.08 W3"]},
+                {"index":"5","values":["Wrap", -0.06, "23.08 W3"]},
+                {"index":"6","values":["Tub,Drum(Center)", -0.21, "23.08 W4"]},
+                {"index":"7","values":["Door,Glass", -0.09, "23.08 W4"]},
+                {"index":"Total","values":["", -1.7, ""]}
+              ]}
+        }
+    },
+    "23.09 W1":{
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+              ]},
+            "Decrease":{
+            "columns": ["", "Decrease", "VI", "Date"],
+            "rows":[
+                {"index":"","values":["No Item This Week","",""]}
+            ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Lid Assembly", 7.51, "23.09 W1"]},
+                {"index":"2","values":["Label,Barcode", 0.1, "23.09 W1"]},
+                {"index":"Total","values":["", 7.61, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tape,PETP", -0.11, "23.09 W1"]},
+                {"index":"2","values":["Tape,PETP", -0.02, "23.09 W1"]},
+                {"index":"Total","values":["", -0.13, ""]}
+              ]}
+        },
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Label,Barcode", 0.1, "23.09 W1"]},
+                {"index":"Total","values":["", 0.1, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Wrap", -0.01, "23.09 W1"]},
+                {"index":"Total","values":["", -0.01, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                    {"index":"","values":["No Item This Week","",""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["PCB Assembly,Complex", -0.26, "23.09 W1"]},
+                {"index":"2","values":["Coil,Steel(STS)", -0.17, "23.09 W1"]},
+                {"index":"3","values":["Holder Assembly", -0.01, "23.09 W1"]},
+                {"index":"Total","values":["", -0.44, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Lid Assembly", 7.51, "23.09 W1"]},
+                {"index":"Total","values":["", 7.51, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tape,PETP", -0.11, "23.09 W1"]},
+                {"index":"2","values":["Tape,PETP", -0.02, "23.09 W1"]},
+                {"index":"Total","values":["", -0.13, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Label,Barcode", 0.1, "23.09 W1"]},
+                {"index":"Total","values":["", 0.1, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Bracket,Top", -0.12, "23.09 W1"]},
+                {"index":"Total","values":["", -0.12, ""]}
+              ]}
+        }
+    },
+    "23.09 W2":{
+        "BPA-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Label,Barcode", 0.1, "23.09 W1"]},
+                {"index":"Total","values":["", 0.1, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Wrap", -0.01, "23.09 W1"]},       
+                {"index":"2","values":["Door,Glass", -0.04, "23.09 W2"]}, 
+                {"index":"Total","values":["", -0.05, ""]}
+              ]}
+        },
+        "BPA-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Label,Barcode", 0.1, "23.09 W2"]},
+                {"index":"Total","values":["", 0.1, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Cabinet", -0.47, "23.09 W2"]},    
+                {"index":"2","values":["Switch Assembly,Locker", -0.02, "23.09 W2"]},
+                {"index":"Total","values":["", -0.49, ""]}
+              ]}
+        },
+        "BPA-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Lid Assembly", 7.51, "23.09 W1"]},
+                {"index":"2","values":["Label,Barcode", 0.1, "23.09 W1"]},
+                {"index":"Total","values":["", 7.61, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tape,PETP", -0.11, "23.09 W1"]},
+                {"index":"2","values":["Tape,PETP", -0.02, "23.09 W1"]},
+                {"index":"3","values":["Cabinet", -0.46, "23.09 W2"]},
+                {"index":"4","values":["Damper Assembly,Friction", -0.02, "23.09 W2"]},
+                {"index":"Total","values":["", -0.61, ""]}
+              ]}
+        },
+        "PAC-DR":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Label,Barcode", 0.1, "23.09 W1"]},
+                {"index":"2","values":["Switch Assembly,Safety", 0.02, "23.09 W2"]},
+                {"index":"Total","values":["", 0.12, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Bracket,Top", -0.12, "23.09 W1"]},
+                {"index":"2","values":["Tub,Drum(Center)", -2.17, "23.09 W2"]},
+                {"index":"3","values":["Parts Assembly,Motor", -1.2, "23.09 W2"]},
+                {"index":"4","values":["Duct Assembly", -0.12, "23.09 W2"]},
+                {"index":"5","values":["Tub,Drum(Front Form)", -0.09, "23.09 W2"]},
+                {"index":"6","values":["Parts Assembly,Motor", -0.09, "23.09 W2"]},
+                {"index":"Total","values":["", -3.79, ""]}
+              ]}
+        },
+        "PAC-FL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Label,Barcode", 0.1, "23.09 W2"]},
+                {"index":"Total","values":["", 0.1, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["PCB Assembly,Complex", -0.26, "23.09 W1"]},
+                {"index":"2","values":["Coil,Steel(STS)", -0.17, "23.09 W1"]},
+                {"index":"3","values":["Holder Assembly", -0.01, "23.09 W1"]},
+                {"index":"4","values":["Cabinet", -5.96, "23.09 W2"]},
+                {"index":"5","values":["Stator Assembly,Combined", -1.64, "23.09 W2"]},
+                {"index":"6","values":["Rotor Assembly,Combined", -0.78, "23.09 W2"]},
+                {"index":"7","values":["Tub,Drum(Rear)", -0.08, "23.09 W2"]},
+                {"index":"8","values":["Tub,Drum(Front)", -0.06, "23.09 W2"]},
+                {"index":"Total","values":["", -8.96, ""]}
+              ]}
+        },
+        "PAC-TL":{ 
+            "Increase":{
+                "columns": ["", "Increase", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Lid Assembly", 7.51, "23.09 W1"]},
+                {"index":"2","values":["Box Assembly,Detergent", 0.17, "23.09 W2"]},
+                {"index":"Total","values":["", 7.68, ""]}
+              ]},
+              "Decrease":{
+                "columns": ["", "Decrease", "VI", "Date"],
+                "rows":[
+                {"index":"1","values":["Tape,PETP", -0.11, "23.09 W1"]},
+                {"index":"2","values":["Tape,PETP", -0.02, "23.09 W1"]},
+                {"index":"3","values":["Cabinet", -5.89, "23.09 W2"]},
+                {"index":"4","values":["Hub,Tub(Inner)", -0.08, "23.09 W2"]},
+                {"index":"5","values":["Resin,PP", -0.06, "23.09 W2"]},
+                {"index":"6","values":["Wrap", -0.06, "23.09 W2"]},
+                {"index":"7","values":["Cover,Rear", -0.05, "23.09 W2"]},
+                {"index":"Total","values":["", -6.27, ""]}
+              ]}
+        }
+    }
+
+}

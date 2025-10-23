@@ -1,0 +1,279 @@
+#symptom-section{
+    padding:66px 15px 60px 15px;
+    margin-bottom:105px;
+}
+
+#symptom-section .container{
+    padding: 10px;
+}
+
+#symptom-section .title{
+    position: relative;
+    width:300;
+    height:152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#symptom-section .title h1{
+    position: relative;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:black;
+    z-index: 1;
+    border: none;
+}
+
+#symptom-section .symptom-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+}
+
+#symptom-section .symptom-container .box {
+    display: block;
+    transition : all .4s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#symptom-section .symptom-container .box.image1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#symptom-section .symptom-container .box .image2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#symptom-section .symptom-container .box.image3{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+#symptom-section .symptom-container .box.image4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+#symptom-section .symptom-container .box.image5{
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+}
+#symptom-section .symptom-container .box.image6{
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+}
+v
+#symptom-section .symptom-container .box.image7{
+    grid-column: 3 / 4;
+    grid-row: 2/3;
+}
+#symptom-section .symptom-container .box.image8{
+    grid-column: 4 / 5;
+    grid-row: 2/3;
+}
+#symptom-section .symptom-container .box.image9{
+    grid-column: 1 / 2;
+    grid-row: 3/4;
+}
+#symptom-section .symptom-container .box.image10{
+    grid-column: 2 / 3;
+    grid-row: 3/4;
+}
+#symptom-section .symptom-container .box.image11{
+    grid-column: 3 / 4;
+    grid-row: 3/4;
+}
+#symptom-section .symptom-container .box.image12{
+    grid-column: 4 / 5;
+    grid-row: 3/4;
+}
+
+
+#symptom-section .symptom-container .box .btn{
+    background-color: rgba(255, 255, 255, 0.579);
+    border: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: 1000;
+    cursor: pointer;
+    color:rgb(177, 17, 81);
+    text-shadow: 2px 2px white;
+    box-shadow: 30px;
+}
+
+#symptom-section .symptom-container .box .btn:hover{
+    background-color:rgba(248, 197, 218, 0);
+    color:white;
+    text-shadow: 2px 2px rgb(177, 17, 81);
+    font-size: 1.8rem;
+    font-size: 1.8rem;
+    transition: all .3s ease;
+}
+
+
+#symptom-section .symptom-container .box.image1{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/14/02/56/students-1822449_640.jpg");
+}
+#symptom-section .symptom-container .box.image2{
+    background-image:url("https://cdn.pixabay.com/photo/2015/06/10/13/23/clothesline-804812_640.jpg");
+}
+#symptom-section .symptom-container .box.image3{
+    background-image: url("https://cdn.pixabay.com/photo/2015/11/08/14/13/switch-1033640_640.jpg");
+}
+#symptom-section .symptom-container .box.image4{
+    background-image: url("https://cdn.pixabay.com/photo/2016/04/17/20/14/sink-1335476_640.jpg");
+}
+#symptom-section .symptom-container .box.image5{
+    background-image: url("https://images.pexels.com/photos/2882552/pexels-photo-2882552.jpeg");
+}
+#symptom-section .symptom-container .box.image6{
+    background-image: url("https://cdn.pixabay.com/photo/2015/06/20/03/04/water-815475_640.jpg");
+}
+#symptom-section .symptom-container .box.image7{
+    background-image: url("https://cdn.pixabay.com/photo/2014/07/14/09/23/child-392971_640.jpg");
+}
+#symptom-section .symptom-container .box.image8{
+    background-image: url("https://images.pexels.com/photos/3735170/pexels-photo-3735170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+#symptom-section .symptom-container .box.image9{
+    background-image: url("https://images.pexels.com/photos/8774531/pexels-photo-8774531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+#symptom-section .symptom-container .box.image10{
+    background-image: url("https://images.unsplash.com/photo-1610056494085-05e9fb6673ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+}
+#symptom-section .symptom-container .box.image11{
+    background-image: url("https://images.pexels.com/photos/3969195/pexels-photo-3969195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+#symptom-section .symptom-container .box.image12{
+    background-image: url("https://images.pexels.com/photos/3720/person-hand-smartphone-technology.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+
+
+
+
+/*tablets*/
+@media only screen and (max-width: 1024px)
+{
+    #symptom-section .container{
+        margin:30px auto 70px auto;
+    }
+    #symptom-section .title {
+        height: 100px;
+    }
+    #symptom-section .title h1 {
+        font-size: 2.2rem;
+        padding:100px 0 30px 0;
+    }
+    #symptom-section .symptom-container .box .btn{
+        font-size: 1.5rem;
+    }
+    #symptom-section .symptom-container {
+        display: grid;
+
+        grid-gap: 5px;
+        padding:20px 0 0 0;
+    }
+    #symptom-section .symptom-container .box .btn:hover{
+        background-color:rgba(248, 197, 218, 0);
+        color:white;
+        text-shadow: 2px 2px rgb(177, 17, 81);
+        font-size: 1.8rem;
+        font-size: 1.8rem;
+        transition: all .3s ease;
+    }
+}
+/*phones*/
+@media only screen and (max-width: 767px){
+    #symptom-section .symptom-container .box .btn{
+        font-size: 0.7rem;
+    }
+    #symptom-section .container{
+        margin:0 auto;
+    }
+    #symptom-section .title{
+        height: 120px;
+    }
+    #symptom-section .title h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #symptom-section .symptom-container{
+        margin:0 auto;
+    }
+    #symptom-section .symptom-container .logo{
+        display: none;
+    }
+    #symptom-section .symptom-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 80px 80px 80px 80px 80px;
+        grid-gap: 1px;
+        padding: 30px 0;
+    }
+    #symptom-section .symptom-container .box .btn:hover{
+        font-size: 0.9rem;
+    }
+    #symptom-section .symptom-container .box.image1{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #symptom-section .symptom-container .box .image2{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #symptom-section .symptom-container .box.image3{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    #symptom-section .symptom-container .box.image4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #symptom-section .symptom-container .box.image5{
+        grid-column: 2 / 3;
+        grid-row: 2/3;
+    }
+    #symptom-section .symptom-container .box.image6{
+        grid-column: 3 / 4;
+        grid-row: 2/3;
+    }
+    #symptom-section .symptom-container .box.image7{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #symptom-section .symptom-container .box.image8{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #symptom-section .symptom-container .box.image9{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    #symptom-section .symptom-container .box.image10{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #symptom-section .symptom-container .box.image11{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #symptom-section .symptom-container .box.image12{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+
+}

@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a144e4bb.css",
+    "main.js": "/static/js/main.533cb2e0.js",
+    "static/media/Employee3.png": "/static/media/Employee3.fc7f2e865c15a14d1329.png",
+    "static/media/DX2.png": "/static/media/DX2.aa840fb96b9906d9fcec.png",
+    "static/media/Employee2.png": "/static/media/Employee2.829004f98fc0d910ccfa.png",
+    "static/media/Employee.png": "/static/media/Employee.cedab3a706f48adfd0af.png",
+    "static/media/QualityAward.png": "/static/media/QualityAward.1276c12780b925064338.png",
+    "static/media/QualityAward2.png": "/static/media/QualityAward2.02de4b6214d72d48e8df.png",
+    "static/media/DX.png": "/static/media/DX.590ce422de64083ac9fe.png",
+    "static/media/KHU.png": "/static/media/KHU.ef35476774cebb4c7130.png",
+    "static/media/AI.png": "/static/media/AI.b7355a4f588c535ee540.png",
+    "static/media/parking.gif": "/static/media/parking.8785fe29b7a382eddbe9.gif",
+    "static/media/delivery.gif": "/static/media/delivery.888263fe251ce509ff69.gif",
+    "static/media/truck.gif": "/static/media/truck.c7f7fb5bed2dcd6278d3.gif",
+    "static/media/visitor.gif": "/static/media/visitor.8b110f99d18e63a86920.gif",
+    "static/media/quality.gif": "/static/media/quality.82d17e2f8342c8aed641.gif",
+    "static/media/video.gif": "/static/media/video.7bc4981877e0aaf433b3.gif",
+    "static/media/reinvent.gif": "/static/media/reinvent.1fcdb2abd08a24d76402.gif",
+    "static/media/cost.gif": "/static/media/cost.bd61703dcba2797bfccc.gif",
+    "static/media/HeroImage.jpg": "/static/media/HeroImage.7241ce8d0bb413acc0e1.jpg",
+    "static/media/cassandra.png": "/static/media/cassandra.f044fcaed9fa2ab1abef.png",
+    "index.html": "/index.html",
+    "main.a144e4bb.css.map": "/static/css/main.a144e4bb.css.map",
+    "main.533cb2e0.js.map": "/static/js/main.533cb2e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a144e4bb.css",
+    "static/js/main.533cb2e0.js"
+  ]
+}

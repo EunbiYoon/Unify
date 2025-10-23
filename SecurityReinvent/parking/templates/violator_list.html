@@ -1,0 +1,79 @@
+{% extends 'parking_base.html' %}
+
+{% block container %}
+  {% load static %}
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  
+  <div class="violator-list">
+    <h3 class="list-title text-left">
+      All List 
+      <a href="{% url 'Pviolator_excel_url' %}"><img width="35" height="35" src="https://img.icons8.com/ios/35/c0aa00/export-excel.png" alt="export-excel"/></a>
+      <a href="{% static 'file/parkingpolicy.pdf' %}" download><img width="35" height="35" src="https://img.icons8.com/ios/35/c0aa00/privacy-policy.png" alt="image--v1"/></a>
+    </h3>
+    <table class="table text-center" id="dataTable" style="border:1px solid lightgray; background-color: white;">
+      <thead>
+        <tr>
+          <th class="text-center">No</th>
+          <th class="text-center">Car Plate</th>
+          <th class="text-center">Violate Date</th>
+          <th class="text-center">Parking Location</th>
+          <th class="text-center">Violate Count</th>
+          <th class="text-center">Ticket</th>
+          {% if user.is_superuser %}
+          <th class="text-center" >Delete</th>
+          {% endif %}
+        </tr>
+      </thead>
+      <tbody class="text-center" >
+        {% for violator in violator_list %}
+          <tr>
+            <td>{{ violator.id }}</td>
+            <td>{{ violator.car_plate }}</td>
+            <td>{{ violator.parking_at|date:"m/d/y h:i:s A" }}</td>
+            <td>{{ violator.parking_lot }} Parking Lot</td>
+            <td>{{ violator.violate_count }}</td>
+            <td>
+              {% if violator.violate_count == 1 %}
+                <form method="post" action="{% url 'Pviolator_ticket_url' violator.id %}" style="margin:0">
+                  {% csrf_token %}
+                  <button type="submit">Ticket</button>
+                </form>
+              {% elif violator.violate_count == 2 %}
+                <form method="post" action="{% url 'Pviolator_tow_url' violator.id %}" style="margin:0">
+                  {% csrf_token %}
+                  <button type="submit">Ticket</button>
+                </form>
+              {% endif %}
+            </td>
+            {% if user.is_superuser %}
+            <td>
+              <form method="post" action="{% url 'Pviolator_delete_url' violator.id %}" style="margin:0">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+              </form>
+            </td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <script>
+    $('#dataTable').DataTable({
+        searching: true,
+        paging: true,
+        ordering: true,
+        pageLength: 10, // Number of records per page
+        "columnDefs":[
+            {
+                "targets":0,
+                "render":function(data, type, row, meta){
+                    return meta.row+1;
+                }
+            }
+        ]
+    });
+</script>
+{% endblock %}

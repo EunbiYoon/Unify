@@ -1,0 +1,55 @@
+<div class="parking">
+  {% extends 'sr_base.html' %}
+
+  {% block title %}Security Center Parking Portal{% endblock %}
+  
+  {% block nav %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/parking4.css' %}">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="{% url 'Phome_url' %}">Parking Center</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'securityhome_url' %}">Security Center</a>
+          </li>
+          {% if user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'Pviolator_url' %}">Violator Parking Registration</a>
+          </li>
+          {% endif %}
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'Pviolator_list_url' %}">Violator Parking List</a>
+          </li>
+          {% if user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'Pemployee_url' %}">Employee Of Month Registration</a>
+          </li>
+          {% endif %}
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'Pemployee_list_url' %}">Employee Of Month List</a>
+          </li>
+        </ul>
+        <form class="form-inline" style="margin:0;">
+          {% if user.is_authenticated %}
+            {% if user.is_superuser %}
+              <h5 style="color:white; margin:0 20px 0 30px;">Admin | {{user.first_name }} {{user.last_name}} ({{user.team_at}})</h5>
+              <a style="color:white; margin:0 20px 0 30px; border:1px solid white; border-radius: 5px; padding:5px" href="{% url 'logout_url' %}">Logout</a>
+            {% else %}
+              <h5 style="color:white; margin:0 20px 0 30px;">User | {{user.first_name }} {{user.last_name}} ({{user.team_at}})</h5>
+              <a style="color:white; margin:0 20px 0 30px; border:1px solid white; border-radius: 5px; padding:5px" href="{% url 'logout_url' %}">Logout</a>
+            {% endif %}
+          {% else %}
+            <h5 style="color:white; margin:0">Login Here</h5>
+            <a style="color:white; margin:0 20px 0 30px; border:1px solid white; border-radius: 5px; padding:5px" href="{% url 'login_url' %}">Login</a>
+          {% endif %}
+        </form>
+      </div>
+    </nav>
+  {% endblock %}
+</div>

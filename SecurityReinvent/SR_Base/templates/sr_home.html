@@ -1,0 +1,32 @@
+<!-- itself -->
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/sr_home.css' %}">
+<title>Home</title>
+
+<div class="home-background"> 
+  <a class="security" href="{% url 'securityhome_url' %}">
+    <div class="intro-text">
+      <h1>SECURITY Center</h1>
+      <div class="intro-list">
+        <h2>- Visitor Registration</h2>
+        <h2>- Parking Management</h2>
+        <h2>- Truck Tracking</h2>
+        <h2>- Delivery Package</h2>
+      </div>
+      <p>With SHEE Team</p>
+    </div>
+  </a>
+  <a class="reinvent" href="{% url 'reinventhome_url' %}">
+    <div class="intro-text">
+      <h1>REINVENT Center</h1>
+      <div class="intro-list">
+        <h2>- My Day</h2>
+        <h2>- Flexible Workhours</h2>
+        <h2>- Happy Friday</h2>
+        <h2>- Leaders Off Day</h2>
+      </div>
+      <p>With HR Team</p>
+    </div>
+  </a>
+</div>

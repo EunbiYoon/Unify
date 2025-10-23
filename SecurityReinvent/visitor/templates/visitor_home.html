@@ -1,0 +1,24 @@
+{% extends 'visitor_base.html' %}
+
+{% block container %}
+<div class="content">
+    <p style="font-weight: 300;">
+      Hello, I'm visitor registration chatbot, your virtual assistant.
+    </p>
+    <p style="font-weight: 300;">
+      What can I do to assist you about visitor registration?
+    </p>
+    <p style="font-weight: 300;">
+      Please Choose One of Below Options
+    </p>
+    <p>
+      <a href="{% url 'Vregister_url' %}">1. Visitor Request</a>
+    </p>
+    <p>
+      <a href="{% url 'Vmy_url' %}">2. My Approval</a>
+    </p>
+    <p>
+      <a href="{% url 'Vlist_url' %}">3. Visitor List</a>
+    </p>
+</div>
+{% endblock %}

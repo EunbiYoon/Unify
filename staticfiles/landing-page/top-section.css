@@ -1,0 +1,97 @@
+#top .container{
+    align-items: center;
+    padding:100px 0px 80px 0px;
+    margin: 23px auto;
+}
+#top .info{
+    padding: 15px 15px ;
+    position: relative;
+}
+#top .symbol{
+    padding: 15px 15px ;
+    position: relative;
+}
+#top h1 {
+    font-size: 100px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color:#C70851;
+    font-weight: 800;
+}
+#top h2 {
+    font-size: 90px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;  
+    color:black;
+}
+#top h3 {
+    font-size: 80px;
+    text-align: center;
+    color: gray;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 400;
+    z-index: 1;
+}
+#top h4 {
+    font-size: 30px; 
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 400;   
+}
+
+#top .neonIcon 
+{
+    text-align: right;
+    animation: flicker4 10s infinite alternate;
+    color: gray;
+}
+
+
+
+/* tablets*/
+@media only screen and (max-width: 1024px){
+    #top{
+        margin:140px 0px 60px 0px
+    }
+    #top .container{
+        padding: 80px 0px 100px 0px;
+    }
+    #top h1{
+        font-size:4rem;
+    }
+    #top h2{
+        font-size:3.8rem;
+    }
+    #top h3{
+        font-size:3.5rem;
+    }
+    #top h4{
+        font-size:15rem;
+    }
+
+}
+
+/*phones*/
+@media only screen and (max-width: 767px){
+    #top{
+        margin: 85px 0 60px 0;
+    }
+    #top .container{
+        padding: 40px 0px 80px 0px;
+    }
+    #top h1{
+        font-size:1.9rem;
+    }
+    #top h2{
+        font-size:2.0rem;
+    }
+    #top h3{
+        font-size:2.0rem;
+    }
+    #top h4{
+        font-size:6rem;
+    }
+}

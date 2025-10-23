@@ -1,0 +1,85 @@
+{% extends 'truck_base.html' %}
+
+{% block container %}
+    <div class="detail">
+        <h1 class="text-center">Truck Detailed View</h1>
+        <h5 class="text-center" style="color:#464133c3">Track the current status of this truck : {% if truck_detailed.checkout_at %}<span style="color:#286060; font-weight: 800;">Check Out</span>{% else %}<span style="color:#A72B2A; font-weight: 800;">Check In</span>{% endif %}</h5>
+        <table class="text-center registerform" style="margin:auto;">
+            <tbody>
+                <tr>
+                    <th scope="row" style="margin:0; background-color:#a72a2a56;; border:1px solid #46413378;"><h5 style="color:black;" class="title1">Check In Time</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.checkin_at|date:"m/d/y H:m"}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title2">Check In PIC</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.checkin_pic.first_name}} {{truck_detailed.checkin_pic.last_name}}</h5></td>
+                </tr>  
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title3">Driver Name</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.driver_name}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title4">License Plate</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.license_plate}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title5">Company</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.company_name}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title6">Truck Number</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.truck_number}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title7">Direct Delivery CNTR</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.direct_cntr}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title8">Trailer Number</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.in_trailer}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#a72a2a56; border:1px solid #46413378;"><h5 style="color:black;" class="title9">Seal Number</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #a72a2a15;">{{truck_detailed.seal_number}}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black;" class="title9">Check Out Time</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #58d5d510;">{% if truck_detailed.checkout_at %}{{truck_detailed.checkout_at|date:"m/d/y H:m"}}{% else %}-{% endif %}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black;" class="title9">Check Out PIC</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #58d5d510;">{% if truck_detailed.checkout_at %}{{truck_detailed.checkout_pic.first_name}} {{truck_detailed.checkout_pic.last_name}}{% else %}-{% endif %}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black;" class="title9">Out Trailer</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #58d5d510;">{% if truck_detailed.checkout_at %}{{truck_detailed.out_trailer}}{% else %}-{% endif %}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black;" class="title9">Load Status</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133"><h5 style="background-color: #58d5d510;">{% if truck_detailed.checkout_at %}{{truck_detailed.load_status}}{% else %}-{% endif %}</h5></td>
+                </tr> 
+                <tr>
+                    <th scope="row" style="background-color:#58d5d556; border:1px solid #46413378;"><h5 style="color:black;" class="title9">Upload File</h5></th>
+                    <td style="border:1px solid #46413378; color:#464133; background-color: #58d5d510;"><small>{{ truck_detailed.upload_file.name }}</small></td>
+                </tr> 
+            </tbody>
+        </table>
+        <div class="text-center">
+            <a href="{% url 'Ttruckhistory_url' %}" type="submit" class="btn btn-primary">Back</a>
+            {% if user.is_superuser %}
+                {% if truck_detailed.checkout_at %}
+                    {% if request.user == truck_detailed.checkout_pic %}
+                        <a href="{% url 'TtruckeditOut_url' truck_detailed.pk%}" type="submit" class="btn btn-primary">Edit</a>
+                        <a href="{% url 'Ttruckdelete_url' truck_detailed.pk %}" class="btn btn-primary">Delete</a>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url 'Ttruckout_url' truck_detailed.pk %}" type="submit" class="btn btn-primary">Check Out</a>
+                    {% if request.user == truck_detailed.checkin_pic %}
+                        <a href="{% url 'TtruckeditIn_url' truck_detailed.pk %}" type="submit" class="btn btn-primary">Edit</a>
+                        <a href="{% url 'Ttruckdelete_url' truck_detailed.pk %}" class="btn btn-primary">Delete</a>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

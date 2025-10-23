@@ -1,0 +1,26 @@
+{% extends 'cost_base.html'%}
+
+{% block title %}{{post.title_tag}}{% endblock %}
+
+{% block container %}
+<div style="background-color: aliceblue; margin:30px; padding:30px 30px 60px; border-radius: 10px;">
+    <h1>{{object.week}} {{object.category}}</h1>
+    <h5>
+        {{ object.author.first_name }}
+        {{ object.author.last_name }} -
+        {{ object.date_added|date:"m/d/y h:m A" }} 
+
+        {% if user.is_authenticated %}
+            <a href="{% url 'update_post' object.pk %}">(Edit)</a>
+            <a href="{% url 'delete_post' object.pk %}">(Delete)</a>
+        {% endif %}
+    </h5>
+    <hr>
+    <div>
+        <h3>{{ object.comment_body }} </h3>
+    </div>
+    <br/>
+    <br/>
+    <a href="{% url 'comment_url' %}" class="btn btn-primary" style="float: right; ">Back</a>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'cost_base.html'%}
+{% block title %}Create New Post{% endblock %}
+{% block container %}
+
+{% if user.is_authenticated %}
+    <h1>Add Post...</h1>
+    <br/><br/>
+    <div class="form-group">
+        <form method="POST">
+            {% csrf_token %}
+            <div>
+                {{ form.post__title.label_tag }}
+                {{ form.post__title }}
+            </div>
+            <div>
+                {{ form.post__slug.label_tag }}
+                {{ form.post__slug }}       
+            </div>
+            <div>
+                {{ form.comment_body.label_tag }}
+                {{ form.comment_body }}
+            </div>
+            <button class="btn btn-secondary">Update</button>
+        </form>
+    </div>
+{% else %}
+    Please Login First!
+{% endif %}
+{% endblock %}

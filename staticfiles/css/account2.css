@@ -1,0 +1,97 @@
+.account-background{
+    background-image:linear-gradient(to bottom right,  rgb(255, 211, 245), rgb(190, 223, 253),rgb(207, 253, 188), #fff2b6,#FDCCBB,#e3ffb6) !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.register-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.register{
+    grid-column:1;
+    border:3px solid #707981;
+    border-radius: 10px;
+    padding:30px 100px;
+    margin:30px;
+    background-color: rgba(255, 255, 255, 0.835);
+}
+.login{
+    grid-column:2;
+    border:3px solid #707981;
+    border-radius: 10px;
+    padding:30px 100px;
+    margin:30px;
+    background-color: rgba(255, 255, 255, 0.835);
+}
+.alert{
+    background: transparent;
+    color:red;
+    font-weight: 500;
+    font-size:1rem;
+    border:none;
+    padding:0;
+    margin:0;
+    width:324px;
+}
+
+h1{
+    margin-bottom:15px;
+    text-align: center;
+    color:#707981
+}
+p{
+    color:#707981;
+}
+
+h6{
+    color:#707981;
+    font-size: 0.8rem;
+}
+label{
+    margin-top:10px;
+    margin-bottom:0;
+}
+
+input{
+    color: black !important;
+    font-weight: 700 !important;
+}
+input::placeholder{
+    color:rgb(185, 185, 185) !important;
+    font-weight: 400 !important;
+}
+
+.login-info{ 
+    color:black;
+    font-weight: 300;
+    text-align: center;
+}
+.register-login .btn{
+    margin-top:10px !important;  
+    background-color: #707981 !important;
+}
+
+.resetbutton{
+    background-color: transparent !important;
+    color:#707981;
+    border:none;
+    text-align: right;
+    margin-top:30px;
+    text-decoration: underline;
+}
+form{
+    margin:0;
+}
+.homebutton{
+    background-color: transparent !important;
+    margin:0;
+    color:#707981;
+    border:none;
+    text-align: right;
+    text-decoration: underline;
+    padding-left:6px;
+}

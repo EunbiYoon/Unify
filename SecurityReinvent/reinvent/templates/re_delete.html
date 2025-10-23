@@ -1,0 +1,28 @@
+{% extends 're_base.html' %}
+
+{% block title %}REINVENT My View{% endblock %}
+
+{% block container %}
+    <div class="tab-content delete-info" style="padding:30px 300px">
+        <h2>Delete this request?</h2>
+        <div class="request-info">
+            <h4 style="font-weight: 600;">Request Information</h4>
+            <h4>Program: {{ selected_data.program }}</h4>
+            {% if selected_data.program in 'Flexible Workhours' %}
+                <h4>Late Day: {{ selected_data.late_day }}</h4>
+            {% endif %}
+            <h4>Applied Day: {{ selected_data.applied_day }}</h4>
+            {% if selected_data.remark %}
+                <h4>Remark: {{ selected_data.remark }}</h4>
+            {% endif %}
+            <h4>Requester: {{ selected_data.user.first_name }} {{ selected_data.user.last_name }}</h4>
+            <h4>Request At: {{ selected_data.request_at|date:'m/d/y h:m A' }}</h4>
+        </div>
+        <h6 style="text-align: center;">
+            If you want to delete this request, please click delete button below.
+            <br/>Once you delete, do not try to go back as it will cause an error.
+            <br/>You will receive an email that delete request has been processed.
+        </h6>
+        <a href="{% url 'Rmydelete_url' selected_data.pk %}" class="btn btn-primary">Delete</a>
+    </div>
+{% endblock %}

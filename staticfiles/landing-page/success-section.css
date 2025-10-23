@@ -1,0 +1,110 @@
+#success-section{
+  background-color: rgba(165, 172, 172, 0.416);
+  margin: 0 auto;
+}
+
+#success-section .review{
+  color:grey;
+  height: 800px;
+
+}
+
+#success-section h1{
+  vertical-align: center;
+  padding: 300px 0 10px 0 ;
+  margin: auto 0 2px 0;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(54, 186, 238);
+  text-align: center;
+}
+
+#success-section h2{
+  padding: 10px;
+}
+#success-section button{
+  text-align:right;
+  margin-bottom:10px;
+  font-size:1.8rem;
+  color:white;
+  background-color: #323f43;
+  border-color: white;
+  border-radius: 10px;
+}
+
+
+#success-section form{
+  text-align: center;
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
+  
+#success-section .footer {
+    background-color: #323f43;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 4px solid black;
+    color: white;
+    font-size: 12px;
+  }
+  
+#success-section .footer__content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+#success-section .footer .left {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+#success-section .footer .right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  
+#success-section .footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  
+#success-section .footer__item {
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+#success-section .footer__item:hover {
+    text-decoration: underline;
+  }
+
+/*phones*/
+@media only screen and (max-width: 767px){
+    #success-section h1{
+      padding: 250px 0 10px 0 ;
+      font-size:1.3rem;
+    }
+    #success-section h2 {
+      font-size: 0.9rem;
+    }
+    #success-section form{
+      text-align: center;
+      background-color: white;
+      width: 80% !important;
+      margin: 0 auto;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+}
+  

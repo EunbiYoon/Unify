@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/report2.css' %}"> 
+</head>
+<body>
+    <div style="display: flex; justify-content: right; margin:0;">
+        <div style="background-color: aliceblue; border:1px solid lightgrey">
+            <a href="{% static file_compare %}" download style="padding: 0 10px">NPT vs GERP File Download</a>
+            <a href="{% static file_result %}" download style="border-left:1px solid lightgray; border-right:1px solid lightgray; padding:0 10px"> Total Result Download</a>
+            <a href="{% url 'detail_comment_url' post_detail.id  %}" style="border-right:1px solid lightgray; padding:0 10px">Comment</a>
+            <a href="{% url 'category_bom_url' %}" style="padding: 0 10px; border-right:1px solid lightgray; ">Dashboard</a>
+            <a href="{% url 'costhome_url' %}" style="padding: 0 10px">Home</a>
+        </div>
+    </div>
+    <form method="post" action="{% url 'detail_bom_url' post_detail.id %}" style="margin: 0 200px;">
+        {% csrf_token %}
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Dryer" id="detail-bom-model">
+        <input style="background-color: #007BFF; color:white;border:none; border-radius:5px 5px 0 0;" type="submit" name="action" value="Front Loader" id="detail-bom-model">
+        <input style="background-color: #007BFF; color:white;border:none; border-radius: 5px 5px 0 0;" type="submit" name="action" value="Top Loader" id="detail-bom-model">
+    </form>
+    <div style="margin: 0 200px; border:3px solid #007bff98; border-radius: 0 10px 10px 10px; padding:20px">
+        <div class="detail-container">
+            <h2 style="text-align: center; margin-bottom:10px; padding:0;">
+                {{ week_num }} BOM Comparison Report
+            </h2> 
+            <!-- graph -->
+            <div class="detail-graph" style="margin-bottom:10px">
+                <h5>[NPT vs GERP Accuracy] {{model_title}}</h5>
+                <canvas width="90vw" height="17vh" id="chart"></canvas>
+                {% load static %}
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    var chartColumn=JSON.parse('{{ detail_graph_column|safe }}');
+                    var chartData=JSON.parse('{{detail_graph_value|safe}}');
+                    var chartData1=JSON.parse('{{detail_graph_value1|safe}}');
+                    var chartData2=JSON.parse('{{detail_graph_value2|safe}}');
+                    var chartData3=JSON.parse('{{detail_graph_value3|safe}}');
+                    var chartConfig={
+                        data:{
+                            labels:chartColumn,
+                            datasets:[{
+                                type:'line',
+                                label:'PAC Net - BOM Net',
+                                data:chartData,
+                                borderColor: '#5C00FE',
+                                backgroundColor:'#5C00FE',
+                            },
+                            {
+                                type:'line',
+                                label:"(Accuracy) Price + Substitute",
+                                data:chartData3,
+                                borderColor:'#C1FF00',
+                                backgroundColor:'#C1FF00',
+                            },
+                            {
+                                type:'bar',
+                                label:"PO Price Change",
+                                data:chartData1,
+                                backgroundColor:'#93E5FF',
+                                bordreWidth:1
+                            },
+                            {
+                                type:'bar',
+                                label:"Substitute Change",
+                                data:chartData2,
+                                backgroundColor:'#FFABDF',
+                                bordreWidth:1
+                            }
+                        ]
+                        },
+                        options:{
+                            scales:{
+                                y:{
+                                    beginAtZero:true,
+                                    ticks: {
+                                        // Include a dollar sign in the ticks
+                                        callback: function(value, index, ticks) {
+                                            return '$' + value;
+                                        }
+                                    }
+                                },
+                                x:{
+                                    grid:{
+                                        display:false
+                                    }    
+                                }
+                            },
+                            plugins:{
+                                legend:{
+                                    labels:{
+                                        // usePointStyle: true,
+                                        // pointStyle: 'line',
+                                        // display:false,
+                                        font:{size:12,family: 'Arial Narrow'}}
+                                }
+                            }
+                        }
+                    };
+                    var chart=new Chart(document.getElementById('chart'), chartConfig);
+                </script>
+            </div>
+            <div class="detail-trend" style="margin-bottom:10px">
+                <h5>[BOM Comparison Trend] {{model_title}}</h5>
+                {% if trend_template %}
+                    {% include trend_template %}
+                {% endif %}
+            </div>
+            <!-- table 2 -->
+            <div class="detail-item" style="margin-bottom:10px">
+                <h5>[NPT vs GERP Difference Item] {{model_title}}</h5>
+                {% if item_template %}
+                    {% include item_template %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

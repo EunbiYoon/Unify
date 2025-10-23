@@ -1,0 +1,203 @@
+#dataTable{
+    width: 100% !important;
+  }
+  .dataTables_wrapper .dataTables_filter input{
+    background-color: white !important;
+  }
+  .dataTables_wrapper .dataTables_length select{
+    background-color: white !important; 
+  }
+  
+/*revinvent_base.html*/
+.reinvent-background nav{
+    background-color:  white;
+    border-bottom:2px solid #faad8f;
+    color:#faad8f;
+}
+.reinvent-background nav ul{
+    text-align: right;
+}
+.reinvent-background nav .navbar-brand{
+    color:#f65757 !important;
+    font-weight: 600;
+}
+
+.reinvent-background nav form h5{
+    color:#f65757; 
+    margin:0; 
+    text-transform: capitalize;
+}
+.reinvent-background nav form a{ 
+    background-color:#f97070; 
+    color:white;
+    font-weight: 600;
+    margin:0 20px 0 30px; 
+    border:2px solid #faad8f; 
+    border-radius: 5px; 
+    padding:5px;
+}
+.reinvent-background nav form a:hover{ 
+    background-color: white;
+    color:#f97070;
+    text-decoration: none;
+}
+
+/* resgister.html */
+.reinvent-background .nav-tabs .nav-item{
+    border:1px solid #f97070;
+    border-bottom:none;
+    background-color: rgba(255, 255, 255, 0.745);
+    border-radius: 5px 5px 0 0;
+    font-weight: 600;
+    color:#464133 !important;
+}
+.reinvent-background .nav-tabs .nav-item .nav-link{
+    color:#f97070;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+.reinvent-background .nav-tabs .nav-item .active{
+    color:white;
+    background-color: #f97070;
+}
+
+.reinvent-background .tab-content{
+    text-align: center;
+    border:1px solid #f97070;
+    background-color: rgba(255, 255, 255, 0.745);
+    border-radius: 0 5px 5px 5px;
+    padding:auto;
+    text-align: center;
+}
+.reinvent-background .tab-content .alert{
+    color: #f94040;
+    font-weight: 500;
+    background-color:  rgba(187, 187, 187, 0.332);
+}
+.reinvent-background .tab-content h3{
+    margin: 30px 0 10px;
+}
+.reinvent-background .tab-content .tab-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.reinvent-background .tab-content h6{
+    text-align: left;
+}
+
+.reinvent-background .tab-content table{
+    margin-top:20px;
+    text-align: right;
+    background-color: rgba(187, 187, 187, 0.332);
+    margin:0 auto;
+}
+.reinvent-background .tab-content table td{
+    text-align: center;
+}
+.reinvent-background .tab-content table th, .tab-content table td{
+    padding:10px;
+    text-align: center !important; 
+}
+.reinvent-background .tab-content input, .tab-content textarea{
+    color:#f65757 !important;
+    font-weight: 600;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 0.761);
+    width: 400px;
+}
+.reinvent-background .tab-content input::placeholder, .tab-content textarea::placeholder{
+    color:#4641336b !important;
+}
+.reinvent-background .tab-content button{
+    border:none;
+    font-weight: 700;
+    color:whitesmoke;
+    background-color: #f97070;
+    margin:10px 0 20px;
+}
+.reinvent-background .tab-content button:hover{
+    background-color: #464133;
+    color:whitesmoke;
+}
+.reinvent-background .tab-content h5{
+    text-align: center;
+}
+
+
+
+/* list.html */
+.reinvent-background .list-table {
+    background-color: rgba(255, 255, 255, 0.932);
+    margin-top:30px;
+    border-radius: 10px;
+    padding:20px;
+    border: 2px solid #faad8f;
+}
+.reinvent-background .list-table .list-title {
+    margin-bottom: 10px;
+    color:#f94040 !important;
+    font-weight: 600 !important;
+    text-align: left;
+    position: relative;
+}
+.reinvent-background .list-table .list-title a {
+    margin:0;
+    padding:0;
+    border:none
+}
+
+.reinvent-background .list-table  table{
+    background-color: transparent !important;
+    white-space: normal;
+    text-align: center;
+}
+.reinvent-background .list-table table thead th{
+    text-align: center !important;
+}
+.reinvent-background .list-table table form{
+    margin:0;
+    padding:0;
+}
+
+.reinvent-background .list-table button{
+    background-color: #464133;
+    border-radius: 5px;
+    color:white;
+    margin:auto;
+}
+
+/* re_delete.html */
+.reinvent-background .delete-info .request-info{
+    background-color:white;
+    padding:10px;
+    border-radius: 5px;
+    margin:10px;
+    text-align: left;
+    border: 1px solid lightgrey;
+}
+.reinvent-background .delete-info a{    
+    background-color:#f97070; 
+    color:white;
+    border-radius: 5px; 
+    border:none;
+}
+.reinvent-background .delete-info a:hover{ 
+    background-color: white;
+    color:#f97070;
+    text-decoration: none;
+    border:1px solid #f97070;
+    font-weight: 600;
+}
+.reinvent-background .delete-info .request-info h4{
+    padding-left:10px;
+    color:black;
+    font-weight: 300;
+}
+
+.reinvent-background td{
+    vertical-align: center !important;
+    text-align: center !important;
+}
