@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["wet-cristy-eunbiyoon071717-3687c184.koyeb.app","www.yooneunbi.com","yooneunbi.com","localhost","127.0.0.1"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "wet-cristy-eunbiyoon071717-3687c184.koyeb.app/",
+    "wet-cristy-eunbiyoon071717-3687c184.koyeb.app",
     "www.yooneunbi.com",
     "yooneunbi.com"
 ]
