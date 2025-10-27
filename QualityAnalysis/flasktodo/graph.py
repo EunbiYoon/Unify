@@ -324,8 +324,8 @@ ppm=ppm.astype(int)
 
 #table 합
 Table=pd.concat([ea,ppm],axis=1)
-Plabels=Table.index[:-1].to_list()
-Pvalues=Table['PPM'][:-1].to_list() #total 제외
+Plabels=Table.index[:-1].tolist()
+Pvalues=Table['PPM'][:-1].tolist() #total 제외
 
 
 ##########################그래프 만들기 1번째 축
@@ -352,17 +352,17 @@ legend0M=date0M_name
 ABlabels=list(range(1,len(Salesresult.index)+1))
 
 # zero not display
-# 에러 수정 1/28/2025
-# Avalues2M=SVCresult['SVC_'+date2M_name].iloc[:, 0].squeeze().dropna().tolist()
-# Avalues1M=SVCresult['SVC_'+date1M_name].iloc[:, 0].squeeze().dropna().tolist()
-Avalues2M=SVCresult['SVC_'+date2M_name].dropna().tolist()
-Avalues1M=SVCresult['SVC_'+date1M_name].dropna().tolist()
+# 에러 수정 1/28/2025 -> 10/27/2025
+Avalues2M=SVCresult['SVC_'+date2M_name].iloc[:, 0].squeeze().dropna().tolist()
+Avalues1M=SVCresult['SVC_'+date1M_name].iloc[:, 0].squeeze().dropna().tolist()
+# Avalues2M=SVCresult['SVC_'+date2M_name].dropna().tolist()
+# Avalues1M=SVCresult['SVC_'+date1M_name].dropna().tolist()
 Avalues0M=SVCresult['SVC_'+date0M_name].dropna().tolist()
-# 에러 수정 1/28/2025
-# Bvalues2M=Salesresult['Sales_'+date2M_name].iloc[:, 0].squeeze().fillna(0).tolist()
-# Bvalues1M=Salesresult['Sales_'+date1M_name].iloc[:, 0].squeeze().fillna(0).tolist()
-Bvalues2M=Salesresult['Sales_'+date2M_name].fillna(0).tolist()
-Bvalues1M=Salesresult['Sales_'+date1M_name].fillna(0).tolist()
+# 에러 수정 1/28/2025 > 10/27/2025
+Bvalues2M=Salesresult['Sales_'+date2M_name].iloc[:, 0].squeeze().fillna(0).tolist()
+Bvalues1M=Salesresult['Sales_'+date1M_name].iloc[:, 0].squeeze().fillna(0).tolist()
+# Bvalues2M=Salesresult['Sales_'+date2M_name].fillna(0).tolist()
+# Bvalues1M=Salesresult['Sales_'+date1M_name].fillna(0).tolist()
 Bvalues0M=Salesresult['Sales_'+date0M_name].fillna(0).tolist()
 
 

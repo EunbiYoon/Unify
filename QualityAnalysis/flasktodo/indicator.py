@@ -443,15 +443,15 @@ def ffr_function(input_data):
             print("done!")
 
 
-    FFR1YValues=FFR_1Y['FFR_1Y'].dropna().to_list()
-    FFR2YValues=FFR_2Y['FFR_2Y'].dropna().to_list()
-    FFR3YValues=FFR_3Y['FFR_3Y'].dropna().to_list()
-    FFR4YValues=FFR_4Y['FFR_4Y'].dropna().to_list()
+    FFR1YValues=FFR_1Y['FFR_1Y'].dropna().tolist()
+    FFR2YValues=FFR_2Y['FFR_2Y'].dropna().tolist()
+    FFR3YValues=FFR_3Y['FFR_3Y'].dropna().tolist()
+    FFR4YValues=FFR_4Y['FFR_4Y'].dropna().tolist()
 
-    FDR1YValues=FDR_1Y['FDR_1Y'].dropna().to_list()
-    FDR2YValues=FDR_2Y['FDR_2Y'].dropna().to_list()
-    FDR3YValues=FDR_3Y['FDR_3Y'].dropna().to_list()
-    FDR4YValues=FDR_4Y['FDR_4Y'].dropna().to_list()
+    FDR1YValues=FDR_1Y['FDR_1Y'].dropna().tolist()
+    FDR2YValues=FDR_2Y['FDR_2Y'].dropna().tolist()
+    FDR3YValues=FDR_3Y['FDR_3Y'].dropna().tolist()
+    FDR4YValues=FDR_4Y['FDR_4Y'].dropna().tolist()
 
     FFR1YLegend="FFR Last 1 Years"
     FFR2YLegend="FFR Last 2 Years"
