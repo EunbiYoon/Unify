@@ -1,0 +1,168 @@
+#summary-section{
+  background-color: rgba(165, 172, 172, 0.416);
+  margin: 0 auto;
+}
+
+#summary-section .review{
+  color:grey;
+
+}
+
+#summary-section h1{
+  vertical-align: center;
+  padding: 100px 0 10px 0 ;
+  margin-top: auto 0;
+  font-size: 3rem;
+  color:rgb(54, 186, 238);
+  text-align: center;
+  font-weight: 700;
+}
+
+#summary-section h2{
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  color:rgb(54, 186, 238);
+}
+
+#summary-section h3{
+  margin-top: 10px;
+  margin-bottom:5px;
+  font-size: 20px;
+  text-align: center;
+  color:rgb(54, 186, 238);
+  font-weight:900;
+}
+
+#summary-section form{
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#summary-section .form-group{
+  padding: 10px;
+  text-align: center;
+  color:rgb(54, 186, 238);
+}
+
+#summary-section input{
+  font-size: 15px;
+}
+
+#summary-section select{
+  font-size: 15px;
+  border-color:grey;
+}
+
+#summary-section textarea{
+  font-size: 18px;
+}
+
+#summary-section button{
+  margin: 0 auto;
+  color:rgb(31, 143, 187);
+  font-weight: 60;
+  background-color:papayawhip;
+  border-color: papayawhip;
+  font-size: 18px;
+}
+
+  
+#summary-section .footer {
+    background-color: #323f43;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 4px solid black;
+    color: white;
+    font-size: 12px;
+  }
+  
+#summary-section .footer__content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+#summary-section .footer .left {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+#summary-section .footer .right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  
+#summary-section .footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  
+#summary-section .footer__item {
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+#summary-section .footer__item:hover {
+    text-decoration: underline;
+  }
+
+/*tablets*/
+@media only screen and (max-width: 1024px)
+{
+  #summary-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  #summary-section .review {
+    padding: 10px 0 45px 0;
+
+  #summary-section textarea {
+    font-size: 18px;
+  }
+}
+
+/*phones*/
+@media only screen and (max-width: 767px){
+  #summary-section {
+    font-size: 1.4rem;
+    padding: 30px 0 0 0;
+  }
+  #summary-section h1{
+    font-size: 1.4rem;
+    padding: 50px 0 10px 0;
+  }
+  #summary-section h2{
+    padding: 0 55px;
+    font-size: 0.8rem;
+    margin-bottom:8px;
+  }
+  #summary-section form {
+    width: 350px;
+  }
+
+  #summary-section form h3{
+    font-size: 0.9rem;
+    margin-bottom:5px;
+    
+  }
+  #summary-section form textarea{
+    font-size: 0.9rem;
+  }
+  #summary-section form input{
+    font-size: 0.9rem;
+  }
+  #summary-section form button{
+    font-size: 1rem;
+  }
+}

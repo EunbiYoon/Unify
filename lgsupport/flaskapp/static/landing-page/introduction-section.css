@@ -1,0 +1,157 @@
+#introduction-section{
+    margin:0px auto 100px auto;    
+}
+
+#introduction-section .container{
+    background-color: rgb(249, 235, 240);
+}
+    
+
+#introduction-section .title{
+    position: relative;
+    width:200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+#introduction-section .title h1{
+    position: relative;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:black;
+    z-index: 1;
+    letter-spacing: 4px;
+}
+
+#introduction-section .introduction-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#introduction-section .introduction-container .box{
+    background: rgba(255,255,255,0);
+    padding: 30px;
+    transition : all .4s ease-in-out;
+    border-radius: 1rem;
+}
+
+#introduction-section .introduction-container .box h5{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color:white;
+    text-align: center;
+ 
+}
+
+#introduction-section .introduction-container .box p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color : #b3b3b3;
+    text-align: center;
+}
+
+#introduction-section .introduction-container .box.blue h5{ 
+    color:rgb(234, 208, 101);
+}
+#introduction-section .introduction-container .box.red h5{ 
+    color:rgb(119, 198, 222);
+}
+#introduction-section .introduction-container .box.yellow h5{ 
+    color: #97d4bb
+}
+
+
+
+
+
+/*tablets*/
+@media only screen and (max-width: 1024px){
+    #introduction-section {
+        margin: 0 auto;
+    }
+    #introduction-section .container{
+        padding:10px 0px 20px 0px;
+        border-radius: 20px;
+        margin: 67px 40px 140px 40px;
+
+    }
+
+    #introduction-section .title {
+        height: 60px;
+        margin-bottom:20px;
+    }
+
+    #introduction-section .introduction-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    #introduction-section .title h1 {
+        position: relative;
+        font-size: 2.5rem;
+    }
+    #introduction-section .introduction-container .box h5 {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box p {
+        font-size: 1.1rem;
+    }
+    
+
+    #introduction-section .introduction-container .box{
+        padding:0 30px;
+    }
+
+}
+
+/*phones*/
+@media only screen and (max-width: 767px){
+    #introduction-section {
+        margin: -60px auto 90px auto;
+    }
+    #introduction-section .container{
+        padding:10px 0px 10px 0px;
+        border-radius: 20px;
+        margin: 30px
+    }
+
+    #introduction-section .title {
+        height: 22px;
+        margin-bottom:20px;
+    }
+    #introduction-section .title h1 {
+        position: relative;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+    }
+    #introduction-section .introduction-container .box  h5 {
+       font-size: 1rem;;
+    }
+    #introduction-section .introduction-container .box  p {
+        font-size: 0.7rem;
+     }
+    #introduction-section .introduction-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+    #introduction-section .introduction-container .box {
+        padding: 0 10px;
+    }
+
+
+}
+
+    
