@@ -4,10 +4,12 @@ from ninja import NinjaAPI
 from .views import (
     pred_router, sap_router, cctr_router, rakey_router,
     gate_router, process_router, merge_router,
-    close_router, db_router
+    close_router, db_router, home_router
 )
+from django.shortcuts import redirect
 
 api = NinjaAPI(version="2.0.0")
+api.add_router("/home", home_router)
 api.add_router("/prediction", pred_router)
 api.add_router("/sap", sap_router)
 api.add_router("/cctr", cctr_router)
@@ -18,7 +20,6 @@ api.add_router("/merge", merge_router)
 api.add_router("/close", close_router)
 api.add_router("/db", db_router)
 
-# ✅ 이게 없어서 에러가 납니다
 urlpatterns = [
     path("", api.urls),
 ]

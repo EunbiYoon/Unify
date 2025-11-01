@@ -52,11 +52,11 @@ def initiate_users_from_excel(request, file: UploadedFile = File(...)):
     - 파일은 영구 저장하지 않음 (임시파일 사용)
     """
     if not request.user.is_authenticated:
-        raise HttpError(401, "로그인이 필요합니다.")
+        raise HttpError(401, "Please login first")
 
     # (선택) 간단한 확장자 체크
     if not (file.name or "").lower().endswith(".xlsx"):
-        raise HttpError(400, "xlsx 파일만 업로드 가능합니다.")
+        raise HttpError(400, "Only xlsx file can upload")
     result = initiate_bulk_user(file)
     return result
 
@@ -102,7 +102,7 @@ def purge_users_except_first(request):
     - django_admin_log 참조는 선행해서 NULL 처리 (FK 에러 방지)
     """
     if not request.user.is_authenticated:
-        raise HttpError(401, "로그인이 필요합니다.")
+        raise HttpError(401, "Please login first")
 
     User = get_user_model()
     table_name = User._meta.db_table
@@ -207,17 +207,17 @@ def signup(request, data: Signup_Schema):
         else:
             raise HttpError(400, "Invalid role")
 
-            # 3) 사용자 생성 (비번 해시)
-            user = CustomUser.objects.create(
-                username=data.username,
-                email=data.email,
-                phone_number=data.phone_number,
-                password=make_password(data.password),
-                division=division_instance,
-                group=group_instance,
-                team=team_instance,
-                role=role_instance,
-            )
+        # 3) 사용자 생성 (비번 해시)
+        user = CustomUser.objects.create(
+            username=data.username,
+            email=data.email,
+            phone_number=data.phone_number,
+            password=make_password(data.password),
+            division=division_instance,
+            group=group_instance,
+            team=team_instance,
+            role=role_instance,
+        )
 
     except IntegrityError:
         raise HttpError(500, "Database error occurred, please try again.")
@@ -264,7 +264,7 @@ def user_login(request, data: Login_Schema):
 def user_find_me(request):
     user = request.user
     if not user.is_authenticated:
-        raise HttpError(401, "로그인이 필요합니다.")
+        raise HttpError(401, "Please login first")
     return to_user_info(user)  # ✅ 여기서 dict가 아닌 User_Info_Out 객체여야 함
 
 def build_team_tree(user, only_my_team=False):
@@ -304,7 +304,7 @@ def build_team_tree(user, only_my_team=False):
             return {"organization": []}
     
     else:
-        raise HttpError(400, "Team or CctrProcessed가 채워져야 합니다.")
+        raise HttpError(400, "Need to fill out Team or CctrProcessed first")
 
     tree = defaultdict(lambda: defaultdict(list))
     for team in teams.select_related("group_parent", "division_parent"):
@@ -335,7 +335,7 @@ def build_team_tree(user, only_my_team=False):
 def get_accessible_team_names(request):
     """📌 유저 권한(role)에 따라 접근 가능한 팀 리스트를 트리 구조로 반환"""
     if not request.user.is_authenticated:
-        raise HttpError(401, "로그인이 필요합니다.")
+        raise HttpError(401, "Login Required")
 
     return build_team_tree(request.user, only_my_team=False)
 
@@ -349,10 +349,10 @@ def logoutView(request):
 @user_router.post("/reset-password")
 def reset_password(request, data: ResetPasswordSchema):
     if not request.user.is_authenticated:
-        raise HttpError(401, "❌ 로그인 필요")
+        raise HttpError(401, "❌ Login Required")
 
     if data.password != data.password_confirmed:
-        raise HttpError(400, "❌ 비밀번호가 일치하지 않습니다.")
+        raise HttpError(400, "❌ Both passward are not matched")
 
     user = request.user
     user.set_password(data.password)
@@ -380,10 +380,10 @@ def _unique_guard(u: CustomUser, data: dict):
     """username/email 중복 방지"""
     if "username" in data and data["username"] \
        and CustomUser.objects.exclude(id=u.id).filter(username=data["username"]).exists():
-        raise HttpError(409, "이미 존재하는 사용자명입니다.")
+        raise HttpError(409, "Already existed username")
     if "email" in data and data["email"] \
        and CustomUser.objects.exclude(id=u.id).filter(email=data["email"]).exists():
-        raise HttpError(409, "이미 사용 중인 이메일입니다.")
+        raise HttpError(409, "Already existed email")
 
 def _resolve_fk_by_string(value: Optional[str], model, field: str):
     """문자열로 FK 조회 (없으면 None)"""
@@ -449,13 +449,13 @@ def delete_user(request, user_id: int):
 def flush_all_orgs(request):
     """📌 Division, Group 데이터 전체 삭제 (순서 중요)"""
     if not request.user.is_superuser:
-        raise HttpError(403, "❌ 슈퍼유저만 사용할 수 있습니다.")
+        raise HttpError(403, "❌ This is only available for superuser authority")
 
     # 삭제 순서 주의: Team → Group → Division
     Group.objects.all().delete()
     Division.objects.all().delete()
 
-    return {"success": True, "message": "✅ 모든 조직 데이터 삭제 완료 (Group → Division)"}
+    return {"success": True, "message": "✅ Delete all organization info (Group → Division)"}
 
 # ===================================================================
 # ✅ Division CRUD

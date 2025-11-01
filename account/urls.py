@@ -13,6 +13,6 @@ api.add_router("team", team_router)
 api.add_router("role", role_router)
 
 urlpatterns = [
-    path("", api.urls),  # ✅ 이 라인이 반드시 있어야 /account/docs 작동
+    path("", api.urls),  # ✅ 이 라인이 반드시 있어야 /account/api/docs 작동
     path('logout/',logoutView, name="logout_url"),
 ]

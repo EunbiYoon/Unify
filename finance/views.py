@@ -14,7 +14,7 @@ from datetime import datetime, date
 from django.db import models, transaction, connection
 from django.db.models import Q, Case, When, Value, IntegerField, Subquery, OuterRef, Max, QuerySet
 from django.http import HttpResponse, JsonResponse, FileResponse
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 # from django.utils import timezone
 # from django.utils.timezone import now
 from django.core.mail import EmailMessage
@@ -83,6 +83,7 @@ import calendar
 
 
 # ✅ Router 선언
+home_router = Router(tags=["Home Page"])
 pred_router = Router(tags=["[Project Page] Team Prediction Initialize + CRUD"])
 job_router = Router(tags=["[Project Page] Project Job"])
 sap_router = Router(tags=["[Project Page] SAP Raw & Transformation"])
@@ -106,6 +107,9 @@ MONTH_KOR = {
     "jul": "7월", "aug": "8월", "sep": "9월", "oct": "10월", "nov": "11월", "dec": "12월"
 }
 
+@home_router.get("")
+def finance_home(request):
+    return render(request, 'finance_home.html')
 
 # ===================================================================
 # 🥳 예상 샘플 업로드
