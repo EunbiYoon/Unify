@@ -1,13 +1,13 @@
 from flask import render_template, Blueprint, request
 
 import pandas as pd 
-from QualityAnalysis.flasktodo.graph import legend2M, legend1M, legend0M, ABlabels, Avalues2M, Avalues1M, Avalues0M, Bvalues2M, Bvalues1M, Bvalues0M, Plabels, Pvalues, svc_data_html, min_data_html
-from QualityAnalysis.flasktodo.indicator import basic_function,pivot_function, hazard_function, ppm_function, ffr_function
+from quality.flasktodo.graph import legend2M, legend1M, legend0M, ABlabels, Avalues2M, Avalues1M, Avalues0M, Bvalues2M, Bvalues1M, Bvalues0M, Plabels, Pvalues, svc_data_html, min_data_html
+from quality.flasktodo.indicator import basic_function,pivot_function, hazard_function, ppm_function, ffr_function
 # from flasktodo.graph import legend2M, legend1M, legend0M, ABlabels, Avalues2M, Avalues1M, Avalues0M, Bvalues2M, Bvalues1M, Bvalues0M, Plabels, Pvalues, svc_data_html, min_data_html
 # from flasktodo.indicator import basic_function,pivot_function, hazard_function, ppm_function, ffr_function
 
 
-hazard_json_path='QualityAnalysis/flasktodo/static/json/hazard.json'
+hazard_json_path='quality/flasktodo/static/json/hazard.json'
 # hazard_json_path='flasktodo/static/json/hazard.json'
 
 

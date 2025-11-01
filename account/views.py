@@ -246,19 +246,6 @@ def to_user_info(user) -> User_Info_Out:
         team_name=extract_last(team.team_name) if team else None,
     )
 
-# ✅ 로그인
-@user_router.post("/login", response=Login_Response)
-def user_login(request, data: Login_Schema):
-    """📌 로그인: 세션 인증 + 최소 사용자 정보 반환"""
-    user = authenticate(request, username=data.username, password=data.password)
-    if not user:
-        raise HttpError(401, "Invalid credentials")
-
-    login(request, user)
-    return {
-        "message": "Login successful",
-        "user": to_user_info(user),
-    }
 
 @user_router.get("/me", response=User_Info_Out)
 def user_find_me(request):
@@ -338,6 +325,20 @@ def get_accessible_team_names(request):
         raise HttpError(401, "Login Required")
 
     return build_team_tree(request.user, only_my_team=False)
+
+# ✅ 로그인
+@user_router.post("/login", response=Login_Response)
+def loginView(request, data: Login_Schema):
+    """📌 로그인: 세션 인증 + 최소 사용자 정보 반환"""
+    user = authenticate(request, username=data.username, password=data.password)
+    if not user:
+        raise HttpError(401, "Invalid credentials")
+
+    login(request, user)
+    return {
+        "message": "Login successful",
+        "user": to_user_info(user),
+    }
 
 # ✅ 로그아웃
 @user_router.post("/logout")

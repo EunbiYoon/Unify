@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from ninja import NinjaAPI
-from account.views import user_router,org_router,division_router,group_router,team_router,role_router, logoutView
+from account.views import user_router,org_router,division_router,group_router,team_router,role_router, loginView, logoutView
 
 api = NinjaAPI(version="1.0.0")
 
@@ -15,4 +15,5 @@ api.add_router("role", role_router)
 urlpatterns = [
     path("", api.urls),  # ✅ 이 라인이 반드시 있어야 /account/api/docs 작동
     path('logout/',logoutView, name="logout_url"),
+    path('login/',loginView, name="login_url"),
 ]

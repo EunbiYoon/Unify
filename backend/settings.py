@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'securityreinvent.truck',
     'securityreinvent.delivery',
     'securityreinvent.reinvent',
+    'quality.flasktodo',
 ]
 JAZZMIN_SETTINGS = {
     "site_title": "Database",        # 브라우저 탭 제목

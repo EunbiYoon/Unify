@@ -23,6 +23,6 @@ def create_app():
     app.register_error_handler(500, handle_500)
 
     # 블루프린트 등록
-    app.register_blueprint(bp, url_prefix='/qualityanalysisdashboard')
+    app.register_blueprint(bp, url_prefix='/quality/dashboard')
 
     return app
