@@ -1,0 +1,77 @@
+{% extends 'visitor_base.html' %}
+
+{% block container %}
+    <div class="register">
+        {% if empty_message %}
+            <p class="alert alert-message">Error: (*) must required. <span style="color:#E5255E; font-weight: 800;">{{ empty_message }}</span> empty now.</p>
+        {% endif %}
+        <h1 class="text-center">Visitor Request</h1>
+        <h6 class="text-left">
+            Security Policy of Visitor
+            <br/>* Visitor wears PPE and safety shoes in the factory and they should provide from visitor requester's team.
+            <br/>* Visitor laptop should be checked and got permission at the security building before bring in to the LG.
+        </h6>
+        <h6 style="color:#F26282; margin-bottom:20px">
+            Approval lines :  Your Team Leader, Security Manager, Security Team Leader.
+            <br/>After you request, email will be sent in parallel to the person in the approval line.
+        </h6>
+        <form method="post" action="{% url 'Vregister_url' %}" class="text-center">
+            {% csrf_token %}
+            <table class="text-center registerform" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <th scope="row" style="background-color:white; border:1px solid lightgray;"><h5>Visitor's Name (*)</h5></th>
+                        <td style="border:1px solid lightgray;"><h5><input class="text-center" type="text" placeholder="John Smith" class="name" name="name" style="width: 100%; border:none;"></h5></td>
+                    </tr>   
+                    <tr>
+                        <th style="background-color:white; border:1px solid lightgray;" scope="row"><h5>Visitor's Company (*)</h5></th>
+                        <td style="border:1px solid lightgray;"><h5><input class="text-center" type="text" placeholder="Pantos" class="company" name="company" style="width: 100%; border:none;"></h5></td>
+                    </tr>  
+                    <tr>
+                        <th style="background-color:white; border:1px solid lightgray;" scope="row"><h5>Visit Date (*)</h5></th>
+                        <td style="border:1px solid lightgray;"><h5><input class="text-center" type="text" class="date" id="date-range-picker" placeholder="Select a date range" class="visitor_input" name="date" style="width: 100%; border:none;"></h5></td>
+                    </tr> 
+                    <tr>
+                        <th style="background-color:white; border:1px solid lightgray;" scope="row"><h5>Visit Purpose (*)</h5></th>
+                        <td style="border:1px solid lightgray;"><h5><textarea class="text-center" name="purpose" placeholder="Site Visit, Corporate and Support Project or Task, Negotiate Terms or Contract, and Etc." class="purpose" style="width: 100%; border:none;"></textarea></h5></td>
+                    </tr> 
+                    <tr>
+                        <th style="background-color:white; border:1px solid lightgray;" scope="row"><h5>Bring Laptop Onsite (*)</h5></th>
+                        <td style="border:1px solid lightgray;">
+                            <h5>
+                                <select class="laptop" name="laptop" class="text-center" style="width: 100%; border:none;">
+                                    <option class="text-center" value="Yes">Yes (Visitor's Laptop will check in Security Building)</option>
+                                    <option class="text-center" value="No">No (Visitor Can Not Bring Laptop)</option>
+                                </select>
+                            </h5>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th style="background-color:white; border:1px solid lightgray;" scope="row"><h5>Visitor Arrived Contact Number</h5></th>
+                        <td style="border:1px solid lightgray;">
+                            <h5><input type="tel" id="phone" name="phone" placeholder="931 111 1111"></h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color:white; border:1px solid lightgray;"><h5>Remark</h5></th>
+                        <td style="border:1px solid lightgray;">
+                            <h5><textarea class="text-center" name="remark" placeholder="Please give me phone call when visitor arrived to the security gate." class="remark" style="width: 100%; border:none;"></textarea></h5>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+            <button id="submit" type="submit" class="btn btn-primary">Request</button>
+        </form>
+    </div>
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> 
+<script>
+    // Initialize flatpickr
+    flatpickr("#date-range-picker", {
+      mode:'range',
+      dateFormat: "Y-m-d", // You can change the format as per your needs
+      minDate:"today"
+    });
+</script> 
+{% endblock %}

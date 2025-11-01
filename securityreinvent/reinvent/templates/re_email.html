@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .email{
+        background-image: linear-gradient(to bottom right,  #fff2b6,#FDCCBB,#f97070) !important; 
+        padding:20px;
+    }
+    .email .container{
+        background-color: rgba(255, 255, 255, 0.745);
+        border:2px solid #f97070;
+        border-radius: 10px;
+    }
+    h6{
+        font-weight: 300;
+        color:black;
+        text-align: right;
+        margin-bottom:30px;
+    }
+    .summary{
+        background-color: rgba(255, 255, 255, 0.954);
+        border-radius: 10px;
+        border:2px solid #FDCCBB;
+        margin:0px 100px 30px 0px;
+        padding:30px;
+    }
+    .summary .title{
+        color:#f65757;
+        font-weight: 600;
+    }
+    span{
+        background-color: #f65757;
+        color:white;
+    }
+    h4{
+        color:black;
+    }
+    h5{
+        color:black;
+        font-weight: 400;
+    }
+</style>
+<body>
+    <div class="email">
+        <div class="container">
+            <h6>Alert Message : New request has been added on {{program}} at {{request_at |date:"m/d/y h:i A"}} by {{ user_name}}</h6>
+            {% if late_day %}
+                <h4>{{ user_name }} will start working from {{applied_day}} based on {{program}} request.</h4>
+                <div class="summary">
+                    <h4 class="title">{{ program }} Request by {{ user_name }} </h4>
+                    <h5>- Late Working Day Finished At : {{ late_day }}</h5>
+                    <h5>- Next Day Starting At : {{ applied_day }}</h5>
+                    {% if remark %}
+                        <h5>- Remark : {{ remark }}</h5>
+                    {% else %}
+                        <h5>- Remark : None</h5>
+                    {% endif %}
+                </div>
+                <h4>What is {{program}}❔</h4>
+                <h5>{{program}} is after 7PM, members can adjust their start time next day between 7AM~10AM. </h5>
+                <br/>
+                <h4>How to request {{program}}❔</h4>
+                <h5>
+                    Please visit website to request and this request does not required approval. <a href="http://10.225.2.86/reinvent">http://10.225.2.86/reinvent</a>
+                </h5>
+            {% else %}
+                <h4>{{ user_name }} will finish working on {{applied_day}} 3PM {{program}} request.</h4>
+                <div class="summary">
+                    <h4 class="title">{{ program }} Request by {{ user_name }} </h4>
+                    <h5>- Applied Date : {{ applied_day }}</h5>
+                    {% if remark %}
+                        <h5>- Remark : {{ remark }}</h5>
+                    {% else %}
+                        <h5>- Remark : None</h5>
+                    {% endif %}
+                </div>
+                <h4>What is {{program}}❔</h4>
+                <h5>{{program}} is choosing one day to leave at 3PM. This rotates once a month. </h5>
+                <br/>
+                <h4>How to request {{program}}❔</h4>
+                <h5>
+                    Please visit website to request and this request does not required approval. <a href="http://10.225.2.86/reinvent">http://10.225.2.86/reinvent</a>
+                </h5>    
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

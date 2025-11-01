@@ -1,0 +1,53 @@
+{% extends 'visitor_base.html' %}
+
+{% block container %}
+{% load static %}
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  
+  <div class="View text-center">
+    <h3 class="list-title text-left">All List <a href="{% url 'Vallexcel_url' %}" class="center"><img width="35" height="35" src="https://img.icons8.com/material-outlined/35/f94040/export-excel.png" alt="export-excel"/></a></h3>
+    <table class="table text-center" id="dataTable">
+      <thead>
+        <tr>
+          <th class="text-center">Visit Date</th>
+          <th class="text-center">Visit Purpose</th>
+          <th class="text-center">Approval Status</th>
+          <th class="text-center">Requster</th>
+          <th class="text-center">Request Date</th>
+          {% if user.is_superuser%}
+            <th class="text-center">Approve</th>
+          {% endif %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for visitor in visitor_list %}
+          <tr>
+            <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.start_date }}{% if visitor.end_date %}~{{ visitor.end_date }}{% endif %}</a></td>
+            <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.visitor_purpose|slice:"30" }}...</a></td>
+            <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.approval_status }}</a></td>
+            <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.user.first_name }} {{ visitor.user.last_name }} ({{ visitor.user.team_at }})</a></td>
+            <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.register_at|date:"m/d/y H:i" }}</a></td>
+            {% if user.is_superuser %}
+              {% if visitor.approval_status == 'Requested' %}
+                <td><a class="approval_button" href="{% url 'Vlistapproval_url' visitor.id %}">✓</a> / <a class="approval_button" href="{% url 'Vlistapproval_url' visitor.id %}">✗</a></td>
+              {% else %}
+                <td>Completed</td>
+              {% endif %}
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    $('#dataTable').DataTable({
+        searching: true,
+        paging: true,
+        ordering: true,
+        pageLength: 10
+    });
+</script>
+{% endblock %}

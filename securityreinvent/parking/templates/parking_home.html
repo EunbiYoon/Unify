@@ -1,0 +1,29 @@
+{% extends 'parking_base.html' %}
+
+{% block container %}
+<div class="content">
+  <p style="font-weight: 300;">
+    Hello, I'm parking management chatbot, your virtual assistant.
+  </p>
+  <p style="font-weight: 300;">
+    What can I do to assist you about parking?
+  </p>
+  <p style="font-weight: 300;">Please Choose One of Below Options</p>
+  {% if user.is_superuser %}
+    <p>
+      <a href="{% url 'Pviolator_url' %}">Violator Parking Registration</a>
+    </p>
+  {% endif %}
+  <p>
+    <a href="{% url 'Pviolator_list_url' %}">Violator Parking Status</a>
+  </p>
+  {% if user.is_superuser %}
+    <p>
+      <a href="{% url 'Pemployee_url' %}">Employee Of Month Registration</a>
+    </p>
+  {% endif %}
+  <p>
+    <a href="{% url 'Pemployee_list_url' %}">Employee Of Month Status</a>
+  </p>
+</div>
+{% endblock %}

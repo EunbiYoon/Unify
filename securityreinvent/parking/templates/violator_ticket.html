@@ -1,0 +1,37 @@
+{% extends 'parking_base.html' %}
+
+{% block container %}
+    <div class="violatorticket">
+        <h2 class="printbutton"><button onclick="printContent()">Print</button></h2>
+        <h5 class="printnote" style="color:white !important">This parking pass is automatically generated according to visitor request approval.</h5>
+        <div class="printview" id="printview">
+            {% load static %}
+            <h2 style="text-align:center; color:#C9211E; font-size:4rem; margin-top:10px;">WARNING</h2>
+            <h2 style="text-align:center; color:#FF0000; font-size:4rem">경고</h2>
+            <h5 style="text-align: center; margin:0 0 10px">
+                You get (1) warning issued before your vehicle is towed. 
+                <br/>Your plate number has been recorded.
+                <br/>Further incidents of improper parking will result in a tow.
+            </h5>
+            <h5 style="text-align: center;  margin:0 0 10px">
+                본 주차장은 사전 주차 허가받은 차량만 주차 가능합니다
+                <br/>이 차량은 호사 주차 규정 위반 차량으로 기록됩니다. 
+                <br/>한 번 더 주차 규정 위방시 견인될 예정임 알립니다. 
+            </h5>
+            <h4 style="background-color: aliceblue; padding:10px; width: 50%; text-align: center; align-items: center; margin:auto;">
+                DateTime : {{ violator_data.parking_at|date:"m/d/y h:i:s A" }}
+                <br/>Car Plate Number : {{ violator_data.car_plate }}
+                <br/>Location : {{ violator_data.parking_lot }} Parking Lot
+                <br/>Violation Count : {{ violator_data.violate_count }}
+            </h4>
+            <h6>Authorized Parking Pass From Security Center Visitor Portal <a href="http://10.225.2.86">http://10.225.2.86</a></h6>
+            <div class="page-break"></div>
+        </div>
+    </div>
+    <script>
+    function printContent(){ 
+        const element=document.getElementById("printview");
+        window.print();
+    }
+    </script>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'cost_base.html' %}
+
+{% block title %}Comment{% endblock %}
+
+{% block container %}
+<div class="row gy-5" style="margin:auto;">
+    <div class="col-6 bg-light border">
+        <div class="text-center" style="margin:30px">
+            <h2>Create a New Comment</h2>
+            <h6>Category: {{ post_detail.category }} | Week: {{ post_detail.week }}</h6>
+            <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="week" value="{{ post.week.pk }}">
+                <input type="hidden" name="category" value="{{ post.category.pk }}">
+                <div style="width: 100%;">
+                    {{ form.comment_body }}
+                </div>
+                <button class="btn btn-primary" type="submit" style="align-items:center;">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="vr"></div>
+    <div class="col-6 border bg-light">
+        <div style="margin:30px">
+            <h2>Comments</h2>
+            {% if comments %}
+                <ul>
+                {% for comment in comments %}
+                    <li>{{ comment.author.first_name }} {{ comment.author.last_name }}: {{ comment.comment_body }} {{ comment.date_added|date:'m/d/y h:m A' }}</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <h5>No Comments Yet</h5>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

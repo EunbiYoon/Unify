@@ -1,0 +1,11 @@
+.todo-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.descrition-title {
+    box-shadow: 1px 6px 2px rgb(6, 6, 6);
+}

@@ -1,0 +1,132 @@
+<div class="security-background">
+  {% extends 'sr_base.html' %}
+
+  {% block title %}Security Center{% endblock %}
+
+  {% block nav %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/sr_home.css' %}">
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar" style="color:white!important;">
+    <a class="navbar-brand" style="color: white!important" href="">Security Center</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'mainhome_url' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Vhome_url' %}">Visitor Portal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Phome_url' %}">Parking Portal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Thome_url' %}">Truck Portal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Dhome_url' %}">Delivery Portal</a>
+        </li>
+      </ul>
+      <form class="form-inline" style="margin:0;">
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        <button style="margin-right: 200px;" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+        {% if user.is_authenticated %}
+          {% if user.is_superuser %}
+          <h5 style="color:white; margin:0; text-transform: capitalize;">Admin | {{user.first_name }} {{user.last_name}} ({{user.team_at}})</h5>
+          <a style="color:white;  margin:0 20px 0 30px; border:1px solid white; border-radius: 5px; padding:5px" href="{% url 'logout_url' %}">Logout</a>
+          {% else %}
+          <h5 style="color:white;  margin:0; text-transform: capitalize;">User | {{user.first_name }} {{user.last_name}} ({{user.team_at}})</h5>
+          <a style="color:white;  margin:0 20px 0 30px; border:1px solid white; border-radius: 5px; padding:5px" href="{% url 'logout_url' %}">Logout</a>
+          {% endif %}
+        {% else %}
+          <h5 style="color:white;  margin:0">Login Here</h5>
+          <a style="color:white;  margin:0 20px 0 30px; border:1px solid white; border-radius: 5px; padding:5px" href="{% url 'login_url' %}">Login</a>
+        {% endif %}
+      </form>
+    </div>
+  </nav>
+  {% endblock %}
+
+  {% block name %}
+    <h1 class="welcome">Welcome to LGETN Security Center</h1>
+    {% load static %}
+    <h5 class="guide">If you have any question, please refer to this guide book! <a class="btn btn-primary"  style="background-color: #7430F8" href="{% static 'file/SecurityCenterGuideBook_v2.pdf' %}" download>Download</a></h5>
+  {% endblock %}
+
+    
+  {% block container %}
+  <div class="container">
+    <div class="home-container">
+      <div class="row" style="width: 4fr; margin:auto;">
+          <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img width="100%" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/300/external-visitors-hospitality-services-flaticons-lineal-color-flat-icons.png" class="card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Visitor Registration <span class="badge badge-pill badge-success">Updated</span></h5>
+                    <p class="card-text">Visitor Registration, Check Your Approval, Visitor Parking Pass, Check When Visitor Arrived Gate.</p>
+                    <p class="card-text"><small class="text-muted">Last updated yesterday</small></p>
+                    <a href="{% url 'Vhome_url' %}" class="btn btn-primary">Vistor Portal</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/300/external-parking-urban-prettycons-lineal-color-prettycons-1.png" class="card-img" style="padding-left:20px">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Parking Management <span class="badge badge-pill badge-success">Updated</span></h5>
+                    <p class="card-text">Parking Pass Request and Check Approval, Parking Violator and Employee of Month ParkingRegistration and Check.</p>
+                    <p class="card-text"><small class="text-muted">Last updated yesterday</small></p>
+                    <a href="{% url 'Phome_url' %}" class="btn btn-primary" style="background-color: #7430F8;">Parking Portal</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="card mb-3">
+              <div class="row no-gutters">  
+                <div class="col-md-4">
+                  <img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/300/external-truck-car-parts-vehicles-prettycons-lineal-color-prettycons-3.png" alt="external-delivery-supermarket-wanicon-flat-wanicon" class="card-img" style="padding-left:20px">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Truck Tracking <span class="badge badge-pill badge-success">Updated</span></h5>
+                    <p class="card-text">Truck Check-In and Check-Out with Seal Number, Trailer number and Truck number. Connected With L.X Pantos USA.</p>
+                    <p class="card-text"><small class="text-muted">Last updated yesterday</small></p>
+                    <a href="{% url 'Thome_url' %}" class="btn btn-primary" style="background-color: #7430F8;">Truck Portal</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="card mb-3">
+              <div class="row no-gutters">
+                  <div class="col-md-4">
+                      <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/300/external-box-logistics-delivery-icongeek26-linear-colour-icongeek26-5.png" alt="external-box-logistics-delivery-icongeek26-linear-colour-icongeek26-5" class="card-img" style="padding-left:20px">
+                  </div>
+                  <div class="col-md-8">
+                      <div class="card-body">
+                      <h5 class="card-title">Delivery Package <span class="badge badge-pill badge-success">Updated</span></h5>
+                      <p class="card-text">Generate Package List and Align Location. Search and Check-Out Package by Scanning QR code or Typing manually.</p>
+                      <p class="card-text"><small class="text-muted">Last updated yesterday</small></p>
+                      <a href="{% url 'Dhome_url' %}" class="btn btn-primary" style="background-color: #7430F8;">Delivery Portal</a>
+                      </div>
+                  </div>
+              </div>
+          </div>            
+      </div>
+    </div>
+    {% endblock%}
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,392 @@
+#dataTable{
+  width: 100% !important;
+}
+.dataTables_wrapper .dataTables_filter input{
+  background-color: white !important;
+}
+.dataTables_wrapper .dataTables_length select{
+  background-color: white !important; 
+}
+
+/* visitor_base.html */
+.top-banner{
+  color:white !important; 
+  margin:0 20px 0 30px; 
+  background-color:#E5255E;
+  border-radius: 5px; 
+  padding:5px;
+  border:2px solid #E5255E;
+}
+.top-banner:hover{
+  background-color:white;
+  border:2px solid #E5255E;
+  color:#E5255E !important;
+  text-decoration: none;
+}
+.visitor-background{
+  z-index:1;
+  position: relative;
+  padding:0;
+  height: 100%;
+}
+.visitor-background::before{
+  content:"";
+  background-size: cover;
+  background-image: url('../../static/image/visitor.PNG');
+  filter:blur(3px);
+  position:fixed;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+nav{
+  border-bottom:2px solid #E5255E !important;
+  background-color: white;
+}
+nav form a{
+  color: #1b1b1b !important;
+  margin:0 20px 0 30px; 
+  border:1px solid white; 
+  border-radius: 5px; 
+  padding:5px
+}
+nav h5{
+  text-transform: capitalize;
+  color: #1b1b1b !important;
+  margin:0
+}
+
+/* visitor_home.html */
+.content{
+  background-color: rgba(255, 255, 255, 0.931);
+  border-radius: 10px;
+  border:3px solid #F26282;
+  margin-top:30px;
+  padding:20px;
+}
+
+.content p {
+  font-size:2.3rem;
+  font-weight:300;
+  border-right: .15em solid #67686B;
+  white-space: nowrap;
+  overflow: hidden;
+  color:#67686B;
+}
+
+.content p a{
+  color:#F26282;
+  font-weight: 700;
+}
+
+.content p:nth-child(1) {
+  width: 26em;
+  -webkit-animation: type 1s steps(40, end);
+  animation: type 1s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.content p:nth-child(2) {
+  width: 23em;
+  opacity: 0;
+  -webkit-animation: type2 1s steps(40, end);
+  animation: type2 1s steps(40, end);
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.content p:nth-child(3) {
+  width: 17em;
+  opacity: 0;
+  -webkit-animation: type2 1s steps(40, end);
+  animation: type2 1s steps(40, end);
+  -webkit-animation-delay: 1s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.content p:nth-child(4) {
+  width: 9em;
+  opacity: 0;
+  -webkit-animation: type3 0.5s steps(40, end);
+  animation: type3 0.5s steps(40, end);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.content p:nth-child(5) {
+  width: 8em;
+  opacity: 0;
+  -webkit-animation: type3 0.5s steps(40, end);
+  animation: type3 0.5s steps(40, end);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.content p:nth-child(6) {
+  width: 7em;
+  opacity: 0;
+  -webkit-animation: type3 0.5s steps(40, end);
+  animation: type3 0.5s steps(40, end);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #64717C;
+  }
+  100% {
+    border: none;
+  }
+}
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #64717C;
+  }
+  100% {
+    border: none;
+  }
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #64717C;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #64717C;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #F26282;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #F26282;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+/* resgister.html */
+.register{
+  background-color: rgba(255, 255, 255, 0.931);
+  border-radius: 10px;
+  border:3px solid #F26282;
+  margin-top:30px;
+  padding:20px;
+}
+.register .alert{
+  background-color: #F2628234;
+  color:black;
+  text-align: center;
+  font-weight: 600;
+  font-size:1rem;
+  border:none;
+}
+.register form{
+  margin:0;
+}
+.register a{
+  color:#F26282;
+}
+.register .registerform h5{
+  margin:0;
+}
+.register .registerform input, textarea{
+  padding:5px;
+  border:none;
+  width: 100%;
+  text-align: center;
+}
+.register button{
+  margin-top:20px;
+  border:none;
+  font-weight: 700;
+  color:whitesmoke;
+  background-color: #E5255E;
+}
+.register button:hover{
+  background-color: #464133;
+  color:whitesmoke;
+  border:2px solid white;
+}
+.register .registerform input::placeholder,textarea::placeholder{
+  color:lightgray
+}
+
+/* visitor_my.html */
+.View{
+  background-color: rgba(255, 255, 255, 0.932);
+  margin-top:30px;
+  border-radius: 10px;
+  padding:20px;
+  border: 2px solid #E5255E;
+}
+#dataTable{
+  background-color: white;
+}
+#dataTable a{
+  color:black
+}
+#dataTable tr:hover{
+  background-color: #ffedf2;
+  font-weight: 600;
+}
+
+
+
+/* visitor_detail.html */
+.detail-view{
+  background-color: rgba(255, 255, 255, 0.932);
+  border-radius: 10px;
+  border:3px solid #F26282;
+  margin-top:30px;
+  padding:20px;
+}
+.detail-view .table{
+  width: 100%;
+  border:1px solid lightgray
+}
+.detail-view .backbutton, .detail-view .deletebutton{
+  background-color: #E5255E !important; 
+  border:1px solid #E5255E;
+}
+.detail-view .backbutton:hover, .detail-view .deletebutton:hover{
+  background-color: black !important;
+  border:1px solid black;
+}
+.detail-view .parkingpass{
+  color:#E5255E;
+}
+
+/* parkingpass.html */
+.parkingpass button{
+  border-radius: 5px !important;
+  margin: 10px;
+}
+.parkingpass span{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom:0;
+}
+.parkingform h1{
+  font-size:6rem;
+  text-align: center;
+}
+.parkingform{ 
+  margin-top: 30px !important;
+  border: 3px dashed black !important;
+  background-color: white !important;
+}
+.parkingform img{
+  margin:20px;
+}
+.parkingform h2{
+  text-align: center !important;
+}
+.parkingform h5{
+  text-align: right;
+  margin-top:100px;
+  margin-right:30px;
+  margin-bottom:20px;
+}
+@media print{
+  body {
+      max-height: 50%;
+  }
+  .printbutton{
+    visibility: hidden;
+  }
+  .parkingform{
+    visibility: visible;
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    margin:0;
+  }
+  .parkingnote{
+    visibility: hidden;
+  }
+}
+
+/*list.html*/
+.approval_button{
+  background-color: #E5255E;
+  color:white !important;
+  font-weight: 600;
+  padding:5px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.approval_button:hover{
+  background-color: white;
+  color:#E5255E !important;
+  border: 1px solid #E5255E !important;
+  text-decoration: none;
+}

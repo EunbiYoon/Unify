@@ -1,0 +1,30 @@
+{% extends 'cost_base.html'%}
+
+{% block container %}
+  <h1>Comments</h1>
+
+  <div class="row" style="border: 2px solid #007BFF ; padding:10px 5px;">
+    {% for comment in object_list %}
+    <div style="margin: 5px; background-color: aliceblue; padding:10px">
+      <div>
+        <a href="{% url 'article-detail' comment.pk %}"><h5>{{ comment.comment_body| slice:":100" }}</h5></a> 
+        <div>
+          <h6>{{ comment.week }} {{ comment.category }}</h6>
+            {{ comment.author.first_name }} {{ comment.author.last_name }}
+             {{ comment.date_added|date:"m/d/y h:i A" }} 
+  
+            {% if user.is_authenticated %}
+              {% if comment.author == user %}
+                <a href="{% url 'update_post' comment.pk %}">(Edit)</a>
+                <a href="{% url 'delete_post' comment.pk %}">(Delete)</a>
+              {% endif %}
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+  <a class="btn btn-primary" href="{% url 'add_post'%}" style="margin:30px auto;">Add Comment</a> 
+
+{% endblock %}

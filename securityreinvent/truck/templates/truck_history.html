@@ -1,0 +1,73 @@
+{% extends 'truck_base.html' %}
+
+{% block container %}
+    {% load static %}
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    
+    <div class="history">
+        <h3 class="list-title text-left">
+            Truck Tracking List
+            <a href="{% url 'Tallexcel_url' %}" class="center">
+                <img width="35" height="35" src="https://img.icons8.com/ios-filled/35/464133/export-excel.png" alt="export-excel"/>
+            </a>
+        </h3>
+        <table class="table text-center" id="dataTable">
+            <thead>
+                <tr>
+                    <th class="text-center" style="color:#464133; background-color: #4641332d;" colspan="4">Truck Information</th>
+                    <th class="text-center" style="color:#A72B2A; background-color: #A72A2A2d;" colspan="2">Check-In</th>
+                    <th class="text-center" style="color:#286060; background-color: #58d5d52d;" colspan="2">Check-Out</th>
+                    <th class="text-center" style="color:#464133; background-color: #4641332d;" rowspan="2">Detail</th>
+                </tr>
+                <tr>
+                    <th class="text-center" style="color:#464133; background-color: #4641332d;">No</th>
+                    <th class="text-center" style="color:#464133; background-color: #4641332d;">License Plate</th>
+                    <th class="text-center" style="color:#464133; background-color: #4641332d;">Truck Number</th>
+                    <th class="text-center" style="color:#464133; background-color: #4641332d;">Driver Name</th>
+                    <th class="text-center" style="color:#A72B2A; background-color: #A72A2A2d;">PIC</th>
+                    <th class="text-center" style="color:#A72B2A; background-color: #A72A2A2d;">Time</th>
+                    <th class="text-center" style="color:#286060; background-color: #58d5d52d;">PIC</th>
+                    <th class="text-center" style="color:#286060; background-color: #58d5d52d;">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for truck in truck_list %}
+                    <tr>
+                        <td>{{ truck.id }}</td>
+                        <td><a>{{ truck.license_plate }}</a></td>
+                        <td><a>{{ truck.truck_number }}</a></td>
+                        <td><a>{{ truck.driver_name }}</a></td>
+                        <td>{{ truck.checkin_pic.first_name }} {{ truck.checkin_pic.last_name }}</td>
+                        <td>{{ truck.checkin_at|date:"m/d/y H:i" }}</td>
+                        {% if truck.checkout_at %}
+                            <td>{{ truck.checkout_pic.first_name }} {{ truck.checkout_pic.last_name }}</td>
+                            <td>{{ truck.checkout_at|date:"m/d/y H:i" }}</td>
+                        {% else %}
+                            <td style="margin:0;">-</td>
+                            <td>-</td>
+                        {% endif %}
+                        <td><a href="{% url 'Ttruckdetail_url' truck.id %}" class="detailbutton">View</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $('#dataTable').DataTable({
+            searching: true,
+            paging: true,
+            ordering: true,
+            pageLength: 10, // Number of records per page
+            "columnDefs":[
+                {
+                    "targets":0,
+                    "render":function(data, type, row, meta){
+                        return meta.row+1;
+                    }
+                }
+            ]
+        });
+    </script>
+{% endblock %}

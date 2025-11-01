@@ -1,0 +1,155 @@
+/* home.html */
+.home-background{
+    height: 100%;
+    display: grid;
+}
+.home-background .security{
+    /* background-image: linear-gradient(to bottom right,  #9375df, #6D9DD3, #A0EC97) !important; */
+    background-image: linear-gradient(to bottom right,   rgb(255, 211, 245), rgb(190, 223, 253), rgb(207, 253, 188)) !important;
+    grid-column: 1;
+    color:#5a1ed2!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-background .security:hover{
+    background-color: black !important;
+    border: 10px solid white !important;
+}
+.home-background .reinvent{
+    background-image: linear-gradient(to bottom right,  #fff2b6,#FDCCBB,#e3ffb6) !important;;
+    grid-column: 2;
+    color:#f32626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-background .reinvent:hover{
+    background-color: white;
+    border: 10px solid white;
+
+}
+
+/* home.html - text */
+.home-background a{
+    text-decoration: none;
+}
+.home-background .intro-text{
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.598);
+    border-radius: 5px;
+    width:400px;
+    height: 280px;
+    padding:10px;
+    border: 3px solid rgba(255, 255, 255, 0.468);
+}
+.home-background .intro-text h1{
+    font-weight: 800;
+}
+.home-background .intro-text h2{
+    font-weight: 300;
+}
+.home-background .intro-text .intro-list{
+    text-align: left;
+}
+.home-background p{
+    text-align: right;
+    font-weight: 600;
+}
+
+
+
+/* securityhome.html */
+.security-background{
+    background-image: linear-gradient(to bottom right,  rgb(255, 211, 245), rgb(190, 223, 253), rgb(207, 253, 188)) !important;
+    height:100%;
+}
+.security-background .welcome{
+    margin-top:70px;
+    text-align:center; 
+    color:#5a1ed2;
+    font-weight: 800;
+}
+.security-background .guide{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:0;
+}
+.security-background .navbar{
+    background-color: #7430F8;
+}
+.security-background .home-container a{
+    background-color: #7430F8;
+}
+.security-background .home-container .row{
+    width: 4fr;
+    margin:auto
+}
+.security-background .home-container .col-md-4{
+    margin:auto;
+}
+.security-background .home-container img{
+    padding-left:20px;
+}
+.security-background .home-container .card-title{
+    font-weight: 700;
+}
+.security-background .home-container .mb-3{
+    max-width: 540px; 
+    margin:auto;
+}
+.security-background .home-container .col-md-4{
+    margin:auto;
+}
+.security-background .home-container .card-title{
+    font-weight: 700;
+}
+
+/* reinvent_home.html*/
+.reinvent-background{
+    background-image: linear-gradient(to bottom right,  #fff2b6,#FDCCBB,#e3ffb6) !important;
+    height: 100%;
+}
+.reinvent-background .welcome{
+    margin-top:70px;
+    text-align: center;
+    font-weight: 700;
+}
+.reinvent-background .guide{
+    text-align: center;
+}
+.reinvent-background .guide a{
+    background-color: #f97070;
+    border:1px solid white;
+    cursor:pointer;
+    color:white !important;
+}
+.reinvent-background .guide a:hover{
+    background-color: rgb(255, 67, 67);
+    border:1px solid white;
+}
+.reinvent-background .section{
+    padding:0;
+    margin:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    margin:auto;
+    grid-gap: 10px;
+}
+.reinvent-background .section .myday{
+    grid-column: 1;
+}
+.reinvent-background .section .flexhour{
+    grid-column: 2;
+}
+.reinvent-background .section .happyfriday{
+    grid-column: 3;
+}
+.reinvent-background .section .leader{
+    grid-column: 4;
+}
+.reinvent-background .section img{
+    width: 100%;
+    border: 1px solid white;
+}

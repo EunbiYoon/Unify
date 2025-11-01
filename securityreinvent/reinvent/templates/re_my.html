@@ -1,0 +1,76 @@
+{% extends 're_base.html' %}
+
+{% block title %}REINVENT My View{% endblock %}
+
+{% block list %}
+{% load static %}
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+<div class="list-table">
+   <h3 class="list-title">My View <a href="{% url 'Rmyexcel_url' %}" class="center"><img width="35" height="35" src="https://img.icons8.com/material-outlined/35/f94040/export-excel.png" alt="export-excel"/></a></h3>
+    <table class="table table-striped" id="dataTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Request</th>
+                <th>Applied Day</th>
+                <th>Late Day(Flexible Workhours)</th>
+                <th>Remark</th>
+                <th>Register At</th>
+                <th>Requester</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reinvent in reinvent_mylist %}
+            <tr>
+                <td>1</td>
+                <td>{{ reinvent.program }}</td>
+                <td>{{ reinvent.applied_day }}</td>
+
+                {% if reinvent.late_day %}
+                    <td>{{ reinvent.late_day }}</td>
+                {% else %}
+                    <td>Not Related</td>
+                {% endif %}
+
+                {% if reinvent.remark %}
+                    <td class="remark">{{ reinvent.remark }}</td>
+                {% else %}
+                    <td>-</td>
+                {% endif %}
+
+                <td>{{ reinvent.request_at|date:"m/d/y h:i A" }}</td>
+                <td>{{ reinvent.user.first_name }} {{ reinvent.user.last_name }}</td>
+
+                <td>
+                    <form method="post" action="{% url 'Rmydeletemessage_url' reinvent.id %}">
+                        {% csrf_token %}
+                        <button type="submit">X</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+<script>
+    $('#dataTable').DataTable({
+        searching: true,
+        paging: true,
+        ordering: true,
+        pageLength: 10, // Number of records per page
+        "columnDefs":[
+            {
+                "targets":0,
+                "render":function(data, type, row, meta){
+                    return meta.row+1;
+                }
+            }
+        ]
+    });
+</script>
+{% endblock %}

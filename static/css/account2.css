@@ -1,0 +1,143 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f7f9fb;
+}
+
+/* 전체 배경 */
+.account-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #007bff, #e3ffb6);
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+/* 메인 박스 */
+.register-login {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* 카드 공통 */
+.register, .login {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #707981;
+  border-radius: 12px;
+  padding: 2.2rem 2.5rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* 제목 */
+.section-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-bottom: .25rem;
+  background: linear-gradient(90deg, #5a1ed2, #7430f8, #00b3ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7680;
+  font-size: .95rem;
+  margin-bottom: 1rem;
+}
+
+/* 입력 */
+.form-label {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #505a63;
+}
+
+input.form-control {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+input.form-control:focus {
+  border-color: #7430F8;
+  box-shadow: 0 0 0 0.15rem rgba(116, 48, 248, 0.25);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* placeholder 색상과 스타일 */
+input::placeholder {
+  color: rgba(76, 76, 76, 0.3) !important; 
+  font-weight: 200;
+  transition: color 0.2s ease;
+}
+
+/* focus 시 더 연하게 (입력 중에는 흐려짐) */
+input:focus::placeholder {
+  color: rgba(150, 150, 150, 0.5);
+}
+
+/* 실제 입력값이 있을 때 대비되는 스타일 */
+input:not(:placeholder-shown) {
+  color: #000;
+  font-weight: 600;
+}
+
+
+
+/* 버튼 */
+.btn.btn-secondary {
+  background-image: linear-gradient(90deg, #6b75ff, #7430F8);
+  border: none;
+  box-shadow: 0 5px 14px rgba(116,48,248,0.25);
+  font-weight: 600;
+}
+
+.btn.btn-secondary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+/* Reset/Home 왼쪽 정렬 (세로 배치) */
+.aux-actions-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .4rem;
+  margin-top: 1.2rem;
+}
+
+.btn-link-like {
+  background: transparent;
+  border: none;
+  color: #707981;
+  text-decoration: underline;
+  font-size: .95rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color .15s ease, transform .1s ease;
+}
+
+.btn-link-like:hover {
+  color: #7430F8;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .register, .login { padding: 1.7rem; }
+  .section-title { font-size: 1.6rem; }
+  .aux-actions-vertical { align-items: center; }
+}
