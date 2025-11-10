@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'cost.report',
     'main',
     'portfolio',
+    'umass',
     'securityreinvent.sr_base',
     'securityreinvent.visitor',
     'securityreinvent.parking',
@@ -63,6 +64,7 @@ INSTALLED_APPS = [
     'securityreinvent.delivery',
     'securityreinvent.reinvent',
     'quality.flasktodo',
+    'whitenoise.runserver_nostatic',
 ]
 JAZZMIN_SETTINGS = {
     "site_title": "Database",        # 브라우저 탭 제목
@@ -86,11 +88,6 @@ MIDDLEWARE = [
 ]
 
 # settings.py
-if DEBUG:
-    STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
-else:
-    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 WHITENOISE_AUTOREFRESH = DEBUG  # 개발 중 변경 즉시 반영
 
 CORS_ALLOW_CREDENTIALS = True  # ✅ 세션/쿠키 인증 시 필수
@@ -155,28 +152,29 @@ USE_TZ = False             # (UTC저장 + KST변환 방식)
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
-PARENT_DIR = BASE_DIR.parent
-MEDIA_ROOT = os.path.join(PARENT_DIR, "media")
-MEDIA_URL = "/media/"
-
-# 정적 파일 URL prefix
 STATIC_URL = '/static/'
 
 # Location where static files will be collected
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
-LGSUPPORT_STATIC_DIRS = BASE_DIR / "lgsupport" / "flaskapp" / "static"
-print(LGSUPPORT_STATIC_DIRS)
-VIDEO_STATIC_DIRS = BASE_DIR / "quality" / "flasktodo" / "static"
-
 # For debugging purposes, during development (optional):
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정
-    LGSUPPORT_STATIC_DIRS,
-    VIDEO_STATIC_DIRS
+    os.path.join(BASE_DIR, 'quality/flasktodo/static')
 ]
+
+# White noise static stuff
+STATIC_ROOT=BASE_DIR / 'staticfiles'
+if DEBUG:
+    STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
+else:
+    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# https://docs.djangoproject.com/en/5.2/howto/static-files/
+PARENT_DIR = BASE_DIR.parent
+MEDIA_ROOT = os.path.join(PARENT_DIR, "media")
+MEDIA_URL = "/media/"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 

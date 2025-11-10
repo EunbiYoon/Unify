@@ -6,7 +6,6 @@ from .views import (
     gate_router, process_router, merge_router,
     close_router, db_router, home_router
 )
-from django.shortcuts import redirect
 
 api = NinjaAPI(version="2.0.0")
 api.add_router("/home", home_router)

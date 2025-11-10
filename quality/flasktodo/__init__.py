@@ -15,7 +15,11 @@ def handle_500(e):
 
 
 def create_app():
-    app = Flask(__name__, instance_relative_config=True)
+    app = Flask(
+        __name__,
+        static_folder="flasktodo/static",               # 실제 폴더
+        static_url_path="/quality/flasktodo/static"   # 브라우저가 접근할 URL
+    )
 
     # 에러 핸들러 등록
     app.register_error_handler(401, handle_401)

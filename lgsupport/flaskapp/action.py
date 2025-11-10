@@ -3,7 +3,11 @@ from flask import render_template, url_for, redirect, Blueprint, abort, request,
 from lgsupport.flaskapp.models import db, VideoSurvey
 # from flaskapp.models import db, VideoSurvey
 
-bp = Blueprint('action', __name__)
+
+bp = Blueprint(
+    "action",
+    __name__
+)
 
 @bp.route('/')
 def index():

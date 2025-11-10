@@ -26,7 +26,11 @@ def handle_404(e):
 # Flask 애플리케이션 팩토리 패턴
 def create_app():
     """Flask 애플리케이션 팩토리"""
-    app = Flask(__name__, instance_relative_config=True)
+    app = Flask(
+        __name__,
+        static_folder="flaskapp/static",               # 실제 폴더
+        static_url_path="/lgsupport/flaskapp/static"   # 브라우저가 접근할 URL
+    )
     
     # 환경 변수 로드
     try:

@@ -3,10 +3,18 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.http import JsonResponse  
+from django.urls import re_path
+from django.views.static import serve
+from django.conf import settings
+from pathlib import Path
 
+
+LGSUPPORT_STATIC_ROOT = Path(settings.BASE_DIR) / "lgsupport" / "flaskapp" / "static"
+QUALITY_STATIC_ROOT = Path(settings.BASE_DIR) / "quality" / "flasktodo" / "static"
 
 urlpatterns = [
-    path('',include('main.urls')),              # ✅ 루트 헬스체크
+    path('',include('main.urls')),
+    path('umass/',include('umass.urls')),             
     path("admin/", admin.site.urls),
     path("account/", include("account.urls")), 
     path("finance/", include("finance.urls")),  
@@ -21,5 +29,6 @@ urlpatterns = [
     path('security/delivery',include('securityreinvent.delivery.urls')),
     path('reinvent',include('securityreinvent.reinvent.urls')),
     path('quality/dashboard', lambda request: JsonResponse({"message": "Flask 앱 에러 발생. QualityAnalysis폴더에서 flask run하여 에러를 확인하세요."})),
-    path('lgsupport/video', lambda request: JsonResponse({"message": "Flask 앱 에러 발생. VideoTutorial폴더에서 flask run하여 에러를 확인하세요."})),
+    re_path(r"^lgsupport/flaskapp/static/(?P<path>.*)$",serve,{"document_root": str(LGSUPPORT_STATIC_ROOT)}),
+    re_path(r"^video/flasktodo/static/(?P<path>.*)$",serve,{"document_root": str(QUALITY_STATIC_ROOT)}),
 ]
