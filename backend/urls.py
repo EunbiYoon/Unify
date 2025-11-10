@@ -28,7 +28,6 @@ urlpatterns = [
     path('security/truck',include('securityreinvent.truck.urls')),
     path('security/delivery',include('securityreinvent.delivery.urls')),
     path('reinvent',include('securityreinvent.reinvent.urls')),
-    path('quality/dashboard', lambda request: JsonResponse({"message": "Flask 앱 에러 발생. QualityAnalysis폴더에서 flask run하여 에러를 확인하세요."})),
     re_path(r"^lgsupport/flaskapp/static/(?P<path>.*)$",serve,{"document_root": str(LGSUPPORT_STATIC_ROOT)}),
-    re_path(r"^video/flasktodo/static/(?P<path>.*)$",serve,{"document_root": str(QUALITY_STATIC_ROOT)}),
+    re_path(r"^quality/flasktodo/static/(?P<path>.*)$",serve,{"document_root": str(QUALITY_STATIC_ROOT)}),
 ]

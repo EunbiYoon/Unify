@@ -13,7 +13,7 @@ api.add_router("team", team_router)
 api.add_router("role", role_router)
 
 urlpatterns = [
-    path("", api.urls),  # Ninja API는 여기로 (이 파일이 account/ 아래 include됐다면 /account/가 prefix)
+    path("api/", api.urls),  # Ninja API는 여기로 (이 파일이 account/ 아래 include됐다면 /account/가 prefix)
 
     # ✅ 장고(HTML)용 URL은 하이픈 + 슬래시 권장
     path("register-login/", htmlaccountView, name="account_url"),

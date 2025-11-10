@@ -14,7 +14,7 @@
       --ink-900: #111827;
       --ink-700: #374151;
       --ink-600: #4b5563;
-      --brand:   #ffbd08;
+      --brand:   #808080;
       --card-radius: 20px;
       --shadow-sm: 0 6px 20px rgba(0,0,0,.08);
       --shadow-md: 0 10px 25px rgba(0,0,0,.12);
@@ -122,6 +122,55 @@
     .btn:active::after{
       width:200%; height:200%; opacity:0; transition:0s;
     }
+/* ==== Machine Learning Section (Balanced Neon Theme) ==== */
+/* ML Section 버튼 색상 재정의 */
+.btn-doctor-ai {
+  background-color: #8b5cf6; /* 연보라 */
+  color: #fff;
+}
+.btn-system-ds {
+  background-color: #11b4ff; /* 파스텔 블루 */
+  color: #fff;
+}
+.btn-ml {
+  background-color: #1dd799; /* 그린 */
+  color:black;
+}
+.btn-ai {
+  background-color: #aff50b; /* 오렌지 */
+  color: black;
+}
+.btn-rl {
+  background-color: #ff51a8; /* 핑크 */
+  color: #fff;
+}
+
+/* hover 시 밝기 살짝만 올리고 음영 추가 */
+.btn-doctor-ai:hover,
+.btn-system-ds:hover,
+.btn-ml:hover,
+.btn-ai:hover,
+.btn-rl:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+/* Machine Learning section 카드 스타일 */
+.ml-section {
+  background:#fff;
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  padding: 35px 28px;
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+.ml-section:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+
 
     /* ===== Animations ===== */
     @keyframes fadeUp { to { opacity:1; transform: translateY(0); } }
@@ -192,11 +241,11 @@
         Summary of what I studied as a Master's student at the University of Massachusetts Amherst.
       </p>
       <div class="btn-group-vertical w-100">
-        <a href="/umass/med-vqa/" class="btn btn-danger btn-lg border-0">Doctor AI Agent</a>
-        <a href="/umass/datascience-system/" class="btn btn-warning btn-lg border-0">System for Data Science</a>
-        <a href="/umass/machine-learning/" class="btn btn-success btn-lg border-0">Machine Learning</a>
-        <a href="/umass/artificial-intelligence/" class="btn btn-info btn-lg border-0">Artificial Intelligence</a>
-        <a href="/umass/reinforcement-learning/" class="btn btn-primary btn-lg border-0">Reinforcement Learning</a>
+        <a href="/umass/med-vqa/" class="btn neon-btn btn-lg btn-doctor-ai">Doctor AI Agent</a>
+        <a href="/umass/datascience-system/" class="btn neon-btn btn-lg btn-system-ds">System for Data Science</a>
+        <a href="/umass/machine-learning/" class="btn neon-btn btn-lg btn-ml">Machine Learning</a>
+        <a href="/umass/artificial-intelligence/" class="btn neon-btn btn-lg btn-ai">Artificial Intelligence</a>
+        <a href="/umass/reinforcement-learning/" class="btn neon-btn btn-lg btn-rl">Reinforcement Learning</a>
       </div>
 
       <hr class="my-4"/>

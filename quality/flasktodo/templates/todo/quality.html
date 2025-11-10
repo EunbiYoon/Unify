@@ -427,10 +427,11 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="../static/js/scripts.js"></script>
-        <script type="text/javascript" src="../static/js/datatables-simple-demo.js"></script>
-        <script type="text/javascript" src="../static/assets/demo/multi-selector.js"></script>
-        <script type="text/javascript" src="../static/assets/demo/hazard-graph.js"></script>
-        <script type="text/javascript" src="../static/assets/demo/ffr-graph.js"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/datatables-simple-demo.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/demo/multi-selector.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/demo/hazard-graph.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/demo/ffr-graph.js') }}"></script>
+
     </body>
 </html>

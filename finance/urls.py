@@ -20,5 +20,5 @@ api.add_router("/close", close_router)
 api.add_router("/db", db_router)
 
 urlpatterns = [
-    path("", api.urls),
+    path("api/", api.urls),
 ]

@@ -78,10 +78,11 @@ from .utils.process_sap import process_sap
 
 from finance.utils.finalize_upload import finalize_upload
 from .signals import get_default_user
+from ninja.security import django_auth
 
 # Routers
 home_router = Router(tags=["Home Page"])
-pred_router = Router(tags=["[Project Page] Team Prediction Initialize + CRUD"])
+pred_router = Router(tags=["[Project Page] Team Prediction Initialize + CRUD"],auth=django_auth)
 job_router = Router(tags=["[Project Page] Project Job"])
 sap_router = Router(tags=["[Project Page] SAP Raw & Transformation"])
 cctr_router = Router(tags=["[Project Page] CCTR Raw & Transformation"])
@@ -124,7 +125,7 @@ def upload_TeamPrediction_data(request, file: UploadedFile = File(...)):
 @pred_router.get("/all/me", response=List[TeamPrediction_Out])
 def find_my_team_predictions(request):
     """Fetch TeamPrediction data for the current user (both operation_team and shared_team rules)."""
-    account_error._login_error(request)
+    #account_error._login_error(request)
 
     # 1) Refresh flags to the latest state
     close_refresh._pred_close(TeamPrediction)

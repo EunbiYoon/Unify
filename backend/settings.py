@@ -181,7 +181,8 @@ MEDIA_URL = "/media/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # 로그인 
-LOGIN_URL = '/account/html/'
+LOGIN_URL = '/account/login/'           # 로그인 페이지
+
 
 # 로그 폴더 보장
 LOG_DIR = BASE_DIR.parent / "logs"
@@ -197,7 +198,7 @@ LOGGING = {
     },
     "filters": {
         "user_filter": {
-            "()": "backend.logging_filters.UserFilter",
+            "()": "backend.middleware.logging_filters.UserFilter",
         },
     },
     "handlers": {
