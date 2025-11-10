@@ -439,8 +439,7 @@ def ffr_function(input_data):
             FDR_4Y.at[i,'FDR_5Y']=fdrffr.at[len(idx2)-2-i,'FDR']
             FFR_4Y.at[i,'FFR_5Y']=fdrffr.at[len(idx2)-2-i,'FFR']
 
-        else:
-            print("done!")
+
 
 
     FFR1YValues=FFR_1Y['FFR_1Y'].dropna().tolist()

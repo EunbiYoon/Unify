@@ -8,7 +8,7 @@ from django.conf import settings
 from django.contrib.auth.decorators import login_required
 
 
-@login_required(login_url='login_url')
+@login_required
 def detail_bom_view(request, pk):
     #get the specific posts
     post = Post.objects.get(pk=pk)
@@ -90,7 +90,7 @@ def detail_bom_view(request, pk):
     }
     return render(request, 'detail-bom.html', context)
 
-@login_required(login_url='login_url')
+@login_required
 def detail_cost_view(request, pk):
     #get the specific posts
     post = Post.objects.get(pk=pk)
@@ -193,7 +193,7 @@ def detail_cost_view(request, pk):
 
     return render(request, 'detail-cost.html', context)
 
-@login_required(login_url='login_url')
+@login_required
 def category_bom_view(request):
     posts = Post.objects.filter(category__name='BOM Comparison').order_by('week__name')
 
@@ -213,7 +213,7 @@ def category_bom_view(request):
 
     return render(request, 'category-bom.html', context)
 
-@login_required(login_url='login_url')
+@login_required
 def category_cost_view(request):
     posts = Post.objects.filter(category__name='Cost Review').order_by('week__name')
 

@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get("DEBUG", default=0))
+DEBUG = os.environ.get("DEBUG", "0") == "1"
 
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(",")
 # customize
@@ -166,14 +166,24 @@ STATIC_URL = '/static/'
 # Location where static files will be collected
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+
+LGSUPPORT_STATIC_DIRS = BASE_DIR / "lgsupport" / "flaskapp" / "static"
+print(LGSUPPORT_STATIC_DIRS)
+VIDEO_STATIC_DIRS = BASE_DIR / "quality" / "flasktodo" / "static"
+
 # For debugging purposes, during development (optional):
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정
+    LGSUPPORT_STATIC_DIRS,
+    VIDEO_STATIC_DIRS
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 로그인 
+LOGIN_URL = '/account/html/'
 
 # 로그 폴더 보장
 LOG_DIR = BASE_DIR.parent / "logs"
