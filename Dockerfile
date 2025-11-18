@@ -25,7 +25,7 @@ COPY . .
 
 # 환경 변수 설정
 ENV PYTHONUNBUFFERED=1
-ENV DJANGO_SETTINGS_MODULE=system.settings
+ENV DJANGO_SETTINGS_MODULE=backend.settings
 ENV PATH="/opt/venv/bin:$PATH"
 
 # 데이터베이스 마이그레이션 및 static 파일 수집 (필요시)
@@ -36,4 +36,4 @@ RUN . /opt/venv/bin/activate && python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # 컨테이너 시작 시 migrate 실행 후 gunicorn 시작
-CMD ["/bin/sh", "-c", ". /opt/venv/bin/activate && python manage.py migrate --noinput && exec gunicorn system.wsgi:application --bind 0.0.0.0:8000"]
+CMD ["/bin/sh", "-c", ". /opt/venv/bin/activate && python manage.py migrate --noinput && exec gunicorn backend.wsgi:application --bind 0.0.0.0:8000"]
