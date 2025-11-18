@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title>Product Quality KPI</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -423,15 +423,90 @@
                 </footer>
             </div>
         </div>
+                <script>
+            // flasktodo 블루프린트의 static 아래 json/hazard.json을 정확한 URL로 생성
+            const hazardJsonUrl = "{{ url_for('static', filename='json/hazard.json') }}";
+        </script>
+        <script>
+            const fetchAsync = async() => {
+                const response = await fetch(hazardJsonUrl),
+                    keyValues = await response.json()
+                return keyValues
+            }
+
+            fetchAsync().then(keyValues => {
+                const time_labels = Object.values(keyValues.slice(1).map(element => element[0])),
+                    states = Object.values(keyValues[0]),
+                    covid_datasets = [],
+                    bc = [
+                        'rgb(27, 158, 119)', //green
+                        'rgb(35,70,169)',
+                        'rgb(166,38,75)',
+                        'rgb(217, 95, 2)', //orange
+                        'rgb(117, 112, 179)', //grape
+                        'rgb(231, 41, 138)', //pink
+                        'rgb(102, 166, 30)', //yellow green
+                        'rgb(230, 171, 2)', //yello
+                        'rgb(161,43,155)',
+                        'rgb(17,171,187)',
+                        'rgb(166, 118, 29)',//brown
+                        'rgb(102, 102, 102)'//grey
+                    ]
+                for (let i = 1; i < states.length + 1; i++) {
+                    covid_datasets.push({
+                        label: states[i - 1],
+                        data: Object.values(keyValues.slice(1, states.length + 1).map(element => element[i])),
+                        backgroundColor: 'rgb(0,0,0,0)',
+                        borderColor: bc[states.length-i]
+                    })
+                }
+                const myNewChart = new Chart(document.getElementById('myTest'), {
+                    type: 'line',
+                    lineThickness: 1,
+                    data: {
+                        datasets: covid_datasets,
+                        labels: time_labels,
+                    },
+                    options: {
+                        elements: {
+                            point:{
+                                radius: 0
+                            }
+                        },
+                        scales:{
+                            xAxes:[{   //remove gridLines from x-axis
+                                gridLines:{
+                                    display:false
+                                }
+                                }],
+
+                        yAxes:[{    //remove gridLines from y-axis
+                                gridLines:{
+                                    display:false
+                                }
+                                }]
+                        },
+                        legend:{
+                            position:'left'
+                        }
+                        
+                    },
+
+                })
+            })
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
 
+        <!-- quality/templates/dashboard.html -->
         <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/demo/chart-area-demo.js') }}"></script>
+        <script src="{{ url_for('static', filename='assets/demo/chart-bar-demo.js') }}"></script>
         <script src="{{ url_for('static', filename='js/datatables-simple-demo.js') }}"></script>
         <script src="{{ url_for('static', filename='assets/demo/multi-selector.js') }}"></script>
-        <script src="{{ url_for('static', filename='assets/demo/hazard-graph.js') }}"></script>
         <script src="{{ url_for('static', filename='assets/demo/ffr-graph.js') }}"></script>
+
 
     </body>
 </html>

@@ -12,13 +12,13 @@ Today_Month=int(datetime.today().month)
 
 month_data=pd.DataFrame()
 ##### 지난 달 구하기
-for i in range(Today_Year-2019+1): #마지막 숫자는 포함 안됨으로
-    if i+2019==Today_Year:
+for i in range(Today_Year-2022+1): #마지막 숫자는 포함 안됨으로
+    if i+2022==Today_Year:
         for j in range(Today_Month): #올해
-            month_data.at[12*i+j,"month"]=str(19+i)+"."+str(j+1) #달은 1부터 시작
+            month_data.at[12*i+j,"month"]=str(22+i)+"."+str(j+1) #달은 1부터 시작
     else:
         for j in range(12): #나머지 해
-            month_data.at[12*i+j,"month"]=str(19+i)+"."+str(j+1) #달은 1부터 시작
+            month_data.at[12*i+j,"month"]=str(22+i)+"."+str(j+1) #달은 1부터 시작
 
 ##### 달 수가 4자리 인경우 가운데 0을 채워 넣기
 for i in range(len(month_data)):
@@ -70,7 +70,7 @@ def random_function():
     today=today.strftime('%Y/%m/%d')
 
     dateformat = '%Y/%m/%d'
-    startDate  = datetime.strptime('2019/01/01',dateformat).date()
+    startDate  = datetime.strptime('2022/01/01',dateformat).date()
     endDate = datetime.strptime(today,dateformat).date()
     date_diff = relativedelta.relativedelta(endDate,startDate)
     nowMonth=int(date_diff.months)+1+int(date_diff.years)*12
@@ -420,7 +420,7 @@ def ffr_function(input_data):
     FFR_4Y=pd.DataFrame()
 
 
-    ###################### 어차피 데이터는 3개년 2019 부터 시작
+    ###################### 어차피 데이터는 3개년 2022 부터 시작
     # 일단 행렬에 넣고
     for i in range(len(idx2)-1): # Total 제
         if i<12:
@@ -439,18 +439,19 @@ def ffr_function(input_data):
             FDR_4Y.at[i,'FDR_5Y']=fdrffr.at[len(idx2)-2-i,'FDR']
             FFR_4Y.at[i,'FFR_5Y']=fdrffr.at[len(idx2)-2-i,'FFR']
 
+        else:
+            print("done!")
 
 
+    FFR1YValues=FFR_1Y['FFR_1Y'].dropna().to_list()
+    FFR2YValues=FFR_2Y['FFR_2Y'].dropna().to_list()
+    FFR3YValues=FFR_3Y['FFR_3Y'].dropna().to_list()
+    FFR4YValues=FFR_4Y['FFR_4Y'].dropna().to_list()
 
-    FFR1YValues=FFR_1Y['FFR_1Y'].dropna().tolist()
-    FFR2YValues=FFR_2Y['FFR_2Y'].dropna().tolist()
-    FFR3YValues=FFR_3Y['FFR_3Y'].dropna().tolist()
-    FFR4YValues=FFR_4Y['FFR_4Y'].dropna().tolist()
-
-    FDR1YValues=FDR_1Y['FDR_1Y'].dropna().tolist()
-    FDR2YValues=FDR_2Y['FDR_2Y'].dropna().tolist()
-    FDR3YValues=FDR_3Y['FDR_3Y'].dropna().tolist()
-    FDR4YValues=FDR_4Y['FDR_4Y'].dropna().tolist()
+    FDR1YValues=FDR_1Y['FDR_1Y'].dropna().to_list()
+    FDR2YValues=FDR_2Y['FDR_2Y'].dropna().to_list()
+    FDR3YValues=FDR_3Y['FDR_3Y'].dropna().to_list()
+    FDR4YValues=FDR_4Y['FDR_4Y'].dropna().to_list()
 
     FFR1YLegend="FFR Last 1 Years"
     FFR2YLegend="FFR Last 2 Years"

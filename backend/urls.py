@@ -7,10 +7,15 @@ from django.urls import re_path
 from django.views.static import serve
 from django.conf import settings
 from pathlib import Path
-
+from django.http import HttpResponse
 
 LGSUPPORT_STATIC_ROOT = Path(settings.BASE_DIR) / "lgsupport" / "flaskapp" / "static"
 QUALITY_STATIC_ROOT = Path(settings.BASE_DIR) / "quality" / "flasktodo" / "static"
+
+def wellknown_ok(_request):
+    # 내용 필요 없으면 204 No Content로
+    return HttpResponse(status=204)
+
 
 urlpatterns = [
     path('',include('main.urls')),
@@ -30,4 +35,5 @@ urlpatterns = [
     path('reinvent',include('securityreinvent.reinvent.urls')),
     re_path(r"^lgsupport/flaskapp/static/(?P<path>.*)$",serve,{"document_root": str(LGSUPPORT_STATIC_ROOT)}),
     re_path(r"^quality/flasktodo/static/(?P<path>.*)$",serve,{"document_root": str(QUALITY_STATIC_ROOT)}),
+    path(".well-known/appspecific/com.chrome.devtools.json", wellknown_ok),
 ]

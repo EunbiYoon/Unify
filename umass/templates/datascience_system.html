@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System for Data Science Project</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f9fc;
+      color: #1a1a1a;
+    }
+
+    .container {
+      position: relative; /* Go Home 버튼을 절대 위치시키기 위해 필요 */
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    /* Go Home 버튼 스타일 */
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 16px;
+      background-color: #007aff;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: 0.2s;
+    }
+
+    .home-btn:hover {
+      background-color: #0063d1;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border-radius: 18px;
+      margin-bottom: 35px;
+      border: none;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .link-box {
+      text-align: center;
+      margin: 25px 0 45px;
+    }
+
+    .drive-link {
+      display: inline-block;
+      font-size: 18px;
+      color: #0a66c2;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .drive-link:hover {
+      text-decoration: underline;
+    }
+
+    .blue-btn {
+      display: block;
+      width: 100%;
+      padding: 18px 0;
+      text-align: center;
+      background-color: #55b8ff;
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 20px;
+      margin-top: 35px;
+      transition: 0.2s;
+    }
+
+    .blue-btn:hover {
+      background-color: #44a6ee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Go Home button -->
+    <a href="/" class="home-btn">Go Home</a>
+
+    <h1>System for Data Science</h1>
+
+    <!-- YouTube Video Embed -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oDVUCjzm5t4?si=EVfpGQ6WKBZd37D1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="link-box">
+      <!-- Google Drive Link -->
+      <a class="drive-link" 
+         href="https://drive.google.com/drive/folders/1eSq6qVGER29xjTCMyuXTjwxcl1tXTdOj?usp=sharing"
+         target="_blank">
+         📁 View Project Files (Google Drive)
+      </a>
+    </div>
+
+    <p>
+      Collaborated as the first author with BioNLP lab on Doctor AI Agent, 
+      designing a multimodal LLM agent system with GraphQL-based sub-question 
+      graphs to orchestrate reasoning through automated tool-calling across 
+      modalities. This project aimed to enhance knowledge-grounded diagnostic 
+      reasoning and improved visual question answering performance by 15% over 
+      baseline.
+    </p>
+
+    <!-- GitHub Repository Button -->
+    <a class="blue-btn" 
+       href="https://github.com/EunbiYoon/med-vqa"
+       target="_blank">
+       GitHub Repository
+    </a>
+
+  </div>
+
+</body>
+</html>

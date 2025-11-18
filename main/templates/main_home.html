@@ -221,9 +221,9 @@
       </p>
       <div class="btn-group-vertical w-100">
         <a href="{% url 'portfolio_url' %}" class="btn btn-danger btn-lg border-0">Portfolio</a>
-        <a href="/admin" class="btn btn-warning btn-lg border-0">Admin Dashboard</a>
-        <a href="/finance/home" class="btn btn-success btn-lg border-0">Finance Backend Interface</a>
-        <a href="/airflow" class="btn btn-info btn-lg border-0">Airflow Dashboard</a>
+        <a href="/admin" class="btn btn-warning btn-lg border-0">Database Management</a>
+        <a href="{% url 'finance_home_url' %}" class="btn btn-success btn-lg border-0">Finance Backend Interface</a>
+        <!-- <a href="/airflow" class="btn btn-info btn-lg border-0">Airflow Dashboard</a> -->
         <a href="{% url 'costhome_url' %}" class="btn btn-primary btn-lg border-0">Cost Data Center</a>
         <a href="/quality/dashboard" class="btn btn-secondary btn-lg border-0">Quality Analysis Dashboard</a>
         <a href="{% url 'sr_home_url' %}" class="btn btn-dark btn-lg border-0">Security & Reinvent System</a>

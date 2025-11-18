@@ -18,7 +18,13 @@ def html_table(input_table):
     input_table_html=input_table_html.replace('<th></th>','<th>No</th>')
     return input_table_html
 
-bp = Blueprint('todo', __name__)
+bp = Blueprint('todo', __name__, static_folder='static', static_url_path='/flasktodo/static')
+# bp = Blueprint(
+#     "todo",
+#     __name__,
+#     static_folder="static",             # 실제 폴더: ./flasktodo/static
+#     static_url_path="/quality/flasktodo/static"  # URL: /quality/flasktodo/static/...
+# )
 
 #check list만 여기서 sorting
 @bp.route("/",methods=["POST","GET"])

@@ -54,18 +54,39 @@ def htmlaccountView(request):
     }
     return render(request, 'account.html',context)
 
+# def htmlloginView(request):
+#     if request.method=="POST":
+#         get_id=request.POST['id'] 
+#         get_password=request.POST['password']
+#         user=authenticate(request, username=get_id, password=get_password)
+#         if user is not None:
+#             login(request, user)
+#             return redirect('mainhome_url')        
+#         else:
+#             messages.error(request,"Wrong Credentials", extra_tags='login')
+#             return HttpResponseRedirect(reverse('account_url'))
+#     return redirect('account_url')
+
 def htmlloginView(request):
-    if request.method=="POST":
-        get_id=request.POST['id'] 
-        get_password=request.POST['password']
-        user=authenticate(request, username=get_id, password=get_password)
+    if request.method == "POST":
+        username = request.POST.get("username", "").strip()
+        password = request.POST.get("password", "")
+
+        if not username or not password:
+            messages.error(request, "Required username and password.", extra_tags="login")
+            return HttpResponseRedirect(reverse("account_url"))
+
+        user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('mainhome_url')        
+            return redirect("mainhome_url")
         else:
-            messages.error(request,"Wrong Credentials", extra_tags='login')
-            return HttpResponseRedirect(reverse('account_url'))
-    return redirect('account_url')
+            messages.error(request, "Wrong Credentials", extra_tags="login")
+            return HttpResponseRedirect(reverse("account_url"))
+
+    # GET이면 account 페이지로
+    return redirect("account_url")
+
 
 def htmlregisterView(request):
     if request.method=='POST':

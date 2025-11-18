@@ -81,18 +81,17 @@ from .signals import get_default_user
 from ninja.security import django_auth
 
 # Routers
-home_router = Router(tags=["Home Page"])
 pred_router = Router(tags=["[Project Page] Team Prediction Initialize + CRUD"],auth=django_auth)
-job_router = Router(tags=["[Project Page] Project Job"])
-sap_router = Router(tags=["[Project Page] SAP Raw & Transformation"])
-cctr_router = Router(tags=["[Project Page] CCTR Raw & Transformation"])
-gate_router = Router(tags=["[Project Page] GATE 3.0 Raw & Transformation"])
-rakey_router = Router(tags=["[2nd Plan] RA Key CRUD"])
-process_router = Router(tags=["[Project Page] Mapping SAP + CCTR + GATE + RAKey and Data Processing"])
-merge_router = Router(tags=["[Report Page] Merge to Finance = TeamPrediction + SapProcessed"])
-close_router = Router(tags=["[Project Page] Close Monthly Data"])
+job_router = Router(tags=["[Project Page] Project Job"],auth=django_auth)
+sap_router = Router(tags=["[Project Page] SAP Raw & Transformation"],auth=django_auth)
+cctr_router = Router(tags=["[Project Page] CCTR Raw & Transformation"],auth=django_auth)
+gate_router = Router(tags=["[Project Page] GATE 3.0 Raw & Transformation"],auth=django_auth)
+rakey_router = Router(tags=["[2nd Plan] RA Key CRUD"],auth=django_auth)
+process_router = Router(tags=["[Project Page] Mapping SAP + CCTR + GATE + RAKey and Data Processing"],auth=django_auth)
+merge_router = Router(tags=["[Report Page] Merge to Finance = TeamPrediction + SapProcessed"],auth=django_auth)
+close_router = Router(tags=["[Project Page] Close Monthly Data"],auth=django_auth)
 # email_router = Router(tags=["[2nd Plan] Email Send"])
-db_router = Router(tags=["[Dev] DB -> Excel Transform"])
+db_router = Router(tags=["[Dev] DB -> Excel Transform"],auth=django_auth)
 
 # Logger
 import logging
@@ -105,7 +104,6 @@ MONTH_LABELS = {
     "jul": "Jul", "aug": "Aug", "sep": "Sep", "oct": "Oct", "nov": "Nov", "dec": "Dec"
 }
 
-@home_router.get("", include_in_schema=False)
 def finance_home(request):
     return render(request, 'finance_home.html')
 
