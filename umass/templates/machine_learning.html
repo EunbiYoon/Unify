@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Machine Learning</title>
+  <style>
+    :root {
+      --mint: #63f5b5;
+      --mint-dark: #0f8a5f;
+      --mint-light: #88ffd0;
+      --bg: #f5f7fb;
+      --text-main: #1e1f25;
+      --text-sub: #5c6470;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    /* ------------------------------
+       CLEAN TOP NAV HOME BUTTON
+    ------------------------------ */
+    .top-nav {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .home-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+
+      background: linear-gradient(90deg, var(--mint), var(--mint-light));
+      color: #0b3f2c;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+
+      border-radius: 999px;
+      border: 1px solid rgba(15, 138, 95, 0.25);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+
+      transition: all 0.25s ease;
+    }
+
+    .home-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 22px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ------------------------------ */
+
+    .pill-header {
+      background: linear-gradient(90deg, #63f5b5, rgb(119, 255, 246),#5ceaa6); 
+      color: black;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .content {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 24px 26px 28px;
+      box-shadow: 0 14px 32px rgba(15, 138, 95, 0.12);
+      border: 1px solid rgba(99, 245, 181, 0.45);
+    }
+
+    .content-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 32px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .text-block {
+      flex: 1 1 260px;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 138, 95, 0.4);
+      background: rgba(99, 245, 181, 0.15);
+      color: var(--mint-dark);
+    }
+
+    .main-text {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 10px;
+    }
+
+    .subtext {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text-sub);
+      margin: 0;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #f5fffb;
+      border: 1px dashed rgba(15, 138, 95, 0.45);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--mint-dark);
+      margin-top: 8px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--mint-dark);
+    }
+
+    .pdf-block {
+      margin-top: 22px;
+    }
+
+    .pdf-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .pdf-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--mint-dark);
+    }
+
+    .pdf-hint {
+      font-size: 12px;
+      color: var(--text-sub);
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .pdf-frame {
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- ✔ 홈 버튼이 pill-header 위에 자연스럽게 위치 -->
+    <div class="top-nav">
+      <a href="/" class="home-button">⟵ Home</a>
+    </div>
+
+    <div class="pill-header">Machine Learning</div>
+
+    <section class="content">
+      <div class="content-top">
+        <div class="text-block">
+
+          <div class="chip-row">
+            <span class="chip">KNN</span>
+            <span class="chip">CNN</span>
+            <span class="chip">Random Forest</span>
+            <span class="chip">Neural Networks</span>
+            <span class="chip">Regression</span>
+            <span class="chip">Multimodal Data</span>
+          </div>
+
+          <p class="main-text">
+            <strong>
+              Trained and optimized ensemble ML models integrating KNN, CNN,
+              Random Forest, Neural networks and Regression techniques on
+              multimodal datasets, improving model robustness under class
+              imbalance and overfitting while achieving 90%+ accuracy and
+              F1-score.
+            </strong>
+          </p>
+
+          <p class="subtext">
+            Designed experiments, tuned hyperparameters, and compared models to deliver
+            stable, production-ready ensembles for real-world decision making.
+          </p>
+
+          <div class="badge">
+            <span class="badge-dot"></span>
+            90%+ accuracy · 90%+ F1-score
+          </div>
+        </div>
+      </div>
+
+      <!-- PDF -->
+      <div class="pdf-block">
+        <div class="pdf-title-row">
+          <div class="pdf-title">Project Report (PDF)</div>
+          <div class="pdf-hint">Click inside to scroll or zoom</div>
+        </div>
+
+        <!-- 📌 요청한 PDF iframe을 그대로 유지 -->
+        <iframe
+          src="https://cdn.jsdelivr.net/gh/EunbiYoon/MachineLearningPDF/final%20project%20(2).pdf"
+          class="pdf-frame">
+        </iframe>
+
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

@@ -6,89 +6,277 @@
   <title>Doctor AI Agent</title>
 
   <style>
+    :root {
+      --violet: #a855f7;
+      --violet-light: #c084fc;
+      --violet-neon: #b26dff;
+      --bg: #f8f5ff;
+      --text-main: #1b1024;
+      --text-sub: #5f4b78;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fb;
-      color: #1a1a1a;
+      background-color: var(--bg);
+      color: var(--text-main);
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    /* 상단 Home 버튼 */
+    .top-nav {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .home-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      background: linear-gradient(90deg, var(--violet), var(--violet-light));
+      color: #faf5ff;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+      border: 1px solid rgba(88, 28, 135, 0.35);
+      box-shadow: 0 6px 18px rgba(88, 28, 135, 0.28);
+      transition: all 0.25s ease;
+    }
+
+    .home-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(88, 28, 135, 0.35);
+    }
+
+    /* 상단 Doctor AI Agent 보라색 pill 헤더 */
+    .pill-header {
+      background: linear-gradient(90deg, #a855f7, #3c2bff, #8000ff);
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      box-shadow: 0 12px 30px rgba(88, 28, 135, 0.35);
     }
 
     .container {
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.07);
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 32px 32px 30px;
+      box-shadow: 0 14px 32px rgba(88, 28, 135, 0.18);
+      border: 1px solid rgba(168, 85, 247, 0.35);
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+      justify-content: center;
+    }
+
+    .chip {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      background: rgba(188, 131, 255, 0.12);
+      color: #5b21b6;
     }
 
     h1 {
-      font-size: 38px;
+      font-size: 28px;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 25px;
+      margin: 0 0 16px;
+      color: #2a1347;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-sub);
+      margin-bottom: 18px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-sub);
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      color: #5b21b6;
+      font-weight: 600;
+    }
+
+    .section-title {
+      margin-top: 20px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #5b21b6;
+    }
+
+    ul {
+      font-size: 14px;
       line-height: 1.6;
+      color: var(--text-sub);
+      padding-left: 20px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .button-row {
       text-align: center;
-      color: #444;
-      margin-bottom: 40px;
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     .github-btn {
       display: inline-block;
-      margin: 0 auto;
-      padding: 14px 32px;
-      background-color: #a475ff;  /* 기존 보라색 버튼 */
+      padding: 12px 26px;
+      background: linear-gradient(135deg, var(--violet-neon), var(--violet));
       color: white;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 12px;
-      transition: 0.2s;
+      border-radius: 14px;
+      border: 1px solid rgba(76, 29, 149, 0.45);
+      box-shadow: 0 10px 26px rgba(88, 28, 135, 0.35);
+      transition: 0.2s ease;
     }
 
     .github-btn:hover {
-      background-color: #8c5ffc;
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, var(--violet), var(--violet-neon));
     }
 
-    .center {
-      text-align: center;
+    @media (max-width: 768px) {
+      .container {
+        padding: 24px 20px 22px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <!-- 상단 Home 버튼 -->
+    <div class="top-nav">
+      <a class="home-button" href="/">⟵ Home</a>
+    </div>
 
-  <div class="container">
-    <h1>Doctor AI Agent</h1>
+    <!-- 보라색 Pill 헤더 -->
+    <div class="pill-header">Doctor AI Agent</div>
 
-    <p>
-      Collaborated as the first author with BioNLP lab on Doctor AI Agent, 
-      designing a multimodal LLM agent system with GraphQL-based sub-question 
-      graphs to orchestrate reasoning through automated tool-calling across modalities; 
-      Aimed to enhance knowledge-grounded diagnostic reasoning and improve visual 
-      question answering performance by 15% over baseline.
-    </p>
+    <div class="container">
+      <div class="chip-row">
+        <span class="chip">Multimodal Medical VQA</span>
+        <span class="chip">LLM Agent System</span>
+        <span class="chip">GraphQL Sub-questions</span>
+        <span class="chip">Tool-Calling</span>
+        <span class="chip">Clinical Reasoning</span>
+      </div>
 
-    <div class="center">
-      <a class="github-btn" 
-         href="https://github.com/EunbiYoon/med-vqa" 
-         style="background-color: #8b5cf6;"
-         >
-         GitHub Repository
-      </a>
-      <a class="github-btn" 
-         href="/" 
-         >
-         Go Home
+      <h1>Doctor AI Agent</h1>
+      <div class="subtitle">
+        First-author multimodal LLM agent for medical visual question answering
+      </div>
 
-      </a>
+      <p>
+        As the <span class="highlight">first author</span>, I collaborated with the BioNLP lab to design
+        <span class="highlight">Doctor AI Agent</span>, a multimodal large language model (LLM) agent system
+        for medical visual question answering (VQA). The system decomposes a clinician’s natural-language
+        query into a graph of <span class="highlight">sub-questions</span> represented in GraphQL, then
+        orchestrates a sequence of tool calls over images, reports, and external medical knowledge
+        to generate grounded, step-by-step reasoning.
+      </p>
+
+      <p>
+        At the core of the project is a <span class="highlight">sub-question-driven planning module</span>
+        that structures each case into atomic reasoning steps such as “localize finding,” “retrieve prior
+        study,” “compare with guideline,” and “summarize for patient safety.” These nodes are stored as a
+        GraphQL schema, enabling the agent to dynamically select and recombine reasoning paths depending on
+        the question type (diagnosis, prognosis, treatment recommendation, or follow-up planning).
+      </p>
+
+      <p>
+        The agent integrates <span class="highlight">multimodal tools</span> including a vision encoder for
+        radiology images, text encoders for clinical notes and reports, retrieval modules over curated
+        medical knowledge, and LLM-based reasoning modules. Each tool call is logged as a structured step,
+        allowing transparent inspection of which evidence was used and how intermediate conclusions were
+        derived before returning the final answer.
+      </p>
+
+      <p>
+        Using this pipeline, we aim to <span class="highlight">improve knowledge-grounded diagnostic
+        reasoning</span> and achieve over <span class="highlight">15% performance gain</span> in medical VQA
+        accuracy compared to a single-pass LLM baseline that directly answers questions from raw inputs. The
+        Excel-based analysis sheet is used to track per-question performance, error categories (reasoning,
+        perception, retrieval, and hallucination), and ablation results for each tool and planning strategy.
+      </p>
+
+      <p>
+        Beyond raw accuracy, the project emphasizes <span class="highlight">clinical safety and
+        interpretability</span>. By exposing sub-question graphs and tool-call traces, Doctor AI Agent can
+        explain which lesions were inspected, which guidelines were consulted, and why a particular
+        treatment or follow-up recommendation was made. This structure also makes it easier to plug in
+        future domain-specific tools, such as risk calculators or guideline-specific scoring functions,
+        without redesigning the overall agent.
+      </p>
+
+      <div class="section-title">Key responsibilities & contributions</div>
+      <ul>
+        <li>Designed the overall <strong>agent architecture</strong>, including sub-question graph schema,
+            tool registry, and orchestration logic for multimodal reasoning.</li>
+        <li>Implemented the <strong>GraphQL-based planner</strong> that converts high-level clinical
+            questions into reusable sub-question templates and dynamically selects reasoning paths.</li>
+        <li>Integrated <strong>vision, text, and retrieval tools</strong> into a unified tool-calling
+            interface, handling input formatting, output normalization, and error recovery.</li>
+        <li>Developed evaluation scripts and spreadsheets to categorize errors (perception vs. reasoning vs.
+            retrieval) and measure gains from each architectural component.</li>
+        <li>Collaborated with clinicians and lab members to refine task definitions, annotation formats,
+            and clinically meaningful success criteria.</li>
+      </ul>
+
+      <div class="button-row">
+        <a class="github-btn"
+           href="https://github.com/EunbiYoon/med-vqa">
+          GitHub Repository
+        </a>
+        <a class="github-btn"
+           href="/">
+          Go Home
+        </a>
+      </div>
     </div>
   </div>
-
 </body>
 </html>

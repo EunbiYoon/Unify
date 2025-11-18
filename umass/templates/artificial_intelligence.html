@@ -1,12 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Artificial Intelligence</title>
+  <style>
+    :root {
+      --lime: #c9f54a;
+      --lime-dark: #7a9b10;
+      --lime-light: #dcff7c;
+      --bg: #f7f9f0;
+      --text-main: #1f210f;
+      --text-sub: #585f38;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    /* Top Home button */
+    .top-nav {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .home-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 16px;
+      background: linear-gradient(90deg, var(--lime), var(--lime-light));
+      color: #233000;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+      border: 1px solid rgba(122, 155, 16, 0.4);
+      box-shadow: 0 6px 18px rgba(122, 155, 16, 0.22);
+      transition: all 0.25s ease;
+    }
+
+    .home-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(122, 155, 16, 0.3);
+    }
+
+    /* Lime header bar */
+    .pill-header {
+      background: linear-gradient(90deg, #c9f54a, #f5ed4a);
+      color: #111;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .content {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 24px 26px 26px;
+      box-shadow: 0 14px 32px rgba(122, 155, 16, 0.16);
+      border: 1px solid rgba(201, 245, 74, 0.45);
+    }
+
+    .content-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 32px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .text-block {
+      flex: 1 1 260px;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(122, 155, 16, 0.4);
+      background: rgba(201, 245, 74, 0.18);
+      color: var(--lime-dark);
+    }
+
+    .main-text {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 10px;
+    }
+
+    .subtext {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-sub);
+      margin: 0 0 6px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: #fbffe8;
+      border: 1px dashed rgba(122, 155, 16, 0.6);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--lime-dark);
+      margin-top: 8px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--lime-dark);
+    }
+
+    .example-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      color: var(--lime-dark);
+    }
+
+    .example-list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+
+    .example-list li {
+      margin-bottom: 4px;
+    }
+
+    .figure-placeholder {
+      margin-top: 20px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        rgba(201, 245, 74, 0.09),
+        rgba(213, 255, 140, 0.2)
+      );
+      border: 1px dashed rgba(122, 155, 16, 0.45);
+      font-size: 12px;
+      color: var(--text-sub);
+    }
+
+    @media (max-width: 768px) {
+      .pill-header {
+        font-size: 22px;
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-    Hello
-    
+  <div class="wrapper">
+    <!-- Home 버튼 -->
+    <div class="top-nav">
+      <a href="/" class="home-button">⟵ Home</a>
+    </div>
+
+    <!-- 상단 라임 헤더 -->
+    <div class="pill-header">Artificial Intelligence</div>
+
+    <!-- 내용 -->
+    <section class="content">
+      <div class="content-top">
+        <div class="text-block">
+          <div class="chip-row">
+            <span class="chip">Adversarial Search</span>
+            <span class="chip">Nash Equilibria</span>
+            <span class="chip">Partial Information</span>
+            <span class="chip">No-Regret Learning</span>
+            <span class="chip">Multiplicative Weights</span>
+            <span class="chip">Logical Agents</span>
+          </div>
+
+          <p class="main-text">
+            <strong>
+              Explored adversarial search and Nash equilibrium to understand how
+              multi-agents plan, compete, and cooperate strategically under partial
+              information. Applied regret minimization to develop adaptive reasoning
+              that optimizes multi-agent decisions.
+            </strong>
+          </p>
+
+          <p class="subtext">
+            Studied classic game-playing settings such as chess, Go, poker, and
+            real-time strategy games as two-player and multi-player zero-sum Markov
+            games, and modeled them as search problems where agents alternate moves
+            while maximizing long-term utility against optimal opponents using
+            minimax and α-β pruning. This included designing evaluation functions,
+            depth-limited search, and heuristics that make adversarial reasoning
+            tractable in very large game trees.
+          </p>
+
+          <p class="subtext">
+            Formalized strategic interaction using normal-form and extensive-form
+            games, analyzing Nash and subgame-perfect equilibria for both complete
+            and partial-information games. Worked through mixed-strategy equilibria
+            where players randomize to remain unpredictable, and reasoned about
+            nature moves to handle stochastic transitions and chance events within
+            the game. These tools were used to characterize when agents should
+            commit to pure exploitation versus randomized policies that are robust
+            to an intelligent adversary observing their behavior.
+          </p>
+
+          <p class="subtext">
+            To design agents that learn good strategies online, implemented
+            no-regret learning algorithms in multi-armed bandit and expert
+            settings, comparing deterministic greedy policies against randomized
+            algorithms such as Randomized Greedy and Multiplicative Weights
+            Updates. Regret was used as a benchmark to guarantee that, over time,
+            the learned policy performs almost as well as the best fixed action in
+            hindsight, even under adversarial reward sequences.
+          </p>
+
+          <p class="subtext">
+            Connected these decision-theoretic ideas back to knowledge-based
+            agents by representing domain knowledge in logic, building simple
+            knowledge bases, and using inference (e.g., resolution, forward and
+            backward chaining) so agents can reason about hidden state,
+            constraints, and goals before engaging in strategic interaction. This
+            combination of logical reasoning, game-theoretic analysis, and
+            regret-based learning provided a unified view of how AI systems can
+            plan, predict opponents, and adapt their policies in complex,
+            multi-agent environments.
+          </p>
+
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Minimax · Nash Equilibria · No-Regret Learning
+          </div>
+
+          <div class="example-title">Example topics & projects:</div>
+          <ul class="example-list">
+            <li>
+              Implemented minimax and α-β pruning for deterministic two-player board
+              games, tuning move ordering and evaluation functions to search deeper
+              under strict time limits.
+            </li>
+            <li>
+              Analyzed Bayesian and mixed-strategy Nash equilibria in partial-information
+              games, deriving best-response dynamics and reasoning about how players
+              should randomize their actions when they cannot fully observe each other’s
+              choices.
+            </li>
+            <li>
+              Built regret-minimizing policies for expert and bandit settings, comparing
+              greedy, Randomized Greedy, and Multiplicative Weights algorithms and
+              proving logarithmic or sublinear regret bounds against adversarial
+              sequences of rewards.
+            </li>
+            <li>
+              Designed logical agents for environments like Wumpus World, encoding
+              safety and reachability constraints in propositional logic and using
+              inference to decide which actions keep the agent safe while still
+              pursuing rewards.
+            </li>
+          </ul>
+
+          <div class="figure-placeholder">
+            💡 Suggested visual: a lime-themed composite figure with (1) a small game
+            tree illustrating minimax and α-β pruning; (2) a 2×2 payoff matrix annotated
+            with a mixed-strategy Nash equilibrium; and (3) a regret curve showing the
+            learned policy’s average regret shrinking over time. Use gradients of this
+            lime color for highlights and dark green/black for axes and annotations.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
