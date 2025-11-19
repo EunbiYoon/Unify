@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- ✅ 모바일 반응형 필수 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Machine Learning</title>
   <style>
     :root {
@@ -27,13 +29,13 @@
     }
 
     .wrapper {
-      max-width: 1100px;
-      margin: 50px auto;
+      max-width: 1000px;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
     /* ------------------------------
-       CLEAN TOP NAV HOME BUTTON
+       TOP NAV HOME BUTTON (같은 느낌)
     ------------------------------ */
     .top-nav {
       display: flex;
@@ -45,30 +47,28 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 10px 16px;
-
+      padding: 9px 18px;
       background: linear-gradient(90deg, var(--mint), var(--mint-light));
       color: #0b3f2c;
       font-size: 14px;
       font-weight: 600;
       text-decoration: none;
-
       border-radius: 999px;
       border: 1px solid rgba(15, 138, 95, 0.25);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
-
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
       transition: all 0.25s ease;
     }
 
     .home-button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 22px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.24);
     }
 
-    /* ------------------------------ */
-
+    /* ------------------------------
+       HEADER PILL
+    ------------------------------ */
     .pill-header {
-      background: linear-gradient(90deg, #63f5b5, rgb(119, 255, 246),#5ceaa6); 
+      background: linear-gradient(90deg, #63f5b5, rgb(119, 255, 246), #5ceaa6);
       color: black;
       font-size: 26px;
       font-weight: 700;
@@ -79,11 +79,14 @@
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
     }
 
+    /* ------------------------------
+       CONTENT CARD (System 페이지와 비슷한 느낌)
+    ------------------------------ */
     .content {
       background: #ffffff;
       border-radius: 22px;
-      padding: 24px 26px 28px;
-      box-shadow: 0 14px 32px rgba(15, 138, 95, 0.12);
+      padding: 34px 34px 32px;
+      box-shadow: 0 14px 32px rgba(15, 138, 95, 0.16);
       border: 1px solid rgba(99, 245, 181, 0.45);
     }
 
@@ -103,11 +106,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
+      justify-content: center; /* ✅ 모바일에서도 가운데 정렬 */
     }
 
     .chip {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 600;
       padding: 4px 10px;
       border-radius: 999px;
@@ -120,11 +124,12 @@
       font-size: 16px;
       line-height: 1.6;
       margin: 0 0 10px;
+      text-align: left;
     }
 
     .subtext {
-      font-size: 13px;
-      line-height: 1.5;
+      font-size: 14px;
+      line-height: 1.6;
       color: var(--text-sub);
       margin: 0;
     }
@@ -150,8 +155,11 @@
       background: var(--mint-dark);
     }
 
+    /* ------------------------------
+       PDF 영역: System 페이지의 video-wrapper 스타일 맞추기
+    ------------------------------ */
     .pdf-block {
-      margin-top: 22px;
+      margin-top: 26px;
     }
 
     .pdf-title-row {
@@ -159,6 +167,8 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 10px;
+      flex-wrap: wrap;
+      row-gap: 4px;
     }
 
     .pdf-title {
@@ -172,17 +182,50 @@
       color: var(--text-sub);
     }
 
-    .pdf-frame {
-      width: 100%;
-      height: 650px;
-      border: none;
-      border-radius: 18px;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    .pdf-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 18px 0 0;
     }
 
+    .pdf-frame {
+      width: 100%;
+      max-width: 720px;       /* ✅ System 페이지 video-frame과 동일한 최대 너비 */
+      aspect-ratio: 16 / 9;   /* 반응형 비율, 모바일에서도 꽉 차게 */
+      border-radius: 18px;
+      border: none;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    /* ------------------------------
+       모바일 최적화
+    ------------------------------ */
     @media (max-width: 768px) {
+      .wrapper {
+        margin: 30px auto;
+      }
+
+      .content {
+        padding: 24px 20px 22px;
+      }
+
+      .pill-header {
+        font-size: 22px;
+      }
+
+      .text-block {
+        flex: 1 1 100%;
+      }
+
+      .pdf-title-row {
+        align-items: flex-start;
+      }
+
       .pdf-frame {
-        height: 500px;
+        max-width: 100%;
+        border-radius: 16px;
       }
     }
   </style>
@@ -191,11 +234,12 @@
 <body>
   <div class="wrapper">
 
-    <!-- ✔ 홈 버튼이 pill-header 위에 자연스럽게 위치 -->
+    <!-- Home 버튼 -->
     <div class="top-nav">
       <a href="/" class="home-button">⟵ Home</a>
     </div>
 
+    <!-- 상단 Pill 헤더 -->
     <div class="pill-header">Machine Learning</div>
 
     <section class="content">
@@ -233,19 +277,19 @@
         </div>
       </div>
 
-      <!-- PDF -->
+      <!-- PDF 영역 -->
       <div class="pdf-block">
         <div class="pdf-title-row">
           <div class="pdf-title">Project Report (PDF)</div>
           <div class="pdf-hint">Click inside to scroll or zoom</div>
         </div>
 
-        <!-- 📌 요청한 PDF iframe을 그대로 유지 -->
-        <iframe
-          src="https://cdn.jsdelivr.net/gh/EunbiYoon/MachineLearningPDF/final%20project%20(2).pdf"
-          class="pdf-frame">
-        </iframe>
-
+        <div class="pdf-wrapper">
+          <iframe
+            src="https://cdn.jsdelivr.net/gh/EunbiYoon/MachineLearningPDF/final%20project%20(2).pdf"
+            class="pdf-frame">
+          </iframe>
+        </div>
       </div>
     </section>
 

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- ✅ 모바일 반응형 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reinforcement Learning</title>
   <style>
     :root {
@@ -27,8 +29,8 @@
     }
 
     .wrapper {
-      max-width: 1100px;
-      margin: 50px auto;
+      max-width: 1000px;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
@@ -62,7 +64,7 @@
 
     /* 상단 Reinforcement Learning 핑크 바 */
     .pill-header {
-      background: linear-gradient(90deg, #f458a8,#ff3a65, #ff8ec8);
+      background: linear-gradient(90deg, #f458a8, #ff3a65, #ff8ec8);
       color: #ffffff;
       font-size: 26px;
       font-weight: 700;
@@ -76,7 +78,7 @@
     .content {
       background: #ffffff;
       border-radius: 22px;
-      padding: 24px 26px 26px;
+      padding: 34px 34px 30px;
       box-shadow: 0 14px 32px rgba(201, 54, 130, 0.16);
       border: 1px solid rgba(244, 88, 168, 0.35);
     }
@@ -98,6 +100,7 @@
       flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 10px;
+      justify-content: center; /* ✅ 가운데 정렬 */
     }
 
     .chip {
@@ -168,16 +171,33 @@
       margin-top: 20px;
       padding: 14px 16px;
       border-radius: 16px;
-      background: linear-gradient(135deg, rgba(244, 88, 168, 0.08), rgba(255, 163, 210, 0.16));
+      background: linear-gradient(
+        135deg,
+        rgba(244, 88, 168, 0.08),
+        rgba(255, 163, 210, 0.16)
+      );
       border: 1px dashed rgba(201, 54, 130, 0.35);
       font-size: 12px;
       color: var(--text-sub);
     }
 
+    /* ✅ 모바일 최적화 */
     @media (max-width: 768px) {
+      .wrapper {
+        margin: 30px auto;
+      }
+
       .pill-header {
         font-size: 22px;
-        padding: 16px;
+        padding: 10px;
+      }
+
+      .content {
+        padding: 24px 20px 22px;
+      }
+
+      .text-block {
+        flex: 1 1 100%;
       }
     }
   </style>
@@ -232,14 +252,22 @@
 
           <div class="example-title">Example RL projects & algorithms:</div>
           <ul class="example-list">
-            <li>Cat-vs-Monsters 5×5 grid MDP: derived and implemented value iteration to compute v★ and an optimal
-                deterministic policy under stochastic transitions and shaped rewards.</li>
-            <li>First-visit & every-visit Monte Carlo evaluation: estimated vπ for the optimal policy and analyzed
-                sample complexity using max-norm and MSE against the true value function.</li>
-            <li>Monte Carlo control with ε-soft policies: learned near-optimal q★ and π★ while balancing exploration
-                and exploitation through fixed and decaying ε schedules.</li>
-            <li>Mountain Car continuous control: applied evolution strategies (black-box policy search) with a neural
-                network policy to optimize returns over thousands of episodes.</li>
+            <li>
+              Cat-vs-Monsters 5×5 grid MDP: derived and implemented value iteration to compute v★ and an optimal
+              deterministic policy under stochastic transitions and shaped rewards.
+            </li>
+            <li>
+              First-visit & every-visit Monte Carlo evaluation: estimated vπ for the optimal policy and analyzed
+              sample complexity using max-norm and MSE against the true value function.
+            </li>
+            <li>
+              Monte Carlo control with ε-soft policies: learned near-optimal q★ and π★ while balancing exploration
+              and exploitation through fixed and decaying ε schedules.
+            </li>
+            <li>
+              Mountain Car continuous control: applied evolution strategies (black-box policy search) with a neural
+              network policy to optimize returns over thousands of episodes.
+            </li>
           </ul>
 
           <!-- 나중에 Cat-vs-Monsters / 학습곡선 그림 넣고 싶으면 여기 교체 -->
