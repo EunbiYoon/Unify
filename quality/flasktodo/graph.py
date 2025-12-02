@@ -334,9 +334,9 @@ Pvalues=Table['PPM'][:-1].tolist() #total 제외
 
 today=date.today()
 date0M_name=today.strftime('%Y.%m')
-date1M_name=today-timedelta(weeks=4) # 어떤 달은 한달이 4주가 아닌 점을 고려
+date1M_name=today-timedelta(weeks=5) # 어떤 달은 한달이 4주가 아닌 점을 고려 ==> 11/30/2025수정
 date1M_name=date1M_name.strftime('%Y.%m')
-date2M_name=today-timedelta(weeks=8) # 어떤 달은 한달이 4주가 아닌 점을 고려
+date2M_name=today-timedelta(weeks=9) # 어떤 달은 한달이 4주가 아닌 점을 고려 려 ==> 11/30/2025수정
 date2M_name=date2M_name.strftime('%Y.%m')
 # 그래프 그리기 위해 데이터 합치기
 SVCresult=YearSVCData[['9','10','11']] 
@@ -352,17 +352,17 @@ legend0M=date0M_name
 ABlabels=list(range(1,len(Salesresult.index)+1))
 
 # zero not display
-# 에러 수정 1/28/2025 -> 10/27/2025 -> 11/1/2025 -> 11/26/2025
-Avalues2M=SVCresult['SVC_'+date2M_name].iloc[:, 0].squeeze().dropna().tolist()
-Avalues1M=SVCresult['SVC_'+date1M_name].iloc[:, 0].squeeze().dropna().tolist()
-# Avalues2M=SVCresult['SVC_'+date2M_name].dropna().tolist()
-# Avalues1M=SVCresult['SVC_'+date1M_name].dropna().tolist()
+# 에러 수정 1/28/2025 -> 10/27/2025 -> 11/1/2025 -> 11/26/2025 -> 11/30/2025
+# Avalues2M=SVCresult['SVC_'+date2M_name].iloc[:, 0].squeeze().dropna().tolist()
+# Avalues1M=SVCresult['SVC_'+date1M_name].iloc[:, 0].squeeze().dropna().tolist()
+Avalues2M=SVCresult['SVC_'+date2M_name].dropna().tolist()
+Avalues1M=SVCresult['SVC_'+date1M_name].dropna().tolist()
 Avalues0M=SVCresult['SVC_'+date0M_name].dropna().tolist()
 # 에러 수정 1/28/2025 > 10/27/2025 -> 11/1/2025 -> 11/26/2025
-Bvalues2M=Salesresult['Sales_'+date2M_name].iloc[:, 0].squeeze().fillna(0).tolist()
-Bvalues1M=Salesresult['Sales_'+date1M_name].iloc[:, 0].squeeze().fillna(0).tolist()
-# Bvalues2M=Salesresult['Sales_'+date2M_name].fillna(0).tolist()
-# Bvalues1M=Salesresult['Sales_'+date1M_name].fillna(0).tolist()
+# Bvalues2M=Salesresult['Sales_'+date2M_name].iloc[:, 0].squeeze().fillna(0).tolist()
+# Bvalues1M=Salesresult['Sales_'+date1M_name].iloc[:, 0].squeeze().fillna(0).tolist()
+Bvalues2M=Salesresult['Sales_'+date2M_name].fillna(0).tolist()
+Bvalues1M=Salesresult['Sales_'+date1M_name].fillna(0).tolist()
 Bvalues0M=Salesresult['Sales_'+date0M_name].fillna(0).tolist()
 
 

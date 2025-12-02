@@ -55,7 +55,6 @@ INSTALLED_APPS = [
     'cost.cost_base',
     'cost.report',
     'main',
-    'portfolio',
     'umass',
     'securityreinvent.sr_base',
     'securityreinvent.visitor',
@@ -93,11 +92,10 @@ WHITENOISE_AUTOREFRESH = DEBUG  # 개발 중 변경 즉시 반영
 CORS_ALLOW_CREDENTIALS = True  # ✅ 세션/쿠키 인증 시 필수
 
 ROOT_URLCONF = 'backend.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "build",],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -150,7 +148,7 @@ LANGUAGE_CODE = 'en-us'   # ✅ 한국어(대한민국)로 변경
 TIME_ZONE = 'Asia/Seoul'  # ✅ 한국 시간
 USE_TZ = False             # (UTC저장 + KST변환 방식)
 
-
+DEBUG = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 
@@ -160,7 +158,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # For debugging purposes, during development (optional):
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # 추가적인 static 폴더가 있다면 설정
-    os.path.join(BASE_DIR, 'quality/flasktodo/static')
+    os.path.join(BASE_DIR, 'quality/flasktodo/static'),
+    os.path.join(BASE_DIR, 'build/static'),
 ]
 
 # White noise static stuff
