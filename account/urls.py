@@ -4,7 +4,7 @@ from ninja import NinjaAPI
 from account.views import user_router,org_router,division_router,group_router,team_router,role_router, htmlaccountView, htmlloginView, htmlregisterView, htmllogoutView
 from django.contrib.auth import views as auth_views
 
-api = NinjaAPI(version="1.0.0",title="Welcome to Account API", csrf=False)
+api = NinjaAPI(version="1.0.0",title="Welcome to Account API")
 api.add_router("user", user_router)
 api.add_router("org", org_router)
 api.add_router("division", division_router)
