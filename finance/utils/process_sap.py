@@ -208,7 +208,7 @@ def process_sap(gate_arg: Union[str, int], sap_arg: Union[str, int], username: s
 
         rows.append({
             "term": term,
-            "category": "결산",
+            "category": "SAP",
             "div": div,
             "group_name": group_name,
             "operation_team": operation_team,

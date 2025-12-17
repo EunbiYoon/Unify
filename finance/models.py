@@ -426,7 +426,7 @@ class SapRaw(models.Model):  # ✅ 원본 SAP 데이터
 
 class SapProcessed(FinanceCommonFields):
     batch_no = models.BigIntegerField(db_index=True)
-    category = models.CharField(max_length=255, default="결산")
+    category = models.CharField(max_length=255, default="SAP")
     operation_team = models.ForeignKey(
         "account.Team",
         on_delete=models.SET_NULL,

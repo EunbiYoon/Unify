@@ -1,15 +1,26 @@
-
-from django.db.models import Q, Case, When, Value, IntegerField, Subquery, OuterRef, Max, QuerySet
-from copy import deepcopy
-from finance.schemas import (
-    TeamPrediction_Out
+from django.db.models import (
+    Q, Case, When, Value, IntegerField, QuerySet, Max
 )
-
+from copy import deepcopy
 import logging
+
+from finance.schemas import TeamPrediction_Out, SapProcessed_Out
+from ninja.errors import HttpError
+
 logger = logging.getLogger(__name__)
 
 
+# =========================================================
+# 공통: 사용자 권한 기반 팀 필터
+# =========================================================
 def _common_filter(model, qs, user):
+    """
+    반환값:
+    - admin: QuerySet[Team]
+    - 그 외: List[str] (team_name 리스트)
+    """
+    team_names = []
+
     user_role = getattr(user, "role", None)
     role_name = getattr(user_role, "role_name", "")
     user_team = getattr(user, "team", None)
@@ -18,58 +29,57 @@ def _common_filter(model, qs, user):
 
     # 🤍 어드민
     if role_name in ["site-admin", "finance-admin"] or user.is_superuser:
-        return qs  # 전체 권한
+        return qs
 
     # 🟡 팀장
-    elif role_name == "team-leader" and user_team:
+    if role_name == "team-leader" and user_team:
         team_names = [user_team.team_name]
 
     # 🔵 그룹장
     elif role_name == "group-leader" and user_group:
         team_names = list(
-            model.objects.filter(group_parent=user_group).values_list("team_name", flat=True)
+            model.objects
+            .filter(group_parent=user_group)
+            .values_list("team_name", flat=True)
         )
 
     # 🟣 디비전장
     elif role_name == "division-leader" and user_division:
         team_names = list(
-            model.objects.filter(division_parent=user_division).values_list("team_name", flat=True)
+            model.objects
+            .filter(division_parent=user_division)
+            .values_list("team_name", flat=True)
         )
 
     logger.info("🟢 필터할 팀 이름 리스트: %s", team_names)
     return team_names
 
 
+# =========================================================
+# TeamPrediction 규칙 Q 생성
+# =========================================================
 def _pred_team(Team, TeamPrediction, request):
-    # 0) 사용자 권한 기반 팀 필터링
     filtered_team = _common_filter(
-        model=Team, qs=Team.objects.all(), user=request.user
+        model=Team,
+        qs=Team.objects.all(),
+        user=request.user
     )
 
-    # 1) 팀 id 리스트로 정규화
+    # 팀 id 정규화
     if isinstance(filtered_team, QuerySet):
         team_ids = list(filtered_team.values_list("id", flat=True))
-        team_count = filtered_team.count()
     else:
         if filtered_team and isinstance(filtered_team[0], str):
             team_ids = list(
-                Team.objects.filter(team_name__in=filtered_team)
+                Team.objects
+                .filter(team_name__in=filtered_team)
                 .values_list("id", flat=True)
             )
         else:
             team_ids = [t.id for t in filtered_team] if filtered_team else []
-        team_count = len(team_ids)
-    logger.info("✅ 대상 팀 수: %s", filtered_team)
-    logger.info("✅ 대상 팀 수: %s", team_count)
 
     if not team_ids:
-        return []
-
-    # 2) 규칙 (shared_team 있는 경우를 먼저 배치)
-    #   - shared_team 있음 + 내가 운영팀: shared_dominate=True
-    #   - shared_team 있음 + 내가 협업팀: shared_dominate=False
-    #   - shared_team 있음 + 내가 운영팀 & 협업팀: 둘다 보이기
-    #   - shared_team 없음: 내가 운영팀이면 포함
+        return Q(pk__isnull=True)  # 항상 false
 
     rule_q = (
         Q(shared_team__isnull=False) & (
@@ -79,119 +89,176 @@ def _pred_team(Team, TeamPrediction, request):
     ) | (
         Q(shared_team__isnull=True) & Q(operation_team_id__in=team_ids)
     )
-    
+
     return rule_q
 
 
-def _process_team(Team, SapProcessed, request, SapProcessed_Out):
-    # ✅ operation_team, project_code별 최신 '결산' 배치 번호
-    recent_batch_per_project = (
-        SapProcessed.objects
-        .filter(category__iexact="결산", operation_team=OuterRef("operation_team"), project_code=OuterRef("project_code"), year=OuterRef("year"))
-        .order_by("-batch_no")
-        .values("id")[:1] #배치가 같은 것중에서는 id가 높은것
+# =========================================================
+# SQLite/Postgres 공통: SAP 최신 배치 id 목록 만들기
+# =========================================================
+def _latest_sap_ids(SapProcessed, team_ids=None, year=None):
+    """
+    (operation_team_id, project_code, year) 별로 category=SAP 최신 batch_no의 id들을 뽑는다.
+    SQLite/PG 모두 안정적으로 동작하도록 2단계로 처리:
+    1) 그룹별 max(batch_no) 집계
+    2) 그 max(batch_no)에 해당하는 row 중 id max로 최종 선택
+    """
+    base = SapProcessed.objects.filter(category__iexact="SAP")
+    if team_ids is not None:
+        base = base.filter(operation_team_id__in=team_ids)
+    if year is not None:
+        base = base.filter(year=year)
+
+    # 1) 그룹별 max(batch_no)
+    groups = (
+        base.values("operation_team_id", "project_code", "year")
+        .annotate(max_batch=Max("batch_no"))
     )
 
+    if not groups:
+        return []
+
+    # 2) 각 그룹의 max_batch에 해당하는 row들 중 가장 큰 id 선택
+    #    (DB마다 tie-break 다를 수 있어서 id max로 통일)
+    latest_ids = []
+    for g in groups:
+        row = (
+            base.filter(
+                operation_team_id=g["operation_team_id"],
+                project_code=g["project_code"],
+                year=g["year"],
+                batch_no=g["max_batch"],
+            )
+            .order_by("-id")
+            .values_list("id", flat=True)
+            .first()
+        )
+        if row:
+            latest_ids.append(row)
+
+    return latest_ids
+
+
+# =========================================================
+# SapProcessed 메인 필터
+# =========================================================
+def _process_team(Team, SapProcessed, request, SapProcessed_Out):
     if not request.user.is_authenticated:
         raise HttpError(401, "로그인이 필요합니다.")
 
-    # 사용자롤
     role_name = getattr(getattr(request.user, "role", None), "role_name", "")
-    if role_name in ("finance-admin", "site-admin"):
-        # ✅ 팀 기준 SapProcessed 조회
-        qs = (
-            SapProcessed.objects
-            .filter(
-                Q(category__iexact="조정") |
-                (Q(category__iexact="결산") & Q(id=recent_batch_per_project))
-            )
-            .annotate(
-                _prio=Case(
-                    When(category__iexact="조정", then=Value(0)),
-                    default=Value(1),
-                    output_field=IntegerField()
-                )
-            )
-            .order_by("_prio", "operation_team", "-created_at")  # ✅ 조정 먼저, 그 다음 실적
-        )
-        logger.info("🔵 필터된 결과 수: %s", qs.count())
-    else:
-        # ✅ 사용자 권한에 따른 대상 팀 필터링
-        filtered_team = _common_filter(
-            model=Team, qs=Team.objects.all(), user=request.user
-        )
 
-        # ✅ 팀 id 리스트 정규화
-        if isinstance(filtered_team, QuerySet):
-            team_ids = list(filtered_team.values_list("id", flat=True))
-            team_count = filtered_team.count()
-        else:
-            if filtered_team and isinstance(filtered_team[0], str):
-                team_ids = list(
-                    Team.objects.filter(team_name__in=filtered_team)
-                    .values_list("id", flat=True)
-                )
-            else:
-                team_ids = [t.id for t in filtered_team]  # list[Team]
-            team_count = len(team_ids)
-
-        logger.info("✅ 대상 팀 수: %s", team_count)
-        if not team_ids:
-            return []
-
-        # ✅ 팀 기준 SapProcessed 조회
+    # ✅ site-admin / superuser: 필터 없이 전부 출력 (요구사항)
+    if role_name == "site-admin" or request.user.is_superuser:
         qs = (
             SapProcessed.objects
             .select_related("operation_team")
-            .filter(Q(operation_team_id__in=team_ids))
-            .filter(
-                Q(category__iexact="조정") |
-                (Q(category__iexact="결산") & Q(id=recent_batch_per_project))
-            )
+            .order_by("-created_at")
+        )
+        logger.warning("🔥 ADMIN BYPASS: 전체 반환 count=%s", qs.count())
+        return qs
+
+    # ✅ finance-admin: (Adjust 전체 + SAP 최신만) 유지하고 싶으면 아래 사용
+    #    아니면 site-admin처럼 전체로 바꿔도 됨
+    if role_name == "finance-admin":
+        latest_ids = _latest_sap_ids(SapProcessed)
+        qs = (
+            SapProcessed.objects
+            .select_related("operation_team")
+            .filter(Q(category__iexact="Adjust") | Q(id__in=latest_ids))
             .annotate(
                 _prio=Case(
-                    When(category__iexact="조정", then=Value(0)),
+                    When(category__iexact="Adjust", then=Value(0)),
                     default=Value(1),
-                    output_field=IntegerField()
+                    output_field=IntegerField(),
                 )
             )
-            .order_by("_prio", "operation_team", "-created_at")  # ✅ 조정 먼저, 그 다음 실적
+            .order_by("_prio", "operation_team_id", "-created_at")
         )
-        logger.info("🔵 필터된 결과 수: %s", qs.count())
+        logger.info("🔵 finance-admin 결과 수: %s", qs.count())
+        return qs
 
-    # ✅ finance-admin or site-admin 이외 사용자에겐 응답에서만 flag=closed로 덮어쓰기 (DB 미변경)
+    # =====================================================
+    # 일반 사용자
+    # =====================================================
+    filtered_team = _common_filter(
+        model=Team,
+        qs=Team.objects.all(),
+        user=request.user
+    )
+
+    # 팀 id 정규화
+    if isinstance(filtered_team, QuerySet):
+        team_ids = list(filtered_team.values_list("id", flat=True))
+    else:
+        if filtered_team and isinstance(filtered_team[0], str):
+            team_ids = list(
+                Team.objects
+                .filter(team_name__in=filtered_team)
+                .values_list("id", flat=True)
+            )
+        else:
+            team_ids = [t.id for t in filtered_team] if filtered_team else []
+
+    if not team_ids:
+        logger.warning("⚠️ team_ids empty -> [] 반환")
+        return []
+
+    # SAP 최신 id (해당 팀 범위 내)
+    latest_ids = _latest_sap_ids(SapProcessed, team_ids=team_ids)
+
+    qs = (
+        SapProcessed.objects
+        .select_related("operation_team")
+        .filter(operation_team_id__in=team_ids)
+        .filter(Q(category__iexact="Adjust") | Q(id__in=latest_ids))
+        .annotate(
+            _prio=Case(
+                When(category__iexact="Adjust", then=Value(0)),
+                default=Value(1),
+                output_field=IntegerField(),
+            )
+        )
+        .order_by("_prio", "operation_team_id", "-created_at")
+    )
+
+    logger.info("🔵 user 결과 수: %s", qs.count())
+
+    # =====================================================
+    # flag=closed 덮어쓰기 (응답용)
+    # =====================================================
     out = []
+    for obj in qs:
+        original_md = obj.monthly_data
+        md = original_md.model_dump() if hasattr(original_md, "model_dump") else original_md
+        md_copy = deepcopy(md)
 
-    if role_name not in ("finance-admin", "site-admin"):
-        for obj in qs:
-            original_md = obj.monthly_data
-            md = original_md.model_dump() if hasattr(original_md, "model_dump") else original_md
-            md_copy = deepcopy(md)
+        for v in md_copy.values():
+            if isinstance(v, dict):
+                v["flag"] = "closed"
 
-            for k, v in md_copy.items():
-                if isinstance(v, dict):
-                    v["flag"] = "closed"
+        obj.monthly_data = md_copy
+        out.append(SapProcessed_Out.model_validate(obj, from_attributes=True))
+        obj.monthly_data = original_md
 
-            # 직렬화용으로만 바꿔치기 → save() 호출 없음 → DB 영향 없음
-            obj.monthly_data = md_copy
-            out.append(SapProcessed_Out.model_validate(obj, from_attributes=True))
-            obj.monthly_data = original_md  # 원복
-        return out
-    return qs
+    return out
 
 
-def _merge_team(Team, TeamPrediction, SapProcessed, year, division, group, team, team_name_combined, request):
-    # ------------------------
-    # TeamPrediction 필터
-    # ------------------------
+# =========================================================
+# TeamPrediction + SapProcessed 병합 조회
+# =========================================================
+def _merge_team(
+    Team, TeamPrediction, SapProcessed,
+    year, division, group, team,
+    team_name_combined, request
+):
     team_name_combined = None
     if division and group and team:
         team_name_combined = f"SS-{division}-{group}-{team}".strip()
 
-    # ------------------------
-    # TeamPrediction 필터
-    # ------------------------
-    # 1) rule_q: 팀 ID + shared_dominate 규칙 기반 필터 (team_ids가 있는 경우만 적용)
+    # -------------------------
+    # TeamPrediction
+    # -------------------------
     rule_q = Q()
     if team_name_combined:
         rule_q = (
@@ -203,51 +270,33 @@ def _merge_team(Team, TeamPrediction, SapProcessed, year, division, group, team,
             Q(shared_team__isnull=True) & Q(operation_team__team_name=team_name_combined)
         )
 
-    # 2) tp_filters: 조직/이름/연도/상태 등 일반 조건
-    tp_filters = Q()
+    tp_filters = Q(status="Progress")
+
     if team_name_combined:
         tp_filters &= (
             Q(operation_team__team_name=team_name_combined) |
             Q(shared_team__team_name=team_name_combined)
         )
     if division:
-        tp_filters &= (
-            Q(operation_team__division_parent__division_name__icontains=division) |
-            Q(shared_team__division_parent__division_name__icontains=division)
-        )
+        tp_filters &= Q(operation_team__division_parent__division_name__icontains=division)
     if group:
-        tp_filters &= (
-            Q(operation_team__group_parent__group_name__icontains=group) |
-            Q(shared_team__group_parent__group_name__icontains=group)
-        )
+        tp_filters &= Q(operation_team__group_parent__group_name__icontains=group)
     if year:
         tp_filters &= Q(year=year)
-    # 상태는 Progress 고정
-    tp_filters &= Q(status="Progress")
 
-    # 3) 최종 Q: team_ids가 있으면 rule_q까지 AND, 없으면 tp_filters만
     final_q = tp_filters & rule_q if team_name_combined else tp_filters
 
-    # 4) 쿼리셋
     tp_qs = (
         TeamPrediction.objects
         .select_related("operation_team", "shared_team")
         .filter(final_q)
-        .order_by("-created_at")   # created_at 최신 우선
-        .distinct()                # 중복 제거(필요시 distinct 필드 지정 고려)
+        .order_by("-created_at")
+        .distinct()
     )
 
-    # ------------------------
-    # SapProcessed 필터 (+ 조정 우선)
-    # ------------------------
-    # ✅ operation_team, project_code별 최신 '결산' 배치 번호
-    recent_batch_per_project = (
-        SapProcessed.objects
-        .filter(category__iexact="결산", operation_team=OuterRef("operation_team"), project_code=OuterRef("project_code"), year=OuterRef("year"))
-        .order_by("-batch_no")
-        .values("id")[:1] #배치가 같은 것중에서는 id가 높은것
-    )
-
+    # -------------------------
+    # SapProcessed (Adjust 전체 + SAP 최신만)
+    # -------------------------
     sp_filters = Q()
     if team_name_combined:
         sp_filters &= Q(operation_team__team_name=team_name_combined)
@@ -258,17 +307,16 @@ def _merge_team(Team, TeamPrediction, SapProcessed, year, division, group, team,
     if year:
         sp_filters &= Q(year=year)
 
+    latest_ids = _latest_sap_ids(SapProcessed, year=year)
+
     sp_qs = (
         SapProcessed.objects
         .select_related("operation_team")
         .filter(sp_filters)
-        .filter(  # ✅ 조정 전체 + 결산은 최신 배치만
-            Q(category__iexact="조정") |
-            (Q(category__iexact="결산") & Q(id=Subquery(recent_batch_per_project)))
-        )
+        .filter(Q(category__iexact="Adjust") | Q(id__in=latest_ids))
         .annotate(
             _prio=Case(
-                When(category__iexact="조정", then=Value(0)),
+                When(category__iexact="Adjust", then=Value(0)),
                 default=Value(1),
                 output_field=IntegerField(),
             )

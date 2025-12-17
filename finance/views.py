@@ -572,12 +572,24 @@ def run_all_processes(request, data: FilePathsIn):
 # ===================================================================
 # 🥳 Read processed data for current user
 # ===================================================================
+# @process_router.get("/all/me", response=List[SapProcessed_Out])
+# def find_my_team_sap_processed(request):
+#     account_error._login_error(request)
+
+#     qs = team_filter._process_team(Team, SapProcessed, request, SapProcessed_Out)
+#     return [SapProcessed_Out.model_validate(obj, from_attributes=True) for obj in qs]
 @process_router.get("/all/me", response=List[SapProcessed_Out])
 def find_my_team_sap_processed(request):
     account_error._login_error(request)
 
     qs = team_filter._process_team(Team, SapProcessed, request, SapProcessed_Out)
+
+    # 이미 schema면 그대로
+    if qs and isinstance(qs[0], SapProcessed_Out):
+        return qs
+
     return [SapProcessed_Out.model_validate(obj, from_attributes=True) for obj in qs]
+
 
 # ===================================================================
 # 🥳 Create a manual adjustment (SapProcessed)

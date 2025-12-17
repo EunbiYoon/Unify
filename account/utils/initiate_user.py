@@ -26,7 +26,7 @@ from account.models import Division, Group, Team, Role  # noqa
 User = get_user_model()
 
 REQUIRED_COLS = ["1DEPTH", "2DEPTH", "3DEPTH", "USER NAME", "ROLE"]
-DEFAULT_PASSWORD = "ptkorea12!@"  # unified password for all created/updated users
+DEFAULT_PASSWORD = "password"  # unified password for all created/updated users
 
 # ────────── helpers ──────────
 def _norm(x: Any) -> Optional[str]:

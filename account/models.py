@@ -5,7 +5,7 @@ from datetime import datetime
 
 class Division(models.Model):
     id = models.BigAutoField(primary_key=True)
-    division_name = models.CharField(max_length=50, unique=True)  # 예: "PTK-TDD"
+    division_name = models.CharField(max_length=50, unique=True)  # 예: "SS-TDD"
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)      # 변경 시각
     owner = models.ForeignKey(
