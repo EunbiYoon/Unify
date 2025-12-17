@@ -186,7 +186,7 @@ def _merge_team(Team, TeamPrediction, SapProcessed, year, division, group, team,
     # ------------------------
     team_name_combined = None
     if division and group and team:
-        team_name_combined = f"PTK-{division}-{group}-{team}".strip()
+        team_name_combined = f"SS-{division}-{group}-{team}".strip()
 
     # ------------------------
     # TeamPrediction 필터

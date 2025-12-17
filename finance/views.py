@@ -716,7 +716,7 @@ def merge_filter_all(
     """
     team_name_combined = None
     if division and group and team:
-        team_name_combined = f"PTK-{division}-{group}-{team}".strip()
+        team_name_combined = f"SS-{division}-{group}-{team}".strip()
 
     tp_qs, sp_qs = team_filter._merge_team(
         Team, TeamPrediction, SapProcessed,

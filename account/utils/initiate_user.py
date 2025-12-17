@@ -46,13 +46,13 @@ def _depth_rank(row) -> int:
     return 0
 
 def _fmt_div(d1: str) -> str:
-    return f"PTK-{d1}"
+    return f"SS-{d1}"
 
 def _fmt_grp(d1: str, d2: str) -> str:
-    return f"PTK-{d1}-{d2}"
+    return f"SS-{d1}-{d2}"
 
 def _fmt_team(d1: str, d2: str, d3: str) -> str:
-    return f"PTK-{d1}-{d2}-{d3}"
+    return f"SS-{d1}-{d2}-{d3}"
 
 def next_available_pk(model) -> int:
     """

@@ -7,7 +7,7 @@ from .views import (
     close_router, db_router, finance_home
 )
 
-api = NinjaAPI(version="2.0.0",title="FINANCE API - CSRF OFF TEST", csrf=False)
+api = NinjaAPI(version="2.0.0",title="Welcome to Finance API", csrf=False)
 api.add_router("/prediction", pred_router)
 api.add_router("/sap", sap_router)
 api.add_router("/cctr", cctr_router)

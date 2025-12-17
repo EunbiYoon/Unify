@@ -175,8 +175,7 @@ else:
     STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-PARENT_DIR = BASE_DIR.parent
-MEDIA_ROOT = os.path.join(PARENT_DIR, "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 
 # Default primary key field type
