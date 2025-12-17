@@ -31,16 +31,18 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "0") == "1"
 
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(",")
-CSRF_TRUSTED_ORIGINS= os.environ.get("CSRF_TRUSTED_ORIGINS").split(",")
+# CSRF_TRUSTED_ORIGINS= os.environ.get("CSRF_TRUSTED_ORIGINS").split(",")
+# CSRF_COOKIE_SECURE = False
+# SESSION_COOKIE_SECURE = False
 
 # customize
 AUTH_USER_MODEL = 'account.CustomUser'
 
 # 로그인 지속 시간
-SESSION_COOKIE_AGE = 3600
-SESSION_COOKIE_SAMESITE = "Lax"
-SESSION_COOKIE_SECURE = False
-SESSION_COOKIE_HTTPONLY=True
+# SESSION_COOKIE_AGE = 3600
+# SESSION_COOKIE_SAMESITE = "Lax"
+# SESSION_COOKIE_SECURE = False
+# SESSION_COOKIE_HTTPONLY=True
 
 # Application definition
 INSTALLED_APPS = [
@@ -81,7 +83,8 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'backend.middleware.csrf_exempt_paths.CsrfExemptFinanceApiMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',

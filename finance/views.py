@@ -9,6 +9,7 @@ from urllib.parse import parse_qs
 from collections import defaultdict
 from typing import List, Optional, Literal
 from datetime import datetime, date
+from django.views.decorators.csrf import csrf_exempt
 
 # Django
 from django.db import models, transaction, connection
@@ -111,6 +112,7 @@ def finance_home(request):
 # 🥳 Sample upload for Team Prediction (DEV / DB migration)
 # ===================================================================
 @pred_router.post("/upload-sample")
+@csrf_exempt
 def upload_TeamPrediction_data(request, file: UploadedFile = File(...)):
     """DEV only: Upload TeamPrediction Excel and insert initial data. Test file: sample/pred_july_sample.xlsx"""
     account_error._superuser_error(request)
