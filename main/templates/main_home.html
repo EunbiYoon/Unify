@@ -15,271 +15,373 @@
   <link rel="icon" type="image/x-icon" href="{% static 'icon/portfolio.png'%}">
 
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-      background: #000;
-      font-family: 'Rajdhani', sans-serif;
+    body, html{
+      margin:0;
+      padding:0;
+      width:100%;
+      height:100vh;
+      overflow:hidden;
+      background:#000;
+      font-family:'Rajdhani', sans-serif;
     }
 
     /* ===============================
        Spline Background (License Crop)
        =============================== */
-    .spline-wrapper {
-      position: absolute;
-      inset: 0;
-      overflow: hidden;
-      z-index: 0;
+    .spline-wrapper{
+      position:absolute;
+      inset:0;
+      overflow:hidden;
+      z-index:0;
     }
-
-    .spline-bg {
-      position: absolute;
-      top: -4%;              /* 👈 라이선스 영역 날리기 */
-      left: 0;
-      width: 100%;
-      height: 112%;
-      border: none;
-      transform: scale(1.15);
+    .spline-bg{
+      position:absolute;
+      top:-4%;
+      left:0;
+      width:100%;
+      height:112%;
+      border:none;
+      transform:scale(1.15);
     }
-
-    /* 하단 페이드 (자연스럽게 가림) */
-    .spline-fade {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 90px;
-      background: linear-gradient(to top, #000, rgba(0,0,0,0));
-      z-index: 4;
-      pointer-events: none;
+    .spline-fade{
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:90px;
+      background:linear-gradient(to top,#000,rgba(0,0,0,0));
+      z-index:4;
+      pointer-events:none;
     }
 
     /* ===============================
-       Glass UI
-    /* 기존 .glass-interface 수정 */
+       Glass UI Layout
+       =============================== */
     .glass-interface{
-      position: absolute;
-      inset: 0;
-      z-index: 10;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;   /* ✅ center -> flex-start */
-      padding: 8vh 5vw 6vh;      /* ✅ 위/아래 여백 통일 (원하는 만큼 조절) */
-      pointer-events: none;
+      position:absolute;
+      inset:0;
+      z-index:10;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      padding:8vh 5vw 6vh;
+      pointer-events:none;
     }
-
     .menu-column{
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      pointer-events: auto;
+      width:300px;
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+      pointer-events:auto;
     }
-
     .login-hint{
-      position: absolute;
-      left: 5vw;            /* glass-interface 좌우 패딩과 맞춤 */
-      top: calc(8vh - 34px);/* ✅ SDE_01 바로 위 (수치만 튜닝) */
-      /* font-family: 'Share Tech Mono', monospace; */
-      font-size: 17px;
-      color: rgba(0,0,0,0.65);
-      /* background: rgba(255,255,255,0.35); */
-      /* border: 1px solid rgba(0,0,0,0.15); */
-      padding: 8px 12px;
-      border-radius: 999px;
-      backdrop-filter: blur(8px);
-      pointer-events: none;
-    }
-    .holo-box {
-      background: rgba(16,21,30,.6);
-      border: 1px solid rgba(0,255,255,.25);
-      padding: 20px;
-      color: #fff;
-      text-decoration: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: .4s cubic-bezier(.175,.885,.32,1.275);
-      backdrop-filter: blur(8px);
-      position: relative;
-      overflow: hidden;
-      pointer-events: auto;
+      position:absolute;
+      left:5vw;
+      top:calc(8vh - 34px);
+      font-size:17px;
+      color:rgba(0,0,0,0.65);
+      padding:8px 12px;
+      border-radius:999px;
+      backdrop-filter:blur(8px);
+      pointer-events:none;
     }
 
-    .holo-box::before {
+    /* ===============================
+       Premium Holo Cards (base)
+       =============================== */
+    .holo-box{
+      --accent: rgba(0, 210, 255, .95);     /* default */
+      --accentSoft: rgba(0, 210, 255, .18);
+
+      background:
+        radial-gradient(1200px 220px at 10% 0%, rgba(255,255,255,.06), transparent 60%),
+        linear-gradient(180deg, rgba(16,21,30,.72), rgba(10,12,18,.62));
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:
+        0 14px 30px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.06);
+      border-radius:14px;
+      padding:20px;
+      color:#fff;
+      text-decoration:none;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      transition:.35s cubic-bezier(.2,.9,.2,1);
+      backdrop-filter:blur(10px);
+      position:relative;
+      overflow:hidden;
+      pointer-events:auto;
+      outline:none;
+    }
+
+    .holo-box::before{
       content:'';
       position:absolute;
-      left:0;
-      top:0;
-      width:3px;
-      height:100%;
-      background:#444;
+      left:0; top:0;
+      width:3px; height:100%;
+      background:var(--accent);
+      opacity:.75;
+      box-shadow:0 0 18px var(--accentSoft);
       transition:.3s;
     }
-
-    .holo-box:hover {
-      transform: scale(1.05) translateX(10px);
-      border-color:#00d2ff;
-      box-shadow:0 0 20px rgba(0,210,255,.45);
-      background: rgba(0,255,255,.1);
+    .holo-box::after{
+      content:'';
+      position:absolute;
+      inset:-60px -80px auto -80px;
+      height:140px;
+      background:radial-gradient(circle at 30% 50%, rgba(255,255,255,.10), transparent 60%);
+      transform:rotate(-8deg);
+      opacity:.55;
+      pointer-events:none;
     }
 
-    .right-col .holo-box:hover {
-      transform: scale(1.05) translateX(-10px);
-    }
-
-    .holo-box:hover::before {
-      background:#00d2ff;
-      box-shadow:0 0 10px #00d2ff;
-    }
-    
-
-    .menu-title {
+    .menu-title{
       font-size:1.25rem;
       font-weight:700;
       letter-spacing:1px;
-      /* text-transform:uppercase; */
+      color:rgba(255,255,255,.95);
+      transition: color .25s ease, text-shadow .25s ease;
+    }
+    .menu-desc{
+      font-size:.82rem;
+      color:rgba(255,255,255,.55);
+      font-family:'Share Tech Mono', monospace;
+      transition: color .25s ease;
     }
 
-    .menu-desc {
-      font-size:.8rem;
-      color:#aaa;
+    .holo-box span{
       font-family:'Share Tech Mono', monospace;
+      font-size:.85rem;
+      color:rgba(255,255,255,.72);
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.05);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+      white-space:nowrap;
+      transition: color .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+    }
+
+    /* Hover/Focus: 고급스럽게 텍스트까지 같이 살아나게 */
+    .holo-box:hover,
+    .holo-box:focus-visible{
+      transform:translateY(-2px) scale(1.03);
+      border-color:rgba(255,255,255,.18);
+      box-shadow:
+        0 18px 42px rgba(0,0,0,.55),
+        0 0 0 1px rgba(255,255,255,.06),
+        0 0 28px var(--accentSoft);
+    }
+    .holo-box:hover::before,
+    .holo-box:focus-visible::before{
+      width:4px;
+      opacity:1;
+      box-shadow:0 0 26px var(--accentSoft);
+    }
+
+    .holo-box:hover .menu-title,
+    .holo-box:focus-visible .menu-title{
+      color:var(--accent);
+      text-shadow:0 0 12px var(--accentSoft);
+    }
+    .holo-box:hover .menu-desc,
+    .holo-box:focus-visible .menu-desc{
+      color:rgba(255,255,255,.88);
+    }
+    .holo-box:hover span,
+    .holo-box:focus-visible span{
+      color:#fff;
+      border-color:var(--accent);
+      background:rgba(255,255,255,.07);
+      box-shadow:
+        0 0 14px var(--accentSoft),
+        inset 0 1px 0 rgba(255,255,255,.18);
+    }
+
+    /* Right column hover feel */
+    .right-col .holo-box:hover,
+    .right-col .holo-box:focus-visible{
+      transform:translateY(-2px) scale(1.03);
+    }
+
+    /* ===============================
+       Category Themes (SDE / ML / CODE)
+       - swapped: ML=Green, CODE=Purple
+       =============================== */
+    .holo-box.sde{
+      --accent: rgba(0, 210, 255, .95);
+      --accentSoft: rgba(0, 210, 255, .22);
+    }
+    .holo-box.ml{
+      --accent: rgba(80, 255, 170, .95);
+      --accentSoft: rgba(80, 255, 170, .22);
+    }
+    .holo-box.code{
+      --accent: rgba(180, 120, 255, .95);
+      --accentSoft: rgba(180, 120, 255, .22);
     }
 
     /* ===============================
        Robot Beam
        =============================== */
-    .connection-line {
+    .connection-line{
       position:absolute;
       width:0;
       height:2px;
-      background:linear-gradient(90deg,transparent,#00d2ff,transparent);
+      background:linear-gradient(90deg,transparent,rgba(0,210,255,.95),transparent);
       transform-origin:left center;
       opacity:0;
       pointer-events:none;
       z-index:15;
+      filter:drop-shadow(0 0 10px rgba(0,210,255,.35));
     }
 
     /* ===============================
-       Bottom Bar
+       HUD Split Title
        =============================== */
-    .bottom-bar {
-      position:absolute;
-      bottom:25px;
-      width:100%;
-      text-align:center;
-      z-index:20;
-      pointer-events:auto;
-    }
-
-    .code-links a {
-      margin:0 15px;
-      color:rgba(255,255,255,.6);
-      text-decoration:none;
-      font-size:.9rem;
-    }
-
-    .code-links a:hover {
-      color:#00d2ff;
-      text-shadow:0 0 8px #00d2ff;
-    }
-
-    /* Mobile */
-    @media (max-width:768px){
-      .glass-interface {
-        flex-direction:column;
-        justify-content:flex-end;
-        padding-bottom:80px;
-      }
-      .menu-column {
-        width:90%;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:center;
-      }
-      .holo-box {
-        width:48%;
-        padding:10px;
-      }
-      .menu-desc {display:none;}
-    }
-    /* ===============================
-   HUD Title (Eunbi Agent System)
-   =============================== */
     .hud-title{
-    position: absolute;
-    left: 50%;
-    top: 10vh;                 /* ✅ 로봇 머리 위 느낌: 8~14vh 사이로 튜닝 */
-    transform: translateX(-50%);
-    z-index: 12;
-    width: min(720px, 86vw);
-    pointer-events: none;      /* spline 회전 방해 X */
+      position:absolute;
+      left:50%;
+      top:10vh;
+      transform:translateX(-50%);
+      z-index:12;
+      width:min(900px, 92vw);
+      pointer-events:none;
     }
-
-    .hud-big{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 6px;
-    text-align: left;
-    filter: drop-shadow(0 0 18px rgba(0, 210, 255, 0.25));
+    .hud-split{
+      display:flex;
+      justify-content:space-between;
+      align-items:baseline;
+      gap:24px;
+      padding:0 10px;
+      filter:drop-shadow(0 0 18px rgba(0, 210, 255, 0.25));
     }
-
-    .hud-small{
-    font-size: clamp(42px, 7vw, 74px);
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: rgb(62, 158, 173, 0.7);
-    }
-
-    .hud-mid{
-    font-size: clamp(60px, 9vw, 118px);
-    font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 0.92;
-    color: rgba(0, 210, 255, 0.55);
-    text-shadow:
+    .hud-left,.hud-right{
+      font-weight:700;
+      letter-spacing:4px;
+      line-height:1;
+      text-shadow:
         0 0 16px rgba(0, 210, 255, 0.20),
         0 0 40px rgba(0, 210, 255, 0.10);
     }
+    .hud-left{
+      font-size:clamp(44px, 6.5vw, 90px);
+      color:rgba(0, 210, 255, 1);
+      text-align:left;
+    }
+    .hud-right{
+      font-size:clamp(44px, 6.5vw, 90px);
+      color:rgba(0, 210, 255, 0.7);
+      text-align:right;
+    }
+    .hud-sub{
+      margin-top:10px;
+      display:flex;
+      justify-content:space-between;
+      font-family:'Share Tech Mono', monospace;
+      font-size:16px;
+      color:rgb(62, 158, 173, 1);
+      letter-spacing:1px;
+      padding:0 12px;
+      opacity:.95;
+    }
 
-    .hud-meta{
-    margin-top: 18px;
-    display: grid;
-    grid-template-columns: 14px 1fr;
+    /* ===============================
+       Mobile (Touch-friendly, readable)
+       =============================== */
+    @media (max-width:768px){
+
+  /* 배경은 고정, 컨텐츠는 스크롤 */
+  body, html{
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Spline 배경을 fixed로 (스크롤해도 계속 배경 유지) */
+  .spline-wrapper{
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+  }
+
+  /* UI를 absolute에서 relative로 바꿔야 스크롤이 생김 */
+  .glass-interface{
+    position: relative;
+    inset: auto;
+    min-height: 100vh;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    padding: 18vh 4vw 6vh;   /* ✅ HUD 위 공간 확보 + 아래 여백 */
     gap: 14px;
-    align-items: start;
-    }
 
-    .hud-bar{
-    width: 3px;
-    height: 76px;
-    background: rgba(0, 210, 255, 1);
-    box-shadow: 0 0 16px rgba(0, 210, 255, 0.25);
-    border-radius: 2px;
-    }
+    pointer-events: auto;    /* 모바일에서 터치 안정 */
+  }
 
-    .hud-lines{
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 18px;
-    letter-spacing: 1px;
-    /* color: rgba(50, 255, 187, 1); */
-    color: rgb(62, 158, 173, 1);
-    }
+  /* HUD는 상단에 고정 느낌으로 */
+  .hud-title{
+    position: fixed;
+    left: 50%;
+    top: 4.5vh;
+    transform: translateX(-50%);
+    width: min(900px, 92vw);
+    z-index: 30;
+  }
 
-    .hud-lines b{
-    color: rgba(0, 210, 255, 0.9);
-    font-weight: 700;
-    }
+  /* 컬럼을 한줄로 쌓고 전체 너비 */
+  .menu-column{
+    width: 100%;
+    gap: 12px;
+  }
+
+  /* 왼쪽/오른쪽 컬럼 사이 간격 */
+  .left-col{ margin-top: 10px; }
+  .right-col{ margin-top: 6px; }
+
+  /* 카드 터치 친화적으로 */
+  .holo-box{
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 16px;
+    transform: none; /* 초기 변형 제거 */
+  }
+
+  .menu-title{ font-size: 1.06rem; }
+  .menu-desc{
+    display: block;
+    font-size: .78rem;
+    color: rgba(255,255,255,.72);
+  }
+
+  /* hover 대신 터치(active) 피드백 */
+  .holo-box:active{
+    transform: scale(.985);
+    border-color: var(--accent);
+    box-shadow:
+      0 12px 28px rgba(0,0,0,.45),
+      0 0 24px var(--accentSoft);
+  }
+  .holo-box:active .menu-title{ color: var(--accent); }
+  .holo-box:active .menu-desc{ color: rgba(255,255,255,.9); }
+
+  .login-hint{ display:none; }
+
+  /* 빔은 모바일에서는 굳이 없어도 됨 (원하면 유지 가능) */
+  /* #connector{ display:none; } */
+}
 
   </style>
 </head>
 
 <body>
-
   <!-- Spline Background -->
   <div class="spline-wrapper">
     <iframe
@@ -293,46 +395,77 @@
 
   <!-- UI -->
   <div class="glass-interface">
-    <div class="hud-title">
-        <!-- <div class="hud-big">
-            <span class="hud-small">Welcome to </span>
-            <span class="hud-mid">Hi, there!</span>
-            <span class="hud-mid">AGENT</span>
-        </div> -->
 
-        <!-- <div class="hud-meta">
-            <div class="hud-bar"></div>
-            <div class="hud-lines">
-            <div>LEFT: <b>Software Engineering</b> / RIGHT: <b>Machine Learning</b></div>
-            <div>LOGIN Username: <b>admin</b> / Password: <b>password</b></div>
-            <div>MODE: <b>INTERACTIVE</b></div>
-            </div>
-        </div> -->
+    <!-- HUD Title -->
+    <div class="hud-title">
+      <div class="hud-split">
+        <div class="hud-left">Eunbi's</div>
+        <div class="hud-right">System</div>
+      </div>
+      <div class="hud-sub">
+        <div>LEFT: <b>Software Development</b></div>
+        <div>RIGHT: <b>Machine Learning</b> / <b>Code</b></div>
+      </div>
     </div>
 
     <!-- Left -->
     <div class="menu-column left-col">
       <div class="login-hint">Username: <b>admin</b> / Password: <b>password</b></div>
-      <a href="{% url 'portfolio_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Portfolio</div><div class="menu-desc">Introduction and Summary</div></div><span>SDE_01</span>
+
+      <a href="{% url 'portfolio_url' %}" class="holo-box sde" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Portfolio</div>
+          <div class="menu-desc">Introduction and Summary</div>
+        </div>
+        <span>SDE_01</span>
       </a>
-      <a href="/admin" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">DB Management</div><div class="menu-desc">View All System's Operations</div></div><span>SDE_02</span>
+
+      <a href="/admin" class="holo-box sde" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">DB Management</div>
+          <div class="menu-desc">View All System's Operations</div>
+        </div>
+        <span>SDE_02</span>
       </a>
-      <a href="{% url 'finance_home_url' %}"  class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Finance Backend</div><div class="menu-desc">Open API Interface</div></div><span>SDE_03</span>
+
+      <a href="{% url 'finance_home_url' %}" class="holo-box sde" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Finance Backend</div>
+          <div class="menu-desc">Open API Interface</div>
+        </div>
+        <span>SDE_03</span>
       </a>
-      <a href="{% url 'costhome_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Cost Data Center</div><div class="menu-desc">Full Stack</div></div><span>SDE_04</span>
+
+      <a href="{% url 'costhome_url' %}" class="holo-box sde" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Cost Data Center</div>
+          <div class="menu-desc">Full Stack</div>
+        </div>
+        <span>SDE_04</span>
       </a>
-      <a href="/quality/dashboard" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Quality Analysis</div><div class="menu-desc">Business Data Solution</div></div><span>SDE_05</span>
+
+      <a href="/quality/dashboard" class="holo-box sde" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Quality Analysis</div>
+          <div class="menu-desc">Business Data Solution</div>
+        </div>
+        <span>SDE_05</span>
       </a>
-      <a href="{% url 'sr_home_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Employee Centered</div><div class="menu-desc">Combine Two Systems</div></div><span>SDE_06</span>
+
+      <a href="{% url 'sr_home_url' %}" class="holo-box sde" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Employee Centered</div>
+          <div class="menu-desc">Combine Two Systems</div>
+        </div>
+        <span>SDE_06</span>
       </a>
-      <a href="/lgsupport/video" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">LG Video Tutorial</div><div class="menu-desc">Mobile Responsive Web App</div></div><span>SDE_07</span>
+
+      <a href="/lgsupport/video" class="holo-box sde" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">LG Video Tutorial</div>
+          <div class="menu-desc">Mobile Responsive Web App</div>
+        </div>
+        <span>SDE_07</span>
       </a>
     </div>
 
@@ -340,46 +473,81 @@
 
     <!-- Right -->
     <div class="menu-column right-col">
-      <a href="/umass/med-vqa/" class="holo-box" onmouseenter="trackMenu(this)">
-        <div><div class="menu-title">Doctor AI Agent</div><div class="menu-desc">Medical VQA Reasoning</div></div><span>ML_01</span>
+      <a href="/umass/med-vqa/" class="holo-box ml" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Doctor AI Agent</div>
+          <div class="menu-desc">Medical VQA Reasoning</div>
+        </div>
+        <span>ML_01</span>
       </a>
-      <a href="/umass/datascience-system/" class="holo-box" onmouseenter="trackMenu(this)">
-        <div><div class="menu-title">Data Science System</div><div class="menu-desc">Stock Prediction with News</div></div><span>ML_02</span>
+
+      <a href="/umass/datascience-system/" class="holo-box ml" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Data Science System</div>
+          <div class="menu-desc">Stock Prediction with News</div>
+        </div>
+        <span>ML_02</span>
       </a>
-      <a href="/umass/machine-learning/" class="holo-box" onmouseenter="trackMenu(this)">
-        <div><div class="menu-title">Machine Learning</div><div class="menu-desc">Supervised and Unsupervised</div></div><span>ML_03</span>
+
+      <a href="/umass/machine-learning/" class="holo-box ml" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Machine Learning</div>
+          <div class="menu-desc">Supervised and Unsupervised</div>
+        </div>
+        <span>ML_03</span>
       </a>
-      <a href="/umass/artificial-intelligence/" class="holo-box" onmouseenter="trackMenu(this)">
-        <div><div class="menu-title">AI Theory</div><div class="menu-desc">Multi Agents Planning Strategy</div></div><span>ML_04</span>
+
+      <a href="/umass/artificial-intelligence/" class="holo-box ml" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">AI Theory</div>
+          <div class="menu-desc">Multi Agents Planning Strategy</div>
+        </div>
+        <span>ML_04</span>
       </a>
-      <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
-        <div><div class="menu-title">Reinforce Learning</div><div class="menu-desc">Find Optimal Policy</div></div><span>ML_05</span>
+
+      <a href="/umass/reinforcement-learning/" class="holo-box ml" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Reinforce Learning</div>
+          <div class="menu-desc">Find Optimal Policy</div>
+        </div>
+        <span>ML_05</span>
       </a>
-      <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
-        <div><div class="menu-title">GitHub</div><div class="menu-desc">Code Configuration</div></div><span>CODE_01</span>
+
+      <a href="https://github.com/EunbiYoon" target="_blank" rel="noopener" class="holo-box code" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">GitHub</div>
+          <div class="menu-desc">Code Configuration</div>
+        </div>
+        <span>CODE_01</span>
       </a>
-        <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
-        <div><div class="menu-title">Notion</div><div class="menu-desc">Code Documentation</div></div><span>CODE_02</span>
+
+      <a href="https://www.notion.so" target="_blank" rel="noopener" class="holo-box code" onmouseenter="trackMenu(this)">
+        <div>
+          <div class="menu-title">Notion</div>
+          <div class="menu-desc">Code Documentation</div>
+        </div>
+        <span>CODE_02</span>
       </a>
     </div>
   </div>
 
-  <!-- Bottom -->
-  <!-- <div class="bottom-bar">
-    <div class="code-links">
-      <a href="https://github.com/EunbiYoon" target="_blank">GITHUB</a>
-      <a href="https://drive.google.com" target="_blank">AI PROJECT</a>
-    </div>
-    <p style="font-size:.7rem;color:#666;">SYSTEM ID: ADMIN / PASSWORD: PASSWORD</p>
-  </div> -->
-
-  <!-- Beam Script -->
-<script>
+  <!-- Script -->
+  <script>
     const ROBOT_ANCHOR_LEFT  = { x: 0.52, y: 0.55 };
     const ROBOT_ANCHOR_RIGHT = { x: 0.48, y: 0.55 };
 
     function trackMenu(el){
       const c = document.getElementById('connector');
+
+      // ✅ swapped colors: ML=Green, CODE=Purple
+      const isML = el.classList.contains('ml');
+      const isCODE = el.classList.contains('code');
+      c.style.background = isML
+        ? 'linear-gradient(90deg,transparent,rgba(80,255,170,.95),transparent)'
+        : isCODE
+          ? 'linear-gradient(90deg,transparent,rgba(180,120,255,.95),transparent)'
+          : 'linear-gradient(90deg,transparent,rgba(0,210,255,.95),transparent)';
+
       const right = el.closest('.right-col');
       const a = right ? ROBOT_ANCHOR_RIGHT : ROBOT_ANCHOR_LEFT;
 
@@ -407,25 +575,28 @@
 
     const spline = document.getElementById("splineFrame");
 
-    // 오버레이 위에서 움직여도, iframe이 움직임을 느끼게 "위치 동기화"
+    // focus 유지 (데스크탑/모바일 모두)
     document.addEventListener("mousemove", (e) => {
-      // iframe의 위치/크기
       const rect = spline.getBoundingClientRect();
-
-      // 마우스가 iframe 영역 안에서 움직이는 경우만
       if (e.clientX >= rect.left && e.clientX <= rect.right &&
           e.clientY >= rect.top && e.clientY <= rect.bottom) {
-
-        // iframe 위에 "가상 커서"를 만들진 못하지만,
-        // Spline은 종종 window mousemove를 읽기 때문에
-        // iframe에 focus를 유지해주는 게 효과가 큼
         spline.focus({ preventScroll: true });
       }
     }, { passive: true });
 
-    // 클릭이나 스크롤 후에도 focus 풀릴 수 있어서 보정
     window.addEventListener("click", () => {
       spline.focus({ preventScroll: true });
+    });
+
+    const panels = document.querySelectorAll('.holo-box');
+    panels.forEach(panel => {
+      panel.addEventListener('mouseenter', () => {
+        spline.focus({ preventScroll: true });
+      });
+      // 모바일 터치에서 포커스도 살려주기
+      panel.addEventListener('touchstart', () => {
+        spline.focus({ preventScroll: true });
+      }, { passive: true });
     });
   </script>
 </body>
