@@ -25,3 +25,15 @@
         [__init__.py]
         2) from VideoTutorial.flaskapp import action    
         3) from VideoTutorial.flaskapp.models import db
+
+
+# SQlite Query
+## get into query
+1. sqlite3 db.sqlite3 
+## check all the table
+2. .tables
+## based on id, delete 
+### if you delete division, all related will delete
+3. DELETE FROM account_division WHERE id >= 3; 
+## reset sequence
+4. DELETE FROM sqlite_sequence WHERE name = 'account_division';
