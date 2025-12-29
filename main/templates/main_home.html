@@ -2,273 +2,392 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eunbi's Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eunbi's Command Center</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   {% load static %}
   <link rel="icon" type="image/x-icon" href="{% static 'icon/portfolio.png'%}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
 
   <style>
-    :root{
-      --bg-soft: linear-gradient(135deg, #f6f8fa, #eef2f3);
-      --ink-900: #111827;
-      --ink-700: #374151;
-      --ink-600: #4b5563;
-      --brand:   #808080;
-      --card-radius: 20px;
-      --shadow-sm: 0 6px 20px rgba(0,0,0,.08);
-      --shadow-md: 0 10px 25px rgba(0,0,0,.12);
-    }
-
-    html,body{height:100%}
-    body {
-      background: var(--bg-soft);
-      font-family: "Inter", "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      color: var(--ink-700);
+    body, html {
       margin: 0;
-      overflow-x: hidden;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: #000;
+      font-family: 'Rajdhani', sans-serif;
     }
 
-    /* ===== Welcome Section ===== */
-    .welcome-section{
-      background:#fff;
-      border-bottom:1px solid #e5e7eb;
-      text-align:center;
-      padding:25px 20px 20px;
-      will-change: transform, opacity;
-      opacity:0; transform: translateY(12px);
-    }
-    .welcome-title{
-      font-size:1.9rem;
-      font-weight:700;
-      color:#111827;
-      margin-bottom:6px;
-    }
-    .welcome-title span{ color:var(--brand); }
-    .welcome-desc{
-      font-size:1rem;
-      color:#4b5563;
-      max-width:720px;
-      margin:0 auto;
-      line-height:1.5;
+    /* ===============================
+       Spline Background (License Crop)
+       =============================== */
+    .spline-wrapper {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 0;
     }
 
-    /* ===== Main Card ===== */
-    .shared-background{
-      background:#fff;
-      border-radius:var(--card-radius);
-      box-shadow: var(--shadow-sm);
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      max-width:1050px;
-      margin:40px auto;
-      padding:40px 50px;
-      gap:28px;
-      will-change: transform, opacity;
-      opacity:0; transform: translateY(12px);
-      transition: box-shadow 0.3s ease;
-    }
-    .shared-background:hover{
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
+    .spline-bg {
+      position: absolute;
+      top: -4%;              /* 👈 라이선스 영역 날리기 */
+      left: 0;
+      width: 100%;
+      height: 112%;
+      border: none;
+      transform: scale(1.15);
     }
 
-    .section-box{ width:46%; }
-    .divider{
-      width:1.5px; align-self:stretch;
-      background: linear-gradient(180deg,#d1d5db,#f3f4f6);
+    /* 하단 페이드 (자연스럽게 가림) */
+    .spline-fade {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      background: linear-gradient(to top, #000, rgba(0,0,0,0));
+      z-index: 4;
+      pointer-events: none;
     }
 
-    h1{ font-size:1.9rem; margin-bottom:18px; color:#1b263b; }
-    p.text-section{ font-size:1rem; color:#555; line-height:1.6; margin-bottom:22px; }
-
-    /* ===== Buttons ===== */
-    .btn{
-      font-size:1rem;
-      font-weight:600;
-      margin-bottom:10px;
-      position:relative;
-      overflow:hidden;
-      border-radius:10px !important;
-      transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+    /* ===============================
+       Glass UI
+       =============================== */
+    .glass-interface {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5vw;
+      pointer-events: none;
     }
 
-    /* hover 시 glow */
-    .btn:hover{
-      transform: scale(1.04);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-      opacity:.95;
+    .menu-column {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      pointer-events: auto;
     }
 
-    /* 클릭 시 press & release */
-    .btn:active{
-      transform: scale(0.95);
-      box-shadow: 0 0 0 4px rgba(37,99,235,0.2);
+    .holo-box {
+      background: rgba(16,21,30,.6);
+      border: 1px solid rgba(0,255,255,.25);
+      padding: 20px;
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: .4s cubic-bezier(.175,.885,.32,1.275);
+      backdrop-filter: blur(8px);
+      position: relative;
+      overflow: hidden;
     }
 
-    /* Ripple effect */
-    .btn::after{
+    .holo-box::before {
       content:'';
       position:absolute;
-      top:50%; left:50%;
-      width:0; height:0;
-      background:rgba(255,255,255,0.5);
-      border-radius:50%;
-      transform:translate(-50%, -50%);
+      left:0;
+      top:0;
+      width:3px;
+      height:100%;
+      background:#444;
+      transition:.3s;
+    }
+
+    .holo-box:hover {
+      transform: scale(1.05) translateX(10px);
+      border-color:#00d2ff;
+      box-shadow:0 0 20px rgba(0,210,255,.45);
+      background: rgba(0,255,255,.1);
+    }
+
+    .right-col .holo-box:hover {
+      transform: scale(1.05) translateX(-10px);
+    }
+
+    .holo-box:hover::before {
+      background:#00d2ff;
+      box-shadow:0 0 10px #00d2ff;
+    }
+
+    .menu-title {
+      font-size:1.25rem;
+      font-weight:700;
+      letter-spacing:1px;
+      /* text-transform:uppercase; */
+    }
+
+    .menu-desc {
+      font-size:.8rem;
+      color:#aaa;
+      font-family:'Share Tech Mono', monospace;
+    }
+
+    /* ===============================
+       Robot Beam
+       =============================== */
+    .connection-line {
+      position:absolute;
+      width:0;
+      height:2px;
+      background:linear-gradient(90deg,transparent,#00d2ff,transparent);
+      transform-origin:left center;
       opacity:0;
-      transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.5s ease-out;
-    }
-    .btn:active::after{
-      width:200%; height:200%; opacity:0; transition:0s;
-    }
-/* ==== Machine Learning Section (Balanced Neon Theme) ==== */
-/* ML Section 버튼 색상 재정의 */
-.btn-doctor-ai {
-  background-color: #8b5cf6; /* 연보라 */
-  color: #fff;
-}
-.btn-system-ds {
-  background-color: #11b4ff; /* 파스텔 블루 */
-  color: #fff;
-}
-.btn-ml {
-  background-color: #1dd799; /* 그린 */
-  color:black;
-}
-.btn-ai {
-  background-color: #aff50b; /* 오렌지 */
-  color: black;
-}
-.btn-rl {
-  background-color: #ff51a8; /* 핑크 */
-  color: #fff;
-}
-
-/* hover 시 밝기 살짝만 올리고 음영 추가 */
-.btn-doctor-ai:hover,
-.btn-system-ds:hover,
-.btn-ml:hover,
-.btn-ai:hover,
-.btn-rl:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-  transition: all 0.2s ease;
-}
-
-/* Machine Learning section 카드 스타일 */
-.ml-section {
-  background:#fff;
-  border-radius: 20px;
-  box-shadow: var(--shadow-sm);
-  padding: 35px 28px;
-  transition: box-shadow .25s ease, transform .25s ease;
-}
-.ml-section:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-}
-
-
-
-    /* ===== Animations ===== */
-    @keyframes fadeUp { to { opacity:1; transform: translateY(0); } }
-
-    body.animate-in .welcome-section { animation: fadeUp .6s ease forwards .05s; }
-    body.animate-in .shared-background { animation: fadeUp .7s ease forwards .45s; }
-
-    @media (prefers-reduced-motion: reduce){
-      *, *::before, *::after { animation:none !important; transition:none !important; }
-      .welcome-section, .shared-background{opacity:1 !important; transform:none !important;}
+      pointer-events:none;
+      z-index:15;
     }
 
-    /* ===== Responsive ===== */
-    @media (max-width: 768px){
-      .welcome-title{ font-size:1.6rem; }
-      .shared-background{ flex-direction:column; padding:28px 20px; max-width:92%; }
-      .section-box{ width:100%; }
-      .divider{ display:none; }
+    /* ===============================
+       Bottom Bar
+       =============================== */
+    .bottom-bar {
+      position:absolute;
+      bottom:25px;
+      width:100%;
+      text-align:center;
+      z-index:20;
+      pointer-events:auto;
     }
+
+    .code-links a {
+      margin:0 15px;
+      color:rgba(255,255,255,.6);
+      text-decoration:none;
+      font-size:.9rem;
+    }
+
+    .code-links a:hover {
+      color:#00d2ff;
+      text-shadow:0 0 8px #00d2ff;
+    }
+
+    /* Mobile */
+    @media (max-width:768px){
+      .glass-interface {
+        flex-direction:column;
+        justify-content:flex-end;
+        padding-bottom:80px;
+      }
+      .menu-column {
+        width:90%;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+      .holo-box {
+        width:48%;
+        padding:10px;
+      }
+      .menu-desc {display:none;}
+    }
+    /* ===============================
+   HUD Title (Eunbi Agent System)
+   =============================== */
+    .hud-title{
+    position: absolute;
+    left: 50%;
+    top: 10vh;                 /* ✅ 로봇 머리 위 느낌: 8~14vh 사이로 튜닝 */
+    transform: translateX(-50%);
+    z-index: 12;
+    width: min(720px, 86vw);
+    pointer-events: none;      /* spline 회전 방해 X */
+    }
+
+    .hud-big{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    text-align: left;
+    filter: drop-shadow(0 0 18px rgba(0, 210, 255, 0.25));
+    }
+
+    .hud-small{
+    font-size: clamp(42px, 7vw, 74px);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(62, 158, 173, 0.7);
+    }
+
+    .hud-mid{
+    font-size: clamp(60px, 9vw, 118px);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 0.92;
+    color: rgba(0, 210, 255, 0.55);
+    text-shadow:
+        0 0 16px rgba(0, 210, 255, 0.20),
+        0 0 40px rgba(0, 210, 255, 0.10);
+    }
+
+    .hud-meta{
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 14px 1fr;
+    gap: 14px;
+    align-items: start;
+    }
+
+    .hud-bar{
+    width: 3px;
+    height: 76px;
+    background: rgba(0, 210, 255, 1);
+    box-shadow: 0 0 16px rgba(0, 210, 255, 0.25);
+    border-radius: 2px;
+    }
+
+    .hud-lines{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /* color: rgba(50, 255, 187, 1); */
+    color: rgb(62, 158, 173, 1);
+    }
+
+    .hud-lines b{
+    color: rgba(0, 210, 255, 0.9);
+    font-weight: 700;
+    }
+
   </style>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6QC7M754R"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-D6QC7M754R');
-  </script>
 </head>
+
 <body>
-  <!-- Welcome -->
-  <div class="welcome-section">
-    <h1 class="welcome-title">👋 Welcome to <span>Eunbi's Website</span></h1>
-    <p class="welcome-desc">
-      Explore my real feature results — bridging software engineering and AI research.
-    </p>
+
+  <!-- Spline Background -->
+  <div class="spline-wrapper">
+    <iframe
+      class="spline-bg"
+      src="https://my.spline.design/nexbotrobotcharacterconcept-cHH2e9wbqTy2D5QSbcUrhEmD/"
+      frameborder="0">
+    </iframe>
+    <div class="spline-fade"></div>
   </div>
 
-  <!-- Main Hub -->
-  <div class="shared-background">
-    <!-- Left -->
-    <div class="section-box text-center">
-      <h1 class="font-weight-bold">Software Engineering Applications</h1>
-      <p class="text-left text-section">
-        When logging in, either sign up or enter the administrator account:
-        <strong class="text-secondary">username: admin, password: password</strong>.<br/>
-        All data on this website is randomly generated test data.
-      </p>
-      <div class="btn-group-vertical w-100">
-        <a href="{% url 'portfolio_url' %}" class="btn btn-danger btn-lg border-0">Portfolio</a>
-        <a href="/admin" class="btn btn-warning btn-lg border-0">Database Management</a>
-        <a href="{% url 'finance_home_url' %}" class="btn btn-success btn-lg border-0">Finance Backend Interface</a>
-        <!-- <a href="/airflow" class="btn btn-info btn-lg border-0">Airflow Dashboard</a> -->
-        <a href="{% url 'costhome_url' %}" class="btn btn-primary btn-lg border-0">Cost Data Center</a>
-        <a href="/quality/dashboard" class="btn btn-secondary btn-lg border-0">Quality Analysis Dashboard</a>
-        <a href="{% url 'sr_home_url' %}" class="btn btn-dark btn-lg border-0">Security & Reinvent System</a>
-        <a href="/lgsupport/video" class="btn btn-light btn-lg border shadow-sm">LG Support Video Tutorial</a>
-      </div>
+  <!-- UI -->
+  <div class="glass-interface">
+    <div class="hud-title">
+        <!-- <div class="hud-big">
+            <span class="hud-small">Welcome to </span>
+            <span class="hud-mid">Hi, there!</span>
+            <span class="hud-mid">AGENT</span>
+        </div> -->
+
+        <!-- <div class="hud-meta">
+            <div class="hud-bar"></div>
+            <div class="hud-lines">
+            <div>LEFT: <b>Software Engineering</b> / RIGHT: <b>Machine Learning</b></div>
+            <div>LOGIN Username: <b>admin</b> / Password: <b>password</b></div>
+            <div>MODE: <b>INTERACTIVE</b></div>
+            </div>
+        </div> -->
     </div>
 
-    <!-- Divider -->
-    <div class="divider"></div>
+    <!-- Left -->
+    <div class="menu-column left-col">
+      <div>Username: <b>admin</b> / Password: <b>password</b></div>
+      <a href="{% url 'portfolio_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
+          <div><div class="menu-title">Portfolio</div><div class="menu-desc">Introduction and Summary</div></div><span>SDE_01</span>
+      </a>
+      <a href="/admin" class="holo-box" onmouseenter="trackMenu(this)">
+          <div><div class="menu-title">DB Management</div><div class="menu-desc">View All System's Operations</div></div><span>SDE_02</span>
+      </a>
+      <a href="{% url 'finance_home_url' %}"  class="holo-box" onmouseenter="trackMenu(this)">
+          <div><div class="menu-title">Finance Backend</div><div class="menu-desc">Open API Interface</div></div><span>SDE_03</span>
+      </a>
+      <a href="{% url 'costhome_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
+          <div><div class="menu-title">Cost Data Center</div><div class="menu-desc">Full Stack</div></div><span>SDE_04</span>
+      </a>
+      <a href="/quality/dashboard" class="holo-box" onmouseenter="trackMenu(this)">
+          <div><div class="menu-title">Quality Analysis</div><div class="menu-desc">Business Data Solution</div></div><span>SDE_05</span>
+      </a>
+      <a href="{% url 'sr_home_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
+          <div><div class="menu-title">Employee Centered</div><div class="menu-desc">Combine Two Systems</div></div><span>SDE_06</span>
+      </a>
+      <a href="/lgsupport/video" class="holo-box" onmouseenter="trackMenu(this)">
+          <div><div class="menu-title">LG Video Tutorial</div><div class="menu-desc">Mobile Responsive Web App</div></div><span>SDE_07</span>
+      </a>
+    </div>
+
+    <div id="connector" class="connection-line"></div>
 
     <!-- Right -->
-    <div class="section-box text-center">
-      <h1 class="font-weight-bold">Machine Learning Algorithms</h1>
-      <p class="text-left text-section">
-        Summary of what I studied as a Master's student at the University of Massachusetts Amherst.
-      </p>
-      <div class="btn-group-vertical w-100">
-        <a href="/umass/med-vqa/" class="btn neon-btn btn-lg btn-doctor-ai">Doctor AI Agent</a>
-        <a href="/umass/datascience-system/" class="btn neon-btn btn-lg btn-system-ds">System for Data Science</a>
-        <a href="/umass/machine-learning/" class="btn neon-btn btn-lg btn-ml">Machine Learning</a>
-        <a href="/umass/artificial-intelligence/" class="btn neon-btn btn-lg btn-ai">Artificial Intelligence</a>
-        <a href="/umass/reinforcement-learning/" class="btn neon-btn btn-lg btn-rl">Reinforcement Learning</a>
-      </div>
-
-      <hr class="my-4"/>
-
-      <h1 class="font-weight-bold" style="margin:0">Code Management</h1>
-      <p class="text-left text-section" style="margin:5px">Notion for documentation and GitHub for configuration management.</p>
-      <div class="btn-group-horizontal">
-        <a href="https://able-fragrance-2c9.notion.site/a383a66c8ec84954af9df857d289b64c?v=49cc3fb120994439b43a38ccf0c02ee9" class="btn btn-dark btn-lg">Notion</a>
-        <a href="https://github.com/EunbiYoon" class="btn btn-light btn-lg border">GitHub</a>
-      </div>
+    <div class="menu-column right-col">
+      <a href="/umass/med-vqa/" class="holo-box" onmouseenter="trackMenu(this)">
+        <div><div class="menu-title">Doctor AI Agent</div><div class="menu-desc">Medical VQA Reasoning</div></div><span>ML_01</span>
+      </a>
+      <a href="/umass/datascience-system/" class="holo-box" onmouseenter="trackMenu(this)">
+        <div><div class="menu-title">Data Science System</div><div class="menu-desc">Stock Prediction with News</div></div><span>ML_02</span>
+      </a>
+      <a href="/umass/machine-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+        <div><div class="menu-title">Machine Learning</div><div class="menu-desc">Supervised and Unsupervised</div></div><span>ML_03</span>
+      </a>
+      <a href="/umass/artificial-intelligence/" class="holo-box" onmouseenter="trackMenu(this)">
+        <div><div class="menu-title">AI Theory</div><div class="menu-desc">Multi Agents Planning Strategy</div></div><span>ML_04</span>
+      </a>
+      <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+        <div><div class="menu-title">Reinforce Learning</div><div class="menu-desc">Find Optimal Policy</div></div><span>ML_05</span>
+      </a>
+      <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+        <div><div class="menu-title">GitHub</div><div class="menu-desc">Code Configuration</div></div><span>CODE_01</span>
+      </a>
+        <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+        <div><div class="menu-title">Notion</div><div class="menu-desc">Code Documentation</div></div><span>CODE_02</span>
+      </a>
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bottom -->
+  <!-- <div class="bottom-bar">
+    <div class="code-links">
+      <a href="https://github.com/EunbiYoon" target="_blank">GITHUB</a>
+      <a href="https://drive.google.com" target="_blank">AI PROJECT</a>
+    </div>
+    <p style="font-size:.7rem;color:#666;">SYSTEM ID: ADMIN / PASSWORD: PASSWORD</p>
+  </div> -->
 
+  <!-- Beam Script -->
   <script>
-    // 페이지 로드 시 순차 Fade-In
-    window.addEventListener('DOMContentLoaded', function(){
-      document.body.classList.add('animate-in');
-    });
+    const ROBOT_ANCHOR_LEFT  = { x: 0.52, y: 0.55 };
+    const ROBOT_ANCHOR_RIGHT = { x: 0.48, y: 0.55 };
+
+    function trackMenu(el){
+      const c = document.getElementById('connector');
+      const right = el.closest('.right-col');
+      const a = right ? ROBOT_ANCHOR_RIGHT : ROBOT_ANCHOR_LEFT;
+
+      const ox = innerWidth * a.x;
+      const oy = innerHeight * a.y;
+      const r = el.getBoundingClientRect();
+      const tx = r.left + r.width/2;
+      const ty = r.top + r.height/2;
+
+      const dx = tx - ox, dy = ty - oy;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      const ang = Math.atan2(dy,dx)*180/Math.PI;
+
+      c.style.left = ox+'px';
+      c.style.top  = oy+'px';
+      c.style.width = dist+'px';
+      c.style.transform = `rotate(${ang}deg)`;
+      c.style.opacity = 1;
+
+      el.addEventListener('mouseleave',()=>{
+        c.style.opacity=0;
+        c.style.width=0;
+      },{once:true});
+    }
   </script>
+
 </body>
 </html>

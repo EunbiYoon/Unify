@@ -334,9 +334,9 @@ Pvalues=Table['PPM'][:-1].tolist() #total 제외
 
 today=date.today()
 date0M_name=today.strftime('%Y.%m')
-date1M_name=today-timedelta(weeks=5) # 어떤 달은 한달이 4주가 아닌 점을 고려 ==> 11/30/2025수정
+date1M_name=today-timedelta(weeks=4) # 어떤 달은 한달이 4주가 아닌 점을 고려
 date1M_name=date1M_name.strftime('%Y.%m')
-date2M_name=today-timedelta(weeks=9) # 어떤 달은 한달이 4주가 아닌 점을 고려 려 ==> 11/30/2025수정
+date2M_name=today-timedelta(weeks=8) # 어떤 달은 한달이 4주가 아닌 점을 고려
 date2M_name=date2M_name.strftime('%Y.%m')
 # 그래프 그리기 위해 데이터 합치기
 SVCresult=YearSVCData[['9','10','11']] 
@@ -352,19 +352,37 @@ legend0M=date0M_name
 ABlabels=list(range(1,len(Salesresult.index)+1))
 
 # zero not display
-# 에러 수정 1/28/2025 -> 10/27/2025 -> 11/1/2025 -> 11/26/2025 -> 11/30/2025 -> 12/3/2025 -> 12/9/2025
+# 에러 수정 1/28/2025 -> 10/27/2025 -> 11/1/2025 -> 12/29/2025
 # Avalues2M=SVCresult['SVC_'+date2M_name].iloc[:, 0].squeeze().dropna().tolist()
 # Avalues1M=SVCresult['SVC_'+date1M_name].iloc[:, 0].squeeze().dropna().tolist()
-Avalues2M=SVCresult['SVC_'+date2M_name].dropna().tolist()
-Avalues1M=SVCresult['SVC_'+date1M_name].dropna().tolist()
-Avalues0M=SVCresult['SVC_'+date0M_name].dropna().tolist()
-# 에러 수정 1/28/2025 > 10/27/2025 -> 11/1/2025 -> 11/26/2025
+# Avalues2M=SVCresult['SVC_'+date2M_name].dropna().tolist()
+# Avalues1M=SVCresult['SVC_'+date1M_name].dropna().tolist()
+# Avalues0M=SVCresult['SVC_'+date0M_name].dropna().tolist()
+col2 = f"SVC_{date2M_name}"
+col1 = f"SVC_{date1M_name}"
+col0 = f"SVC_{date0M_name}"
+
+def as_series(x):
+    # x가 DataFrame(중복컬럼)으로 나올 때 첫 번째 컬럼만 사용
+    return x.iloc[:, 0] if isinstance(x, pd.DataFrame) else x
+
+Avalues2M = as_series(SVCresult[col2]).dropna().to_list()
+Avalues1M = as_series(SVCresult[col1]).dropna().to_list()
+Avalues0M = as_series(SVCresult[col0]).dropna().to_list()
+
+# 에러 수정 1/28/2025 > 10/27/2025 -> 11/1/2025
 # Bvalues2M=Salesresult['Sales_'+date2M_name].iloc[:, 0].squeeze().fillna(0).tolist()
 # Bvalues1M=Salesresult['Sales_'+date1M_name].iloc[:, 0].squeeze().fillna(0).tolist()
-Bvalues2M=Salesresult['Sales_'+date2M_name].fillna(0).tolist()
-Bvalues1M=Salesresult['Sales_'+date1M_name].fillna(0).tolist()
-Bvalues0M=Salesresult['Sales_'+date0M_name].fillna(0).tolist()
+# # Bvalues2M=Salesresult['Sales_'+date2M_name].fillna(0).tolist()
+# # Bvalues1M=Salesresult['Sales_'+date1M_name].fillna(0).tolist()
+# Bvalues0M=Salesresult['Sales_'+date0M_name].fillna(0).tolist()
+col22 = f"Sales_{date2M_name}"
+col11 = f"Sales_{date1M_name}"
+col00 = f"Sales_{date0M_name}"
 
+Bvalues2M = as_series(Salesresult[col22]).dropna().to_list()
+Bvalues1M = as_series(Salesresult[col11]).dropna().to_list()
+Bvalues0M = as_series(Salesresult[col00]).dropna().to_list()
 
 svc_data.index=range(1,len(svc_data)+1)
 svc_data.columns=["Symptom","Details","Parts", "Repair_No","Serial_No","Report_Date"]
