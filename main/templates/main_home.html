@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eunbi's Command Center</title>
+  <title>Eunbi's System</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   {% load static %}
   <link rel="icon" type="image/x-icon" href="{% static 'icon/portfolio.png'%}">
@@ -26,7 +23,7 @@
     }
 
     /* ===============================
-       Spline Background (License Crop)
+       Spline Background (Runtime Canvas)
        =============================== */
     .spline-wrapper {
       position: absolute;
@@ -35,17 +32,18 @@
       z-index: 0;
     }
 
-    .spline-bg {
+    /* ✅ iframe 대신 canvas */
+    #splineCanvas {
       position: absolute;
-      top: -4%;              /* 👈 라이선스 영역 날리기 */
+      top: -4%;
       left: 0;
       width: 100%;
       height: 112%;
-      border: none;
       transform: scale(1.15);
+      outline: none;
+      display: block;
     }
 
-    /* 하단 페이드 (자연스럽게 가림) */
     .spline-fade {
       position: absolute;
       bottom: 0;
@@ -60,23 +58,36 @@
     /* ===============================
        Glass UI
        =============================== */
-    .glass-interface {
+    .glass-interface{
       position: absolute;
       inset: 0;
       z-index: 10;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 0 5vw;
-      pointer-events: none;
+      align-items: flex-start;
+      padding: 8vh 5vw 6vh;
+      pointer-events: none; /* ✅ 전체 오버레이는 이벤트 통과 */
     }
 
-    .menu-column {
+    /* ✅ 컬럼/박스도 이벤트 통과 (중요!) */
+    .menu-column{
       width: 300px;
       display: flex;
       flex-direction: column;
       gap: 20px;
-      pointer-events: auto;
+      pointer-events: none;
+    }
+
+    .login-hint{
+      position: absolute;
+      left: 5vw;
+      top: calc(8vh - 34px);
+      font-size: 17px;
+      color: rgba(0,0,0,0.65);
+      padding: 8px 12px;
+      border-radius: 999px;
+      backdrop-filter: blur(8px);
+      pointer-events: none;
     }
 
     .holo-box {
@@ -88,10 +99,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: .4s cubic-bezier(.175,.885,.32,1.275);
+      transition: .25s ease;
       backdrop-filter: blur(8px);
       position: relative;
       overflow: hidden;
+
+      /* ✅ 이벤트는 canvas가 받고, UI는 JS로 hover/click 처리 */
+      pointer-events: none;
+      user-select: none;
     }
 
     .holo-box::before {
@@ -102,21 +117,20 @@
       width:3px;
       height:100%;
       background:#444;
-      transition:.3s;
+      transition:.25s ease;
     }
 
-    .holo-box:hover {
+    /* ✅ JS가 클래스 붙여서 hover 효과 */
+    .holo-box.is-hover {
       transform: scale(1.05) translateX(10px);
       border-color:#00d2ff;
       box-shadow:0 0 20px rgba(0,210,255,.45);
       background: rgba(0,255,255,.1);
     }
-
-    .right-col .holo-box:hover {
+    .right-col .holo-box.is-hover {
       transform: scale(1.05) translateX(-10px);
     }
-
-    .holo-box:hover::before {
+    .holo-box.is-hover::before {
       background:#00d2ff;
       box-shadow:0 0 10px #00d2ff;
     }
@@ -125,9 +139,7 @@
       font-size:1.25rem;
       font-weight:700;
       letter-spacing:1px;
-      /* text-transform:uppercase; */
     }
-
     .menu-desc {
       font-size:.8rem;
       color:#aaa;
@@ -147,246 +159,159 @@
       pointer-events:none;
       z-index:15;
     }
-
-    /* ===============================
-       Bottom Bar
-       =============================== */
-    .bottom-bar {
-      position:absolute;
-      bottom:25px;
-      width:100%;
-      text-align:center;
-      z-index:20;
-      pointer-events:auto;
-    }
-
-    .code-links a {
-      margin:0 15px;
-      color:rgba(255,255,255,.6);
-      text-decoration:none;
-      font-size:.9rem;
-    }
-
-    .code-links a:hover {
-      color:#00d2ff;
-      text-shadow:0 0 8px #00d2ff;
-    }
-
-    /* Mobile */
-    @media (max-width:768px){
-      .glass-interface {
-        flex-direction:column;
-        justify-content:flex-end;
-        padding-bottom:80px;
-      }
-      .menu-column {
-        width:90%;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:center;
-      }
-      .holo-box {
-        width:48%;
-        padding:10px;
-      }
-      .menu-desc {display:none;}
-    }
-    /* ===============================
-   HUD Title (Eunbi Agent System)
-   =============================== */
-    .hud-title{
-    position: absolute;
-    left: 50%;
-    top: 10vh;                 /* ✅ 로봇 머리 위 느낌: 8~14vh 사이로 튜닝 */
-    transform: translateX(-50%);
-    z-index: 12;
-    width: min(720px, 86vw);
-    pointer-events: none;      /* spline 회전 방해 X */
-    }
-
-    .hud-big{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 6px;
-    text-align: left;
-    filter: drop-shadow(0 0 18px rgba(0, 210, 255, 0.25));
-    }
-
-    .hud-small{
-    font-size: clamp(42px, 7vw, 74px);
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: rgb(62, 158, 173, 0.7);
-    }
-
-    .hud-mid{
-    font-size: clamp(60px, 9vw, 118px);
-    font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 0.92;
-    color: rgba(0, 210, 255, 0.55);
-    text-shadow:
-        0 0 16px rgba(0, 210, 255, 0.20),
-        0 0 40px rgba(0, 210, 255, 0.10);
-    }
-
-    .hud-meta{
-    margin-top: 18px;
-    display: grid;
-    grid-template-columns: 14px 1fr;
-    gap: 14px;
-    align-items: start;
-    }
-
-    .hud-bar{
-    width: 3px;
-    height: 76px;
-    background: rgba(0, 210, 255, 1);
-    box-shadow: 0 0 16px rgba(0, 210, 255, 0.25);
-    border-radius: 2px;
-    }
-
-    .hud-lines{
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 18px;
-    letter-spacing: 1px;
-    /* color: rgba(50, 255, 187, 1); */
-    color: rgb(62, 158, 173, 1);
-    }
-
-    .hud-lines b{
-    color: rgba(0, 210, 255, 0.9);
-    font-weight: 700;
-    }
-
   </style>
 </head>
 
 <body>
 
-  <!-- Spline Background -->
+  <!-- Spline Background (Runtime Canvas) -->
   <div class="spline-wrapper">
-    <iframe
-      class="spline-bg"
-      src="https://my.spline.design/nexbotrobotcharacterconcept-cHH2e9wbqTy2D5QSbcUrhEmD/"
-      frameborder="0">
-    </iframe>
+    <canvas id="splineCanvas" tabindex="0"></canvas>
     <div class="spline-fade"></div>
   </div>
 
   <!-- UI -->
   <div class="glass-interface">
-    <div class="hud-title">
-        <!-- <div class="hud-big">
-            <span class="hud-small">Welcome to </span>
-            <span class="hud-mid">Hi, there!</span>
-            <span class="hud-mid">AGENT</span>
-        </div> -->
-
-        <!-- <div class="hud-meta">
-            <div class="hud-bar"></div>
-            <div class="hud-lines">
-            <div>LEFT: <b>Software Engineering</b> / RIGHT: <b>Machine Learning</b></div>
-            <div>LOGIN Username: <b>admin</b> / Password: <b>password</b></div>
-            <div>MODE: <b>INTERACTIVE</b></div>
-            </div>
-        </div> -->
-    </div>
-
-    <!-- Left -->
     <div class="menu-column left-col">
-      <div>Username: <b>admin</b> / Password: <b>password</b></div>
-      <a href="{% url 'portfolio_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Portfolio</div><div class="menu-desc">Introduction and Summary</div></div><span>SDE_01</span>
+      <div class="login-hint">Username: <b>admin</b> / Password: <b>password</b></div>
+
+      <a href="{% url 'portfolio_url' %}" class="holo-box">
+        <div><div class="menu-title">Portfolio</div><div class="menu-desc">Introduction and Summary</div></div><span>SDE_01</span>
       </a>
-      <a href="/admin" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">DB Management</div><div class="menu-desc">View All System's Operations</div></div><span>SDE_02</span>
+      <a href="/admin" class="holo-box">
+        <div><div class="menu-title">DB Management</div><div class="menu-desc">View All System's Operations</div></div><span>SDE_02</span>
       </a>
-      <a href="{% url 'finance_home_url' %}"  class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Finance Backend</div><div class="menu-desc">Open API Interface</div></div><span>SDE_03</span>
+      <a href="{% url 'finance_home_url' %}" class="holo-box">
+        <div><div class="menu-title">Finance Backend</div><div class="menu-desc">Open API Interface</div></div><span>SDE_03</span>
       </a>
-      <a href="{% url 'costhome_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Cost Data Center</div><div class="menu-desc">Full Stack</div></div><span>SDE_04</span>
+      <a href="{% url 'costhome_url' %}" class="holo-box">
+        <div><div class="menu-title">Cost Data Center</div><div class="menu-desc">Full Stack</div></div><span>SDE_04</span>
       </a>
-      <a href="/quality/dashboard" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Quality Analysis</div><div class="menu-desc">Business Data Solution</div></div><span>SDE_05</span>
+      <a href="/quality/dashboard" class="holo-box">
+        <div><div class="menu-title">Quality Analysis</div><div class="menu-desc">Business Data Solution</div></div><span>SDE_05</span>
       </a>
-      <a href="{% url 'sr_home_url' %}" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">Employee Centered</div><div class="menu-desc">Combine Two Systems</div></div><span>SDE_06</span>
+      <a href="{% url 'sr_home_url' %}" class="holo-box">
+        <div><div class="menu-title">Employee Centered</div><div class="menu-desc">Combine Two Systems</div></div><span>SDE_06</span>
       </a>
-      <a href="/lgsupport/video" class="holo-box" onmouseenter="trackMenu(this)">
-          <div><div class="menu-title">LG Video Tutorial</div><div class="menu-desc">Mobile Responsive Web App</div></div><span>SDE_07</span>
+      <a href="/lgsupport/video" class="holo-box">
+        <div><div class="menu-title">LG Video Tutorial</div><div class="menu-desc">Mobile Responsive Web App</div></div><span>SDE_07</span>
       </a>
     </div>
 
     <div id="connector" class="connection-line"></div>
 
-    <!-- Right -->
     <div class="menu-column right-col">
-      <a href="/umass/med-vqa/" class="holo-box" onmouseenter="trackMenu(this)">
+      <a href="/umass/med-vqa/" class="holo-box">
         <div><div class="menu-title">Doctor AI Agent</div><div class="menu-desc">Medical VQA Reasoning</div></div><span>ML_01</span>
       </a>
-      <a href="/umass/datascience-system/" class="holo-box" onmouseenter="trackMenu(this)">
+      <a href="/umass/datascience-system/" class="holo-box">
         <div><div class="menu-title">Data Science System</div><div class="menu-desc">Stock Prediction with News</div></div><span>ML_02</span>
       </a>
-      <a href="/umass/machine-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+      <a href="/umass/machine-learning/" class="holo-box">
         <div><div class="menu-title">Machine Learning</div><div class="menu-desc">Supervised and Unsupervised</div></div><span>ML_03</span>
       </a>
-      <a href="/umass/artificial-intelligence/" class="holo-box" onmouseenter="trackMenu(this)">
+      <a href="/umass/artificial-intelligence/" class="holo-box">
         <div><div class="menu-title">AI Theory</div><div class="menu-desc">Multi Agents Planning Strategy</div></div><span>ML_04</span>
       </a>
-      <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+      <a href="/umass/reinforcement-learning/" class="holo-box">
         <div><div class="menu-title">Reinforce Learning</div><div class="menu-desc">Find Optimal Policy</div></div><span>ML_05</span>
       </a>
-      <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+      <a href="https://github.com/EunbiYoon" class="holo-box" target="_blank">
         <div><div class="menu-title">GitHub</div><div class="menu-desc">Code Configuration</div></div><span>CODE_01</span>
       </a>
-        <a href="/umass/reinforcement-learning/" class="holo-box" onmouseenter="trackMenu(this)">
+      <a href="https://able-fragrance-2c9.notion.site" class="holo-box" target="_blank">
         <div><div class="menu-title">Notion</div><div class="menu-desc">Code Documentation</div></div><span>CODE_02</span>
       </a>
     </div>
   </div>
 
-  <!-- Bottom -->
-  <!-- <div class="bottom-bar">
-    <div class="code-links">
-      <a href="https://github.com/EunbiYoon" target="_blank">GITHUB</a>
-      <a href="https://drive.google.com" target="_blank">AI PROJECT</a>
-    </div>
-    <p style="font-size:.7rem;color:#666;">SYSTEM ID: ADMIN / PASSWORD: PASSWORD</p>
-  </div> -->
+  <!-- ===============================
+       Spline Runtime + UI HitTest
+       =============================== -->
+  <script type="module">
+    import { Application } from "https://unpkg.com/@splinetool/runtime@1.9.6/build/runtime.js";
 
-  <!-- Beam Script -->
-  <script>
+    // ✅ 1) Spline Runtime 로드 (여기에 splinecode URL 넣어야 함)
+    const canvas = document.getElementById("splineCanvas");
+    const app = new Application(canvas);
+
+    // ⚠️ 여기 URL은 반드시 Spline Export에서 받은 "scene.splinecode" 링크로 교체해야 함
+    // 예: https://prod.spline.design/XXXX/scene.splinecode
+    const SPLINE_SCENECODE_URL = "PASTE_YOUR_SCENE_SPLINECODE_URL_HERE";
+    await app.load(SPLINE_SCENECODE_URL);
+
+    // ✅ 2) 패널 hover/beam/click을 부모 문서에서 처리 (Spline은 계속 마우스 받음)
     const ROBOT_ANCHOR_LEFT  = { x: 0.52, y: 0.55 };
     const ROBOT_ANCHOR_RIGHT = { x: 0.48, y: 0.55 };
 
-    function trackMenu(el){
-      const c = document.getElementById('connector');
-      const right = el.closest('.right-col');
+    const connector = document.getElementById("connector");
+    const boxes = Array.from(document.querySelectorAll("a.holo-box"));
+    let hovered = null;
+
+    function drawBeam(el){
+      const right = el.closest(".right-col") !== null;
       const a = right ? ROBOT_ANCHOR_RIGHT : ROBOT_ANCHOR_LEFT;
 
       const ox = innerWidth * a.x;
       const oy = innerHeight * a.y;
+
       const r = el.getBoundingClientRect();
       const tx = r.left + r.width/2;
       const ty = r.top + r.height/2;
 
       const dx = tx - ox, dy = ty - oy;
       const dist = Math.sqrt(dx*dx + dy*dy);
-      const ang = Math.atan2(dy,dx)*180/Math.PI;
+      const ang = Math.atan2(dy,dx) * 180 / Math.PI;
 
-      c.style.left = ox+'px';
-      c.style.top  = oy+'px';
-      c.style.width = dist+'px';
-      c.style.transform = `rotate(${ang}deg)`;
-      c.style.opacity = 1;
-
-      el.addEventListener('mouseleave',()=>{
-        c.style.opacity=0;
-        c.style.width=0;
-      },{once:true});
+      connector.style.left = ox+"px";
+      connector.style.top  = oy+"px";
+      connector.style.width = dist+"px";
+      connector.style.transform = `rotate(${ang}deg)`;
+      connector.style.opacity = 1;
     }
+
+    function clearBeam(){
+      connector.style.opacity = 0;
+      connector.style.width = 0;
+    }
+
+    function hitTest(x, y){
+      for (const el of boxes){
+        const r = el.getBoundingClientRect();
+        if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) return el;
+      }
+      return null;
+    }
+
+    window.addEventListener("mousemove", (e) => {
+      const el = hitTest(e.clientX, e.clientY);
+      if (el === hovered) return;
+
+      if (hovered) hovered.classList.remove("is-hover");
+      hovered = el;
+
+      if (hovered){
+        hovered.classList.add("is-hover");
+        drawBeam(hovered);
+      } else {
+        clearBeam();
+      }
+    }, { passive: true });
+
+    window.addEventListener("click", (e) => {
+      if (!hovered) return;
+
+      const href = hovered.getAttribute("href");
+      const target = hovered.getAttribute("target");
+      if (!href) return;
+
+      // Django {% url %}도 href에 렌더링되면 그대로 이동됨
+      if (target === "_blank") {
+        window.open(href, "_blank", "noopener");
+      } else {
+        window.location.href = href;
+      }
+    });
   </script>
 
 </body>
