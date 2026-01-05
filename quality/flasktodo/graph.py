@@ -23,18 +23,52 @@ def last_day(d):
 
 def generate_svc_data(today, total):
     symptoms = ["DRAIN","EXPLANATION","INSTALLATION","NOISE","OTHER","PCB"]
+    base = month_start(today)
+    months = [add_months(base, -2), add_months(base, -1), base]  # 2M,1M,0M
+
+    # 월별 총량 비율(너가 원하는 느낌으로 조절)
+    # 너무 작위적이면 0.25/0.35/0.40 같이 완만하게
+    ratios = np.array([0.28, 0.33, 0.39])
+    totals = (ratios * total).astype(int)
+    totals[-1] = total - totals[:-1].sum()
+
     rows = []
-    for _ in range(total):
-        m = randint(0, 2)
-        d0 = add_months(month_start(today), -m)
-        day = randint(1, last_day(d0))
-        d = date(d0.year, d0.month, day)
-        if d > today:
-            continue
-        rows.append({
-            "Symptoms": choice(symptoms),
-            "Report_Date": d.strftime("%Y-%m-%d")
-        })
+
+    for m, month_total in zip(months, totals):
+        end = last_day(m)
+
+        # 일별 가중치: 완만한 랜덤(합 1)
+        # Dirichlet은 "자연스러운 분배" 만들기 좋음
+        w = np.random.dirichlet(alpha=np.ones(end) * 2.5)  # alpha↑ = 더 매끈
+        daily = np.round(w * month_total).astype(int)
+
+        # 반올림 오차 보정
+        diff = month_total - daily.sum()
+        if diff != 0:
+            idx = np.random.randint(0, end)
+            daily[idx] += diff
+
+        for day in range(1, end + 1):
+            d = date(m.year, m.month, day)
+            if d > today:
+                break
+
+            cnt = int(daily[day - 1])
+
+            # (선택) 요일 효과: 주말 조금 줄고, 월요일 약간 증가 같은 느낌
+            # 너무 티나면 주석 처리해도 됨
+            wd = d.weekday()  # Mon=0 ... Sun=6
+            if wd == 0:            # 월요일
+                cnt = int(cnt * 1.08)
+            elif wd >= 5:          # 토/일
+                cnt = int(cnt * 0.92)
+
+            for _ in range(cnt):
+                rows.append({
+                    "Symptoms": choice(symptoms),
+                    "Report_Date": d.strftime("%Y-%m-%d")
+                })
+
     return pd.DataFrame(rows)
 
 
