@@ -37,3 +37,10 @@
 3. DELETE FROM account_division WHERE id >= 3; 
 ## reset sequence
 4. DELETE FROM sqlite_sequence WHERE name = 'account_division';
+
+### vision streamlit run
+cd vision
+streamlit run app3.py --server.port 8501 --server.baseUrlPath vision
+
+# run in local with docker-compose.local.yml
+docker compose -f docker-compose.local.yml up --build

@@ -1,0 +1,6 @@
+streamlit
+streamlit-autorefresh
+tensorflow
+numpy
+pillow
+pandas

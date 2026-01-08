@@ -1,5 +1,5 @@
 # Python 이미지를 사용 (최신 안정 버전)
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 # 작업 디렉터리 설정
 WORKDIR /app
@@ -36,4 +36,5 @@ RUN . /opt/venv/bin/activate && python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # 컨테이너 시작 시 migrate 실행 후 gunicorn 시작
-CMD ["/bin/sh", "-c", ". /opt/venv/bin/activate && python manage.py migrate --noinput && exec gunicorn backend.wsgi:application --bind 0.0.0.0:8000"]
+CMD ["/bin/sh", "-c", ". /opt/venv/bin/activate && python manage.py migrate --noinput && exec gunicorn backend.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
+# CMD ["/bin/sh", "-c", ". /opt/venv/bin/activate && python manage.py migrate --noinput && exec gunicorn backend.wsgi:application --bind 0.0.0.0:8000"]
