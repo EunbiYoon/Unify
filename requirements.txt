@@ -44,3 +44,9 @@ python-dateutil
 django-ninja
 openpyxl
 email-validator
+streamlit
+streamlit-autorefresh
+tensorflow
+numpy
+pillow
+pandas

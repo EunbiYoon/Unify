@@ -43,4 +43,16 @@ cd vision
 streamlit run app3.py --server.port 8501 --server.baseUrlPath vision
 
 # run in local with docker-compose.local.yml
+open -a Docker
 docker compose -f docker-compose.local.yml up --build
+
+# docker
+open -a Docker
+docker build -t koyeb-test .
+docker run --rm -e PORT=8000 -p 8000:8000 koyeb-test
+
+
+# check
+http://localhost:8000/
+http://localhost:8000/vision/
+http://localhost:8000/gradio/
