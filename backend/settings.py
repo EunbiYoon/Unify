@@ -115,9 +115,7 @@ TEMPLATES = [
         },
     },
 ]
-TEMPLATES[0]["OPTIONS"]["context_processors"] += [
-    "backend.context_processors.global_vars",
-]
+
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
